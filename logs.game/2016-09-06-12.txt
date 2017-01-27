@@ -1,0 +1,387 @@
+06.09 12:00:06 TIMER: Check auto-disconnect...
+06.09 12:00:39 STATS: vdl.0 cache, locks:0
+06.09 12:01:06 TIMER: Check auto-disconnect...
+06.09 12:01:08 NET: Client (name:null conid:16381693 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:01:39 STATS: vdl.0 cache, locks:0
+06.09 12:02:06 TIMER: Check auto-disconnect...
+06.09 12:02:39 STATS: vdl.0 cache, locks:0
+06.09 12:03:06 TIMER: Check auto-disconnect...
+06.09 12:03:14 NET: Client (conid:9506696) connected to vdl.0 (clients:1)
+06.09 12:03:39 STATS: vdl.0 cache, locks:0
+06.09 12:04:06 TIMER: Check auto-disconnect...
+06.09 12:04:39 STATS: vdl.0 cache, locks:0
+06.09 12:05:05 NET: Client (conid:96249755) connected to vdl.0 (clients:2)
+06.09 12:05:05 NET: Client (name:null conid:96249755 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:05:05 NET: Client (conid:68900993) connected to vdl.0 (clients:2)
+06.09 12:05:06 TIMER: Check auto-disconnect...
+06.09 12:05:09 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:05:09 TRACE: User not logon yet.
+06.09 12:05:09 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:05:09 TRACE: User not logon yet.
+06.09 12:05:09 NET: Client (name:null conid:68900993 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:05:39 STATS: vdl.0 cache, locks:0
+06.09 12:05:48 NET: Client (conid:51935442) connected to vdl.0 (clients:2)
+06.09 12:05:48 NET: Client (conid:30886196) connected to vdl.0 (clients:3)
+06.09 12:05:48 NET: Client (name:null conid:51935442 TCP) disconnected from vdl.0 (clients:2)
+06.09 12:06:06 TIMER: Check auto-disconnect...
+06.09 12:06:39 STATS: vdl.0 cache, locks:0
+06.09 12:07:06 TIMER: Check auto-disconnect...
+06.09 12:07:06 NET: Client (name:null conid:9506696 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:07:39 STATS: vdl.0 cache, locks:0
+06.09 12:08:06 TIMER: Check auto-disconnect...
+06.09 12:08:39 STATS: vdl.0 cache, locks:0
+06.09 12:09:06 TIMER: Check auto-disconnect...
+06.09 12:09:06 NET: Client (name:null conid:30886196 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:09:39 STATS: vdl.0 cache, locks:0
+06.09 12:10:06 TIMER: Check auto-disconnect...
+06.09 12:10:39 STATS: vdl.0 cache, locks:0
+06.09 12:11:06 TIMER: Check auto-disconnect...
+06.09 12:11:39 STATS: vdl.0 cache, locks:0
+06.09 12:12:06 TIMER: Check auto-disconnect...
+06.09 12:12:39 STATS: vdl.0 cache, locks:0
+06.09 12:13:06 TIMER: Check auto-disconnect...
+06.09 12:13:39 STATS: vdl.0 cache, locks:0
+06.09 12:14:06 TIMER: Check auto-disconnect...
+06.09 12:14:39 STATS: vdl.0 cache, locks:0
+06.09 12:15:06 TIMER: Check auto-disconnect...
+06.09 12:15:39 STATS: vdl.0 cache, locks:0
+06.09 12:16:06 TIMER: Check auto-disconnect...
+06.09 12:16:39 STATS: vdl.0 cache, locks:0
+06.09 12:17:00 NET: Client (conid:28452472) connected to vdl.0 (clients:1)
+06.09 12:17:00 NET: Client (name:null conid:28452472 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:17:00 NET: Client (conid:46001146) connected to vdl.0 (clients:1)
+06.09 12:17:06 TIMER: Check auto-disconnect...
+06.09 12:17:12 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:17:12 TRACE: User not logon yet.
+06.09 12:17:12 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:17:12 TRACE: User not logon yet.
+06.09 12:17:12 NET: Client (name:null conid:46001146 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:17:39 STATS: vdl.0 cache, locks:0
+06.09 12:18:06 TIMER: Check auto-disconnect...
+06.09 12:18:36 NET: Client (conid:26602742) connected to vdl.0 (clients:1)
+06.09 12:18:36 NET: Client (name:null conid:26602742 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:18:36 NET: Client (conid:5241524) connected to vdl.0 (clients:1)
+06.09 12:18:39 STATS: vdl.0 cache, locks:0
+06.09 12:18:52 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:18:52 TRACE: User not logon yet.
+06.09 12:18:52 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:18:52 TRACE: User not logon yet.
+06.09 12:18:52 NET: Client (name:null conid:5241524 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:19:06 TIMER: Check auto-disconnect...
+06.09 12:19:39 STATS: vdl.0 cache, locks:0
+06.09 12:20:06 TIMER: Check auto-disconnect...
+06.09 12:20:39 STATS: vdl.0 cache, locks:0
+06.09 12:21:06 TIMER: Check auto-disconnect...
+06.09 12:21:39 STATS: vdl.0 cache, locks:0
+06.09 12:22:06 TIMER: Check auto-disconnect...
+06.09 12:22:39 STATS: vdl.0 cache, locks:0
+06.09 12:23:06 TIMER: Check auto-disconnect...
+06.09 12:23:39 STATS: vdl.0 cache, locks:0
+06.09 12:24:06 TIMER: Check auto-disconnect...
+06.09 12:24:39 STATS: vdl.0 cache, locks:0
+06.09 12:25:06 TIMER: Check auto-disconnect...
+06.09 12:25:39 STATS: vdl.0 cache, locks:0
+06.09 12:26:06 TIMER: Check auto-disconnect...
+06.09 12:26:39 STATS: vdl.0 cache, locks:0
+06.09 12:27:06 TIMER: Check auto-disconnect...
+06.09 12:27:39 STATS: vdl.0 cache, locks:0
+06.09 12:27:54 NET: Client (conid:94036589) connected to vdl.0 (clients:1)
+06.09 12:27:54 NET: Client (name:null conid:94036589 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:27:54 NET: Client (conid:8313395) connected to vdl.0 (clients:1)
+06.09 12:27:59 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:27:59 TRACE: User not logon yet.
+06.09 12:27:59 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:27:59 TRACE: User not logon yet.
+06.09 12:27:59 NET: Client (name:null conid:8313395 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:28:06 TIMER: Check auto-disconnect...
+06.09 12:28:39 STATS: vdl.0 cache, locks:0
+06.09 12:29:06 TIMER: Check auto-disconnect...
+06.09 12:29:39 STATS: vdl.0 cache, locks:0
+06.09 12:30:06 TIMER: Check auto-disconnect...
+06.09 12:30:14 NET: Client (conid:92066162) connected to vdl.0 (clients:1)
+06.09 12:30:14 NET: Client (name:null conid:92066162 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:30:14 NET: Client (conid:80988284) connected to vdl.0 (clients:1)
+06.09 12:30:19 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:30:19 TRACE: User not logon yet.
+06.09 12:30:19 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:30:19 TRACE: User not logon yet.
+06.09 12:30:19 NET: Client (name:null conid:80988284 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:30:39 STATS: vdl.0 cache, locks:0
+06.09 12:31:06 TIMER: Check auto-disconnect...
+06.09 12:31:29 NET: Client (conid:49672834) connected to vdl.0 (clients:1)
+06.09 12:31:30 NET: Client (name:null conid:49672834 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:31:30 NET: Client (conid:9235136) connected to vdl.0 (clients:1)
+06.09 12:31:30 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:31:30 TRACE: User not logon yet.
+06.09 12:31:30 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:31:30 TRACE: User not logon yet.
+06.09 12:31:30 NET: Client (name:null conid:9235136 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:31:39 STATS: vdl.0 cache, locks:0
+06.09 12:32:06 TIMER: Check auto-disconnect...
+06.09 12:32:39 STATS: vdl.0 cache, locks:0
+06.09 12:33:06 TIMER: Check auto-disconnect...
+06.09 12:33:39 STATS: vdl.0 cache, locks:0
+06.09 12:34:06 TIMER: Check auto-disconnect...
+06.09 12:34:39 STATS: vdl.0 cache, locks:0
+06.09 12:34:44 NET: Client (conid:38923490) connected to vdl.0 (clients:1)
+06.09 12:34:44 NET: Client (name:null conid:38923490 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:34:44 NET: Client (conid:20745370) connected to vdl.0 (clients:1)
+06.09 12:34:53 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:34:53 TRACE: User not logon yet.
+06.09 12:34:53 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:34:53 TRACE: User not logon yet.
+06.09 12:34:53 NET: Client (name:null conid:20745370 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:35:06 TIMER: Check auto-disconnect...
+06.09 12:35:13 NET: Client (conid:4675499) connected to vdl.0 (clients:1)
+06.09 12:35:13 NET: Client (name:null conid:4675499 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:35:13 NET: Client (conid:33505217) connected to vdl.0 (clients:1)
+06.09 12:35:15 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:35:15 TRACE: User not logon yet.
+06.09 12:35:15 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:35:15 TRACE: User not logon yet.
+06.09 12:35:15 NET: Client (name:null conid:33505217 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:35:39 STATS: vdl.0 cache, locks:0
+06.09 12:36:03 NET: Client (conid:36473280) connected to vdl.0 (clients:1)
+06.09 12:36:03 NET: Client (name:null conid:36473280 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:36:04 NET: Client (conid:91917346) connected to vdl.0 (clients:1)
+06.09 12:36:06 TIMER: Check auto-disconnect...
+06.09 12:36:12 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:36:12 TRACE: User not logon yet.
+06.09 12:36:12 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:36:12 TRACE: User not logon yet.
+06.09 12:36:12 NET: Client (name:null conid:91917346 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:36:39 STATS: vdl.0 cache, locks:0
+06.09 12:37:06 TIMER: Check auto-disconnect...
+06.09 12:37:17 NET: Client (conid:56862465) connected to vdl.0 (clients:1)
+06.09 12:37:17 NET: Client (name:null conid:56862465 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:37:18 NET: Client (conid:34425691) connected to vdl.0 (clients:1)
+06.09 12:37:24 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:37:24 TRACE: User not logon yet.
+06.09 12:37:24 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:37:24 TRACE: User not logon yet.
+06.09 12:37:24 NET: Client (name:null conid:34425691 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:37:30 NET: Client (conid:18796740) connected to vdl.0 (clients:1)
+06.09 12:37:30 NET: Client (name:null conid:18796740 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:37:30 NET: Client (conid:74265396) connected to vdl.0 (clients:1)
+06.09 12:37:33 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:37:33 TRACE: User not logon yet.
+06.09 12:37:33 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:37:33 TRACE: User not logon yet.
+06.09 12:37:33 NET: Client (name:null conid:74265396 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:37:39 STATS: vdl.0 cache, locks:0
+06.09 12:38:06 TIMER: Check auto-disconnect...
+06.09 12:38:39 STATS: vdl.0 cache, locks:0
+06.09 12:39:06 TIMER: Check auto-disconnect...
+06.09 12:39:07 NET: Client (conid:94243468) connected to vdl.0 (clients:1)
+06.09 12:39:07 NET: Client (name:null conid:94243468 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:39:07 NET: Client (conid:35923931) connected to vdl.0 (clients:1)
+06.09 12:39:09 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:39:09 TRACE: User not logon yet.
+06.09 12:39:09 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:39:09 TRACE: User not logon yet.
+06.09 12:39:09 NET: Client (name:null conid:35923931 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:39:16 NET: Client (conid:90970734) connected to vdl.0 (clients:1)
+06.09 12:39:16 NET: Client (name:null conid:90970734 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:39:16 NET: Client (conid:43056782) connected to vdl.0 (clients:1)
+06.09 12:39:17 NET: Client (name:null conid:43056782 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:39:17 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:39:17 TRACE: User not logon yet.
+06.09 12:39:17 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:39:17 TRACE: User not logon yet.
+06.09 12:39:39 STATS: vdl.0 cache, locks:0
+06.09 12:39:46 NET: Client (conid:40071967) connected to vdl.0 (clients:1)
+06.09 12:39:46 NET: Client (name:null conid:40071967 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:39:46 NET: Client (conid:20128211) connected to vdl.0 (clients:1)
+06.09 12:39:49 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:39:49 TRACE: User not logon yet.
+06.09 12:39:49 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:39:49 TRACE: User not logon yet.
+06.09 12:39:49 NET: Client (name:null conid:20128211 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:40:06 TIMER: Check auto-disconnect...
+06.09 12:40:39 STATS: vdl.0 cache, locks:0
+06.09 12:40:49 NET: Client (conid:77840092) connected to vdl.0 (clients:1)
+06.09 12:40:49 NET: Client (name:null conid:77840092 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:40:50 NET: Client (conid:84979364) connected to vdl.0 (clients:1)
+06.09 12:40:53 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:40:53 TRACE: User not logon yet.
+06.09 12:40:53 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:40:53 TRACE: User not logon yet.
+06.09 12:40:53 NET: Client (name:null conid:84979364 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:41:06 TIMER: Check auto-disconnect...
+06.09 12:41:39 STATS: vdl.0 cache, locks:0
+06.09 12:42:06 TIMER: Check auto-disconnect...
+06.09 12:42:39 STATS: vdl.0 cache, locks:0
+06.09 12:43:06 TIMER: Check auto-disconnect...
+06.09 12:43:39 STATS: vdl.0 cache, locks:0
+06.09 12:44:06 TIMER: Check auto-disconnect...
+06.09 12:44:39 STATS: vdl.0 cache, locks:0
+06.09 12:45:06 TIMER: Check auto-disconnect...
+06.09 12:45:39 STATS: vdl.0 cache, locks:0
+06.09 12:46:06 TIMER: Check auto-disconnect...
+06.09 12:46:21 NET: Client (conid:25572449) connected to vdl.0 (clients:1)
+06.09 12:46:22 NET: Client (name:null conid:25572449 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:46:22 NET: Client (conid:32165742) connected to vdl.0 (clients:1)
+06.09 12:46:38 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:46:38 TRACE: User not logon yet.
+06.09 12:46:38 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:46:38 TRACE: User not logon yet.
+06.09 12:46:38 NET: Client (name:null conid:32165742 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:46:39 STATS: vdl.0 cache, locks:0
+06.09 12:46:58 NET: Client (conid:96734022) connected to vdl.0 (clients:1)
+06.09 12:46:58 NET: Client (name:null conid:96734022 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:46:58 NET: Client (conid:6327430) connected to vdl.0 (clients:1)
+06.09 12:47:01 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:47:01 TRACE: User not logon yet.
+06.09 12:47:01 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:47:01 TRACE: User not logon yet.
+06.09 12:47:01 NET: Client (name:null conid:6327430 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:47:06 TIMER: Check auto-disconnect...
+06.09 12:47:39 STATS: vdl.0 cache, locks:0
+06.09 12:48:06 TIMER: Check auto-disconnect...
+06.09 12:48:39 STATS: vdl.0 cache, locks:0
+06.09 12:49:06 TIMER: Check auto-disconnect...
+06.09 12:49:39 STATS: vdl.0 cache, locks:0
+06.09 12:50:06 TIMER: Check auto-disconnect...
+06.09 12:50:39 STATS: vdl.0 cache, locks:0
+06.09 12:50:41 NET: Client (conid:81182688) connected to vdl.0 (clients:1)
+06.09 12:50:41 NET: Client (name:null conid:81182688 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:50:41 NET: Client (conid:86538736) connected to vdl.0 (clients:1)
+06.09 12:50:44 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:50:44 TRACE: User not logon yet.
+06.09 12:50:44 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:50:44 TRACE: User not logon yet.
+06.09 12:50:44 NET: Client (name:null conid:86538736 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:50:49 NET: Client (conid:34681017) connected to vdl.0 (clients:1)
+06.09 12:50:49 NET: Client (name:null conid:34681017 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:50:49 NET: Client (conid:70217712) connected to vdl.0 (clients:1)
+06.09 12:50:50 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:50:50 TRACE: User not logon yet.
+06.09 12:50:50 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:50:50 TRACE: User not logon yet.
+06.09 12:50:50 NET: Client (name:null conid:70217712 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:50:56 NET: Client (conid:65232837) connected to vdl.0 (clients:1)
+06.09 12:50:57 NET: Client (name:null conid:65232837 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:50:57 NET: Client (conid:41791140) connected to vdl.0 (clients:1)
+06.09 12:51:06 TIMER: Check auto-disconnect...
+06.09 12:51:07 NET: Client (conid:86273655) connected to vdl.0 (clients:2)
+06.09 12:51:17 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:51:17 TRACE: User not logon yet.
+06.09 12:51:17 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:51:17 TRACE: User not logon yet.
+06.09 12:51:17 NET: Client (name:null conid:41791140 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:51:39 STATS: vdl.0 cache, locks:0
+06.09 12:51:53 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:51:53 TRACE: User not logon yet.
+06.09 12:51:53 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:51:53 TRACE: User not logon yet.
+06.09 12:51:53 NET: Client (name:null conid:86273655 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:51:57 NET: Client (conid:56933815) connected to vdl.0 (clients:1)
+06.09 12:52:06 TIMER: Check auto-disconnect...
+06.09 12:52:36 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:52:36 TRACE: User not logon yet.
+06.09 12:52:36 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:52:36 TRACE: User not logon yet.
+06.09 12:52:36 NET: Client (name:null conid:56933815 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:52:39 STATS: vdl.0 cache, locks:0
+06.09 12:52:57 NET: Client (conid:96049404) connected to vdl.0 (clients:1)
+06.09 12:52:57 NET: Client (name:null conid:96049404 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:52:58 NET: Client (conid:26530883) connected to vdl.0 (clients:1)
+06.09 12:53:04 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:53:04 TRACE: User not logon yet.
+06.09 12:53:04 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:53:04 TRACE: User not logon yet.
+06.09 12:53:04 NET: Client (name:null conid:26530883 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:53:06 TIMER: Check auto-disconnect...
+06.09 12:53:11 NET: Client (conid:47275726) connected to vdl.0 (clients:1)
+06.09 12:53:11 NET: Client (name:null conid:47275726 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:53:11 NET: Client (conid:69341392) connected to vdl.0 (clients:1)
+06.09 12:53:21 NET: Client (conid:29287810) connected to vdl.0 (clients:2)
+06.09 12:53:39 STATS: vdl.0 cache, locks:0
+06.09 12:54:05 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:54:05 TRACE: User not logon yet.
+06.09 12:54:05 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:54:05 TRACE: User not logon yet.
+06.09 12:54:05 NET: Client (name:null conid:29287810 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:54:06 TIMER: Check auto-disconnect...
+06.09 12:54:39 STATS: vdl.0 cache, locks:0
+06.09 12:55:06 TIMER: Check auto-disconnect...
+06.09 12:55:39 STATS: vdl.0 cache, locks:0
+06.09 12:56:06 TIMER: Check auto-disconnect...
+06.09 12:56:18 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:56:18 TRACE: User not logon yet.
+06.09 12:56:18 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:56:18 TRACE: User not logon yet.
+06.09 12:56:18 NET: Client (name:null conid:69341392 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:56:39 STATS: vdl.0 cache, locks:0
+06.09 12:56:42 NET: Client (conid:20282713) connected to vdl.0 (clients:1)
+06.09 12:56:42 NET: Client (name:null conid:20282713 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:56:43 NET: Client (conid:54567118) connected to vdl.0 (clients:1)
+06.09 12:56:46 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:56:46 TRACE: User not logon yet.
+06.09 12:56:46 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:56:46 TRACE: User not logon yet.
+06.09 12:56:46 NET: Client (name:null conid:54567118 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:06 TIMER: Check auto-disconnect...
+06.09 12:57:18 NET: Client (conid:75844323) connected to vdl.0 (clients:1)
+06.09 12:57:18 NET: Client (name:null conid:75844323 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:18 NET: Client (conid:89130890) connected to vdl.0 (clients:1)
+06.09 12:57:24 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:57:24 TRACE: User not logon yet.
+06.09 12:57:24 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:57:24 TRACE: User not logon yet.
+06.09 12:57:24 NET: Client (name:null conid:89130890 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:32 NET: Client (conid:49706496) connected to vdl.0 (clients:1)
+06.09 12:57:32 NET: Client (name:null conid:49706496 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:32 NET: Client (conid:12457749) connected to vdl.0 (clients:1)
+06.09 12:57:33 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:57:33 TRACE: User not logon yet.
+06.09 12:57:33 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:57:33 TRACE: User not logon yet.
+06.09 12:57:33 NET: Client (name:null conid:12457749 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:37 NET: Client (conid:77300749) connected to vdl.0 (clients:1)
+06.09 12:57:38 NET: Client (name:null conid:77300749 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:57:38 NET: Client (conid:77658900) connected to vdl.0 (clients:1)
+06.09 12:57:39 STATS: vdl.0 cache, locks:0
+06.09 12:57:52 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:57:52 TRACE: User not logon yet.
+06.09 12:57:52 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:57:52 TRACE: User not logon yet.
+06.09 12:57:52 NET: Client (name:null conid:77658900 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:58:06 TIMER: Check auto-disconnect...
+06.09 12:58:23 NET: Client (conid:31006258) connected to vdl.0 (clients:1)
+06.09 12:58:23 NET: Client (name:null conid:31006258 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:58:23 NET: Client (conid:50299433) connected to vdl.0 (clients:1)
+06.09 12:58:27 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:58:27 TRACE: User not logon yet.
+06.09 12:58:27 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:58:27 TRACE: User not logon yet.
+06.09 12:58:27 NET: Client (name:null conid:50299433 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:58:39 STATS: vdl.0 cache, locks:0
+06.09 12:59:06 TIMER: Check auto-disconnect...
+06.09 12:59:08 NET: Client (conid:95903040) connected to vdl.0 (clients:1)
+06.09 12:59:08 NET: Client (name:null conid:95903040 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:59:08 NET: Client (conid:66730820) connected to vdl.0 (clients:1)
+06.09 12:59:10 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:59:10 TRACE: User not logon yet.
+06.09 12:59:10 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:59:10 TRACE: User not logon yet.
+06.09 12:59:10 NET: Client (name:null conid:66730820 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:59:14 NET: Client (conid:47792076) connected to vdl.0 (clients:1)
+06.09 12:59:14 NET: Client (name:null conid:47792076 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:59:14 NET: Client (conid:69121232) connected to vdl.0 (clients:1)
+06.09 12:59:18 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:59:18 TRACE: User not logon yet.
+06.09 12:59:18 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:59:18 TRACE: User not logon yet.
+06.09 12:59:18 NET: Client (name:null conid:69121232 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:59:26 NET: Client (conid:9519631) connected to vdl.0 (clients:1)
+06.09 12:59:26 NET: Client (name:null conid:9519631 TCP) disconnected from vdl.0 (clients:0)
+06.09 12:59:26 NET: Client (conid:49396787) connected to vdl.0 (clients:1)
+06.09 12:59:29 NET: Client (conid:22188205) connected to vdl.0 (clients:2)
+06.09 12:59:39 STATS: vdl.0 cache, locks:0
+06.09 12:59:51 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 12:59:51 TRACE: User not logon yet.
+06.09 12:59:51 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 12:59:51 TRACE: User not logon yet.
+06.09 12:59:51 NET: Client (name:null conid:22188205 TCP) disconnected from vdl.0 (clients:1)
+06.09 12:59:57 NET: Client (conid:49584194) connected to vdl.0 (clients:2)

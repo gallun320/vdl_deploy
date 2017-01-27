@@ -1,0 +1,19 @@
+28.09 14:27:42 TRACE: user.logout : No such module: user
+28.09 14:27:42 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 14:28:51 TRACE: user.logout : No such module: user
+28.09 14:28:51 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 14:40:03 TRACE: user.logout : No such module: user
+28.09 14:40:03 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 14:47:41 TRACE: battle.end : cacheRequest exception { roomId => 75, _type => vdl/cache.battle.infoRoom }
+28.09 14:47:41 TRACE: battle.end : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 195
+Called from modules/VDLBattleModule.hx line 51
+Called from modules/VDLBattleModule.hx line 33
+Called from snipe/slave/Server.hx line 1223
+28.09 14:47:41 TRACE: user.logout : No such module: user
+28.09 14:47:41 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206

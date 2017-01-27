@@ -1,0 +1,12 @@
+06.09 16:35:15 TRACE: User not logon yet.
+06.09 16:37:53 TRACE: User not logon yet.
+06.09 16:37:53 TRACE: User not logon yet.
+06.09 16:49:09 TRACE: User not logon yet.
+06.09 16:49:09 TRACE: User not logon yet.
+06.09 16:53:20 TRACE: user.logout : No such module: user
+06.09 16:53:20 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1186
+06.09 16:54:39 TRACE: User not logon yet.
+06.09 16:54:39 TRACE: User not logon yet.
+06.09 16:57:29 TRACE: User not logon yet.
+06.09 16:57:29 TRACE: User not logon yet.

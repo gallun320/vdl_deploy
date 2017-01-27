@@ -1,0 +1,69 @@
+10.11 11:23:33 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:23:33 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+10.11 11:28:46 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:28:46 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+10.11 11:32:16 TRACE: battle.sendtask : cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:32:16 TRACE: battle.sendtask : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 255
+Called from modules/VDLBattleModule.hx line 64
+Called from modules/VDLBattleModule.hx line 42
+Called from snipe/slave/Server.hx line 1225
+10.11 11:47:44 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:47:44 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+10.11 11:48:09 TRACE: User not logon yet.
+10.11 11:48:17 TRACE: User not logon yet.
+10.11 11:48:25 TRACE: User not logon yet.
+10.11 11:48:32 TRACE: User not logon yet.
+10.11 11:48:40 TRACE: User not logon yet.
+10.11 11:48:47 TRACE: User not logon yet.
+10.11 11:48:53 TRACE: User not logon yet.
+10.11 11:49:00 TRACE: User not logon yet.
+10.11 11:49:06 TRACE: User not logon yet.
+10.11 11:49:13 TRACE: User not logon yet.
+10.11 11:49:22 TRACE: User not logon yet.
+10.11 11:49:31 TRACE: User not logon yet.
+10.11 11:49:36 TRACE: User not logon yet.
+10.11 11:49:43 TRACE: User not logon yet.
+10.11 11:49:51 TRACE: User not logon yet.
+10.11 11:49:58 TRACE: User not logon yet.
+10.11 11:50:06 TRACE: User not logon yet.
+10.11 11:50:20 TRACE: User not logon yet.
+10.11 11:50:28 TRACE: User not logon yet.
+10.11 11:50:35 TRACE: User not logon yet.
+10.11 11:50:44 TRACE: User not logon yet.
+10.11 11:50:52 TRACE: User not logon yet.
+10.11 11:54:15 TRACE: User not logon yet.
+10.11 11:54:23 TRACE: User not logon yet.
+10.11 11:54:31 TRACE: User not logon yet.
+10.11 11:54:40 TRACE: User not logon yet.
+10.11 11:54:48 TRACE: User not logon yet.
+10.11 11:54:56 TRACE: User not logon yet.
+10.11 11:55:03 TRACE: User not logon yet.
+10.11 11:55:11 TRACE: User not logon yet.
+10.11 11:55:18 TRACE: User not logon yet.
+10.11 11:56:11 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:56:11 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+10.11 11:57:50 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.11 11:57:50 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009

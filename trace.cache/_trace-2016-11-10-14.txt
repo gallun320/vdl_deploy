@@ -1,0 +1,6 @@
+10.11 14:04:25 TRACE: vdl/cache.battle.findRandom : Invalid field access : name
+10.11 14:04:25 TRACE: vdl/cache.battle.findRandom : 
+Called from modules/VDLCache.hx line 541
+Called from modules/VDLCache.hx line 222
+Called from modules/VDLCache.hx line 149
+Called from snipe/cache/CacheServer.hx line 487

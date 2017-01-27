@@ -1,0 +1,241 @@
+06.09 10:00:06 TIMER: Check auto-disconnect...
+06.09 10:00:38 STATS: vdl.0 cache, locks:0
+06.09 10:01:06 TIMER: Check auto-disconnect...
+06.09 10:01:38 STATS: vdl.0 cache, locks:0
+06.09 10:02:06 TIMER: Check auto-disconnect...
+06.09 10:02:38 STATS: vdl.0 cache, locks:0
+06.09 10:03:06 TIMER: Check auto-disconnect...
+06.09 10:03:38 STATS: vdl.0 cache, locks:0
+06.09 10:04:06 TIMER: Check auto-disconnect...
+06.09 10:04:38 STATS: vdl.0 cache, locks:0
+06.09 10:05:06 TIMER: Check auto-disconnect...
+06.09 10:05:38 STATS: vdl.0 cache, locks:0
+06.09 10:06:06 TIMER: Check auto-disconnect...
+06.09 10:06:38 STATS: vdl.0 cache, locks:0
+06.09 10:07:06 TIMER: Check auto-disconnect...
+06.09 10:07:38 STATS: vdl.0 cache, locks:0
+06.09 10:08:06 TIMER: Check auto-disconnect...
+06.09 10:08:38 STATS: vdl.0 cache, locks:0
+06.09 10:09:06 TIMER: Check auto-disconnect...
+06.09 10:09:38 STATS: vdl.0 cache, locks:0
+06.09 10:09:40 NET: Client (conid:48180774) connected to vdl.0 (clients:1)
+06.09 10:09:46 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:09:46 TRACE: User not logon yet.
+06.09 10:09:46 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:09:46 TRACE: User not logon yet.
+06.09 10:09:46 NET: Client (name:null conid:48180774 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:10:06 TIMER: Check auto-disconnect...
+06.09 10:10:38 STATS: vdl.0 cache, locks:0
+06.09 10:11:02 NET: Client (conid:70081735) connected to vdl.0 (clients:1)
+06.09 10:11:02 NET: Client (name:null conid:70081735 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:11:02 NET: Client (conid:64862479) connected to vdl.0 (clients:1)
+06.09 10:11:06 TIMER: Check auto-disconnect...
+06.09 10:11:08 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:11:08 TRACE: User not logon yet.
+06.09 10:11:08 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:11:08 TRACE: User not logon yet.
+06.09 10:11:08 NET: Client (name:null conid:64862479 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:11:38 STATS: vdl.0 cache, locks:0
+06.09 10:12:06 TIMER: Check auto-disconnect...
+06.09 10:12:38 STATS: vdl.0 cache, locks:0
+06.09 10:13:06 TIMER: Check auto-disconnect...
+06.09 10:13:19 NET: Client (conid:28105215) connected to vdl.0 (clients:1)
+06.09 10:13:20 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:13:20 TRACE: User not logon yet.
+06.09 10:13:20 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:13:20 TRACE: User not logon yet.
+06.09 10:13:20 NET: Client (name:null conid:28105215 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:13:38 STATS: vdl.0 cache, locks:0
+06.09 10:14:06 TIMER: Check auto-disconnect...
+06.09 10:14:38 STATS: vdl.0 cache, locks:0
+06.09 10:15:06 TIMER: Check auto-disconnect...
+06.09 10:15:08 NET: Client (conid:87626076) connected to vdl.0 (clients:1)
+06.09 10:15:19 ++ NET: null req: user.login { password => test, name => test1, messageType => user.login }
+06.09 10:15:19 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'test1' AND Password = E'test'
+06.09 10:15:19 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'test1' AND Password = E'test', _type => core/server.query }
+06.09 10:15:19 -<<-: core/server.query { list => {{ name => test1, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+06.09 10:15:19 STATS: vdl.0 cache connection, 1554 calls, total 1.3636519908905 sec spent, avg 0.88 ms
+06.09 10:15:19 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+06.09 10:15:19 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+06.09 10:15:19 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+06.09 10:15:19 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { attrs => { _lastTime.24hr => 1473082488, lastLoginDate => 249, lastLoadDate => 906 }, effects => { list => [] } }, name => test1, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => test, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => , mathrating => 0, regdate => 2016-09-02 18:16:02.951845+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 3 } }
+06.09 10:15:19 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+06.09 10:15:19 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+06.09 10:15:19 NET: Client login (conid:87626076, id:3, name:test1)
+06.09 10:15:19 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 188.162.39.86 }
+06.09 10:15:19 -<<-: core/user.loginPost { _type => core/user.loginPost }
+06.09 10:15:19 DB: SELECT ID FROM TempUserLogins WHERE UserID = 3 AND Date = 'today'::timestamp
+06.09 10:15:19 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 3 AND Date = 'today'::timestamp, _type => core/server.query }
+06.09 10:15:19 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+06.09 10:15:19 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (3, 'today'::timestamp)
+06.09 10:15:19 == NET: test1 ret: user.login { name => test1, type => user.login, errorCode => ok, id => 3 }
+06.09 10:15:19 == NET: test1 ret: user.join { name => test1, type => user.join }
+06.09 10:15:19 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (3, 'today'::timestamp), _type => core/server.pending }} }
+06.09 10:15:19 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+06.09 10:15:20 ++ NET: test1 req: battle.find { messageType => battle.find }
+06.09 10:15:20 ->>-: vdl/cache.battle.find { _type => vdl/cache.battle.find }
+06.09 10:15:20 -<<-: vdl/cache.battle.find { list => {}, count => 0, errorCode => not, _type => vdl/cache.battle.find }
+06.09 10:15:20 ->>-: vdl/cache.battle.create { selfId => 3, _type => vdl/cache.battle.create }
+06.09 10:15:20 -<<-: vdl/cache.battle.create { room => 47, errorCode => ok, _type => vdl/cache.battle.create, player => 1 }
+06.09 10:15:20 TIME: battle.find 12.08 ms
+06.09 10:15:20 == NET: test1 ret: battle.find { room => 47, type => battle.find, errorCode => ok, _type => vdl/cache.battle.create, player => 1 }
+06.09 10:15:28 ->>-: core/cache.update { diff => {language => en, params => { attrs => { lastLoginDate => 250, lastLoadDate => 907 } }}, type => user, unlock => false, id => 3, _type => core/cache.update }
+06.09 10:15:28 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+06.09 10:15:36 ++ NET: test1 req: battle.end { roomId => 47, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:15:36 ->>-: vdl/cache.battle.infoRoom { roomId => 47, _type => vdl/cache.battle.infoRoom }
+06.09 10:15:36 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+06.09 10:15:36 DB: INSERT INTO statistics (id, firstid,secondid, roomid, params) VALUES ('', 3,0,47,{ scoresSecond => null, scoresFirst => null })
+06.09 10:15:36 ->>-: core/server.query { q => INSERT INTO statistics (id, firstid,secondid, roomid, params) VALUES ('', 3,0,47,{ scoresSecond => null, scoresFirst => null }), _type => core/server.query }
+06.09 10:15:36 -<<-: core/server.query { errorCode => ok, _type => core/server.query }
+06.09 10:15:36 ->>-: vdl/cache.battle.finishRoom { roomId => 47, _type => vdl/cache.battle.finishRoom }
+06.09 10:15:36 -<<-: vdl/cache.battle.finishRoom { errorCode => true, _type => vdl/cache.battle.finishRoom }
+06.09 10:15:36 ->>-: vdl/cache.battle.deleteRoom { roomId => 47, _type => vdl/cache.battle.deleteRoom }
+06.09 10:15:36 -<<-: vdl/cache.battle.deleteRoom { errorCode => true, _type => vdl/cache.battle.deleteRoom }
+06.09 10:15:36 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { _type => battle.end } }
+06.09 10:15:36 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+06.09 10:15:36 TIME: battle.end 18.36 ms
+06.09 10:15:36 == NET: test1 ret: battle.end { type => battle.end, errorCode => ok }
+06.09 10:15:37 NET: Client (name:test1 conid:87626076 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:15:37 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+06.09 10:15:37 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+06.09 10:15:37 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+06.09 10:15:37 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+06.09 10:15:37 -<<-: vdl/cache.battle.deleteRoom { errorCode => true, _type => vdl/cache.battle.deleteRoom }
+06.09 10:15:37 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+06.09 10:15:37 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+06.09 10:15:37 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+06.09 10:15:37 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+06.09 10:15:37 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+06.09 10:15:37 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+06.09 10:15:37 NET: Client (conid:18692273) connected to vdl.0 (clients:1)
+06.09 10:15:38 STATS: vdl.0 cache, locks:0
+06.09 10:15:39 ++ NET: null req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 47, name => throw, side => 2, dices => 020552, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+06.09 10:15:39 TRACE: User not logon yet.
+06.09 10:16:06 TIMER: Check auto-disconnect...
+06.09 10:16:38 STATS: vdl.0 cache, locks:0
+06.09 10:17:06 TIMER: Check auto-disconnect...
+06.09 10:17:23 ++ NET: null req: battle.end { roomId => 47, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:17:23 TRACE: User not logon yet.
+06.09 10:17:23 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:17:23 TRACE: User not logon yet.
+06.09 10:17:23 NET: Client (name:null conid:18692273 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:17:38 STATS: vdl.0 cache, locks:0
+06.09 10:18:06 TIMER: Check auto-disconnect...
+06.09 10:18:38 STATS: vdl.0 cache, locks:0
+06.09 10:19:06 TIMER: Check auto-disconnect...
+06.09 10:19:38 STATS: vdl.0 cache, locks:0
+06.09 10:20:06 TIMER: Check auto-disconnect...
+06.09 10:20:38 STATS: vdl.0 cache, locks:0
+06.09 10:21:06 TIMER: Check auto-disconnect...
+06.09 10:21:38 STATS: vdl.0 cache, locks:0
+06.09 10:22:06 TIMER: Check auto-disconnect...
+06.09 10:22:38 STATS: vdl.0 cache, locks:0
+06.09 10:23:06 TIMER: Check auto-disconnect...
+06.09 10:23:38 STATS: vdl.0 cache, locks:0
+06.09 10:24:06 TIMER: Check auto-disconnect...
+06.09 10:24:38 STATS: vdl.0 cache, locks:0
+06.09 10:25:06 TIMER: Check auto-disconnect...
+06.09 10:25:38 STATS: vdl.0 cache, locks:0
+06.09 10:26:06 TIMER: Check auto-disconnect...
+06.09 10:26:38 STATS: vdl.0 cache, locks:0
+06.09 10:27:06 TIMER: Check auto-disconnect...
+06.09 10:27:38 STATS: vdl.0 cache, locks:0
+06.09 10:28:06 TIMER: Check auto-disconnect...
+06.09 10:28:38 STATS: vdl.0 cache, locks:0
+06.09 10:29:06 TIMER: Check auto-disconnect...
+06.09 10:29:38 STATS: vdl.0 cache, locks:0
+06.09 10:30:06 TIMER: Check auto-disconnect...
+06.09 10:30:38 STATS: vdl.0 cache, locks:0
+06.09 10:31:06 TIMER: Check auto-disconnect...
+06.09 10:31:38 STATS: vdl.0 cache, locks:0
+06.09 10:32:06 TIMER: Check auto-disconnect...
+06.09 10:32:38 STATS: vdl.0 cache, locks:0
+06.09 10:33:06 TIMER: Check auto-disconnect...
+06.09 10:33:38 STATS: vdl.0 cache, locks:0
+06.09 10:34:06 TIMER: Check auto-disconnect...
+06.09 10:34:38 STATS: vdl.0 cache, locks:0
+06.09 10:35:06 TIMER: Check auto-disconnect...
+06.09 10:35:38 STATS: vdl.0 cache, locks:0
+06.09 10:36:06 TIMER: Check auto-disconnect...
+06.09 10:36:38 STATS: vdl.0 cache, locks:0
+06.09 10:37:06 TIMER: Check auto-disconnect...
+06.09 10:37:38 STATS: vdl.0 cache, locks:0
+06.09 10:38:06 TIMER: Check auto-disconnect...
+06.09 10:38:38 STATS: vdl.0 cache, locks:0
+06.09 10:38:39 NET: Client (conid:91944179) connected to vdl.0 (clients:1)
+06.09 10:38:39 NET: Client (name:null conid:91944179 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:38:39 NET: Client (conid:26957469) connected to vdl.0 (clients:1)
+06.09 10:39:05 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:39:05 TRACE: User not logon yet.
+06.09 10:39:05 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:39:05 TRACE: User not logon yet.
+06.09 10:39:05 NET: Client (name:null conid:26957469 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:39:06 TIMER: Check auto-disconnect...
+06.09 10:39:38 STATS: vdl.0 cache, locks:0
+06.09 10:40:06 TIMER: Check auto-disconnect...
+06.09 10:40:38 STATS: vdl.0 cache, locks:0
+06.09 10:41:06 TIMER: Check auto-disconnect...
+06.09 10:41:38 STATS: vdl.0 cache, locks:0
+06.09 10:42:06 TIMER: Check auto-disconnect...
+06.09 10:42:38 STATS: vdl.0 cache, locks:0
+06.09 10:43:06 TIMER: Check auto-disconnect...
+06.09 10:43:37 NET: Client (conid:91467635) connected to vdl.0 (clients:1)
+06.09 10:43:37 NET: Client (name:null conid:91467635 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:43:37 NET: Client (conid:64872478) connected to vdl.0 (clients:1)
+06.09 10:43:38 STATS: vdl.0 cache, locks:0
+06.09 10:43:40 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:43:40 TRACE: User not logon yet.
+06.09 10:43:40 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:43:40 TRACE: User not logon yet.
+06.09 10:43:40 NET: Client (name:null conid:64872478 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:43:46 NET: Client (conid:59473278) connected to vdl.0 (clients:1)
+06.09 10:44:04 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:44:04 TRACE: User not logon yet.
+06.09 10:44:04 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:44:04 TRACE: User not logon yet.
+06.09 10:44:04 NET: Client (name:null conid:59473278 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:44:06 TIMER: Check auto-disconnect...
+06.09 10:44:38 STATS: vdl.0 cache, locks:0
+06.09 10:45:06 TIMER: Check auto-disconnect...
+06.09 10:45:38 STATS: vdl.0 cache, locks:0
+06.09 10:46:06 TIMER: Check auto-disconnect...
+06.09 10:46:38 STATS: vdl.0 cache, locks:0
+06.09 10:47:06 TIMER: Check auto-disconnect...
+06.09 10:47:39 STATS: vdl.0 cache, locks:0
+06.09 10:48:06 TIMER: Check auto-disconnect...
+06.09 10:48:39 STATS: vdl.0 cache, locks:0
+06.09 10:49:06 TIMER: Check auto-disconnect...
+06.09 10:49:39 STATS: vdl.0 cache, locks:0
+06.09 10:50:06 TIMER: Check auto-disconnect...
+06.09 10:50:39 STATS: vdl.0 cache, locks:0
+06.09 10:51:06 TIMER: Check auto-disconnect...
+06.09 10:51:39 STATS: vdl.0 cache, locks:0
+06.09 10:52:06 TIMER: Check auto-disconnect...
+06.09 10:52:39 STATS: vdl.0 cache, locks:0
+06.09 10:53:06 TIMER: Check auto-disconnect...
+06.09 10:53:39 STATS: vdl.0 cache, locks:0
+06.09 10:54:06 TIMER: Check auto-disconnect...
+06.09 10:54:39 STATS: vdl.0 cache, locks:0
+06.09 10:55:06 TIMER: Check auto-disconnect...
+06.09 10:55:39 STATS: vdl.0 cache, locks:0
+06.09 10:56:06 TIMER: Check auto-disconnect...
+06.09 10:56:39 STATS: vdl.0 cache, locks:0
+06.09 10:56:54 NET: Client (conid:86003634) connected to vdl.0 (clients:1)
+06.09 10:57:06 TIMER: Check auto-disconnect...
+06.09 10:57:39 STATS: vdl.0 cache, locks:0
+06.09 10:58:06 TIMER: Check auto-disconnect...
+06.09 10:58:28 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:58:28 TRACE: User not logon yet.
+06.09 10:58:28 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:58:28 TRACE: User not logon yet.
+06.09 10:58:28 NET: Client (name:null conid:86003634 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:58:39 STATS: vdl.0 cache, locks:0
+06.09 10:58:43 NET: Client (conid:70588981) connected to vdl.0 (clients:1)
+06.09 10:59:00 ++ NET: null req: battle.end { roomId => 0, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+06.09 10:59:00 TRACE: User not logon yet.
+06.09 10:59:00 ++ NET: null req: user.logout { messageType => user.logout }
+06.09 10:59:00 TRACE: User not logon yet.
+06.09 10:59:00 NET: Client (name:null conid:70588981 TCP) disconnected from vdl.0 (clients:0)
+06.09 10:59:06 TIMER: Check auto-disconnect...
+06.09 10:59:12 NET: Client (conid:5165133) connected to vdl.0 (clients:1)
+06.09 10:59:39 STATS: vdl.0 cache, locks:0

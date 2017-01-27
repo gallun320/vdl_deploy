@@ -1,0 +1,217 @@
+12.11 18:00:14 STATS: vdl.0 cache, locks:2
+12.11 18:00:28 TIMER: Check auto-disconnect...
+12.11 18:01:14 STATS: vdl.0 cache, locks:2
+12.11 18:01:28 TIMER: Check auto-disconnect...
+12.11 18:02:14 STATS: vdl.0 cache, locks:2
+12.11 18:02:28 TIMER: Check auto-disconnect...
+12.11 18:03:14 STATS: vdl.0 cache, locks:2
+12.11 18:03:28 TIMER: Check auto-disconnect...
+12.11 18:04:14 STATS: vdl.0 cache, locks:2
+12.11 18:04:28 TIMER: Check auto-disconnect...
+12.11 18:05:14 STATS: vdl.0 cache, locks:2
+12.11 18:05:28 TIMER: Check auto-disconnect...
+12.11 18:06:14 STATS: vdl.0 cache, locks:2
+12.11 18:06:28 TIMER: Check auto-disconnect...
+12.11 18:07:14 STATS: vdl.0 cache, locks:2
+12.11 18:07:28 TIMER: Check auto-disconnect...
+12.11 18:08:14 STATS: vdl.0 cache, locks:2
+12.11 18:08:28 TIMER: Check auto-disconnect...
+12.11 18:09:14 STATS: vdl.0 cache, locks:2
+12.11 18:09:28 TIMER: Check auto-disconnect...
+12.11 18:10:14 STATS: vdl.0 cache, locks:2
+12.11 18:10:28 TIMER: Check auto-disconnect...
+12.11 18:11:14 STATS: vdl.0 cache, locks:2
+12.11 18:11:28 TIMER: Check auto-disconnect...
+12.11 18:12:14 STATS: vdl.0 cache, locks:2
+12.11 18:12:28 TIMER: Check auto-disconnect...
+12.11 18:13:14 STATS: vdl.0 cache, locks:2
+12.11 18:13:28 TIMER: Check auto-disconnect...
+12.11 18:14:14 STATS: vdl.0 cache, locks:2
+12.11 18:14:28 TIMER: Check auto-disconnect...
+12.11 18:15:14 STATS: vdl.0 cache, locks:2
+12.11 18:15:28 TIMER: Check auto-disconnect...
+12.11 18:16:14 STATS: vdl.0 cache, locks:2
+12.11 18:16:28 TIMER: Check auto-disconnect...
+12.11 18:17:14 STATS: vdl.0 cache, locks:2
+12.11 18:17:28 TIMER: Check auto-disconnect...
+12.11 18:18:14 STATS: vdl.0 cache, locks:2
+12.11 18:18:28 TIMER: Check auto-disconnect...
+12.11 18:19:14 STATS: vdl.0 cache, locks:2
+12.11 18:19:28 TIMER: Check auto-disconnect...
+12.11 18:20:14 STATS: vdl.0 cache, locks:2
+12.11 18:20:28 TIMER: Check auto-disconnect...
+12.11 18:21:14 STATS: vdl.0 cache, locks:2
+12.11 18:21:28 TIMER: Check auto-disconnect...
+12.11 18:22:14 STATS: vdl.0 cache, locks:2
+12.11 18:22:28 TIMER: Check auto-disconnect...
+12.11 18:23:14 STATS: vdl.0 cache, locks:2
+12.11 18:23:28 TIMER: Check auto-disconnect...
+12.11 18:24:13 NET: Client (conid:70314907) connected to vdl.0 (clients:1)
+12.11 18:24:14 STATS: vdl.0 cache, locks:2
+12.11 18:24:16 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA= }
+12.11 18:24:16 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10'
+12.11 18:24:16 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10', _type => core/server.query }
+12.11 18:24:16 -<<-: core/server.query { list => {{ name => uid10, networkid => , isbanned => false, id => 10 }}, errorCode => ok, _type => core/server.query }
+12.11 18:24:16 STATS: vdl.0 cache connection, 1219 calls, total 0.922423839569092 sec spent, avg 0.76 ms
+12.11 18:24:16 ->>-: core/user.isOnlineID { id => 10, _type => core/user.isOnlineID }
+12.11 18:24:16 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+12.11 18:24:16 ->>-: core/cache.get { type => user, v => -1, id => 10, _type => core/cache.get }
+12.11 18:24:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid10, deleted => false, year => , email => mail, networktype =>   , password => uid10, isbanned => false, regdate => 2016-11-11 16:44:40.114978+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1478883018, lastLoginDate => 316, lastLoadDate => 1112 }, effects => { list => [] } }}, version => 0, id => 10 } }
+12.11 18:24:16 ->>-: core/cache.get { type => questdata, v => -1, id => 10, _type => core/cache.get }
+12.11 18:24:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 10 } }
+12.11 18:24:16 NET: Client login (conid:70314907, id:10, name:uid10)
+12.11 18:24:16 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 10, _type => core/user.loginPost, ipAddr => 217.118.78.102 }
+12.11 18:24:16 -<<-: core/user.loginPost { _type => core/user.loginPost }
+12.11 18:24:16 DB: SELECT token FROM tokens WHERE userid = 10
+12.11 18:24:16 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 10, _type => core/server.query }
+12.11 18:24:16 -<<-: core/server.query { list => {{ token => 7d07835a7ac504860eca00797571652e }, { token => 5ebb306a7a1786d93b682f793d093a4f }}, errorCode => ok, _type => core/server.query }
+12.11 18:24:16 DB: SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp
+12.11 18:24:16 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp, _type => core/server.query }
+12.11 18:24:16 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+12.11 18:24:16 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (10, 'today'::timestamp)
+12.11 18:24:16 == NET: uid10 ret: user.login { name => uid10, type => user.login, errorCode => ok, id => 10, token => 7d07835a7ac504860eca00797571652e }
+12.11 18:24:16 == NET: uid10 ret: user.join { name => uid10, type => user.join }
+12.11 18:24:16 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (10, 'today'::timestamp), _type => core/server.pending }} }
+12.11 18:24:16 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+12.11 18:24:24 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478975056, lastLoginDate => 317, lastLoadDate => 1113 } }}, type => user, unlock => false, id => 10, _type => core/cache.update }
+12.11 18:24:24 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+12.11 18:24:28 TIMER: Check auto-disconnect...
+12.11 18:24:34 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:24:34 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:24:34 TIME: user.ping 0.12 ms
+12.11 18:25:14 STATS: vdl.0 cache, locks:4
+12.11 18:25:26 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:25:26 TIME: user.ping 0.18 ms
+12.11 18:25:26 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:25:28 TIMER: Check auto-disconnect...
+12.11 18:26:14 STATS: vdl.0 cache, locks:4
+12.11 18:26:18 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:26:18 TIME: user.ping 0.12 ms
+12.11 18:26:18 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:26:28 TIMER: Check auto-disconnect...
+12.11 18:27:10 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:27:10 TIME: user.ping 0.17 ms
+12.11 18:27:10 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:27:14 STATS: vdl.0 cache, locks:4
+12.11 18:27:28 TIMER: Check auto-disconnect...
+12.11 18:28:06 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:28:06 TIME: user.ping 0.14 ms
+12.11 18:28:06 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:28:14 STATS: vdl.0 cache, locks:4
+12.11 18:28:28 TIMER: Check auto-disconnect...
+12.11 18:29:02 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:29:02 TIME: user.ping 0.12 ms
+12.11 18:29:02 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:29:14 STATS: vdl.0 cache, locks:4
+12.11 18:29:28 TIMER: Check auto-disconnect...
+12.11 18:29:58 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:29:58 TIME: user.ping 0.14 ms
+12.11 18:29:58 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:30:14 STATS: vdl.0 cache, locks:4
+12.11 18:30:28 TIMER: Check auto-disconnect...
+12.11 18:31:14 STATS: vdl.0 cache, locks:4
+12.11 18:31:28 TIMER: Check auto-disconnect...
+12.11 18:31:47 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:31:47 TIME: user.ping 0.15 ms
+12.11 18:31:47 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:32:14 STATS: vdl.0 cache, locks:4
+12.11 18:32:28 TIMER: Check auto-disconnect...
+12.11 18:32:39 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:32:39 TIME: user.ping 0.13 ms
+12.11 18:32:39 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:33:14 STATS: vdl.0 cache, locks:4
+12.11 18:33:28 TIMER: Check auto-disconnect...
+12.11 18:33:38 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:33:38 TIME: user.ping 0.12 ms
+12.11 18:33:38 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:34:14 STATS: vdl.0 cache, locks:4
+12.11 18:34:28 TIMER: Check auto-disconnect...
+12.11 18:34:38 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:34:38 TIME: user.ping 2.9 ms
+12.11 18:34:38 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:35:14 STATS: vdl.0 cache, locks:4
+12.11 18:35:28 TIMER: Check auto-disconnect...
+12.11 18:35:34 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:35:34 TIME: user.ping 0.14 ms
+12.11 18:35:34 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:36:14 STATS: vdl.0 cache, locks:4
+12.11 18:36:28 TIMER: Check auto-disconnect...
+12.11 18:36:29 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:36:29 TIME: user.ping 0.13 ms
+12.11 18:36:29 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:37:14 STATS: vdl.0 cache, locks:4
+12.11 18:37:24 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:37:24 TIME: user.ping 0.15 ms
+12.11 18:37:24 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:37:28 TIMER: Check auto-disconnect...
+12.11 18:38:14 STATS: vdl.0 cache, locks:4
+12.11 18:38:16 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:38:16 TIME: user.ping 0.14 ms
+12.11 18:38:16 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:38:28 TIMER: Check auto-disconnect...
+12.11 18:39:10 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:39:10 TIME: user.ping 0.13 ms
+12.11 18:39:10 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:39:14 STATS: vdl.0 cache, locks:4
+12.11 18:39:28 TIMER: Check auto-disconnect...
+12.11 18:40:04 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:40:04 TIME: user.ping 0.12 ms
+12.11 18:40:04 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:40:14 STATS: vdl.0 cache, locks:4
+12.11 18:40:28 TIMER: Check auto-disconnect...
+12.11 18:41:14 STATS: vdl.0 cache, locks:4
+12.11 18:41:28 TIMER: Check auto-disconnect...
+12.11 18:42:14 STATS: vdl.0 cache, locks:4
+12.11 18:42:28 TIMER: Check auto-disconnect...
+12.11 18:43:14 STATS: vdl.0 cache, locks:4
+12.11 18:43:28 TIMER: Check auto-disconnect...
+12.11 18:44:14 STATS: vdl.0 cache, locks:4
+12.11 18:44:28 TIMER: Check auto-disconnect...
+12.11 18:45:14 STATS: vdl.0 cache, locks:4
+12.11 18:45:28 TIMER: Check auto-disconnect...
+12.11 18:46:14 STATS: vdl.0 cache, locks:4
+12.11 18:46:28 TIMER: Check auto-disconnect...
+12.11 18:47:14 STATS: vdl.0 cache, locks:4
+12.11 18:47:28 TIMER: Check auto-disconnect...
+12.11 18:47:39 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:47:39 TIME: user.ping 0.14 ms
+12.11 18:47:39 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:48:14 STATS: vdl.0 cache, locks:4
+12.11 18:48:28 TIMER: Check auto-disconnect...
+12.11 18:48:31 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:48:31 TIME: user.ping 0.12 ms
+12.11 18:48:31 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:49:14 STATS: vdl.0 cache, locks:4
+12.11 18:49:22 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:49:22 TIME: user.ping 0.13 ms
+12.11 18:49:22 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:49:28 TIMER: Check auto-disconnect...
+12.11 18:50:14 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:50:14 TIME: user.ping 0.19 ms
+12.11 18:50:14 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:50:14 STATS: vdl.0 cache, locks:4
+12.11 18:50:28 TIMER: Check auto-disconnect...
+12.11 18:51:06 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:51:06 TIME: user.ping 0.15 ms
+12.11 18:51:06 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:51:14 STATS: vdl.0 cache, locks:4
+12.11 18:51:28 TIMER: Check auto-disconnect...
+12.11 18:51:58 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+12.11 18:51:58 TIME: user.ping 0.14 ms
+12.11 18:51:58 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+12.11 18:52:14 STATS: vdl.0 cache, locks:4
+12.11 18:52:28 TIMER: Check auto-disconnect...
+12.11 18:53:14 STATS: vdl.0 cache, locks:4
+12.11 18:53:28 TIMER: Check auto-disconnect...
+12.11 18:54:14 STATS: vdl.0 cache, locks:4
+12.11 18:54:28 TIMER: Check auto-disconnect...
+12.11 18:55:14 STATS: vdl.0 cache, locks:4
+12.11 18:55:28 TIMER: Check auto-disconnect...
+12.11 18:56:14 STATS: vdl.0 cache, locks:4
+12.11 18:56:28 TIMER: Check auto-disconnect...
+12.11 18:57:14 STATS: vdl.0 cache, locks:4
+12.11 18:57:28 TIMER: Check auto-disconnect...
+12.11 18:58:14 STATS: vdl.0 cache, locks:4
+12.11 18:58:28 TIMER: Check auto-disconnect...
+12.11 18:59:14 STATS: vdl.0 cache, locks:4
+12.11 18:59:28 TIMER: Check auto-disconnect...

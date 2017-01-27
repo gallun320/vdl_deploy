@@ -1,0 +1,13 @@
+29.12 15:39:34 TRACE: ============ GAME = null
+29.12 15:39:35 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+29.12 15:39:35 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+29.12 15:41:17 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+29.12 15:41:17 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487

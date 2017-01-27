@@ -1,0 +1,785 @@
+21.12 12:00:10 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:00:10 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:00:10 TIME: user.ping 0.16 ms
+21.12 12:00:26 TIMER: Check auto-disconnect...
+21.12 12:00:26 STATS: vdl.0 cache, locks:2
+21.12 12:00:31 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:00:31 TIME: user.ping 0.12 ms
+21.12 12:00:31 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:00:53 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:00:53 TIME: user.ping 0.17 ms
+21.12 12:00:53 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:01:14 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:01:14 TIME: user.ping 0.15 ms
+21.12 12:01:14 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:01:26 TIMER: Check auto-disconnect...
+21.12 12:01:26 STATS: vdl.0 cache, locks:2
+21.12 12:01:36 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:01:36 TIME: user.ping 0.1 ms
+21.12 12:01:36 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:01:59 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:01:59 TIME: user.ping 0.11 ms
+21.12 12:01:59 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:02:25 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:02:25 TIME: user.ping 0.16 ms
+21.12 12:02:25 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:02:26 TIMER: Check auto-disconnect...
+21.12 12:02:26 STATS: vdl.0 cache, locks:2
+21.12 12:02:51 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:02:51 TIME: user.ping 0.12 ms
+21.12 12:02:51 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:03:13 NET: Client (name:uid112 conid:29893248 TCP) disconnected from vdl.0 (clients:0)
+21.12 12:03:13 DB: SELECT id FROM battle WHERE firstid=112 OR secondid=112 AND finished <> true
+21.12 12:03:13 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=112 OR secondid=112 AND finished <> true, _type => core/server.query }
+21.12 12:03:13 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+21.12 12:03:13 STATS: vdl.0 cache connection, 48 calls, total 0.0575935840606689 sec spent, avg 1.2 ms
+21.12 12:03:13 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+21.12 12:03:13 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+21.12 12:03:13 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+21.12 12:03:13 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+21.12 12:03:13 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 112, _type => core/cache.update }
+21.12 12:03:13 -<<-: core/cache.update { errorCode => ok, version => 4, _type => core/cache.update }
+21.12 12:03:13 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 112, _type => core/cache.update }
+21.12 12:03:13 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+21.12 12:03:13 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 112, _type => core/user.logoutPost }
+21.12 12:03:13 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+21.12 12:03:26 TIMER: Check auto-disconnect...
+21.12 12:03:26 STATS: vdl.0 cache, locks:0
+21.12 12:03:33 NET: Client (conid:72818235) connected to vdl.0 (clients:1)
+21.12 12:03:34 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTEy }
+21.12 12:03:34 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid112' AND Password = 'uid112'
+21.12 12:03:34 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid112' AND Password = 'uid112', _type => core/server.query }
+21.12 12:03:34 -<<-: core/server.query { list => {{ name => uid112, networkid => , isbanned => false, id => 112 }}, errorCode => ok, _type => core/server.query }
+21.12 12:03:34 ->>-: core/user.isOnlineID { id => 112, _type => core/user.isOnlineID }
+21.12 12:03:34 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+21.12 12:03:34 ->>-: core/cache.get { type => user, v => -1, id => 112, _type => core/cache.get }
+21.12 12:03:34 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid112, deleted => false, year => , email => mail, networktype =>   , password => uid112, isbanned => false, regdate => 2016-11-20 16:49:02.85795+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1482321387, lastLoginDate => 356, lastLoadDate => 1222 }, effects => { list => [] } }}, version => 0, id => 112 } }
+21.12 12:03:34 ->>-: core/cache.get { type => questdata, v => -1, id => 112, _type => core/cache.get }
+21.12 12:03:34 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 112 } }
+21.12 12:03:34 NET: Client login (conid:72818235, id:112, name:uid112)
+21.12 12:03:34 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 112, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+21.12 12:03:34 -<<-: core/user.loginPost { _type => core/user.loginPost }
+21.12 12:03:34 DB: SELECT token FROM tokens WHERE userid = 112
+21.12 12:03:34 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 112, _type => core/server.query }
+21.12 12:03:34 -<<-: core/server.query { list => {{ token => b9b344ddb63b34ea57fc74ab83d687ac }}, errorCode => ok, _type => core/server.query }
+21.12 12:03:34 == NET: uid112 ret: user.login { name => uid112, type => user.login, errorCode => ok, id => 112, token => b9b344ddb63b34ea57fc74ab83d687ac }
+21.12 12:03:34 == NET: uid112 ret: user.join { name => uid112, type => user.join }
+21.12 12:03:38 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:03:38 TIME: user.ping 0.17 ms
+21.12 12:03:38 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:03:41 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 112, _type => core/cache.update }
+21.12 12:03:41 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+21.12 12:03:42 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:03:42 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:03:42 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:03:42 TIME: tournament.getAvailableTournament 5.66 ms
+21.12 12:03:42 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:00 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:04:00 TIME: user.ping 0.14 ms
+21.12 12:04:00 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:04:05 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:05 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:06 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:06 TIME: tournament.getAvailableTournament 5.65 ms
+21.12 12:04:06 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:07 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:07 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:07 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:07 TIME: tournament.getAvailableTournament 3.32 ms
+21.12 12:04:07 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:08 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:08 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:08 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:08 TIME: tournament.getAvailableTournament 2.98 ms
+21.12 12:04:08 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:09 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:09 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:09 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:09 TIME: tournament.getAvailableTournament 2.92 ms
+21.12 12:04:09 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:10 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:10 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:10 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:10 TIME: tournament.getAvailableTournament 2.93 ms
+21.12 12:04:10 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:11 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:04:11 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:11 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:11 TIME: tournament.getAvailableTournament 3.12 ms
+21.12 12:04:11 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:04:22 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:04:22 TIME: user.ping 0.21 ms
+21.12 12:04:22 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:04:26 TIMER: Check auto-disconnect...
+21.12 12:04:26 STATS: vdl.0 cache, locks:2
+21.12 12:04:43 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:04:43 TIME: user.ping 0.13 ms
+21.12 12:04:43 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:05:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:05:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:05:03 TIME: user.ping 0.17 ms
+21.12 12:05:24 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:05:24 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:05:24 TIME: user.ping 0.27 ms
+21.12 12:05:26 TIMER: Check auto-disconnect...
+21.12 12:05:26 STATS: vdl.0 cache, locks:2
+21.12 12:05:44 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:05:44 TIME: user.ping 0.16 ms
+21.12 12:05:44 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:06:05 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:06:05 TIME: user.ping 0.19 ms
+21.12 12:06:05 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:06:25 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:06:25 TIME: user.ping 0.16 ms
+21.12 12:06:25 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:06:26 TIMER: Check auto-disconnect...
+21.12 12:06:26 STATS: vdl.0 cache, locks:2
+21.12 12:06:46 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:06:46 TIME: user.ping 0.11 ms
+21.12 12:06:46 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:07:06 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:07:06 TIME: user.ping 0.15 ms
+21.12 12:07:06 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:07:26 TIMER: Check auto-disconnect...
+21.12 12:07:26 STATS: vdl.0 cache, locks:2
+21.12 12:07:27 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:07:27 TIME: user.ping 0.12 ms
+21.12 12:07:27 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:07:39 ++ NET: uid112 req: tournament.grid { tournamentId => 6, round => 1, messageType => tournament.grid }
+21.12 12:07:39 ->>-: vdl/cache.tournament.getStatus { tournamentId => 6, _type => vdl/cache.tournament.getStatus }
+21.12 12:07:39 -<<-: vdl/cache.tournament.getStatus { errorCode => ok, _type => vdl/cache.tournament.getStatus, status => starting }
+21.12 12:07:39 STATS: vdl.0 cache connection, 67 calls, total 0.0911786556243896 sec spent, avg 1.36 ms
+21.12 12:07:39 ->>-: vdl/cache.tournament.getAvailableTournamentUsers { tournamentId => 6, _type => vdl/cache.tournament.getAvailableTournamentUsers }
+21.12 12:07:39 -<<-: vdl/cache.tournament.getAvailableTournamentUsers { errorCode => ok, _type => vdl/cache.tournament.getAvailableTournamentUsers, users => [124,117] }
+21.12 12:07:39 ->>-: vdl/cache.tournament.setGrid { battles => [{ winner => -1, round => 1, player1 => 124, player2 => 117 }], tournamentId => 6, round => 1, _type => vdl/cache.tournament.setGrid, status => starting }
+21.12 12:07:39 -<<-: vdl/cache.tournament.setGrid { list => [{ winner => -1, round => 1, player1 => 124, player2 => 117 }], tournamentId => 6, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+21.12 12:07:39 TIME: tournament.grid 2.24 ms
+21.12 12:07:39 == NET: uid112 ret: tournament.grid { list => [{ winner => -1, round => 1, player1 => 124, player2 => 117 }], type => tournament.grid, tournamentId => 6, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+21.12 12:07:41 ++ NET: uid112 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+21.12 12:07:41 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:07:41 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:07:41 TIME: tournament.getAvailableTournament 6.85 ms
+21.12 12:07:41 == NET: uid112 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+21.12 12:07:46 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:07:46 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:07:46 TIME: user.ping 0.15 ms
+21.12 12:08:04 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:08:04 TIME: user.ping 0.15 ms
+21.12 12:08:04 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:08:22 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:08:22 TIME: user.ping 0.16 ms
+21.12 12:08:22 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:08:26 TIMER: Check auto-disconnect...
+21.12 12:08:26 STATS: vdl.0 cache, locks:2
+21.12 12:08:40 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:08:40 TIME: user.ping 0.16 ms
+21.12 12:08:40 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:08:58 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:08:58 TIME: user.ping 0.16 ms
+21.12 12:08:58 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:09:16 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:09:16 TIME: user.ping 0.1 ms
+21.12 12:09:16 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:09:26 TIMER: Check auto-disconnect...
+21.12 12:09:26 STATS: vdl.0 cache, locks:2
+21.12 12:09:34 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:09:34 TIME: user.ping 0.18 ms
+21.12 12:09:34 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:09:51 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:09:51 TIME: user.ping 0.16 ms
+21.12 12:09:51 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:10:09 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:10:09 TIME: user.ping 0.13 ms
+21.12 12:10:09 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:10:26 TIMER: Check auto-disconnect...
+21.12 12:10:26 STATS: vdl.0 cache, locks:2
+21.12 12:10:27 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:10:27 TIME: user.ping 0.13 ms
+21.12 12:10:27 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:10:45 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:10:45 TIME: user.ping 0.16 ms
+21.12 12:10:45 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:11:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:11:03 TIME: user.ping 0.12 ms
+21.12 12:11:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:11:21 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:11:21 TIME: user.ping 0.27 ms
+21.12 12:11:21 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:11:26 TIMER: Check auto-disconnect...
+21.12 12:11:26 STATS: vdl.0 cache, locks:2
+21.12 12:11:39 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:11:39 TIME: user.ping 0.15 ms
+21.12 12:11:39 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:11:57 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:11:57 TIME: user.ping 0.17 ms
+21.12 12:11:57 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:12:15 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:12:15 TIME: user.ping 0.16 ms
+21.12 12:12:15 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:12:26 TIMER: Check auto-disconnect...
+21.12 12:12:26 STATS: vdl.0 cache, locks:2
+21.12 12:12:33 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:12:33 TIME: user.ping 0.3 ms
+21.12 12:12:33 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:12:51 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:12:51 TIME: user.ping 0.18 ms
+21.12 12:12:51 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:13:08 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:13:08 TIME: user.ping 0.29 ms
+21.12 12:13:08 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:13:26 TIMER: Check auto-disconnect...
+21.12 12:13:26 STATS: vdl.0 cache, locks:2
+21.12 12:13:27 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:13:27 TIME: user.ping 0.16 ms
+21.12 12:13:27 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:13:44 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:13:44 TIME: user.ping 0.13 ms
+21.12 12:13:44 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:14:02 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:14:02 TIME: user.ping 0.16 ms
+21.12 12:14:02 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:14:20 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:14:20 TIME: user.ping 0.15 ms
+21.12 12:14:20 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:14:26 TIMER: Check auto-disconnect...
+21.12 12:14:26 STATS: vdl.0 cache, locks:2
+21.12 12:14:39 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:14:39 TIME: user.ping 0.17 ms
+21.12 12:14:39 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:14:59 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:14:59 TIME: user.ping 0.15 ms
+21.12 12:14:59 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:15:20 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:15:20 TIME: user.ping 0.12 ms
+21.12 12:15:20 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:15:26 TIMER: Check auto-disconnect...
+21.12 12:15:26 STATS: vdl.0 cache, locks:2
+21.12 12:15:27 ++ NET: uid112 req: user.searchEnemy { name => uid, messageType => user.searchEnemy }
+21.12 12:15:27 ->>-: vdl/cache.user.searchEnemy { name => uid, id => 112, _type => vdl/cache.user.searchEnemy }
+21.12 12:15:27 -<<-: vdl/cache.user.searchEnemy { errorCode => ok, _type => vdl/cache.user.searchEnemy, users => [{ name => uid16, isOnline => false, id => 16 },{ name => uid2, isOnline => false, id => 2 },{ name => uid3, isOnline => false, id => 3 },{ name => uid4, isOnline => false, id => 4 },{ name => uid5, isOnline => false, id => 5 },{ name => uid39, isOnline => false, id => 39 },{ name => uid40, isOnline => false, id => 40 },{ name => uid11, isOnline => false, id => 11 },{ name => uid23, isOnline => false, id => 23 },{ name => uid24, isOnline => false, id => 24 },{ name => uid6, isOnline => false, id => 6 },{ name => uid25, isOnline => false, id => 25 },{ name => uid13, isOnline => false, id => 13 },{ name => uid14, isOnline => false, id => 14 },{ name => uid7, isOnline => false, id => 7 },{ name => uid41, isOnline => false, id => 41 },{ name => uid22, isOnline => false, id => 22 },{ name => uid26, isOnline => false, id => 26 },{ name => uid42, isOnline => false, id => 42 },{ name => uid27, isOnline => false, id => 27 },{ name => uid43, isOnline => false, id => 43 },{ name => uid17, isOnline => false, id => 17 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid21, isOnline => false, id => 21 },{ name => uid44, isOnline => false, id => 44 },{ name => uid12, isOnline => false, id => 12 },{ name => uid45, isOnline => false, id => 45 },{ name => uid8, isOnline => false, id => 8 },{ name => uid10, isOnline => false, id => 10 },{ name => uid29, isOnline => false, id => 29 },{ name => uid9, isOnline => false, id => 9 },{ name => uid46, isOnline => false, id => 46 },{ name => uid47, isOnline => false, id => 47 },{ name => uid48, isOnline => false, id => 48 },{ name => uid20, isOnline => false, id => 20 },{ name => uid31, isOnline => false, id => 31 },{ name => uid32, isOnline => false, id => 32 },{ name => uid33, isOnline => false, id => 33 },{ name => uid34, isOnline => false, id => 34 },{ name => uid35, isOnline => false, id => 35 },{ name => uid36, isOnline => false, id => 36 },{ name => uid37, isOnline => false, id => 37 },{ name => uid38, isOnline => false, id => 38 },{ name => uid49, isOnline => false, id => 49 },{ name => uid50, isOnline => false, id => 50 },{ name => uid51, isOnline => false, id => 51 },{ name => uid52, isOnline => false, id => 52 },{ name => uid53, isOnline => false, id => 53 },{ name => uid54, isOnline => false, id => 54 },{ name => uid55, isOnline => false, id => 55 },{ name => uid56, isOnline => false, id => 56 },{ name => uid57, isOnline => false, id => 57 },{ name => uid58, isOnline => false, id => 58 },{ name => uid59, isOnline => false, id => 59 },{ name => uid60, isOnline => false, id => 60 },{ name => uid61, isOnline => false, id => 61 },{ name => uid62, isOnline => false, id => 62 },{ name => uid63, isOnline => false, id => 63 },{ name => uid64, isOnline => false, id => 64 },{ name => uid65, isOnline => false, id => 65 },{ name => uid66, isOnline => false, id => 66 },{ name => uid67, isOnline => false, id => 67 },{ name => uid68, isOnline => false, id => 68 },{ name => uid69, isOnline => false, id => 69 },{ name => uid70, isOnline => false, id => 70 },{ name => uid71, isOnline => false, id => 71 },{ name => uid72, isOnline => false, id => 72 },{ name => uid73, isOnline => false, id => 73 },{ name => uid74, isOnline => false, id => 74 },{ name => uid75, isOnline => false, id => 75 },{ name => uid76, isOnline => false, id => 76 },{ name => uid77, isOnline => false, id => 77 },{ name => uid78, isOnline => false, id => 78 },{ name => uid79, isOnline => false, id => 79 },{ name => uid80, isOnline => false, id => 80 },{ name => uid81, isOnline => false, id => 81 },{ name => uid82, isOnline => false, id => 82 },{ name => uid86, isOnline => false, id => 86 },{ name => uid83, isOnline => false, id => 83 },{ name => uid87, isOnline => false, id => 87 },{ name => uid84, isOnline => false, id => 84 },{ name => uid88, isOnline => false, id => 88 },{ name => uid85, isOnline => false, id => 85 },{ name => uid89, isOnline => false, id => 89 },{ name => uid90, isOnline => false, id => 90 },{ name => uid91, isOnline => false, id => 91 },{ name => uid92, isOnline => false, id => 92 },{ name => uid93, isOnline => false, id => 93 },{ name => uid94, isOnline => false, id => 94 },{ name => uid95, isOnline => false, id => 95 },{ name => uid96, isOnline => false, id => 96 },{ name => uid97, isOnline => false, id => 97 },{ name => uid98, isOnline => false, id => 98 },{ name => uid99, isOnline => false, id => 99 },{ name => uid100, isOnline => false, id => 100 },{ name => uid101, isOnline => false, id => 101 },{ name => uid102, isOnline => false, id => 102 },{ name => uid103, isOnline => false, id => 103 },{ name => uid104, isOnline => false, id => 104 },{ name => uid105, isOnline => false, id => 105 },{ name => uid106, isOnline => false, id => 106 },{ name => uid107, isOnline => false, id => 107 },{ name => uid108, isOnline => false, id => 108 },{ name => uid109, isOnline => false, id => 109 },{ name => uid110, isOnline => false, id => 110 },{ name => uid113, isOnline => false, id => 113 },{ name => uid114, isOnline => false, id => 114 },{ name => uid115, isOnline => false, id => 115 },{ name => uid116, isOnline => false, id => 116 },{ name => uid118, isOnline => false, id => 118 },{ name => uid119, isOnline => false, id => 119 },{ name => uid120, isOnline => false, id => 120 },{ name => uid121, isOnline => false, id => 121 },{ name => uid122, isOnline => false, id => 122 },{ name => uid123, isOnline => false, id => 123 },{ name => uid128, isOnline => false, id => 128 },{ name => uid130, isOnline => false, id => 130 },{ name => uid15, isOnline => false, id => 15 },{ name => uid125, isOnline => false, id => 125 },{ name => uid126, isOnline => false, id => 126 },{ name => uid129, isOnline => false, id => 129 },{ name => uid131, isOnline => false, id => 131 },{ name => uid111, isOnline => false, id => 111 },{ name => uid30, isOnline => false, id => 30 },{ name => uid127, isOnline => false, id => 127 },{ name => uid132, isOnline => false, id => 132 }] }
+21.12 12:15:27 STATS: vdl.0 cache connection, 71 calls, total 0.100658416748047 sec spent, avg 1.42 ms
+21.12 12:15:27 TIME: user.searchEnemy 2.15 ms
+21.12 12:15:27 ++ NET: uid112 req: user.searchEnemy { name => uid, messageType => user.searchEnemy }
+21.12 12:15:27 == NET: uid112 ret: user.searchEnemy { list => [{ name => uid16, isOnline => false, id => 16 },{ name => uid2, isOnline => false, id => 2 },{ name => uid3, isOnline => false, id => 3 },{ name => uid4, isOnline => false, id => 4 },{ name => uid5, isOnline => false, id => 5 },{ name => uid39, isOnline => false, id => 39 },{ name => uid40, isOnline => false, id => 40 },{ name => uid11, isOnline => false, id => 11 },{ name => uid23, isOnline => false, id => 23 },{ name => uid24, isOnline => false, id => 24 },{ name => uid6, isOnline => false, id => 6 },{ name => uid25, isOnline => false, id => 25 },{ name => uid13, isOnline => false, id => 13 },{ name => uid14, isOnline => false, id => 14 },{ name => uid7, isOnline => false, id => 7 },{ name => uid41, isOnline => false, id => 41 },{ name => uid22, isOnline => false, id => 22 },{ name => uid26, isOnline => false, id => 26 },{ name => uid42, isOnline => false, id => 42 },{ name => uid27, isOnline => false, id => 27 },{ name => uid43, isOnline => false, id => 43 },{ name => uid17, isOnline => false, id => 17 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid21, isOnline => false, id => 21 },{ name => uid44, isOnline => false, id => 44 },{ name => uid12, isOnline => false, id => 12 },{ name => uid45, isOnline => false, id => 45 },{ name => uid8, isOnline => false, id => 8 },{ name => uid10, isOnline => false, id => 10 },{ name => uid29, isOnline => false, id => 29 },{ name => uid9, isOnline => false, id => 9 },{ name => uid46, isOnline => false, id => 46 },{ name => uid47, isOnline => false, id => 47 },{ name => uid48, isOnline => false, id => 48 },{ name => uid20, isOnline => false, id => 20 },{ name => uid31, isOnline => false, id => 31 },{ name => uid32, isOnline => false, id => 32 },{ name => uid33, isOnline => false, id => 33 },{ name => uid34, isOnline => false, id => 34 },{ name => uid35, isOnline => false, id => 35 },{ name => uid36, isOnline => false, id => 36 },{ name => uid37, isOnline => false, id => 37 },{ name => uid38, isOnline => false, id => 38 },{ name => uid49, isOnline => false, id => 49 },{ name => uid50, isOnline => false, id => 50 },{ name => uid51, isOnline => false, id => 51 },{ name => uid52, isOnline => false, id => 52 },{ name => uid53, isOnline => false, id => 53 },{ name => uid54, isOnline => false, id => 54 },{ name => uid55, isOnline => false, id => 55 },{ name => uid56, isOnline => false, id => 56 },{ name => uid57, isOnline => false, id => 57 },{ name => uid58, isOnline => false, id => 58 },{ name => uid59, isOnline => false, id => 59 },{ name => uid60, isOnline => false, id => 60 },{ name => uid61, isOnline => false, id => 61 },{ name => uid62, isOnline => false, id => 62 },{ name => uid63, isOnline => false, id => 63 },{ name => uid64, isOnline => false, id => 64 },{ name => uid65, isOnline => false, id => 65 },{ name => uid66, isOnline => false, id => 66 },{ name => uid67, isOnline => false, id => 67 },{ name => uid68, isOnline => false, id => 68 },{ name => uid69, isOnline => false, id => 69 },{ name => uid70, isOnline => false, id => 70 },{ name => uid71, isOnline => false, id => 71 },{ name => uid72, isOnline => false, id => 72 },{ name => uid73, isOnline => false, id => 73 },{ name => uid74, isOnline => false, id => 74 },{ name => uid75, isOnline => false, id => 75 },{ name => uid76, isOnline => false, id => 76 },{ name => uid77, isOnline => false, id => 77 },{ name => uid78, isOnline => false, id => 78 },{ name => uid79, isOnline => false, id => 79 },{ name => uid80, isOnline => false, id => 80 },{ name => uid81, isOnline => false, id => 81 },{ name => uid82, isOnline => false, id => 82 },{ name => uid86, isOnline => false, id => 86 },{ name => uid83, isOnline => false, id => 83 },{ name => uid87, isOnline => false, id => 87 },{ name => uid84, isOnline => false, id => 84 },{ name => uid88, isOnline => false, id => 88 },{ name => uid85, isOnline => false, id => 85 },{ name => uid89, isOnline => false, id => 89 },{ name => uid90, isOnline => false, id => 90 },{ name => uid91, isOnline => false, id => 91 },{ name => uid92, isOnline => false, id => 92 },{ name => uid93, isOnline => false, id => 93 },{ name => uid94, isOnline => false, id => 94 },{ name => uid95, isOnline => false, id => 95 },{ name => uid96, isOnline => false, id => 96 },{ name => uid97, isOnline => false, id => 97 },{ name => uid98, isOnline => false, id => 98 },{ name => uid99, isOnline => false, id => 99 },{ name => uid100, isOnline => false, id => 100 },{ name => uid101, isOnline => false, id => 101 },{ name => uid102, isOnline => false, id => 102 },{ name => uid103, isOnline => false, id => 103 },{ name => uid104, isOnline => false, id => 104 },{ name => uid105, isOnline => false, id => 105 },{ name => uid106, isOnline => false, id => 106 },{ name => uid107, isOnline => false, id => 107 },{ name => uid108, isOnline => false, id => 108 },{ name => uid109, isOnline => false, id => 109 },{ name => uid110, isOnline => false, id => 110 },{ name => uid113, isOnline => false, id => 113 },{ name => uid114, isOnline => false, id => 114 },{ name => uid115, isOnline => false, id => 115 },{ name => uid116, isOnline => false, id => 116 },{ name => uid118, isOnline => false, id => 118 },{ name => uid119, isOnline => false, id => 119 },{ name => uid120, isOnline => false, id => 120 },{ name => uid121, isOnline => false, id => 121 },{ name => uid122, isOnline => false, id => 122 },{ name => uid123, isOnline => false, id => 123 },{ name => uid128, isOnline => false, id => 128 },{ name => uid130, isOnline => false, id => 130 },{ name => uid15, isOnline => false, id => 15 },{ name => uid125, isOnline => false, id => 125 },{ name => uid126, isOnline => false, id => 126 },{ name => uid129, isOnline => false, id => 129 },{ name => uid131, isOnline => false, id => 131 },{ name => uid111, isOnline => false, id => 111 },{ name => uid30, isOnline => false, id => 30 },{ name => uid127, isOnline => false, id => 127 },{ name => uid132, isOnline => false, id => 132 }], type => user.searchEnemy, errorCode => ok }
+21.12 12:15:27 ->>-: vdl/cache.user.searchEnemy { name => uid, id => 112, _type => vdl/cache.user.searchEnemy }
+21.12 12:15:27 -<<-: vdl/cache.user.searchEnemy { errorCode => ok, _type => vdl/cache.user.searchEnemy, users => [{ name => uid16, isOnline => false, id => 16 },{ name => uid2, isOnline => false, id => 2 },{ name => uid3, isOnline => false, id => 3 },{ name => uid4, isOnline => false, id => 4 },{ name => uid5, isOnline => false, id => 5 },{ name => uid39, isOnline => false, id => 39 },{ name => uid40, isOnline => false, id => 40 },{ name => uid11, isOnline => false, id => 11 },{ name => uid23, isOnline => false, id => 23 },{ name => uid24, isOnline => false, id => 24 },{ name => uid6, isOnline => false, id => 6 },{ name => uid25, isOnline => false, id => 25 },{ name => uid13, isOnline => false, id => 13 },{ name => uid14, isOnline => false, id => 14 },{ name => uid7, isOnline => false, id => 7 },{ name => uid41, isOnline => false, id => 41 },{ name => uid22, isOnline => false, id => 22 },{ name => uid26, isOnline => false, id => 26 },{ name => uid42, isOnline => false, id => 42 },{ name => uid27, isOnline => false, id => 27 },{ name => uid43, isOnline => false, id => 43 },{ name => uid17, isOnline => false, id => 17 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid21, isOnline => false, id => 21 },{ name => uid44, isOnline => false, id => 44 },{ name => uid12, isOnline => false, id => 12 },{ name => uid45, isOnline => false, id => 45 },{ name => uid8, isOnline => false, id => 8 },{ name => uid10, isOnline => false, id => 10 },{ name => uid29, isOnline => false, id => 29 },{ name => uid9, isOnline => false, id => 9 },{ name => uid46, isOnline => false, id => 46 },{ name => uid47, isOnline => false, id => 47 },{ name => uid48, isOnline => false, id => 48 },{ name => uid20, isOnline => false, id => 20 },{ name => uid31, isOnline => false, id => 31 },{ name => uid32, isOnline => false, id => 32 },{ name => uid33, isOnline => false, id => 33 },{ name => uid34, isOnline => false, id => 34 },{ name => uid35, isOnline => false, id => 35 },{ name => uid36, isOnline => false, id => 36 },{ name => uid37, isOnline => false, id => 37 },{ name => uid38, isOnline => false, id => 38 },{ name => uid49, isOnline => false, id => 49 },{ name => uid50, isOnline => false, id => 50 },{ name => uid51, isOnline => false, id => 51 },{ name => uid52, isOnline => false, id => 52 },{ name => uid53, isOnline => false, id => 53 },{ name => uid54, isOnline => false, id => 54 },{ name => uid55, isOnline => false, id => 55 },{ name => uid56, isOnline => false, id => 56 },{ name => uid57, isOnline => false, id => 57 },{ name => uid58, isOnline => false, id => 58 },{ name => uid59, isOnline => false, id => 59 },{ name => uid60, isOnline => false, id => 60 },{ name => uid61, isOnline => false, id => 61 },{ name => uid62, isOnline => false, id => 62 },{ name => uid63, isOnline => false, id => 63 },{ name => uid64, isOnline => false, id => 64 },{ name => uid65, isOnline => false, id => 65 },{ name => uid66, isOnline => false, id => 66 },{ name => uid67, isOnline => false, id => 67 },{ name => uid68, isOnline => false, id => 68 },{ name => uid69, isOnline => false, id => 69 },{ name => uid70, isOnline => false, id => 70 },{ name => uid71, isOnline => false, id => 71 },{ name => uid72, isOnline => false, id => 72 },{ name => uid73, isOnline => false, id => 73 },{ name => uid74, isOnline => false, id => 74 },{ name => uid75, isOnline => false, id => 75 },{ name => uid76, isOnline => false, id => 76 },{ name => uid77, isOnline => false, id => 77 },{ name => uid78, isOnline => false, id => 78 },{ name => uid79, isOnline => false, id => 79 },{ name => uid80, isOnline => false, id => 80 },{ name => uid81, isOnline => false, id => 81 },{ name => uid82, isOnline => false, id => 82 },{ name => uid86, isOnline => false, id => 86 },{ name => uid83, isOnline => false, id => 83 },{ name => uid87, isOnline => false, id => 87 },{ name => uid84, isOnline => false, id => 84 },{ name => uid88, isOnline => false, id => 88 },{ name => uid85, isOnline => false, id => 85 },{ name => uid89, isOnline => false, id => 89 },{ name => uid90, isOnline => false, id => 90 },{ name => uid91, isOnline => false, id => 91 },{ name => uid92, isOnline => false, id => 92 },{ name => uid93, isOnline => false, id => 93 },{ name => uid94, isOnline => false, id => 94 },{ name => uid95, isOnline => false, id => 95 },{ name => uid96, isOnline => false, id => 96 },{ name => uid97, isOnline => false, id => 97 },{ name => uid98, isOnline => false, id => 98 },{ name => uid99, isOnline => false, id => 99 },{ name => uid100, isOnline => false, id => 100 },{ name => uid101, isOnline => false, id => 101 },{ name => uid102, isOnline => false, id => 102 },{ name => uid103, isOnline => false, id => 103 },{ name => uid104, isOnline => false, id => 104 },{ name => uid105, isOnline => false, id => 105 },{ name => uid106, isOnline => false, id => 106 },{ name => uid107, isOnline => false, id => 107 },{ name => uid108, isOnline => false, id => 108 },{ name => uid109, isOnline => false, id => 109 },{ name => uid110, isOnline => false, id => 110 },{ name => uid113, isOnline => false, id => 113 },{ name => uid114, isOnline => false, id => 114 },{ name => uid115, isOnline => false, id => 115 },{ name => uid116, isOnline => false, id => 116 },{ name => uid118, isOnline => false, id => 118 },{ name => uid119, isOnline => false, id => 119 },{ name => uid120, isOnline => false, id => 120 },{ name => uid121, isOnline => false, id => 121 },{ name => uid122, isOnline => false, id => 122 },{ name => uid123, isOnline => false, id => 123 },{ name => uid128, isOnline => false, id => 128 },{ name => uid130, isOnline => false, id => 130 },{ name => uid15, isOnline => false, id => 15 },{ name => uid125, isOnline => false, id => 125 },{ name => uid126, isOnline => false, id => 126 },{ name => uid129, isOnline => false, id => 129 },{ name => uid131, isOnline => false, id => 131 },{ name => uid111, isOnline => false, id => 111 },{ name => uid30, isOnline => false, id => 30 },{ name => uid127, isOnline => false, id => 127 },{ name => uid132, isOnline => false, id => 132 }] }
+21.12 12:15:27 TIME: user.searchEnemy 4.15 ms
+21.12 12:15:27 == NET: uid112 ret: user.searchEnemy { list => [{ name => uid16, isOnline => false, id => 16 },{ name => uid2, isOnline => false, id => 2 },{ name => uid3, isOnline => false, id => 3 },{ name => uid4, isOnline => false, id => 4 },{ name => uid5, isOnline => false, id => 5 },{ name => uid39, isOnline => false, id => 39 },{ name => uid40, isOnline => false, id => 40 },{ name => uid11, isOnline => false, id => 11 },{ name => uid23, isOnline => false, id => 23 },{ name => uid24, isOnline => false, id => 24 },{ name => uid6, isOnline => false, id => 6 },{ name => uid25, isOnline => false, id => 25 },{ name => uid13, isOnline => false, id => 13 },{ name => uid14, isOnline => false, id => 14 },{ name => uid7, isOnline => false, id => 7 },{ name => uid41, isOnline => false, id => 41 },{ name => uid22, isOnline => false, id => 22 },{ name => uid26, isOnline => false, id => 26 },{ name => uid42, isOnline => false, id => 42 },{ name => uid27, isOnline => false, id => 27 },{ name => uid43, isOnline => false, id => 43 },{ name => uid17, isOnline => false, id => 17 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid21, isOnline => false, id => 21 },{ name => uid44, isOnline => false, id => 44 },{ name => uid12, isOnline => false, id => 12 },{ name => uid45, isOnline => false, id => 45 },{ name => uid8, isOnline => false, id => 8 },{ name => uid10, isOnline => false, id => 10 },{ name => uid29, isOnline => false, id => 29 },{ name => uid9, isOnline => false, id => 9 },{ name => uid46, isOnline => false, id => 46 },{ name => uid47, isOnline => false, id => 47 },{ name => uid48, isOnline => false, id => 48 },{ name => uid20, isOnline => false, id => 20 },{ name => uid31, isOnline => false, id => 31 },{ name => uid32, isOnline => false, id => 32 },{ name => uid33, isOnline => false, id => 33 },{ name => uid34, isOnline => false, id => 34 },{ name => uid35, isOnline => false, id => 35 },{ name => uid36, isOnline => false, id => 36 },{ name => uid37, isOnline => false, id => 37 },{ name => uid38, isOnline => false, id => 38 },{ name => uid49, isOnline => false, id => 49 },{ name => uid50, isOnline => false, id => 50 },{ name => uid51, isOnline => false, id => 51 },{ name => uid52, isOnline => false, id => 52 },{ name => uid53, isOnline => false, id => 53 },{ name => uid54, isOnline => false, id => 54 },{ name => uid55, isOnline => false, id => 55 },{ name => uid56, isOnline => false, id => 56 },{ name => uid57, isOnline => false, id => 57 },{ name => uid58, isOnline => false, id => 58 },{ name => uid59, isOnline => false, id => 59 },{ name => uid60, isOnline => false, id => 60 },{ name => uid61, isOnline => false, id => 61 },{ name => uid62, isOnline => false, id => 62 },{ name => uid63, isOnline => false, id => 63 },{ name => uid64, isOnline => false, id => 64 },{ name => uid65, isOnline => false, id => 65 },{ name => uid66, isOnline => false, id => 66 },{ name => uid67, isOnline => false, id => 67 },{ name => uid68, isOnline => false, id => 68 },{ name => uid69, isOnline => false, id => 69 },{ name => uid70, isOnline => false, id => 70 },{ name => uid71, isOnline => false, id => 71 },{ name => uid72, isOnline => false, id => 72 },{ name => uid73, isOnline => false, id => 73 },{ name => uid74, isOnline => false, id => 74 },{ name => uid75, isOnline => false, id => 75 },{ name => uid76, isOnline => false, id => 76 },{ name => uid77, isOnline => false, id => 77 },{ name => uid78, isOnline => false, id => 78 },{ name => uid79, isOnline => false, id => 79 },{ name => uid80, isOnline => false, id => 80 },{ name => uid81, isOnline => false, id => 81 },{ name => uid82, isOnline => false, id => 82 },{ name => uid86, isOnline => false, id => 86 },{ name => uid83, isOnline => false, id => 83 },{ name => uid87, isOnline => false, id => 87 },{ name => uid84, isOnline => false, id => 84 },{ name => uid88, isOnline => false, id => 88 },{ name => uid85, isOnline => false, id => 85 },{ name => uid89, isOnline => false, id => 89 },{ name => uid90, isOnline => false, id => 90 },{ name => uid91, isOnline => false, id => 91 },{ name => uid92, isOnline => false, id => 92 },{ name => uid93, isOnline => false, id => 93 },{ name => uid94, isOnline => false, id => 94 },{ name => uid95, isOnline => false, id => 95 },{ name => uid96, isOnline => false, id => 96 },{ name => uid97, isOnline => false, id => 97 },{ name => uid98, isOnline => false, id => 98 },{ name => uid99, isOnline => false, id => 99 },{ name => uid100, isOnline => false, id => 100 },{ name => uid101, isOnline => false, id => 101 },{ name => uid102, isOnline => false, id => 102 },{ name => uid103, isOnline => false, id => 103 },{ name => uid104, isOnline => false, id => 104 },{ name => uid105, isOnline => false, id => 105 },{ name => uid106, isOnline => false, id => 106 },{ name => uid107, isOnline => false, id => 107 },{ name => uid108, isOnline => false, id => 108 },{ name => uid109, isOnline => false, id => 109 },{ name => uid110, isOnline => false, id => 110 },{ name => uid113, isOnline => false, id => 113 },{ name => uid114, isOnline => false, id => 114 },{ name => uid115, isOnline => false, id => 115 },{ name => uid116, isOnline => false, id => 116 },{ name => uid118, isOnline => false, id => 118 },{ name => uid119, isOnline => false, id => 119 },{ name => uid120, isOnline => false, id => 120 },{ name => uid121, isOnline => false, id => 121 },{ name => uid122, isOnline => false, id => 122 },{ name => uid123, isOnline => false, id => 123 },{ name => uid128, isOnline => false, id => 128 },{ name => uid130, isOnline => false, id => 130 },{ name => uid15, isOnline => false, id => 15 },{ name => uid125, isOnline => false, id => 125 },{ name => uid126, isOnline => false, id => 126 },{ name => uid129, isOnline => false, id => 129 },{ name => uid131, isOnline => false, id => 131 },{ name => uid111, isOnline => false, id => 111 },{ name => uid30, isOnline => false, id => 30 },{ name => uid127, isOnline => false, id => 127 },{ name => uid132, isOnline => false, id => 132 }], type => user.searchEnemy, errorCode => ok }
+21.12 12:15:45 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:15:45 TIME: user.ping 0.14 ms
+21.12 12:15:45 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:16:12 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:16:12 TIME: user.ping 0.16 ms
+21.12 12:16:12 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:16:26 TIMER: Check auto-disconnect...
+21.12 12:16:26 STATS: vdl.0 cache, locks:2
+21.12 12:16:31 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:16:31 TIME: user.ping 0.13 ms
+21.12 12:16:31 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:16:50 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:16:50 TIME: user.ping 0.13 ms
+21.12 12:16:50 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:17:09 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:17:09 TIME: user.ping 0.17 ms
+21.12 12:17:09 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:17:26 TIMER: Check auto-disconnect...
+21.12 12:17:26 STATS: vdl.0 cache, locks:2
+21.12 12:17:28 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:17:28 TIME: user.ping 0.2 ms
+21.12 12:17:28 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:17:47 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:17:47 TIME: user.ping 0.14 ms
+21.12 12:17:47 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:18:06 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:18:06 TIME: user.ping 0.14 ms
+21.12 12:18:06 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:18:25 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:18:25 TIME: user.ping 0.19 ms
+21.12 12:18:25 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:18:26 TIMER: Check auto-disconnect...
+21.12 12:18:26 STATS: vdl.0 cache, locks:2
+21.12 12:18:44 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:18:44 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:18:44 TIME: user.ping 2.23 ms
+21.12 12:19:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:19:03 TIME: user.ping 0.17 ms
+21.12 12:19:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:19:22 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:19:22 TIME: user.ping 0.17 ms
+21.12 12:19:22 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:19:26 TIMER: Check auto-disconnect...
+21.12 12:19:26 STATS: vdl.0 cache, locks:2
+21.12 12:19:41 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:19:41 TIME: user.ping 0.13 ms
+21.12 12:19:41 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:20:00 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:20:00 TIME: user.ping 0.19 ms
+21.12 12:20:00 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:20:19 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:20:19 TIME: user.ping 0.13 ms
+21.12 12:20:19 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:20:26 TIMER: Check auto-disconnect...
+21.12 12:20:26 STATS: vdl.0 cache, locks:2
+21.12 12:20:38 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:20:38 TIME: user.ping 0.13 ms
+21.12 12:20:38 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:20:57 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:20:57 TIME: user.ping 0.16 ms
+21.12 12:20:57 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:21:16 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:21:16 TIME: user.ping 0.12 ms
+21.12 12:21:16 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:21:26 TIMER: Check auto-disconnect...
+21.12 12:21:26 STATS: vdl.0 cache, locks:2
+21.12 12:21:35 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:21:35 TIME: user.ping 0.17 ms
+21.12 12:21:35 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:21:54 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:21:54 TIME: user.ping 0.16 ms
+21.12 12:21:54 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:22:13 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:22:13 TIME: user.ping 0.1 ms
+21.12 12:22:13 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:22:26 TIMER: Check auto-disconnect...
+21.12 12:22:26 STATS: vdl.0 cache, locks:2
+21.12 12:22:32 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:22:32 TIME: user.ping 0.17 ms
+21.12 12:22:32 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:22:51 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:22:51 TIME: user.ping 0.29 ms
+21.12 12:22:51 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:23:10 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:23:10 TIME: user.ping 0.19 ms
+21.12 12:23:10 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:23:26 TIMER: Check auto-disconnect...
+21.12 12:23:26 STATS: vdl.0 cache, locks:2
+21.12 12:23:29 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:23:29 TIME: user.ping 0.14 ms
+21.12 12:23:29 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:23:48 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:23:48 TIME: user.ping 0.13 ms
+21.12 12:23:48 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:24:07 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:24:07 TIME: user.ping 0.19 ms
+21.12 12:24:07 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:24:26 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:24:26 TIME: user.ping 0.15 ms
+21.12 12:24:26 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:24:26 TIMER: Check auto-disconnect...
+21.12 12:24:27 STATS: vdl.0 cache, locks:2
+21.12 12:24:45 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:24:45 TIME: user.ping 0.1 ms
+21.12 12:24:45 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:25:04 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:25:04 TIME: user.ping 0.18 ms
+21.12 12:25:04 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:25:23 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:25:23 TIME: user.ping 0.19 ms
+21.12 12:25:23 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:25:26 TIMER: Check auto-disconnect...
+21.12 12:25:27 STATS: vdl.0 cache, locks:2
+21.12 12:25:42 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:25:42 TIME: user.ping 0.13 ms
+21.12 12:25:42 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:26:01 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:26:01 TIME: user.ping 0.17 ms
+21.12 12:26:01 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:26:20 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:26:20 TIME: user.ping 0.13 ms
+21.12 12:26:20 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:26:26 TIMER: Check auto-disconnect...
+21.12 12:26:27 STATS: vdl.0 cache, locks:2
+21.12 12:26:38 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:26:38 TIME: user.ping 0.14 ms
+21.12 12:26:38 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:26:57 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:26:57 TIME: user.ping 0.12 ms
+21.12 12:26:57 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:27:16 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:27:16 TIME: user.ping 0.17 ms
+21.12 12:27:16 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:27:26 TIMER: Check auto-disconnect...
+21.12 12:27:27 STATS: vdl.0 cache, locks:2
+21.12 12:27:34 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:27:34 TIME: user.ping 0.13 ms
+21.12 12:27:34 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:27:53 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:27:53 TIME: user.ping 0.15 ms
+21.12 12:27:53 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:28:11 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:28:11 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:28:11 TIME: user.ping 0.17 ms
+21.12 12:28:26 TIMER: Check auto-disconnect...
+21.12 12:28:27 STATS: vdl.0 cache, locks:2
+21.12 12:28:30 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:28:30 TIME: user.ping 0.13 ms
+21.12 12:28:30 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:28:49 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:28:49 TIME: user.ping 0.22 ms
+21.12 12:28:49 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:29:08 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:29:08 TIME: user.ping 0.18 ms
+21.12 12:29:08 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:29:26 TIMER: Check auto-disconnect...
+21.12 12:29:26 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:29:26 TIME: user.ping 0.2 ms
+21.12 12:29:26 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:29:27 STATS: vdl.0 cache, locks:2
+21.12 12:29:45 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:29:45 TIME: user.ping 0.13 ms
+21.12 12:29:45 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:30:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:30:03 TIME: user.ping 0.14 ms
+21.12 12:30:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:30:22 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:30:22 TIME: user.ping 0.19 ms
+21.12 12:30:22 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:30:26 TIMER: Check auto-disconnect...
+21.12 12:30:27 STATS: vdl.0 cache, locks:2
+21.12 12:30:41 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:30:41 TIME: user.ping 0.13 ms
+21.12 12:30:41 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:31:00 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:31:00 TIME: user.ping 0.24 ms
+21.12 12:31:00 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:31:19 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:31:19 TIME: user.ping 0.19 ms
+21.12 12:31:19 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:31:26 TIMER: Check auto-disconnect...
+21.12 12:31:27 STATS: vdl.0 cache, locks:2
+21.12 12:31:37 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:31:37 TIME: user.ping 0.12 ms
+21.12 12:31:37 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:31:56 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:31:56 TIME: user.ping 0.15 ms
+21.12 12:31:56 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:32:15 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:32:15 TIME: user.ping 0.14 ms
+21.12 12:32:15 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:32:26 TIMER: Check auto-disconnect...
+21.12 12:32:27 STATS: vdl.0 cache, locks:2
+21.12 12:32:33 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:32:33 TIME: user.ping 0.13 ms
+21.12 12:32:33 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:32:52 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:32:52 TIME: user.ping 0.13 ms
+21.12 12:32:52 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:33:11 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:33:11 TIME: user.ping 0.16 ms
+21.12 12:33:11 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:33:26 TIMER: Check auto-disconnect...
+21.12 12:33:27 STATS: vdl.0 cache, locks:2
+21.12 12:33:29 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:33:29 TIME: user.ping 0.21 ms
+21.12 12:33:29 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:33:48 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:33:48 TIME: user.ping 0.17 ms
+21.12 12:33:48 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:34:07 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:34:07 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:34:07 TIME: user.ping 0.23 ms
+21.12 12:34:26 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:34:26 TIME: user.ping 0.12 ms
+21.12 12:34:26 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:34:26 TIMER: Check auto-disconnect...
+21.12 12:34:27 STATS: vdl.0 cache, locks:2
+21.12 12:34:44 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:34:44 TIME: user.ping 0.25 ms
+21.12 12:34:44 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:35:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:35:03 TIME: user.ping 0.15 ms
+21.12 12:35:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:35:21 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:35:21 TIME: user.ping 0.11 ms
+21.12 12:35:21 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:35:26 TIMER: Check auto-disconnect...
+21.12 12:35:27 STATS: vdl.0 cache, locks:2
+21.12 12:35:40 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:35:40 TIME: user.ping 0.12 ms
+21.12 12:35:40 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:35:59 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:35:59 TIME: user.ping 0.15 ms
+21.12 12:35:59 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:36:17 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:36:17 TIME: user.ping 0.15 ms
+21.12 12:36:17 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:36:26 TIMER: Check auto-disconnect...
+21.12 12:36:27 STATS: vdl.0 cache, locks:2
+21.12 12:36:36 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:36:36 TIME: user.ping 0.32 ms
+21.12 12:36:36 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:36:55 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:36:55 TIME: user.ping 0.14 ms
+21.12 12:36:55 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:37:13 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:37:13 TIME: user.ping 0.19 ms
+21.12 12:37:13 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:37:26 TIMER: Check auto-disconnect...
+21.12 12:37:27 STATS: vdl.0 cache, locks:2
+21.12 12:37:32 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:37:32 TIME: user.ping 0.13 ms
+21.12 12:37:32 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:37:50 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:37:50 TIME: user.ping 0.15 ms
+21.12 12:37:50 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:38:09 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:38:09 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:38:09 TIME: user.ping 0.41 ms
+21.12 12:38:26 TIMER: Check auto-disconnect...
+21.12 12:38:27 STATS: vdl.0 cache, locks:2
+21.12 12:38:28 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:38:28 TIME: user.ping 0.17 ms
+21.12 12:38:28 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:38:46 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:38:46 TIME: user.ping 0.36 ms
+21.12 12:38:46 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:39:05 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:39:05 TIME: user.ping 0.14 ms
+21.12 12:39:05 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:39:24 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:39:24 TIME: user.ping 0.19 ms
+21.12 12:39:24 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:39:26 TIMER: Check auto-disconnect...
+21.12 12:39:27 STATS: vdl.0 cache, locks:2
+21.12 12:39:42 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:39:42 TIME: user.ping 0.16 ms
+21.12 12:39:42 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:40:01 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:40:01 TIME: user.ping 0.22 ms
+21.12 12:40:01 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:40:19 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:40:19 TIME: user.ping 0.12 ms
+21.12 12:40:19 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:40:26 TIMER: Check auto-disconnect...
+21.12 12:40:27 STATS: vdl.0 cache, locks:2
+21.12 12:40:38 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:40:38 TIME: user.ping 0.13 ms
+21.12 12:40:38 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:40:57 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:40:57 TIME: user.ping 0.12 ms
+21.12 12:40:57 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:41:15 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:41:15 TIME: user.ping 0.15 ms
+21.12 12:41:15 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:41:26 TIMER: Check auto-disconnect...
+21.12 12:41:27 STATS: vdl.0 cache, locks:2
+21.12 12:41:34 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:41:34 TIME: user.ping 0.16 ms
+21.12 12:41:34 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:41:53 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:41:53 TIME: user.ping 0.12 ms
+21.12 12:41:53 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:42:12 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:42:12 TIME: user.ping 0.13 ms
+21.12 12:42:12 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:42:26 TIMER: Check auto-disconnect...
+21.12 12:42:27 STATS: vdl.0 cache, locks:2
+21.12 12:42:30 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:42:30 TIME: user.ping 0.13 ms
+21.12 12:42:30 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:42:49 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:42:49 TIME: user.ping 0.17 ms
+21.12 12:42:49 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:43:08 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:43:08 TIME: user.ping 0.3 ms
+21.12 12:43:08 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:43:26 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:43:26 TIME: user.ping 0.26 ms
+21.12 12:43:26 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:43:26 TIMER: Check auto-disconnect...
+21.12 12:43:27 STATS: vdl.0 cache, locks:2
+21.12 12:43:45 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:43:45 TIME: user.ping 0.14 ms
+21.12 12:43:45 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:44:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:44:03 TIME: user.ping 0.45 ms
+21.12 12:44:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:44:22 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:44:22 TIME: user.ping 0.14 ms
+21.12 12:44:22 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:44:26 TIMER: Check auto-disconnect...
+21.12 12:44:27 STATS: vdl.0 cache, locks:2
+21.12 12:44:41 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:44:41 TIME: user.ping 0.14 ms
+21.12 12:44:41 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:44:59 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:44:59 TIME: user.ping 0.16 ms
+21.12 12:44:59 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:45:18 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:45:18 TIME: user.ping 0.16 ms
+21.12 12:45:18 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:45:26 TIMER: Check auto-disconnect...
+21.12 12:45:27 STATS: vdl.0 cache, locks:2
+21.12 12:45:37 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:45:37 TIME: user.ping 0.15 ms
+21.12 12:45:37 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:45:55 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:45:55 TIME: user.ping 0.17 ms
+21.12 12:45:55 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:46:14 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:46:14 TIME: user.ping 0.1 ms
+21.12 12:46:14 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:46:26 TIMER: Check auto-disconnect...
+21.12 12:46:27 STATS: vdl.0 cache, locks:2
+21.12 12:46:33 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:46:33 TIME: user.ping 0.17 ms
+21.12 12:46:33 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:46:52 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:46:52 TIME: user.ping 0.19 ms
+21.12 12:46:52 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:47:10 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:47:10 TIME: user.ping 0.1 ms
+21.12 12:47:10 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:47:26 TIMER: Check auto-disconnect...
+21.12 12:47:27 STATS: vdl.0 cache, locks:2
+21.12 12:47:29 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:47:29 TIME: user.ping 0.13 ms
+21.12 12:47:29 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:47:48 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:47:48 TIME: user.ping 0.12 ms
+21.12 12:47:48 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:48:06 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:48:06 TIME: user.ping 0.15 ms
+21.12 12:48:06 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:48:25 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:48:25 TIME: user.ping 0.2 ms
+21.12 12:48:25 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:48:26 TIMER: Check auto-disconnect...
+21.12 12:48:27 STATS: vdl.0 cache, locks:2
+21.12 12:48:44 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:48:44 TIME: user.ping 0.13 ms
+21.12 12:48:44 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:49:03 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:49:03 TIME: user.ping 0.2 ms
+21.12 12:49:03 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:49:21 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:49:21 TIME: user.ping 0.16 ms
+21.12 12:49:21 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:49:26 TIMER: Check auto-disconnect...
+21.12 12:49:27 STATS: vdl.0 cache, locks:2
+21.12 12:49:40 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:49:40 TIME: user.ping 0.12 ms
+21.12 12:49:40 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:49:59 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:49:59 TIME: user.ping 0.15 ms
+21.12 12:49:59 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:50:17 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:50:17 TIME: user.ping 0.18 ms
+21.12 12:50:17 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:50:26 TIMER: Check auto-disconnect...
+21.12 12:50:27 STATS: vdl.0 cache, locks:2
+21.12 12:50:36 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:50:36 TIME: user.ping 0.16 ms
+21.12 12:50:36 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:50:55 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:50:55 TIME: user.ping 0.13 ms
+21.12 12:50:55 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:51:14 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:51:14 TIME: user.ping 0.27 ms
+21.12 12:51:14 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:51:26 TIMER: Check auto-disconnect...
+21.12 12:51:27 STATS: vdl.0 cache, locks:2
+21.12 12:51:32 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:51:32 TIME: user.ping 0.17 ms
+21.12 12:51:32 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:51:51 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:51:51 TIME: user.ping 0.12 ms
+21.12 12:51:51 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:52:10 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:52:10 TIME: user.ping 0.19 ms
+21.12 12:52:10 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:52:26 TIMER: Check auto-disconnect...
+21.12 12:52:27 STATS: vdl.0 cache, locks:2
+21.12 12:52:29 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:52:29 TIME: user.ping 0.15 ms
+21.12 12:52:29 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:52:47 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:52:47 TIME: user.ping 0.13 ms
+21.12 12:52:47 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:53:06 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:53:06 TIME: user.ping 0.15 ms
+21.12 12:53:06 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:53:25 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:53:25 TIME: user.ping 0.18 ms
+21.12 12:53:25 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:53:26 TIMER: Check auto-disconnect...
+21.12 12:53:27 STATS: vdl.0 cache, locks:2
+21.12 12:53:43 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:53:43 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:53:43 TIME: user.ping 0.16 ms
+21.12 12:54:02 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:54:02 TIME: user.ping 0.2 ms
+21.12 12:54:02 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:54:21 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:54:21 TIME: user.ping 0.21 ms
+21.12 12:54:21 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:54:26 TIMER: Check auto-disconnect...
+21.12 12:54:27 STATS: vdl.0 cache, locks:2
+21.12 12:54:40 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:54:40 TIME: user.ping 0.17 ms
+21.12 12:54:40 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:54:58 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:54:58 TIME: user.ping 0.14 ms
+21.12 12:54:58 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:55:17 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:55:17 TIME: user.ping 0.13 ms
+21.12 12:55:17 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:55:26 TIMER: Check auto-disconnect...
+21.12 12:55:27 STATS: vdl.0 cache, locks:2
+21.12 12:55:36 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:55:36 TIME: user.ping 0.11 ms
+21.12 12:55:36 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:55:54 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:55:54 TIME: user.ping 0.12 ms
+21.12 12:55:54 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:56:13 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:56:13 TIME: user.ping 0.11 ms
+21.12 12:56:13 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:56:26 TIMER: Check auto-disconnect...
+21.12 12:56:27 STATS: vdl.0 cache, locks:2
+21.12 12:56:31 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:56:31 TIME: user.ping 0.19 ms
+21.12 12:56:31 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:56:50 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:56:50 TIME: user.ping 0.17 ms
+21.12 12:56:50 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:57:09 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:57:09 TIME: user.ping 0.17 ms
+21.12 12:57:09 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:57:26 TIMER: Check auto-disconnect...
+21.12 12:57:27 STATS: vdl.0 cache, locks:2
+21.12 12:57:28 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:57:28 TIME: user.ping 0.13 ms
+21.12 12:57:28 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:57:46 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:57:46 TIME: user.ping 0.18 ms
+21.12 12:57:46 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:58:05 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:58:05 TIME: user.ping 0.16 ms
+21.12 12:58:05 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:58:24 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:58:24 TIME: user.ping 0.11 ms
+21.12 12:58:24 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:58:26 TIMER: Check auto-disconnect...
+21.12 12:58:27 STATS: vdl.0 cache, locks:2
+21.12 12:58:43 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:58:43 TIME: user.ping 0.25 ms
+21.12 12:58:43 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:59:02 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:59:02 TIME: user.ping 0.13 ms
+21.12 12:59:02 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:59:20 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:59:20 TIME: user.ping 0.17 ms
+21.12 12:59:20 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:59:26 TIMER: Check auto-disconnect...
+21.12 12:59:27 STATS: vdl.0 cache, locks:2
+21.12 12:59:39 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:59:39 TIME: user.ping 0.11 ms
+21.12 12:59:39 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }
+21.12 12:59:58 ++ NET: uid112 req: user.ping { messageType => user.ping, msg => ok }
+21.12 12:59:58 TIME: user.ping 0.19 ms
+21.12 12:59:58 == NET: uid112 ret: user.ping { type => user.ping, errorCode => ok }

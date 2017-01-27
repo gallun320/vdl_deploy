@@ -1,0 +1,10 @@
+27.10 13:00:10 STATS: vdl.0 cache, locks:0
+27.10 13:01:10 STATS: vdl.0 cache, locks:0
+27.10 13:02:10 STATS: vdl.0 cache, locks:0
+27.10 13:03:10 STATS: vdl.0 cache, locks:0
+27.10 13:04:10 STATS: vdl.0 cache, locks:0
+27.10 13:05:10 STATS: vdl.0 cache, locks:0
+27.10 13:06:10 STATS: vdl.0 cache, locks:0
+27.10 13:07:10 STATS: vdl.0 cache, locks:0
+27.10 13:08:10 STATS: vdl.0 cache, locks:0
+27.10 13:09:10 STATS: vdl.0 cache, locks:0

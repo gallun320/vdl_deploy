@@ -1,0 +1,514 @@
+29.12 11:00:12 TIMER: Check auto-disconnect...
+29.12 11:00:12 STATS: vdl.0 cache, locks:2
+29.12 11:00:16 NET: Client (name:Aimer conid:58429956 TCP) disconnected from vdl.0 (clients:0)
+29.12 11:00:16 DB: SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true
+29.12 11:00:16 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true, _type => core/server.query }
+29.12 11:00:16 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+29.12 11:00:16 STATS: vdl.0 cache connection, 102 calls, total 0.100397348403931 sec spent, avg 0.98 ms
+29.12 11:00:16 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:00:16 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+29.12 11:00:16 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:00:16 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+29.12 11:00:16 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:00:16 -<<-: core/cache.update { errorCode => ok, version => 5, _type => core/cache.update }
+29.12 11:00:16 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:00:16 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+29.12 11:00:16 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 28, _type => core/user.logoutPost }
+29.12 11:00:16 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+29.12 11:00:16 NET: Client (conid:67388047) connected to vdl.0 (clients:1)
+29.12 11:00:16 ++ NET: null req: user.login { password => kO2YJdf, name => Aimer, messageType => user.login }
+29.12 11:00:16 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf'
+29.12 11:00:16 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf', _type => core/server.query }
+29.12 11:00:16 -<<-: core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 28 }}, errorCode => ok, _type => core/server.query }
+29.12 11:00:16 ->>-: core/user.isOnlineID { id => 28, _type => core/user.isOnlineID }
+29.12 11:00:16 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+29.12 11:00:16 ->>-: core/cache.get { type => user, v => -1, id => 28, _type => core/cache.get }
+29.12 11:00:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, year => , email => raBpoLL1@ya.ru, networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-11-20 13:52:24.495988+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1482929689, lastLoginDate => 364, money => 11, lastLoadDate => 1230 }, effects => { list => [] } }}, version => 5, id => 28 } }
+29.12 11:00:16 ->>-: core/cache.get { type => questdata, v => -1, id => 28, _type => core/cache.get }
+29.12 11:00:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 2, id => 28 } }
+29.12 11:00:16 NET: Client login (conid:67388047, id:28, name:Aimer)
+29.12 11:00:16 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 28, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+29.12 11:00:16 -<<-: core/user.loginPost { _type => core/user.loginPost }
+29.12 11:00:16 DB: SELECT token FROM tokens WHERE userid = 28
+29.12 11:00:16 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 28, _type => core/server.query }
+29.12 11:00:16 -<<-: core/server.query { list => {{ token => f8036965bfbe74fbafeb175107a122c4 }, { token => f430b4db749d48ed955ce2b85103338c }}, errorCode => ok, _type => core/server.query }
+29.12 11:00:16 == NET: Aimer ret: user.login { name => Aimer, type => user.login, errorCode => ok, id => 28, token => f8036965bfbe74fbafeb175107a122c4 }
+29.12 11:00:16 == NET: Aimer ret: user.join { name => Aimer, type => user.join }
+29.12 11:00:16 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:00:16 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:00:16 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:00:16 TIME: user.data 0.28 ms
+29.12 11:00:16 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:00:18 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:00:18 TIME: user.ping 0.12 ms
+29.12 11:00:18 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:00:22 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 28, _type => core/cache.update }
+29.12 11:00:22 -<<-: core/cache.update { errorCode => ok, version => 6, _type => core/cache.update }
+29.12 11:00:40 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:00:40 TIME: user.ping 0.12 ms
+29.12 11:00:40 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:01:02 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:01:02 TIME: user.ping 0.14 ms
+29.12 11:01:02 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:01:12 TIMER: Check auto-disconnect...
+29.12 11:01:12 STATS: vdl.0 cache, locks:2
+29.12 11:01:21 NET: Client (name:Aimer conid:67388047 TCP) disconnected from vdl.0 (clients:0)
+29.12 11:01:21 DB: SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true
+29.12 11:01:21 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true, _type => core/server.query }
+29.12 11:01:21 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+29.12 11:01:21 STATS: vdl.0 cache connection, 115 calls, total 0.105424642562866 sec spent, avg 0.92 ms
+29.12 11:01:21 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:21 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:21 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:21 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+29.12 11:01:21 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:01:21 -<<-: core/cache.update { errorCode => ok, version => 7, _type => core/cache.update }
+29.12 11:01:21 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:01:21 -<<-: core/cache.update { errorCode => ok, version => 3, _type => core/cache.update }
+29.12 11:01:21 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 28, _type => core/user.logoutPost }
+29.12 11:01:21 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+29.12 11:01:30 NET: Client (conid:37405149) connected to vdl.0 (clients:1)
+29.12 11:01:31 ++ NET: null req: user.login { password => kO2YJdf, name => Aimer, messageType => user.login }
+29.12 11:01:31 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf'
+29.12 11:01:31 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf', _type => core/server.query }
+29.12 11:01:31 -<<-: core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 28 }}, errorCode => ok, _type => core/server.query }
+29.12 11:01:31 ->>-: core/user.isOnlineID { id => 28, _type => core/user.isOnlineID }
+29.12 11:01:31 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+29.12 11:01:31 ->>-: core/cache.get { type => user, v => -1, id => 28, _type => core/cache.get }
+29.12 11:01:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, year => , email => raBpoLL1@ya.ru, networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-11-20 13:52:24.495988+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1482929689, lastLoginDate => 364, money => 11, lastLoadDate => 1230 }, effects => { list => [] } }}, version => 7, id => 28 } }
+29.12 11:01:31 ->>-: core/cache.get { type => questdata, v => -1, id => 28, _type => core/cache.get }
+29.12 11:01:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 3, id => 28 } }
+29.12 11:01:31 NET: Client login (conid:37405149, id:28, name:Aimer)
+29.12 11:01:31 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 28, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+29.12 11:01:31 -<<-: core/user.loginPost { _type => core/user.loginPost }
+29.12 11:01:31 DB: SELECT token FROM tokens WHERE userid = 28
+29.12 11:01:31 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 28, _type => core/server.query }
+29.12 11:01:31 -<<-: core/server.query { list => {{ token => f8036965bfbe74fbafeb175107a122c4 }, { token => f430b4db749d48ed955ce2b85103338c }}, errorCode => ok, _type => core/server.query }
+29.12 11:01:31 == NET: Aimer ret: user.login { name => Aimer, type => user.login, errorCode => ok, id => 28, token => f8036965bfbe74fbafeb175107a122c4 }
+29.12 11:01:31 == NET: Aimer ret: user.join { name => Aimer, type => user.join }
+29.12 11:01:33 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:01:33 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:33 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:33 TIME: user.data 0.47 ms
+29.12 11:01:33 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:35 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:01:35 TIME: user.ping 0.11 ms
+29.12 11:01:35 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:01:37 ++ NET: Aimer req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+29.12 11:01:37 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:01:37 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:01:37 TIME: tournament.getAvailableTournament 6.56 ms
+29.12 11:01:37 == NET: Aimer ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:01:37 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 28, _type => core/cache.update }
+29.12 11:01:37 -<<-: core/cache.update { errorCode => ok, version => 8, _type => core/cache.update }
+29.12 11:01:50 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:01:50 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:50 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:50 TIME: user.data 0.31 ms
+29.12 11:01:50 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:57 NET: Client (name:Aimer conid:37405149 TCP) disconnected from vdl.0 (clients:0)
+29.12 11:01:57 DB: SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true
+29.12 11:01:57 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true, _type => core/server.query }
+29.12 11:01:57 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+29.12 11:01:57 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:57 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:57 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:01:57 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+29.12 11:01:57 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:01:57 -<<-: core/cache.update { errorCode => ok, version => 9, _type => core/cache.update }
+29.12 11:01:57 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:01:57 -<<-: core/cache.update { errorCode => ok, version => 4, _type => core/cache.update }
+29.12 11:01:57 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 28, _type => core/user.logoutPost }
+29.12 11:01:57 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+29.12 11:01:57 NET: Client (conid:90390232) connected to vdl.0 (clients:1)
+29.12 11:01:57 ++ NET: null req: user.login { password => kO2YJdf, name => Aimer, messageType => user.login }
+29.12 11:01:57 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf'
+29.12 11:01:57 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'Aimer' AND Password = 'kO2YJdf', _type => core/server.query }
+29.12 11:01:57 -<<-: core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 28 }}, errorCode => ok, _type => core/server.query }
+29.12 11:01:57 ->>-: core/user.isOnlineID { id => 28, _type => core/user.isOnlineID }
+29.12 11:01:57 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+29.12 11:01:57 ->>-: core/cache.get { type => user, v => -1, id => 28, _type => core/cache.get }
+29.12 11:01:57 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, year => , email => raBpoLL1@ya.ru, networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-11-20 13:52:24.495988+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1482929689, lastLoginDate => 364, money => 11, lastLoadDate => 1230 }, effects => { list => [] } }}, version => 9, id => 28 } }
+29.12 11:01:57 ->>-: core/cache.get { type => questdata, v => -1, id => 28, _type => core/cache.get }
+29.12 11:01:57 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 4, id => 28 } }
+29.12 11:01:57 NET: Client login (conid:90390232, id:28, name:Aimer)
+29.12 11:01:57 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 28, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+29.12 11:01:57 -<<-: core/user.loginPost { _type => core/user.loginPost }
+29.12 11:01:57 DB: SELECT token FROM tokens WHERE userid = 28
+29.12 11:01:57 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 28, _type => core/server.query }
+29.12 11:01:57 -<<-: core/server.query { list => {{ token => f8036965bfbe74fbafeb175107a122c4 }, { token => f430b4db749d48ed955ce2b85103338c }}, errorCode => ok, _type => core/server.query }
+29.12 11:01:57 == NET: Aimer ret: user.login { name => Aimer, type => user.login, errorCode => ok, id => 28, token => f8036965bfbe74fbafeb175107a122c4 }
+29.12 11:01:57 == NET: Aimer ret: user.join { name => Aimer, type => user.join }
+29.12 11:01:57 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:01:57 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:57 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:57 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:01:57 TIME: user.data 0.28 ms
+29.12 11:01:59 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:01:59 TIME: user.ping 0.11 ms
+29.12 11:01:59 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:02:02 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 28, _type => core/cache.update }
+29.12 11:02:02 -<<-: core/cache.update { errorCode => ok, version => 10, _type => core/cache.update }
+29.12 11:02:12 TIMER: Check auto-disconnect...
+29.12 11:02:12 STATS: vdl.0 cache, locks:2
+29.12 11:02:21 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:02:21 TIME: user.ping 0.12 ms
+29.12 11:02:21 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:02:39 ++ NET: Aimer req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+29.12 11:02:39 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:02:39 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:02:39 STATS: vdl.0 cache connection, 143 calls, total 0.132426738739014 sec spent, avg 0.93 ms
+29.12 11:02:39 TIME: tournament.getAvailableTournament 7.14 ms
+29.12 11:02:39 == NET: Aimer ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:02:45 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:02:45 TIME: user.ping 0.11 ms
+29.12 11:02:45 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:02:55 ++ NET: Aimer req: tournament.grid { tournamentId => 7, round => 1, messageType => tournament.grid }
+29.12 11:02:55 ->>-: vdl/cache.tournament.getStatus { tournamentId => 7, _type => vdl/cache.tournament.getStatus }
+29.12 11:02:55 -<<-: vdl/cache.tournament.getStatus { errorCode => ok, _type => vdl/cache.tournament.getStatus, status => starting }
+29.12 11:02:55 ->>-: vdl/cache.tournament.getAvailableTournamentUsers { tournamentId => 7, _type => vdl/cache.tournament.getAvailableTournamentUsers }
+29.12 11:02:55 -<<-: vdl/cache.tournament.getAvailableTournamentUsers { errorCode => ok, _type => vdl/cache.tournament.getAvailableTournamentUsers, users => [124,28] }
+29.12 11:02:55 ->>-: vdl/cache.tournament.setGrid { battles => [{ winner => -1, round => 1, player1 => 124, player2 => 28 }], tournamentId => 7, round => 1, _type => vdl/cache.tournament.setGrid, status => starting }
+29.12 11:02:55 -<<-: vdl/cache.tournament.setGrid { list => [{ winner => -1, round => 1, player1 => 124, player2 => 28 }], tournamentId => 7, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+29.12 11:02:55 TIME: tournament.grid 1.31 ms
+29.12 11:02:55 == NET: Aimer ret: tournament.grid { list => [{ winner => -1, round => 1, player1 => 124, player2 => 28 }], type => tournament.grid, tournamentId => 7, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+29.12 11:03:06 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:03:06 TIME: user.ping 0.14 ms
+29.12 11:03:06 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:03:12 TIMER: Check auto-disconnect...
+29.12 11:03:12 STATS: vdl.0 cache, locks:2
+29.12 11:03:28 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:03:28 TIME: user.ping 0.17 ms
+29.12 11:03:28 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:03:35 ++ NET: Aimer req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+29.12 11:03:35 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:03:35 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:03:35 TIME: tournament.getAvailableTournament 6.24 ms
+29.12 11:03:35 == NET: Aimer ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 },{ name => Aimer, id => 28 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+29.12 11:03:41 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:03:41 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:03:41 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:03:41 STATS: vdl.0 cache connection, 148 calls, total 0.140126705169678 sec spent, avg 0.95 ms
+29.12 11:03:41 TIME: user.data 0.48 ms
+29.12 11:03:41 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 11 }
+29.12 11:03:44 ++ NET: Aimer req: user.addMoney { count => 1, messageType => user.addMoney }
+29.12 11:03:44 TIME: user.addMoney 0.17 ms
+29.12 11:03:44 == NET: Aimer ret: user.addMoney { type => user.addMoney, errorCode => ok, money => 13 }
+29.12 11:03:44 ++ NET: Aimer req: user.data { messageType => user.data }
+29.12 11:03:44 ->>-: vdl/cache.user.getData { userId => 28, _type => vdl/cache.user.getData, money => 13 }
+29.12 11:03:44 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 13 }
+29.12 11:03:44 TIME: user.data 0.45 ms
+29.12 11:03:44 == NET: Aimer ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 13 }
+29.12 11:03:51 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:03:51 TIME: user.ping 0.13 ms
+29.12 11:03:51 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:03:52 ->>-: core/cache.update { diff => {params => { attrs => { money => 13 } }}, type => user, unlock => false, id => 28, _type => core/cache.update }
+29.12 11:03:52 -<<-: core/cache.update { errorCode => ok, version => 11, _type => core/cache.update }
+29.12 11:04:12 TIMER: Check auto-disconnect...
+29.12 11:04:12 STATS: vdl.0 cache, locks:2
+29.12 11:04:13 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:04:13 TIME: user.ping 0.35 ms
+29.12 11:04:13 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:04:37 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:04:37 TIME: user.ping 0.12 ms
+29.12 11:04:37 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:04:59 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:04:59 TIME: user.ping 0.14 ms
+29.12 11:04:59 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:05:12 TIMER: Check auto-disconnect...
+29.12 11:05:12 STATS: vdl.0 cache, locks:2
+29.12 11:05:21 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:05:21 TIME: user.ping 0.15 ms
+29.12 11:05:21 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:05:44 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:05:44 TIME: user.ping 0.12 ms
+29.12 11:05:44 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:06:06 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:06:06 TIME: user.ping 0.11 ms
+29.12 11:06:06 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:06:12 TIMER: Check auto-disconnect...
+29.12 11:06:12 STATS: vdl.0 cache, locks:2
+29.12 11:06:28 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:06:28 TIME: user.ping 0.12 ms
+29.12 11:06:28 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:06:50 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:06:50 TIME: user.ping 0.12 ms
+29.12 11:06:50 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:07:12 TIMER: Check auto-disconnect...
+29.12 11:07:12 STATS: vdl.0 cache, locks:2
+29.12 11:07:13 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:07:13 TIME: user.ping 0.17 ms
+29.12 11:07:13 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:07:35 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:07:35 TIME: user.ping 0.14 ms
+29.12 11:07:35 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:07:57 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:07:57 TIME: user.ping 0.13 ms
+29.12 11:07:57 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:08:12 TIMER: Check auto-disconnect...
+29.12 11:08:12 STATS: vdl.0 cache, locks:2
+29.12 11:08:19 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:08:19 TIME: user.ping 0.13 ms
+29.12 11:08:19 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:08:41 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:08:41 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:08:41 TIME: user.ping 0.17 ms
+29.12 11:09:03 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:09:03 TIME: user.ping 0.08 ms
+29.12 11:09:03 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:09:12 TIMER: Check auto-disconnect...
+29.12 11:09:12 STATS: vdl.0 cache, locks:2
+29.12 11:09:26 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:09:26 TIME: user.ping 0.14 ms
+29.12 11:09:26 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:09:48 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:09:48 TIME: user.ping 0.14 ms
+29.12 11:09:48 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:10:10 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:10:10 TIME: user.ping 0.15 ms
+29.12 11:10:10 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:10:12 TIMER: Check auto-disconnect...
+29.12 11:10:12 STATS: vdl.0 cache, locks:2
+29.12 11:10:32 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:10:32 TIME: user.ping 2.26 ms
+29.12 11:10:32 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:10:54 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:10:54 TIME: user.ping 0.17 ms
+29.12 11:10:54 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:11:12 TIMER: Check auto-disconnect...
+29.12 11:11:12 STATS: vdl.0 cache, locks:2
+29.12 11:11:16 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:11:16 TIME: user.ping 0.11 ms
+29.12 11:11:16 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:11:39 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:11:39 TIME: user.ping 0.12 ms
+29.12 11:11:39 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:12:01 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:12:01 TIME: user.ping 0.12 ms
+29.12 11:12:01 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:12:12 TIMER: Check auto-disconnect...
+29.12 11:12:12 STATS: vdl.0 cache, locks:2
+29.12 11:12:23 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:12:23 TIME: user.ping 0.13 ms
+29.12 11:12:23 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:12:45 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:12:45 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:12:45 TIME: user.ping 0.15 ms
+29.12 11:13:07 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:13:07 TIME: user.ping 0.11 ms
+29.12 11:13:07 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:13:12 TIMER: Check auto-disconnect...
+29.12 11:13:12 STATS: vdl.0 cache, locks:2
+29.12 11:13:29 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:13:29 TIME: user.ping 0.14 ms
+29.12 11:13:29 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:13:52 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:13:52 TIME: user.ping 0.12 ms
+29.12 11:13:52 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:14:12 TIMER: Check auto-disconnect...
+29.12 11:14:13 STATS: vdl.0 cache, locks:2
+29.12 11:14:14 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:14:14 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:14:14 TIME: user.ping 0.12 ms
+29.12 11:14:36 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:14:36 TIME: user.ping 0.16 ms
+29.12 11:14:36 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:14:58 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:14:58 TIME: user.ping 0.13 ms
+29.12 11:14:58 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:15:12 TIMER: Check auto-disconnect...
+29.12 11:15:13 STATS: vdl.0 cache, locks:2
+29.12 11:15:20 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:15:20 TIME: user.ping 0.13 ms
+29.12 11:15:20 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:15:42 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:15:42 TIME: user.ping 0.15 ms
+29.12 11:15:42 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:16:04 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:16:04 TIME: user.ping 0.13 ms
+29.12 11:16:04 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:16:12 TIMER: Check auto-disconnect...
+29.12 11:16:13 STATS: vdl.0 cache, locks:2
+29.12 11:16:27 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:16:27 TIME: user.ping 0.13 ms
+29.12 11:16:27 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:16:49 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:16:49 TIME: user.ping 0.12 ms
+29.12 11:16:49 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:17:11 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:17:11 TIME: user.ping 0.11 ms
+29.12 11:17:11 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:17:12 TIMER: Check auto-disconnect...
+29.12 11:17:13 STATS: vdl.0 cache, locks:2
+29.12 11:17:33 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:17:33 TIME: user.ping 0.12 ms
+29.12 11:17:33 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:17:55 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:17:55 TIME: user.ping 0.12 ms
+29.12 11:17:55 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:18:12 TIMER: Check auto-disconnect...
+29.12 11:18:13 STATS: vdl.0 cache, locks:2
+29.12 11:18:17 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:18:17 TIME: user.ping 0.17 ms
+29.12 11:18:17 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:18:40 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:18:40 TIME: user.ping 0.12 ms
+29.12 11:18:40 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:19:02 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:19:02 TIME: user.ping 0.13 ms
+29.12 11:19:02 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:19:12 TIMER: Check auto-disconnect...
+29.12 11:19:13 STATS: vdl.0 cache, locks:2
+29.12 11:19:24 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:19:24 TIME: user.ping 0.12 ms
+29.12 11:19:24 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:19:46 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:19:46 TIME: user.ping 0.15 ms
+29.12 11:19:46 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:20:08 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:20:08 TIME: user.ping 0.13 ms
+29.12 11:20:08 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:20:12 TIMER: Check auto-disconnect...
+29.12 11:20:13 STATS: vdl.0 cache, locks:2
+29.12 11:20:30 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:20:30 TIME: user.ping 0.12 ms
+29.12 11:20:30 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:20:53 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:20:53 TIME: user.ping 0.16 ms
+29.12 11:20:53 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:21:12 TIMER: Check auto-disconnect...
+29.12 11:21:13 STATS: vdl.0 cache, locks:2
+29.12 11:21:15 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:21:15 TIME: user.ping 0.13 ms
+29.12 11:21:15 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:21:37 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:21:37 TIME: user.ping 0.1 ms
+29.12 11:21:37 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:21:59 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:21:59 TIME: user.ping 0.15 ms
+29.12 11:21:59 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:22:12 TIMER: Check auto-disconnect...
+29.12 11:22:13 STATS: vdl.0 cache, locks:2
+29.12 11:22:21 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:22:21 TIME: user.ping 0.14 ms
+29.12 11:22:21 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:22:43 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:22:43 TIME: user.ping 0.11 ms
+29.12 11:22:43 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:23:05 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:23:05 TIME: user.ping 0.14 ms
+29.12 11:23:05 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:23:12 TIMER: Check auto-disconnect...
+29.12 11:23:13 STATS: vdl.0 cache, locks:2
+29.12 11:23:28 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:23:28 TIME: user.ping 0.12 ms
+29.12 11:23:28 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:23:50 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:23:50 TIME: user.ping 0.14 ms
+29.12 11:23:50 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:24:12 TIMER: Check auto-disconnect...
+29.12 11:24:12 ++ NET: Aimer req: user.ping { messageType => user.ping, msg => ok }
+29.12 11:24:12 TIME: user.ping 0.14 ms
+29.12 11:24:12 == NET: Aimer ret: user.ping { type => user.ping, errorCode => ok }
+29.12 11:24:13 STATS: vdl.0 cache, locks:2
+29.12 11:25:12 TIMER: Check auto-disconnect...
+29.12 11:25:13 STATS: vdl.0 cache, locks:2
+29.12 11:26:12 TIMER: Check auto-disconnect...
+29.12 11:26:13 STATS: vdl.0 cache, locks:2
+29.12 11:27:12 TIMER: Check auto-disconnect...
+29.12 11:27:13 STATS: vdl.0 cache, locks:2
+29.12 11:28:12 TIMER: Check auto-disconnect...
+29.12 11:28:13 STATS: vdl.0 cache, locks:2
+29.12 11:29:12 TIMER: Check auto-disconnect...
+29.12 11:29:13 STATS: vdl.0 cache, locks:2
+29.12 11:30:12 TIMER: Check auto-disconnect...
+29.12 11:30:13 STATS: vdl.0 cache, locks:2
+29.12 11:31:12 TIMER: Check auto-disconnect...
+29.12 11:31:13 STATS: vdl.0 cache, locks:2
+29.12 11:32:12 TIMER: Check auto-disconnect...
+29.12 11:32:13 STATS: vdl.0 cache, locks:2
+29.12 11:33:12 TIMER: Check auto-disconnect...
+29.12 11:33:13 STATS: vdl.0 cache, locks:2
+29.12 11:34:12 TIMER: Check auto-disconnect...
+29.12 11:34:13 STATS: vdl.0 cache, locks:2
+29.12 11:35:12 TIMER: Check auto-disconnect...
+29.12 11:35:13 STATS: vdl.0 cache, locks:2
+29.12 11:36:12 TIMER: Check auto-disconnect...
+29.12 11:36:13 STATS: vdl.0 cache, locks:2
+29.12 11:37:12 TIMER: Check auto-disconnect...
+29.12 11:37:13 STATS: vdl.0 cache, locks:2
+29.12 11:38:12 TIMER: Check auto-disconnect...
+29.12 11:38:13 STATS: vdl.0 cache, locks:2
+29.12 11:39:12 TIMER: Check auto-disconnect...
+29.12 11:39:13 STATS: vdl.0 cache, locks:2
+29.12 11:40:12 TIMER: Check auto-disconnect...
+29.12 11:40:13 STATS: vdl.0 cache, locks:2
+29.12 11:41:12 TIMER: Check auto-disconnect...
+29.12 11:41:13 STATS: vdl.0 cache, locks:2
+29.12 11:42:12 TIMER: Check auto-disconnect...
+29.12 11:42:13 STATS: vdl.0 cache, locks:2
+29.12 11:43:12 TIMER: Check auto-disconnect...
+29.12 11:43:13 STATS: vdl.0 cache, locks:2
+29.12 11:44:12 TIMER: Check auto-disconnect...
+29.12 11:44:13 STATS: vdl.0 cache, locks:2
+29.12 11:45:12 TIMER: Check auto-disconnect...
+29.12 11:45:13 STATS: vdl.0 cache, locks:2
+29.12 11:46:12 TIMER: Check auto-disconnect...
+29.12 11:46:13 STATS: vdl.0 cache, locks:2
+29.12 11:47:12 TIMER: Check auto-disconnect...
+29.12 11:47:13 STATS: vdl.0 cache, locks:2
+29.12 11:48:12 TIMER: Check auto-disconnect...
+29.12 11:48:13 STATS: vdl.0 cache, locks:2
+29.12 11:49:12 TIMER: Check auto-disconnect...
+29.12 11:49:13 STATS: vdl.0 cache, locks:2
+29.12 11:50:12 TIMER: Check auto-disconnect...
+29.12 11:50:13 STATS: vdl.0 cache, locks:2
+29.12 11:51:12 TIMER: Check auto-disconnect...
+29.12 11:51:13 STATS: vdl.0 cache, locks:2
+29.12 11:52:12 TIMER: Check auto-disconnect...
+29.12 11:52:13 STATS: vdl.0 cache, locks:2
+29.12 11:53:12 TIMER: Check auto-disconnect...
+29.12 11:53:13 STATS: vdl.0 cache, locks:2
+29.12 11:54:12 TIMER: Check auto-disconnect...
+29.12 11:54:13 STATS: vdl.0 cache, locks:2
+29.12 11:55:12 TIMER: Check auto-disconnect...
+29.12 11:55:12 NET: Client (name:Aimer conid:90390232 TCP) disconnected from vdl.0 (clients:0)
+29.12 11:55:12 DB: SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true
+29.12 11:55:12 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=28 OR secondid=28 AND finished <> true, _type => core/server.query }
+29.12 11:55:12 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+29.12 11:55:12 STATS: vdl.0 cache connection, 151 calls, total 0.1416015625 sec spent, avg 0.94 ms
+29.12 11:55:12 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:55:12 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+29.12 11:55:12 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+29.12 11:55:12 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+29.12 11:55:12 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:55:12 -<<-: core/cache.update { errorCode => ok, version => 12, _type => core/cache.update }
+29.12 11:55:12 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 28, _type => core/cache.update }
+29.12 11:55:12 -<<-: core/cache.update { errorCode => ok, version => 5, _type => core/cache.update }
+29.12 11:55:12 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 28, _type => core/user.logoutPost }
+29.12 11:55:12 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+29.12 11:55:13 STATS: vdl.0 cache, locks:0
+29.12 11:56:12 TIMER: Check auto-disconnect...
+29.12 11:56:13 STATS: vdl.0 cache, locks:0
+29.12 11:57:12 TIMER: Check auto-disconnect...
+29.12 11:57:13 STATS: vdl.0 cache, locks:0
+29.12 11:58:12 TIMER: Check auto-disconnect...
+29.12 11:58:13 STATS: vdl.0 cache, locks:0
+29.12 11:59:12 TIMER: Check auto-disconnect...
+29.12 11:59:13 STATS: vdl.0 cache, locks:0

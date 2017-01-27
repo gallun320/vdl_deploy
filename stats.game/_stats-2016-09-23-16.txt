@@ -1,0 +1,14 @@
+23.09 16:00:44 STATS: vdl.0 cache, locks:0
+23.09 16:01:44 STATS: vdl.0 cache, locks:0
+23.09 16:02:44 STATS: vdl.0 cache, locks:0
+23.09 16:03:44 STATS: vdl.0 cache, locks:0
+23.09 16:04:44 STATS: vdl.0 cache, locks:0
+23.09 16:05:44 STATS: vdl.0 cache, locks:0
+23.09 16:06:44 STATS: vdl.0 cache, locks:0
+23.09 16:07:44 STATS: vdl.0 cache, locks:0
+23.09 16:08:44 STATS: vdl.0 cache, locks:0
+23.09 16:09:44 STATS: vdl.0 cache, locks:0
+23.09 16:10:44 STATS: vdl.0 cache, locks:0
+23.09 16:11:44 STATS: vdl.0 cache, locks:0
+23.09 16:12:44 STATS: vdl.0 cache, locks:0
+23.09 16:13:44 STATS: vdl.0 cache, locks:0

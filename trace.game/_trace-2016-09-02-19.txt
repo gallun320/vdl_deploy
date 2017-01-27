@@ -1,0 +1,29 @@
+02.09 19:15:48 TRACE: battle.sendtask : cacheRequest exception { roomId => 38, _type => vdl/cache.battle.infoRoom }
+02.09 19:15:48 TRACE: battle.sendtask : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 195
+Called from modules/VDLBattleModule.hx line 112
+Called from modules/VDLBattleModule.hx line 45
+Called from modules/VDLBattleModule.hx line 31
+Called from snipe/slave/Server.hx line 1176
+<<<<<<< HEAD
+02.09 19:41:58 TRACE: user.logout : No such module: user
+02.09 19:41:58 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1186
+02.09 19:42:08 TRACE: battle.sendtask : cacheRequest exception { roomId => 5, _type => vdl/cache.battle.infoRoom }
+02.09 19:42:08 TRACE: battle.sendtask : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 195
+Called from modules/VDLBattleModule.hx line 112
+Called from modules/VDLBattleModule.hx line 45
+Called from modules/VDLBattleModule.hx line 31
+Called from snipe/slave/Server.hx line 1203
+02.09 19:50:47 TRACE: user.logout : No such module: user
+02.09 19:50:47 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1186
+02.09 19:53:57 TRACE: user.logout : No such module: user
+02.09 19:53:57 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1186
+02.09 19:59:46 TRACE: User not logon yet.
+=======
+>>>>>>> d8dd5f2cef87bf846119ec65a7adf149bc370c79

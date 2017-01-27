@@ -1,0 +1,10 @@
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0
+23.12 12:53:08 STATS: vdl.0 cache, locks:0

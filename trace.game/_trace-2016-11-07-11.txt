@@ -1,0 +1,78 @@
+07.11 11:47:41 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: /EnIWpMOOpGATwvnUp9tSQ==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:41 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+07.11 11:47:46 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: koog9lrjtvGtj2fIVlj+wQ==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:46 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+07.11 11:47:48 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: /S9QTJUw/Ag+/1Wxp5gi6A==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:48 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+07.11 11:47:50 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: pEdyljwxB5KTZUkr6kQ7OQ==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:50 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+07.11 11:47:52 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: giWrjdO+p8wceo4Vk6mZlw==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:52 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160
+07.11 11:47:54 TRACE: Invalid message 'GET / HTTP/1.1
+User-Agent: websocket-sharp/1.0
+Host: 188.225.38.160:3020
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: ReZcOhQGCFRdE/84tSoR/Q==
+Sec-WebSocket-Version: 13
+
+'
+07.11 11:47:54 TRACE: 
+Called from snipe/slave/MetaServer.hx line 494
+Called from snipe/slave/ThreadServerModified.hx line 135
+Called from snipe/slave/ThreadServerModified.hx line 160

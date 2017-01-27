@@ -1,0 +1,12 @@
+09.10 13:58:11 TRACE: User not logon yet.
+09.10 13:58:24 TRACE: Class cast error
+09.10 13:58:24 TRACE: 
+Called from snipe/lib/Params.hx line 76
+Called from snipe/slave/modules/UserModuleCore.hx line 344
+Called from snipe/slave/Server.hx line 890
+Called from snipe/slave/Server.hx line 1171
+09.10 13:58:24 TRACE: Could not login.
+09.10 13:58:24 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

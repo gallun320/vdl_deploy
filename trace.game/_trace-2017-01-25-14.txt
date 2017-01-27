@@ -1,0 +1,17 @@
+25.01 14:27:18 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+25.01 14:27:18 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+25.01 14:45:48 TRACE: user.addFriend : Invalid field access : push
+25.01 14:45:48 TRACE: user.addFriend : 
+Called from modules/VDLUserModule.hx line 127
+Called from modules/VDLUserModule.hx line 36
+Called from snipe/slave/Server.hx line 1225
+25.01 14:46:03 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+25.01 14:46:03 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009

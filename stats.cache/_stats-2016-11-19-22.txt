@@ -1,0 +1,8 @@
+19.11 22:08:56 STATS: cache [battle], get [1 calls, 0 cache hits, 0 cache misses, 0 same version, 0 not found]
+19.11 22:08:56 STATS: cache [battle], segments [1 calls, 0 hits, 0 misses]
+19.11 22:08:56 STATS: cache [battle], database [77 calls, 0 reads, 0 writes]
+19.11 22:08:56 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+19.11 22:11:44 STATS: cache [battle], get [3 calls, 1 cache hits, 1 cache misses, 0 same version, 0 not found]
+19.11 22:11:44 STATS: cache [battle], segments [6 calls, 4 hits, 1 misses]
+19.11 22:11:44 STATS: cache [battle], database [245 calls, 1 reads, 1 writes]
+19.11 22:11:44 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]

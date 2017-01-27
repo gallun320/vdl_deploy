@@ -1,0 +1,120 @@
+18.11 13:00:14 STATS: vdl.0 cache connection, 31419 calls, total 25.0936276912689 sec spent, avg 0.8 ms
+18.11 13:00:19 STATS: vdl.0 cache, locks:1
+18.11 13:01:14 STATS: vdl.0 cache connection, 31431 calls, total 25.1030304431915 sec spent, avg 0.8 ms
+18.11 13:01:19 STATS: vdl.0 cache, locks:1
+18.11 13:02:14 STATS: vdl.0 cache connection, 31443 calls, total 25.1124794483185 sec spent, avg 0.8 ms
+18.11 13:02:19 STATS: vdl.0 cache, locks:1
+18.11 13:03:14 STATS: vdl.0 cache connection, 31455 calls, total 25.1213986873627 sec spent, avg 0.8 ms
+18.11 13:03:19 STATS: vdl.0 cache, locks:1
+18.11 13:04:14 STATS: vdl.0 cache connection, 31467 calls, total 25.1303763389587 sec spent, avg 0.8 ms
+18.11 13:04:19 STATS: vdl.0 cache, locks:1
+18.11 13:05:14 STATS: vdl.0 cache connection, 31479 calls, total 25.1390459537506 sec spent, avg 0.8 ms
+18.11 13:05:19 STATS: vdl.0 cache, locks:1
+18.11 13:06:14 STATS: vdl.0 cache connection, 31491 calls, total 25.1484892368317 sec spent, avg 0.8 ms
+18.11 13:06:19 STATS: vdl.0 cache, locks:1
+18.11 13:07:14 STATS: vdl.0 cache connection, 31503 calls, total 25.1575679779053 sec spent, avg 0.8 ms
+18.11 13:07:19 STATS: vdl.0 cache, locks:1
+18.11 13:08:14 STATS: vdl.0 cache connection, 31515 calls, total 25.1672987937927 sec spent, avg 0.8 ms
+18.11 13:08:19 STATS: vdl.0 cache, locks:1
+18.11 13:09:14 STATS: vdl.0 cache connection, 31527 calls, total 25.1771647930145 sec spent, avg 0.8 ms
+18.11 13:09:19 STATS: vdl.0 cache, locks:1
+18.11 13:10:14 STATS: vdl.0 cache connection, 31539 calls, total 25.1849794387817 sec spent, avg 0.8 ms
+18.11 13:10:19 STATS: vdl.0 cache, locks:1
+18.11 13:11:14 STATS: vdl.0 cache connection, 31551 calls, total 25.1944634914398 sec spent, avg 0.8 ms
+18.11 13:11:19 STATS: vdl.0 cache, locks:1
+18.11 13:12:14 STATS: vdl.0 cache connection, 31563 calls, total 25.2041141986847 sec spent, avg 0.8 ms
+18.11 13:12:19 STATS: vdl.0 cache, locks:1
+18.11 13:13:14 STATS: vdl.0 cache connection, 31575 calls, total 25.2135450839996 sec spent, avg 0.8 ms
+18.11 13:13:19 STATS: vdl.0 cache, locks:1
+18.11 13:14:14 STATS: vdl.0 cache connection, 31587 calls, total 25.2228202819824 sec spent, avg 0.8 ms
+18.11 13:14:19 STATS: vdl.0 cache, locks:1
+18.11 13:15:14 STATS: vdl.0 cache connection, 31599 calls, total 25.2356104850769 sec spent, avg 0.8 ms
+18.11 13:15:19 STATS: vdl.0 cache, locks:1
+18.11 13:16:14 STATS: vdl.0 cache connection, 31611 calls, total 25.2451694011688 sec spent, avg 0.8 ms
+18.11 13:16:19 STATS: vdl.0 cache, locks:1
+18.11 13:17:14 STATS: vdl.0 cache connection, 31623 calls, total 25.2539947032928 sec spent, avg 0.8 ms
+18.11 13:17:19 STATS: vdl.0 cache, locks:1
+18.11 13:18:14 STATS: vdl.0 cache connection, 31635 calls, total 25.2620565891266 sec spent, avg 0.8 ms
+18.11 13:18:19 STATS: vdl.0 cache, locks:1
+18.11 13:19:14 STATS: vdl.0 cache connection, 31647 calls, total 25.2716908454895 sec spent, avg 0.8 ms
+18.11 13:19:19 STATS: vdl.0 cache, locks:1
+18.11 13:20:14 STATS: vdl.0 cache connection, 31659 calls, total 25.2810444831848 sec spent, avg 0.8 ms
+18.11 13:20:19 STATS: vdl.0 cache, locks:1
+18.11 13:21:14 STATS: vdl.0 cache connection, 31671 calls, total 25.2897427082062 sec spent, avg 0.8 ms
+18.11 13:21:19 STATS: vdl.0 cache, locks:1
+18.11 13:22:14 STATS: vdl.0 cache connection, 31683 calls, total 25.2985327243805 sec spent, avg 0.8 ms
+18.11 13:22:19 STATS: vdl.0 cache, locks:1
+18.11 13:23:14 STATS: vdl.0 cache connection, 31695 calls, total 25.3075885772705 sec spent, avg 0.8 ms
+18.11 13:23:19 STATS: vdl.0 cache, locks:1
+18.11 13:24:14 STATS: vdl.0 cache connection, 31707 calls, total 25.3167464733124 sec spent, avg 0.8 ms
+18.11 13:24:19 STATS: vdl.0 cache, locks:1
+18.11 13:25:14 STATS: vdl.0 cache connection, 31719 calls, total 25.3263630867004 sec spent, avg 0.8 ms
+18.11 13:25:19 STATS: vdl.0 cache, locks:1
+18.11 13:26:14 STATS: vdl.0 cache connection, 31731 calls, total 25.3354089260101 sec spent, avg 0.8 ms
+18.11 13:26:19 STATS: vdl.0 cache, locks:1
+18.11 13:27:14 STATS: vdl.0 cache connection, 31743 calls, total 25.3446655273438 sec spent, avg 0.8 ms
+18.11 13:27:19 STATS: vdl.0 cache, locks:1
+18.11 13:28:14 STATS: vdl.0 cache connection, 31755 calls, total 25.357577085495 sec spent, avg 0.8 ms
+18.11 13:28:19 STATS: vdl.0 cache, locks:1
+18.11 13:29:14 STATS: vdl.0 cache connection, 31767 calls, total 25.3662633895874 sec spent, avg 0.8 ms
+18.11 13:29:19 STATS: vdl.0 cache, locks:1
+18.11 13:30:14 STATS: vdl.0 cache connection, 31779 calls, total 25.3758080005646 sec spent, avg 0.8 ms
+18.11 13:30:19 STATS: vdl.0 cache, locks:1
+18.11 13:31:14 STATS: vdl.0 cache connection, 31791 calls, total 25.38543176651 sec spent, avg 0.8 ms
+18.11 13:31:19 STATS: vdl.0 cache, locks:1
+18.11 13:32:14 STATS: vdl.0 cache connection, 31803 calls, total 25.3936474323273 sec spent, avg 0.8 ms
+18.11 13:32:19 STATS: vdl.0 cache, locks:1
+18.11 13:33:14 STATS: vdl.0 cache connection, 31815 calls, total 25.4021012783051 sec spent, avg 0.8 ms
+18.11 13:33:19 STATS: vdl.0 cache, locks:1
+18.11 13:34:14 STATS: vdl.0 cache connection, 31827 calls, total 25.4117724895477 sec spent, avg 0.8 ms
+18.11 13:34:19 STATS: vdl.0 cache, locks:1
+18.11 13:35:14 STATS: vdl.0 cache connection, 31839 calls, total 25.4210147857666 sec spent, avg 0.8 ms
+18.11 13:35:19 STATS: vdl.0 cache, locks:1
+18.11 13:36:14 STATS: vdl.0 cache connection, 31851 calls, total 25.4296660423279 sec spent, avg 0.8 ms
+18.11 13:36:19 STATS: vdl.0 cache, locks:1
+18.11 13:37:14 STATS: vdl.0 cache connection, 31863 calls, total 25.4431176185608 sec spent, avg 0.8 ms
+18.11 13:37:19 STATS: vdl.0 cache, locks:1
+18.11 13:38:14 STATS: vdl.0 cache connection, 31875 calls, total 25.4525456428528 sec spent, avg 0.8 ms
+18.11 13:38:19 STATS: vdl.0 cache, locks:1
+18.11 13:39:14 STATS: vdl.0 cache connection, 31887 calls, total 25.4614608287811 sec spent, avg 0.8 ms
+18.11 13:39:19 STATS: vdl.0 cache, locks:1
+18.11 13:40:14 STATS: vdl.0 cache connection, 31899 calls, total 25.4745483398438 sec spent, avg 0.8 ms
+18.11 13:40:19 STATS: vdl.0 cache, locks:1
+18.11 13:41:14 STATS: vdl.0 cache connection, 31911 calls, total 25.4832894802094 sec spent, avg 0.8 ms
+18.11 13:41:19 STATS: vdl.0 cache, locks:1
+18.11 13:42:14 STATS: vdl.0 cache connection, 31923 calls, total 25.4918270111084 sec spent, avg 0.8 ms
+18.11 13:42:19 STATS: vdl.0 cache, locks:1
+18.11 13:43:14 STATS: vdl.0 cache connection, 31935 calls, total 25.5007352828979 sec spent, avg 0.8 ms
+18.11 13:43:19 STATS: vdl.0 cache, locks:1
+18.11 13:44:14 STATS: vdl.0 cache connection, 31947 calls, total 25.5097222328186 sec spent, avg 0.8 ms
+18.11 13:44:19 STATS: vdl.0 cache, locks:1
+18.11 13:45:14 STATS: vdl.0 cache connection, 31959 calls, total 25.5190591812134 sec spent, avg 0.8 ms
+18.11 13:45:19 STATS: vdl.0 cache, locks:1
+18.11 13:46:14 STATS: vdl.0 cache connection, 31971 calls, total 25.5275127887726 sec spent, avg 0.8 ms
+18.11 13:46:19 STATS: vdl.0 cache, locks:1
+18.11 13:47:14 STATS: vdl.0 cache connection, 31983 calls, total 25.5368540287018 sec spent, avg 0.8 ms
+18.11 13:47:19 STATS: vdl.0 cache, locks:1
+18.11 13:48:14 STATS: vdl.0 cache connection, 31995 calls, total 25.5455436706543 sec spent, avg 0.8 ms
+18.11 13:48:19 STATS: vdl.0 cache, locks:1
+18.11 13:49:14 STATS: vdl.0 cache connection, 32007 calls, total 25.5544085502625 sec spent, avg 0.8 ms
+18.11 13:49:19 STATS: vdl.0 cache, locks:1
+18.11 13:50:14 STATS: vdl.0 cache connection, 32019 calls, total 25.5633814334869 sec spent, avg 0.8 ms
+18.11 13:50:19 STATS: vdl.0 cache, locks:1
+18.11 13:51:14 STATS: vdl.0 cache connection, 32031 calls, total 25.5723550319672 sec spent, avg 0.8 ms
+18.11 13:51:19 STATS: vdl.0 cache, locks:1
+18.11 13:52:14 STATS: vdl.0 cache connection, 32043 calls, total 25.5805740356445 sec spent, avg 0.8 ms
+18.11 13:52:19 STATS: vdl.0 cache, locks:1
+18.11 13:53:14 STATS: vdl.0 cache connection, 32055 calls, total 25.5895953178406 sec spent, avg 0.8 ms
+18.11 13:53:19 STATS: vdl.0 cache, locks:1
+18.11 13:54:14 STATS: vdl.0 cache connection, 32067 calls, total 25.6000654697418 sec spent, avg 0.8 ms
+18.11 13:54:19 STATS: vdl.0 cache, locks:1
+18.11 13:55:14 STATS: vdl.0 cache connection, 32079 calls, total 25.6096832752228 sec spent, avg 0.8 ms
+18.11 13:55:19 STATS: vdl.0 cache, locks:1
+18.11 13:56:14 STATS: vdl.0 cache connection, 32091 calls, total 25.6172204017639 sec spent, avg 0.8 ms
+18.11 13:56:19 STATS: vdl.0 cache, locks:1
+18.11 13:57:14 STATS: vdl.0 cache connection, 32103 calls, total 25.6260178089142 sec spent, avg 0.8 ms
+18.11 13:57:19 STATS: vdl.0 cache, locks:1
+18.11 13:58:14 STATS: vdl.0 cache connection, 32115 calls, total 25.6350610256195 sec spent, avg 0.8 ms
+18.11 13:58:19 STATS: vdl.0 cache, locks:1
+18.11 13:59:14 STATS: vdl.0 cache connection, 32127 calls, total 25.6485941410065 sec spent, avg 0.8 ms
+18.11 13:59:19 STATS: vdl.0 cache, locks:1

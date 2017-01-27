@@ -1,0 +1,1961 @@
+18.01 19:00:00 TIMER: Check step...
+18.01 19:00:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:00 TIMER: Check step: 1ms
+18.01 19:00:05 TIMER: Check step...
+18.01 19:00:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:05 TIMER: Check step: 1ms
+18.01 19:00:10 PENDING: INSERT INTO LogUserOnlineCount (Date, Min, Max, Avg) VALUES (now(), 0, 1, 0)
+18.01 19:00:10 TIMER: Clans cache...
+18.01 19:00:10 TIMER: Clans cache: 0ms
+18.01 19:00:10 TIMER: Check step...
+18.01 19:00:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:10 TIMER: Check step: 0ms
+18.01 19:00:10 TIMER: Check round...
+18.01 19:00:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:00' OR rounddate = '2017-18-01 22:00' AND status <> 'finished'
+18.01 19:00:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.21001891' AND avaliable = true AND finished <> true
+18.01 19:00:10 TIMER: Check round: 0ms
+18.01 19:00:15 TIMER: Check step...
+18.01 19:00:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:15 TIMER: Check step: 1ms
+18.01 19:00:20 TIMER: Check step...
+18.01 19:00:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:20 TIMER: Check step: 1ms
+18.01 19:00:25 TIMER: Check step...
+18.01 19:00:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:25 TIMER: Check step: 1ms
+18.01 19:00:30 TIMER: Check step...
+18.01 19:00:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:30 TIMER: Check step: 0ms
+18.01 19:00:35 TIMER: Check step...
+18.01 19:00:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:35 TIMER: Check step: 1ms
+18.01 19:00:40 TIMER: Check step...
+18.01 19:00:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:40 TIMER: Check step: 2ms
+18.01 19:00:45 TIMER: Check step...
+18.01 19:00:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:45 TIMER: Check step: 1ms
+18.01 19:00:50 TIMER: Check step...
+18.01 19:00:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:50 TIMER: Check step: 1ms
+18.01 19:00:55 TIMER: Check step...
+18.01 19:00:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:00:55 TIMER: Check step: 1ms
+18.01 19:01:00 TIMER: Check step...
+18.01 19:01:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:00 TIMER: Check step: 1ms
+18.01 19:01:05 TIMER: Check step...
+18.01 19:01:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:05 TIMER: Check step: 0ms
+18.01 19:01:10 TIMER: Clans cache...
+18.01 19:01:10 TIMER: Clans cache: 0ms
+18.01 19:01:10 TIMER: Check step...
+18.01 19:01:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:10 TIMER: Check step: 0ms
+18.01 19:01:10 TIMER: Check round...
+18.01 19:01:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:01' OR rounddate = '2017-18-01 22:01' AND status <> 'finished'
+18.01 19:01:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.27004827' AND avaliable = true AND finished <> true
+18.01 19:01:10 TIMER: Check round: 1ms
+18.01 19:01:15 TIMER: Check step...
+18.01 19:01:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:15 TIMER: Check step: 0ms
+18.01 19:01:20 TIMER: Check step...
+18.01 19:01:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:20 TIMER: Check step: 1ms
+18.01 19:01:25 TIMER: Check step...
+18.01 19:01:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:25 TIMER: Check step: 1ms
+18.01 19:01:30 TIMER: Check step...
+18.01 19:01:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:30 TIMER: Check step: 1ms
+18.01 19:01:35 TIMER: Check step...
+18.01 19:01:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:35 TIMER: Check step: 1ms
+18.01 19:01:40 TIMER: Check step...
+18.01 19:01:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:40 TIMER: Check step: 1ms
+18.01 19:01:45 TIMER: Check step...
+18.01 19:01:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:45 TIMER: Check step: 1ms
+18.01 19:01:50 TIMER: Check step...
+18.01 19:01:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:50 TIMER: Check step: 1ms
+18.01 19:01:55 TIMER: Check step...
+18.01 19:01:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:01:55 TIMER: Check step: 1ms
+18.01 19:02:00 TIMER: Check step...
+18.01 19:02:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:00 TIMER: Check step: 1ms
+18.01 19:02:05 TIMER: Check step...
+18.01 19:02:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:05 TIMER: Check step: 1ms
+18.01 19:02:10 TIMER: Clans cache...
+18.01 19:02:10 TIMER: Clans cache: 0ms
+18.01 19:02:10 TIMER: Check step...
+18.01 19:02:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:10 TIMER: Check step: 0ms
+18.01 19:02:10 TIMER: Check round...
+18.01 19:02:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:02' OR rounddate = '2017-18-01 22:02' AND status <> 'finished'
+18.01 19:02:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.33008363' AND avaliable = true AND finished <> true
+18.01 19:02:10 TIMER: Check round: 1ms
+18.01 19:02:15 TIMER: Check step...
+18.01 19:02:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:15 TIMER: Check step: 1ms
+18.01 19:02:20 TIMER: Check step...
+18.01 19:02:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:20 TIMER: Check step: 1ms
+18.01 19:02:25 TIMER: Check step...
+18.01 19:02:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:25 TIMER: Check step: 1ms
+18.01 19:02:30 TIMER: Check step...
+18.01 19:02:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:30 TIMER: Check step: 1ms
+18.01 19:02:35 TIMER: Check step...
+18.01 19:02:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:35 TIMER: Check step: 1ms
+18.01 19:02:40 TIMER: Check step...
+18.01 19:02:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:40 TIMER: Check step: 1ms
+18.01 19:02:41 NET: vdl.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true, _type => core/server.query }
+18.01 19:02:41 DB: SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true
+18.01 19:02:41 QUEUE: vdl.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+18.01 19:02:41 TIME: core/server.query : 1.36 ms
+18.01 19:02:41 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+18.01 19:02:41 STATS: cache [battle], get [3 calls, 0 cache hits, 2 cache misses, 0 same version, 2 not found]
+18.01 19:02:41 STATS: cache [battle], segments [3 calls, 0 hits, 2 misses]
+18.01 19:02:41 STATS: cache [battle], database [752 calls, 2 reads, 0 writes]
+18.01 19:02:41 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:02:41 READDB: SELECT * FROM Battle WHERE ID = 0
+18.01 19:02:41 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+18.01 19:02:41 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 226
+Called from modules/VDLCache.hx line 219
+Called from modules/VDLCache.hx line 156
+Called from snipe/cache/CacheServer.hx line 487
+18.01 19:02:41 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+18.01 19:02:41 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:02:41 STATS: cache [user], get [3 calls, 0 cache hits, 3 cache misses, 0 same version, 0 not found]
+18.01 19:02:41 STATS: cache [user], segments [14 calls, 7 hits, 6 misses]
+18.01 19:02:41 STATS: cache [user], database [752 calls, 3 reads, 5 writes]
+18.01 19:02:41 STATS: cache [user], lock [3 calls, 3 attempts, 0 failures]
+18.01 19:02:41 STATS: cache manager [1], get [6 calls, total 0.01 sec spent, avg 1.75 ms]
+18.01 19:02:41 STATS: cache manager [1], update [8 calls, total 0 sec spent, avg 0.21 ms]
+18.01 19:02:41 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+18.01 19:02:41 TIME: core/cache.update : 0.76 ms
+18.01 19:02:41 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:02:41 STATS: cache [questdata], get [3 calls, 0 cache hits, 3 cache misses, 0 same version, 0 not found]
+18.01 19:02:41 STATS: cache [questdata], segments [11 calls, 4 hits, 6 misses]
+18.01 19:02:41 STATS: cache [questdata], database [752 calls, 3 reads, 2 writes]
+18.01 19:02:41 STATS: cache [questdata], lock [3 calls, 3 attempts, 0 failures]
+18.01 19:02:41 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:02:41 TIME: core/cache.update : 0.79 ms
+18.01 19:02:41 NET: vdl.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 162, _type => core/user.logoutPost }
+18.01 19:02:41 QUEUE: vdl.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+18.01 19:02:41 TIME: core/user.logoutPost : 0.29 ms
+18.01 19:02:41 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:02:41 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 162
+18.01 19:02:45 TIMER: Check step...
+18.01 19:02:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:45 TIMER: Check step: 1ms
+18.01 19:02:50 TIMER: Check step...
+18.01 19:02:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:50 TIMER: Check step: 1ms
+18.01 19:02:51 BLOCKREMOVE: user 162 removed
+18.01 19:02:51 BLOCKREMOVE: questdata 162 removed
+18.01 19:02:55 TIMER: Check step...
+18.01 19:02:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:02:55 TIMER: Check step: 1ms
+18.01 19:03:00 TIMER: Check step...
+18.01 19:03:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:00 TIMER: Check step: 0ms
+18.01 19:03:05 TIMER: Check step...
+18.01 19:03:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:05 TIMER: Check step: 1ms
+18.01 19:03:10 TIMER: Clans cache...
+18.01 19:03:10 TIMER: Clans cache: 0ms
+18.01 19:03:10 TIMER: Check step...
+18.01 19:03:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:10 TIMER: Check step: 1ms
+18.01 19:03:10 TIMER: Check round...
+18.01 19:03:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:03' OR rounddate = '2017-18-01 22:03' AND status <> 'finished'
+18.01 19:03:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.39013167' AND avaliable = true AND finished <> true
+18.01 19:03:10 TIMER: Check round: 1ms
+18.01 19:03:15 TIMER: Check step...
+18.01 19:03:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:15 TIMER: Check step: 1ms
+18.01 19:03:20 TIMER: Check step...
+18.01 19:03:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:20 TIMER: Check step: 1ms
+18.01 19:03:25 TIMER: Check step...
+18.01 19:03:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:25 TIMER: Check step: 1ms
+18.01 19:03:30 TIMER: Check step...
+18.01 19:03:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:30 TIMER: Check step: 1ms
+18.01 19:03:35 TIMER: Check step...
+18.01 19:03:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:35 TIMER: Check step: 1ms
+18.01 19:03:40 TIMER: Check step...
+18.01 19:03:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:40 TIMER: Check step: 1ms
+18.01 19:03:45 TIMER: Check step...
+18.01 19:03:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:45 TIMER: Check step: 1ms
+18.01 19:03:48 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162', _type => core/server.query }
+18.01 19:03:48 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162'
+18.01 19:03:48 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => uid162, networkid => , isbanned => false, id => 162 }}, errorCode => ok, _type => core/server.query }
+18.01 19:03:48 TIME: core/server.query : 1.55 ms
+18.01 19:03:48 NET: vdl.0 (thread) request core/user.isOnlineID { id => 162, _type => core/user.isOnlineID }
+18.01 19:03:48 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:03:48 TIME: core/user.isOnlineID : 0.12 ms
+18.01 19:03:48 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 162, _type => core/cache.get }
+18.01 19:03:48 STATS: cache [user], get [3 calls, 0 cache hits, 3 cache misses, 0 same version, 0 not found]
+18.01 19:03:48 STATS: cache [user], segments [16 calls, 9 hits, 6 misses]
+18.01 19:03:48 STATS: cache [user], database [819 calls, 3 reads, 6 writes]
+18.01 19:03:48 STATS: cache [user], lock [4 calls, 4 attempts, 0 failures]
+18.01 19:03:48 READDB: SELECT * FROM Users WHERE ID = 162
+18.01 19:03:48 STATS: cache manager [1], get [7 calls, total 0.01 sec spent, avg 1.82 ms]
+18.01 19:03:48 STATS: cache manager [1], update [9 calls, total 0 sec spent, avg 0.23 ms]
+18.01 19:03:48 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid162, deleted => false, email => , networktype =>   , password => uid162, isbanned => false, regdate => 2017-01-18 17:10:44.031496+03, language => en, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1484748644, lastLoginDate => 18, lastLoadDate => 119 }, effects => { list => [] } }}, version => 0, id => 162 } }
+18.01 19:03:48 TIME: core/cache.get : 2.76 ms
+18.01 19:03:48 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 162, _type => core/cache.get }
+18.01 19:03:48 STATS: cache [questdata], get [3 calls, 0 cache hits, 3 cache misses, 0 same version, 0 not found]
+18.01 19:03:48 STATS: cache [questdata], segments [13 calls, 6 hits, 6 misses]
+18.01 19:03:48 STATS: cache [questdata], database [819 calls, 3 reads, 3 writes]
+18.01 19:03:48 STATS: cache [questdata], lock [4 calls, 4 attempts, 0 failures]
+18.01 19:03:48 READDB: SELECT * FROM UserQuests WHERE ID = 162
+18.01 19:03:48 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 162 } }
+18.01 19:03:48 TIME: core/cache.get : 1.66 ms
+18.01 19:03:48 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 162, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:03:48 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:03:48 TIME: core/user.loginPost : 0.23 ms
+18.01 19:03:50 TIMER: Check step...
+18.01 19:03:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:50 TIMER: Check step: 0ms
+18.01 19:03:53 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162', _type => core/server.query }
+18.01 19:03:53 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162'
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => uid162, networkid => , isbanned => false, id => 162 }}, errorCode => ok, _type => core/server.query }
+18.01 19:03:53 TIME: core/server.query : 1.63 ms
+18.01 19:03:53 NET: vdl.0 (thread) request core/user.isOnlineID { id => 162, _type => core/user.isOnlineID }
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => true, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:03:53 TIME: core/user.isOnlineID : 0.13 ms
+18.01 19:03:53 NET: vdl.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true, _type => core/server.query }
+18.01 19:03:53 DB: SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+18.01 19:03:53 TIME: core/server.query : 1.03 ms
+18.01 19:03:53 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+18.01 19:03:53 STATS: cache [battle], get [4 calls, 0 cache hits, 3 cache misses, 0 same version, 3 not found]
+18.01 19:03:53 STATS: cache [battle], segments [4 calls, 0 hits, 3 misses]
+18.01 19:03:53 STATS: cache [battle], database [824 calls, 3 reads, 0 writes]
+18.01 19:03:53 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:03:53 READDB: SELECT * FROM Battle WHERE ID = 0
+18.01 19:03:53 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+18.01 19:03:53 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 226
+Called from modules/VDLCache.hx line 219
+Called from modules/VDLCache.hx line 156
+Called from snipe/cache/CacheServer.hx line 487
+18.01 19:03:53 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+18.01 19:03:53 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:03:53 TIME: core/cache.update : 0.41 ms
+18.01 19:03:53 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:03:53 TIME: core/cache.update : 0.16 ms
+18.01 19:03:53 NET: vdl.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 162, _type => core/user.logoutPost }
+18.01 19:03:53 QUEUE: vdl.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+18.01 19:03:53 TIME: core/user.logoutPost : 0.13 ms
+18.01 19:03:53 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:03:53 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 162
+18.01 19:03:55 TIMER: Check step...
+18.01 19:03:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:03:55 TIMER: Check step: 1ms
+18.01 19:04:00 TIMER: Check step...
+18.01 19:04:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:00 TIMER: Check step: 1ms
+18.01 19:04:03 BLOCKREMOVE: user 162 removed
+18.01 19:04:03 BLOCKREMOVE: questdata 162 removed
+18.01 19:04:05 TIMER: Check step...
+18.01 19:04:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:05 TIMER: Check step: 1ms
+18.01 19:04:09 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162', _type => core/server.query }
+18.01 19:04:09 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162'
+18.01 19:04:09 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => uid162, networkid => , isbanned => false, id => 162 }}, errorCode => ok, _type => core/server.query }
+18.01 19:04:09 TIME: core/server.query : 1.98 ms
+18.01 19:04:09 NET: vdl.0 (thread) request core/user.isOnlineID { id => 162, _type => core/user.isOnlineID }
+18.01 19:04:09 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:04:09 TIME: core/user.isOnlineID : 0.1 ms
+18.01 19:04:09 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 162, _type => core/cache.get }
+18.01 19:04:09 READDB: SELECT * FROM Users WHERE ID = 162
+18.01 19:04:09 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid162, deleted => false, email => , networktype =>   , password => uid162, isbanned => false, regdate => 2017-01-18 17:10:44.031496+03, language => en, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1484748644, lastLoginDate => 18, lastLoadDate => 119 }, effects => { list => [] } }}, version => 0, id => 162 } }
+18.01 19:04:09 TIME: core/cache.get : 1.49 ms
+18.01 19:04:09 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 162, _type => core/cache.get }
+18.01 19:04:09 READDB: SELECT * FROM UserQuests WHERE ID = 162
+18.01 19:04:09 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 162 } }
+18.01 19:04:09 TIME: core/cache.get : 0.46 ms
+18.01 19:04:09 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 162, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:04:09 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:04:09 TIME: core/user.loginPost : 0.04 ms
+18.01 19:04:10 TIMER: Clans cache...
+18.01 19:04:10 TIMER: Clans cache: 0ms
+18.01 19:04:10 TIMER: Check step...
+18.01 19:04:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:10 TIMER: Check step: 1ms
+18.01 19:04:10 TIMER: Check round...
+18.01 19:04:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:04' OR rounddate = '2017-18-01 22:04' AND status <> 'finished'
+18.01 19:04:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.45017036' AND avaliable = true AND finished <> true
+18.01 19:04:10 TIMER: Check round: 1ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 162, _type => core/cache.update }
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:04:14 TIME: core/cache.update : 0.26 ms
+18.01 19:04:14 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:04:14 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf', _type => core/server.query }
+18.01 19:04:14 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf'
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 76 }}, errorCode => ok, _type => core/server.query }
+18.01 19:04:14 TIME: core/server.query : 0.86 ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/user.isOnlineID { id => 76, _type => core/user.isOnlineID }
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:04:14 TIME: core/user.isOnlineID : 0.12 ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 76, _type => core/cache.get }
+18.01 19:04:14 READDB: SELECT * FROM Users WHERE ID = 76
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, email => , networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-10-19 18:05:38.946809+03, language => en, networkid => , params => { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1482845166, lastLoginDate => 362, money => 3, lastLoadDate => 1228 }, effects => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:04:14 TIME: core/cache.get : 0.73 ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 76, _type => core/cache.get }
+18.01 19:04:14 READDB: SELECT * FROM UserQuests WHERE ID = 76
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:04:14 TIME: core/cache.get : 0.3 ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 76, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:04:14 TIME: core/user.loginPost : 0.03 ms
+18.01 19:04:14 NET: vdl.0 (thread) request core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 76 AND Date = 'today'::timestamp, _type => core/server.query }
+18.01 19:04:14 DB: SELECT ID FROM TempUserLogins WHERE UserID = 76 AND Date = 'today'::timestamp
+18.01 19:04:14 QUEUE: vdl.0 (thread) response core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+18.01 19:04:14 TIME: core/server.query : 0.78 ms
+18.01 19:04:15 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (76, 'today'::timestamp)
+18.01 19:04:15 NET: vdl.0 (thread) request vdl/cache.user.getData { userId => 76, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:04:15 QUEUE: vdl.0 (thread) response vdl/cache.user.getData { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, errorCode => ok, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:04:15 TIME: vdl/cache.user.getData : 0.15 ms
+18.01 19:04:15 TIMER: Check step...
+18.01 19:04:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:15 TIMER: Check step: 0ms
+18.01 19:04:20 TIMER: Check step...
+18.01 19:04:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:20 TIMER: Check step: 1ms
+18.01 19:04:24 NET: vdl.0 (thread) request core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1484755454, lastLoginDate => 18, lastLoadDate => 119 } }}, type => user, unlock => false, id => 76, _type => core/cache.update }
+18.01 19:04:24 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:04:24 TIME: core/cache.update : 0.33 ms
+18.01 19:04:24 WRITEDB: UPDATE Users SET name = E'Aimer', deleted = E'false', email = E'', networktype = E'  ', password = E'kO2YJdf', isbanned = E'false', regdate = E'2016-10-19 18:05:38.946809+03', language = E'en', networkid = E'', params = E'{"info":{"city":"Kazan","year":"1993","email":"rabpoll1@ya.ru"},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484755454,"lastLoginDate":18,"money":3,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 76
+18.01 19:04:25 TIMER: Check step...
+18.01 19:04:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:25 TIMER: Check step: 1ms
+18.01 19:04:30 TIMER: Check step...
+18.01 19:04:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:30 TIMER: Check step: 1ms
+18.01 19:04:35 TIMER: Check step...
+18.01 19:04:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:35 TIMER: Check step: 1ms
+18.01 19:04:35 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 76 }, _type => vdl/cache.battle.findRandom }
+18.01 19:04:35 DB: SELECT nextval('Battle_id_seq') AS id
+18.01 19:04:35 READDB: SELECT ID FROM Battle WHERE ID = 33
+18.01 19:04:35 READDB: INSERT INTO Battle (ID) VALUES (33)
+18.01 19:04:35 READDB: SELECT * FROM Battle WHERE ID = 33
+18.01 19:04:35 DB: SELECT name FROM users WHERE id=76
+18.01 19:04:35 DB: SELECT name FROM users WHERE id=162
+18.01 19:04:35 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => Aimer, enemy.id => 162, enemy.name => uid162, id => 76, enemy.num => 2, battleId => 33, player => 1 }, _isNotify => true, id => 76, _type => battle.enemyEvent }
+18.01 19:04:35 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => uid162, enemy.id => 76, enemy.name => Aimer, id => 162, enemy.num => 1, battleId => 33, player => 2 }, _isNotify => true, id => 162, _type => battle.enemyEvent }
+18.01 19:04:35 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:04:35 TIME: vdl/cache.battle.findRandom : 13.86 ms
+18.01 19:04:40 TIMER: Check step...
+18.01 19:04:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:40 TIMER: Check step: 1ms
+18.01 19:04:40 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'false', endtime = E'1488355.47572298', firstid = E'76', steptime = E'1484785.47572489', params = E'{}', avaliable = E'false' WHERE ID = 33
+18.01 19:04:45 TIMER: Check step...
+18.01 19:04:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:45 TIMER: Check step: 1ms
+18.01 19:04:50 TIMER: Check step...
+18.01 19:04:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:50 TIMER: Check step: 1ms
+18.01 19:04:50 BLOCKREMOVE: battle 33 removed
+18.01 19:04:53 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 162 }, _type => vdl/cache.battle.findRandom }
+18.01 19:04:53 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:04:53 TIME: vdl/cache.battle.findRandom : 0.66 ms
+18.01 19:04:55 TIMER: Check step...
+18.01 19:04:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:04:55 TIMER: Check step: 1ms
+18.01 19:05:00 TIMER: Check step...
+18.01 19:05:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:00 TIMER: Check step: 0ms
+18.01 19:05:05 TIMER: Check step...
+18.01 19:05:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:05 TIMER: Check step: 1ms
+18.01 19:05:10 TIMER: Clans cache...
+18.01 19:05:10 TIMER: Clans cache: 0ms
+18.01 19:05:10 TIMER: Check step...
+18.01 19:05:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:10 TIMER: Check step: 1ms
+18.01 19:05:10 TIMER: Check round...
+18.01 19:05:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:05' OR rounddate = '2017-18-01 22:05' AND status <> 'finished'
+18.01 19:05:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.51020842' AND avaliable = true AND finished <> true
+18.01 19:05:10 TIMER: Check round: 2ms
+18.01 19:05:15 TIMER: Check step...
+18.01 19:05:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:15 TIMER: Check step: 1ms
+18.01 19:05:20 TIMER: Check step...
+18.01 19:05:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:20 TIMER: Check step: 1ms
+18.01 19:05:24 NET: vdl.0 (thread) request vdl/cache.battle.closeFind { userId => 162, _type => vdl/cache.battle.closeFind }
+18.01 19:05:24 QUEUE: vdl.0 (thread) response vdl/cache.battle.closeFind { errorCode => ok, _type => vdl/cache.battle.closeFind }
+18.01 19:05:24 TIME: vdl/cache.battle.closeFind : 0.08 ms
+18.01 19:05:25 TIMER: Check step...
+18.01 19:05:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:25 TIMER: Check step: 0ms
+18.01 19:05:30 TIMER: Check step...
+18.01 19:05:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:30 TIMER: Check step: 1ms
+18.01 19:05:35 TIMER: Check step...
+18.01 19:05:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:35 TIMER: Check step: 0ms
+18.01 19:05:36 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 33, _type => vdl/cache.battle.infoRoom }
+18.01 19:05:36 STATS: cache [battle], get [7 calls, 1 cache hits, 5 cache misses, 0 same version, 4 not found]
+18.01 19:05:36 STATS: cache [battle], segments [10 calls, 4 hits, 5 misses]
+18.01 19:05:36 STATS: cache [battle], database [927 calls, 5 reads, 1 writes]
+18.01 19:05:36 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:05:36 READDB: SELECT * FROM Battle WHERE ID = 33
+18.01 19:05:36 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:05:36 TIME: vdl/cache.battle.infoRoom : 0.94 ms
+18.01 19:05:36 NET: vdl.0 (thread) request vdl/cache.battle.finishRoom { roomId => 33, _type => vdl/cache.battle.finishRoom }
+18.01 19:05:36 QUEUE: vdl.0 (thread) response vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+18.01 19:05:36 TIME: vdl/cache.battle.finishRoom : 0.07 ms
+18.01 19:05:40 TIMER: Check step...
+18.01 19:05:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:40 TIMER: Check step: 1ms
+18.01 19:05:41 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'true', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 33
+18.01 19:05:45 TIMER: Check step...
+18.01 19:05:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:45 TIMER: Check step: 1ms
+18.01 19:05:50 TIMER: Check step...
+18.01 19:05:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:50 TIMER: Check step: 0ms
+18.01 19:05:51 BLOCKREMOVE: battle 33 removed
+18.01 19:05:55 TIMER: Check step...
+18.01 19:05:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:05:55 TIMER: Check step: 1ms
+18.01 19:06:00 TIMER: Check step...
+18.01 19:06:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:00 TIMER: Check step: 1ms
+18.01 19:06:05 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 162 }, _type => vdl/cache.battle.findRandom }
+18.01 19:06:05 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:06:05 TIME: vdl/cache.battle.findRandom : 0.12 ms
+18.01 19:06:05 TIMER: Check step...
+18.01 19:06:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:05 TIMER: Check step: 0ms
+18.01 19:06:08 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 76 }, _type => vdl/cache.battle.findRandom }
+18.01 19:06:08 DB: SELECT nextval('Battle_id_seq') AS id
+18.01 19:06:08 READDB: SELECT ID FROM Battle WHERE ID = 34
+18.01 19:06:08 READDB: INSERT INTO Battle (ID) VALUES (34)
+18.01 19:06:08 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:06:08 DB: SELECT name FROM users WHERE id=76
+18.01 19:06:08 DB: SELECT name FROM users WHERE id=162
+18.01 19:06:08 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => Aimer, enemy.id => 162, enemy.name => uid162, id => 76, enemy.num => 2, battleId => 34, player => 1 }, _isNotify => true, id => 76, _type => battle.enemyEvent }
+18.01 19:06:08 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => uid162, enemy.id => 76, enemy.name => Aimer, id => 162, enemy.num => 1, battleId => 34, player => 2 }, _isNotify => true, id => 162, _type => battle.enemyEvent }
+18.01 19:06:08 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:06:08 TIME: vdl/cache.battle.findRandom : 9.77 ms
+18.01 19:06:10 TIMER: Clans cache...
+18.01 19:06:10 TIMER: Clans cache: 0ms
+18.01 19:06:10 TIMER: Check step...
+18.01 19:06:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:10 TIMER: Check step: 0ms
+18.01 19:06:10 TIMER: Check round...
+18.01 19:06:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:06' OR rounddate = '2017-18-01 22:06' AND status <> 'finished'
+18.01 19:06:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.57023992' AND avaliable = true AND finished <> true
+18.01 19:06:10 TIMER: Check round: 1ms
+18.01 19:06:13 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'false', endtime = E'1488355.56864402', firstid = E'76', steptime = E'1484785.56864593', params = E'{}', avaliable = E'false' WHERE ID = 34
+18.01 19:06:15 TIMER: Check step...
+18.01 19:06:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:15 TIMER: Check step: 1ms
+18.01 19:06:19 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:06:19 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:06:19 TIME: vdl/cache.battle.infoRoom : 0.15 ms
+18.01 19:06:20 TIMER: Check step...
+18.01 19:06:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:20 TIMER: Check step: 0ms
+18.01 19:06:25 TIMER: Check step...
+18.01 19:06:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:25 TIMER: Check step: 1ms
+18.01 19:06:29 BLOCKREMOVE: battle 34 removed
+18.01 19:06:30 TIMER: Check step...
+18.01 19:06:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:30 TIMER: Check step: 1ms
+18.01 19:06:35 TIMER: Check step...
+18.01 19:06:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:35 TIMER: Check step: 1ms
+18.01 19:06:40 TIMER: Check step...
+18.01 19:06:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:40 TIMER: Check step: 1ms
+18.01 19:06:45 TIMER: Check step...
+18.01 19:06:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:45 TIMER: Check step: 1ms
+18.01 19:06:50 TIMER: Check step...
+18.01 19:06:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:50 TIMER: Check step: 0ms
+18.01 19:06:55 TIMER: Check step...
+18.01 19:06:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:06:55 TIMER: Check step: 1ms
+18.01 19:07:00 TIMER: Check step...
+18.01 19:07:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:00 TIMER: Check step: 1ms
+18.01 19:07:05 TIMER: Check step...
+18.01 19:07:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:05 TIMER: Check step: 1ms
+18.01 19:07:10 TIMER: Clans cache...
+18.01 19:07:10 TIMER: Clans cache: 0ms
+18.01 19:07:10 TIMER: Check step...
+18.01 19:07:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:10 TIMER: Check step: 1ms
+18.01 19:07:10 TIMER: Check round...
+18.01 19:07:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:07' OR rounddate = '2017-18-01 22:07' AND status <> 'finished'
+18.01 19:07:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.63027921' AND avaliable = true AND finished <> true
+18.01 19:07:10 TIMER: Check round: 1ms
+18.01 19:07:15 TIMER: Check step...
+18.01 19:07:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:15 TIMER: Check step: 0ms
+18.01 19:07:20 TIMER: Check step...
+18.01 19:07:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:20 TIMER: Check step: 1ms
+18.01 19:07:25 TIMER: Check step...
+18.01 19:07:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:25 TIMER: Check step: 1ms
+18.01 19:07:30 TIMER: Check step...
+18.01 19:07:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:30 TIMER: Check step: 1ms
+18.01 19:07:35 TIMER: Check step...
+18.01 19:07:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:35 TIMER: Check step: 1ms
+18.01 19:07:40 TIMER: Check step...
+18.01 19:07:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:40 TIMER: Check step: 1ms
+18.01 19:07:45 TIMER: Check step...
+18.01 19:07:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:45 TIMER: Check step: 1ms
+18.01 19:07:49 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:07:49 STATS: cache [battle], get [12 calls, 4 cache hits, 7 cache misses, 0 same version, 4 not found]
+18.01 19:07:49 STATS: cache [battle], segments [19 calls, 11 hits, 7 misses]
+18.01 19:07:49 STATS: cache [battle], database [1060 calls, 7 reads, 3 writes]
+18.01 19:07:49 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:07:49 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:07:49 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:07:49 TIME: vdl/cache.battle.infoRoom : 1.84 ms
+18.01 19:07:50 TIMER: Check step...
+18.01 19:07:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:50 TIMER: Check step: 0ms
+18.01 19:07:55 TIMER: Check step...
+18.01 19:07:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:07:55 TIMER: Check step: 0ms
+18.01 19:07:59 BLOCKREMOVE: battle 34 removed
+18.01 19:08:00 TIMER: Check step...
+18.01 19:08:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:00 TIMER: Check step: 1ms
+18.01 19:08:00 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:08:00 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:08:00 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:08:00 TIME: vdl/cache.battle.infoRoom : 1.89 ms
+18.01 19:08:05 TIMER: Check step...
+18.01 19:08:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:05 TIMER: Check step: 1ms
+18.01 19:08:10 TIMER: Clans cache...
+18.01 19:08:10 TIMER: Clans cache: 0ms
+18.01 19:08:10 TIMER: Check step...
+18.01 19:08:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:10 TIMER: Check step: 1ms
+18.01 19:08:10 TIMER: Check round...
+18.01 19:08:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:08' OR rounddate = '2017-18-01 22:08' AND status <> 'finished'
+18.01 19:08:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.69031535' AND avaliable = true AND finished <> true
+18.01 19:08:10 TIMER: Check round: 1ms
+18.01 19:08:10 BLOCKREMOVE: battle 34 removed
+18.01 19:08:15 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:08:15 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:08:15 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:08:15 TIME: vdl/cache.battle.infoRoom : 1.55 ms
+18.01 19:08:15 NET: vdl.0 (thread) request vdl/cache.battle.makeTurn { userId => 76, roomId => 34, _type => vdl/cache.battle.makeTurn }
+18.01 19:08:15 QUEUE: vdl.0 (thread) response vdl/cache.battle.makeTurn { errorCode => ok, _type => vdl/cache.battle.makeTurn, turnId => 76 }
+18.01 19:08:15 TIME: vdl/cache.battle.makeTurn : 0.2 ms
+18.01 19:08:15 TIMER: Check step...
+18.01 19:08:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:15 TIMER: Check step: 0ms
+18.01 19:08:20 TIMER: Check step...
+18.01 19:08:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:20 TIMER: Check step: 1ms
+18.01 19:08:20 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'162', finished = E'false', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 34
+18.01 19:08:25 TIMER: Check step...
+18.01 19:08:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:25 TIMER: Check step: 1ms
+18.01 19:08:30 TIMER: Check step...
+18.01 19:08:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:30 TIMER: Check step: 0ms
+18.01 19:08:30 BLOCKREMOVE: battle 34 removed
+18.01 19:08:35 TIMER: Check step...
+18.01 19:08:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:35 TIMER: Check step: 1ms
+18.01 19:08:40 TIMER: Check step...
+18.01 19:08:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:40 TIMER: Check step: 0ms
+18.01 19:08:45 TIMER: Check step...
+18.01 19:08:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:45 TIMER: Check step: 0ms
+18.01 19:08:50 TIMER: Check step...
+18.01 19:08:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:50 TIMER: Check step: 0ms
+18.01 19:08:55 TIMER: Check step...
+18.01 19:08:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:08:55 TIMER: Check step: 0ms
+18.01 19:09:00 TIMER: Check step...
+18.01 19:09:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:00 TIMER: Check step: 1ms
+18.01 19:09:05 TIMER: Check step...
+18.01 19:09:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:05 TIMER: Check step: 1ms
+18.01 19:09:10 TIMER: Clans cache...
+18.01 19:09:10 TIMER: Clans cache: 0ms
+18.01 19:09:10 TIMER: Check step...
+18.01 19:09:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:10 TIMER: Check step: 0ms
+18.01 19:09:10 TIMER: Check round...
+18.01 19:09:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:09' OR rounddate = '2017-18-01 22:09' AND status <> 'finished'
+18.01 19:09:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.75034321' AND avaliable = true AND finished <> true
+18.01 19:09:10 TIMER: Check round: 1ms
+18.01 19:09:15 TIMER: Check step...
+18.01 19:09:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:15 TIMER: Check step: 2ms
+18.01 19:09:20 TIMER: Check step...
+18.01 19:09:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:20 TIMER: Check step: 1ms
+18.01 19:09:25 TIMER: Check step...
+18.01 19:09:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:25 TIMER: Check step: 1ms
+18.01 19:09:30 TIMER: Check step...
+18.01 19:09:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:30 TIMER: Check step: 1ms
+18.01 19:09:35 TIMER: Check step...
+18.01 19:09:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:35 TIMER: Check step: 1ms
+18.01 19:09:40 TIMER: Check step...
+18.01 19:09:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:40 TIMER: Check step: 1ms
+18.01 19:09:45 TIMER: Check step...
+18.01 19:09:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:45 TIMER: Check step: 1ms
+18.01 19:09:50 TIMER: Check step...
+18.01 19:09:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:50 TIMER: Check step: 1ms
+18.01 19:09:55 TIMER: Check step...
+18.01 19:09:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:09:55 TIMER: Check step: 1ms
+18.01 19:10:00 TIMER: Check step...
+18.01 19:10:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:00 TIMER: Check step: 1ms
+18.01 19:10:05 TIMER: Check step...
+18.01 19:10:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:05 TIMER: Check step: 1ms
+18.01 19:10:10 TIMER: Clans cache...
+18.01 19:10:10 TIMER: Clans cache: 0ms
+18.01 19:10:10 TIMER: Check step...
+18.01 19:10:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:10 TIMER: Check step: 0ms
+18.01 19:10:10 TIMER: Check round...
+18.01 19:10:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:10' OR rounddate = '2017-18-01 22:10' AND status <> 'finished'
+18.01 19:10:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.81037776' AND avaliable = true AND finished <> true
+18.01 19:10:10 TIMER: Check round: 1ms
+18.01 19:10:15 TIMER: Check step...
+18.01 19:10:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:15 TIMER: Check step: 1ms
+18.01 19:10:18 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:10:18 STATS: cache [battle], get [16 calls, 5 cache hits, 10 cache misses, 0 same version, 4 not found]
+18.01 19:10:18 STATS: cache [battle], segments [24 calls, 13 hits, 10 misses]
+18.01 19:10:18 STATS: cache [battle], database [1209 calls, 10 reads, 4 writes]
+18.01 19:10:18 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:10:18 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:10:18 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 162 }
+18.01 19:10:18 TIME: vdl/cache.battle.infoRoom : 1.36 ms
+18.01 19:10:18 NET: vdl.0 (thread) request vdl/cache.battle.makeTurn { userId => 162, roomId => 34, _type => vdl/cache.battle.makeTurn }
+18.01 19:10:18 QUEUE: vdl.0 (thread) response vdl/cache.battle.makeTurn { errorCode => ok, _type => vdl/cache.battle.makeTurn, turnId => 76 }
+18.01 19:10:18 TIME: vdl/cache.battle.makeTurn : 0.17 ms
+18.01 19:10:20 TIMER: Check step...
+18.01 19:10:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:20 TIMER: Check step: 1ms
+18.01 19:10:24 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'false', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 34
+18.01 19:10:25 TIMER: Check step...
+18.01 19:10:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:25 TIMER: Check step: 1ms
+18.01 19:10:30 TIMER: Check step...
+18.01 19:10:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:30 TIMER: Check step: 1ms
+18.01 19:10:34 BLOCKREMOVE: battle 34 removed
+18.01 19:10:35 TIMER: Check step...
+18.01 19:10:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:35 TIMER: Check step: 1ms
+18.01 19:10:40 TIMER: Check step...
+18.01 19:10:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:40 TIMER: Check step: 1ms
+18.01 19:10:45 TIMER: Check step...
+18.01 19:10:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:45 TIMER: Check step: 1ms
+18.01 19:10:50 TIMER: Check step...
+18.01 19:10:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:50 TIMER: Check step: 0ms
+18.01 19:10:55 TIMER: Check step...
+18.01 19:10:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:10:55 TIMER: Check step: 1ms
+18.01 19:11:00 TIMER: Check step...
+18.01 19:11:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:00 TIMER: Check step: 1ms
+18.01 19:11:05 TIMER: Check step...
+18.01 19:11:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:05 TIMER: Check step: 1ms
+18.01 19:11:10 TIMER: Clans cache...
+18.01 19:11:10 TIMER: Clans cache: 0ms
+18.01 19:11:10 TIMER: Check step...
+18.01 19:11:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:10 TIMER: Check step: 1ms
+18.01 19:11:10 TIMER: Check round...
+18.01 19:11:10 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:11' OR rounddate = '2017-18-01 22:11' AND status <> 'finished'
+18.01 19:11:10 DB: SELECT * FROM battle WHERE endtime >= '1484755.87040841' AND avaliable = true AND finished <> true
+18.01 19:11:10 TIMER: Check round: 2ms
+18.01 19:11:19 TIMER: Starting timer...
+18.01 19:11:19 TIMER: Timer running...
+18.01 19:11:19 DB: SELECT * FROM GameVars
+18.01 19:11:19 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd + '1day'::interval) AS TimeEnd FROM CalendarEvents ORDER BY ID
+18.01 19:11:19 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+18.01 19:11:19 DB: SELECT * FROM Shops WHERE ID = 1
+18.01 19:11:19 TEMP: load ./tmp/quest_daily_ids
+18.01 19:11:19 DB: SELECT ID FROM QuestChains WHERE IsEnabled = 't' AND Params LIKE '%"isDaily":true%' ORDER BY ID
+18.01 19:11:19 TEMP: save ./tmp/quest_daily_ids
+18.01 19:11:19 NET: ??? request core/server.login { host => 172.16.20.171, name => vdl.0, port => 2030, type => game, _type => core/server.login, externalHost => 172.16.20.171, externalPort => 2030 }
+18.01 19:11:19 QUEUE: vdl.0 (thread) response server.login
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM LocalizationStrings
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 5.06 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM GameVars
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.48 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.54 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.36 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.43 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.85 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/quest.getDaily { _type => core/quest.getDaily }
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/quest.getDaily
+18.01 19:11:19 TIME: core/quest.getDaily : 0.02 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM UserAttributeTypes
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.3 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM UserVariableTypes
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.45 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 1.13 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM ItemGroups
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.41 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM Bundles ORDER BY ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.55 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM BundleItems ORDER BY ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.47 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/shop.getList { _type => core/shop.getList }
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/shop.getList
+18.01 19:11:19 TIME: core/shop.getList : 0.02 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM EffectAttributeTypes
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.5 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM Effects
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.44 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.61 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+18.01 19:11:19 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.77 ms
+18.01 19:11:19 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+18.01 19:11:19 DB: SELECT * FROM Badges
+18.01 19:11:19 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:19 TIME: core/server.query : 0.31 ms
+18.01 19:11:24 TIMER: Check step...
+18.01 19:11:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:24 TIMER: Check step: 3ms
+18.01 19:11:29 TIMER: Check step...
+18.01 19:11:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:29 TIMER: Check step: 3ms
+18.01 19:11:34 TIMER: Check step...
+18.01 19:11:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:34 TIMER: Check step: 3ms
+18.01 19:11:34 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162', _type => core/server.query }
+18.01 19:11:34 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162'
+18.01 19:11:34 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:11:34 TIME: core/server.query : 3.38 ms
+18.01 19:11:34 NET: vdl.0 (thread) request core/user.isOnlineID { id => 162, _type => core/user.isOnlineID }
+18.01 19:11:34 QUEUE: vdl.0 (thread) response core/user.isOnlineID
+18.01 19:11:34 TIME: core/user.isOnlineID : 0.09 ms
+18.01 19:11:34 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 162, _type => core/cache.get }
+18.01 19:11:34 READDB: SELECT * FROM Users WHERE ID = 162
+18.01 19:11:34 QUEUE: vdl.0 (thread) response core/cache.get
+18.01 19:11:34 TIME: core/cache.get : 3.64 ms
+18.01 19:11:34 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 162, _type => core/cache.get }
+18.01 19:11:34 READDB: SELECT * FROM UserQuests WHERE ID = 162
+18.01 19:11:34 QUEUE: vdl.0 (thread) response core/cache.get
+18.01 19:11:34 TIME: core/cache.get : 1.36 ms
+18.01 19:11:34 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 162, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:11:34 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:11:34 TIME: core/user.loginPost : 0.11 ms
+18.01 19:11:39 TIMER: Check step...
+18.01 19:11:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:39 TIMER: Check step: 0ms
+18.01 19:11:39 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 162, _type => core/cache.update }
+18.01 19:11:39 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:11:39 TIME: core/cache.update : 0.09 ms
+18.01 19:11:39 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf', _type => core/server.query }
+18.01 19:11:39 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf'
+18.01 19:11:40 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 76 }}, errorCode => ok, _type => core/server.query }
+18.01 19:11:40 TIME: core/server.query : 2.04 ms
+18.01 19:11:40 NET: vdl.0 (thread) request core/user.isOnlineID { id => 76, _type => core/user.isOnlineID }
+18.01 19:11:40 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:11:40 TIME: core/user.isOnlineID : 0.05 ms
+18.01 19:11:40 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 76, _type => core/cache.get }
+18.01 19:11:40 READDB: SELECT * FROM Users WHERE ID = 76
+18.01 19:11:40 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, email => , networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-10-19 18:05:38.946809+03, language => en, networkid => , params => { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1484755454, lastLoginDate => 18, money => 3, lastLoadDate => 119 }, effects => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:11:40 TIME: core/cache.get : 0.69 ms
+18.01 19:11:40 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 76, _type => core/cache.get }
+18.01 19:11:40 READDB: SELECT * FROM UserQuests WHERE ID = 76
+18.01 19:11:40 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:11:40 TIME: core/cache.get : 0.51 ms
+18.01 19:11:40 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 76, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:11:40 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:11:40 TIME: core/user.loginPost : 0.06 ms
+18.01 19:11:40 NET: vdl.0 (thread) request vdl/cache.user.getData { userId => 76, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:11:40 QUEUE: vdl.0 (thread) response vdl/cache.user.getData { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, errorCode => ok, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:11:40 TIME: vdl/cache.user.getData : 0.12 ms
+18.01 19:11:40 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:11:44 TIMER: Check step...
+18.01 19:11:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:44 TIMER: Check step: 1ms
+18.01 19:11:49 TIMER: Check step...
+18.01 19:11:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:49 TIMER: Check step: 2ms
+18.01 19:11:49 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 76, _type => core/cache.update }
+18.01 19:11:49 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:11:49 TIME: core/cache.update : 0.08 ms
+18.01 19:11:50 WRITEDB: UPDATE Users SET name = E'Aimer', deleted = E'false', email = E'', networktype = E'  ', password = E'kO2YJdf', isbanned = E'false', regdate = E'2016-10-19 18:05:38.946809+03', language = E'en', networkid = E'', params = E'{"info":{"city":"Kazan","year":"1993","email":"rabpoll1@ya.ru"},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484755454,"lastLoginDate":18,"money":3,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 76
+18.01 19:11:54 TIMER: Check step...
+18.01 19:11:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:54 TIMER: Check step: 0ms
+18.01 19:11:59 TIMER: Check step...
+18.01 19:11:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:11:59 TIMER: Check step: 0ms
+18.01 19:12:04 TIMER: Check step...
+18.01 19:12:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:04 TIMER: Check step: 0ms
+18.01 19:12:09 TIMER: Check step...
+18.01 19:12:09 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:09 TIMER: Check step: 1ms
+18.01 19:12:14 TIMER: Check step...
+18.01 19:12:14 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:14 TIMER: Check step: 1ms
+18.01 19:12:19 TIMER: Clans cache...
+18.01 19:12:19 TIMER: Clans cache: 0ms
+18.01 19:12:19 TIMER: Check step...
+18.01 19:12:19 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:19 TIMER: Check step: 0ms
+18.01 19:12:19 TIMER: Check round...
+18.01 19:12:19 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:12' OR rounddate = '2017-18-01 22:12' AND status <> 'finished'
+18.01 19:12:19 DB: SELECT * FROM battle WHERE endtime >= '1484755.9398482' AND avaliable = false AND finished <> true
+18.01 19:12:19 TRACE: Check round timer exception:
+18.01 19:12:19 TRACE: Invalid field access : player1
+
+18.01 19:12:19 TIMER: Check round: 1ms
+18.01 19:12:22 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:12:22 STATS: cache [battle], get [1 calls, 0 cache hits, 0 cache misses, 0 same version, 0 not found]
+18.01 19:12:22 STATS: cache [battle], segments [1 calls, 0 hits, 0 misses]
+18.01 19:12:22 STATS: cache [battle], database [63 calls, 0 reads, 0 writes]
+18.01 19:12:22 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:12:22 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:12:22 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:12:22 TIME: vdl/cache.battle.infoRoom : 2 ms
+18.01 19:12:22 NET: vdl.0 (thread) request vdl/cache.battle.finishRoom { roomId => 34, _type => vdl/cache.battle.finishRoom }
+18.01 19:12:22 QUEUE: vdl.0 (thread) response vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+18.01 19:12:22 TIME: vdl/cache.battle.finishRoom : 0.23 ms
+18.01 19:12:24 TIMER: Check step...
+18.01 19:12:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:24 TIMER: Check step: 1ms
+18.01 19:12:27 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'true', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 34
+18.01 19:12:28 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 76 }, _type => vdl/cache.battle.findRandom }
+18.01 19:12:28 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:12:28 TIME: vdl/cache.battle.findRandom : 0.1 ms
+18.01 19:12:29 TIMER: Check step...
+18.01 19:12:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:29 TIMER: Check step: 0ms
+18.01 19:12:34 TIMER: Check step...
+18.01 19:12:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:34 TIMER: Check step: 0ms
+18.01 19:12:37 BLOCKREMOVE: battle 34 removed
+18.01 19:12:39 TIMER: Check step...
+18.01 19:12:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:39 TIMER: Check step: 1ms
+18.01 19:12:44 TIMER: Check step...
+18.01 19:12:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:44 TIMER: Check step: 1ms
+18.01 19:12:49 TIMER: Check step...
+18.01 19:12:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:49 TIMER: Check step: 1ms
+18.01 19:12:54 TIMER: Check step...
+18.01 19:12:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:54 TIMER: Check step: 1ms
+18.01 19:12:59 TIMER: Check step...
+18.01 19:12:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:12:59 TIMER: Check step: 1ms
+18.01 19:13:04 TIMER: Check step...
+18.01 19:13:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:04 TIMER: Check step: 1ms
+18.01 19:13:09 TIMER: Check step...
+18.01 19:13:09 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:09 TIMER: Check step: 1ms
+18.01 19:13:14 TIMER: Check step...
+18.01 19:13:14 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:14 TIMER: Check step: 1ms
+18.01 19:13:19 TIMER: Clans cache...
+18.01 19:13:19 TIMER: Clans cache: 0ms
+18.01 19:13:19 TIMER: Check step...
+18.01 19:13:19 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:19 TIMER: Check step: 0ms
+18.01 19:13:19 TIMER: Check round...
+18.01 19:13:19 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:13' OR rounddate = '2017-18-01 22:13' AND status <> 'finished'
+18.01 19:13:19 DB: SELECT * FROM battle WHERE endtime >= '1484755.9998817' AND avaliable = false AND finished <> true
+18.01 19:13:19 TIMER: Check round: 1ms
+18.01 19:13:24 TIMER: Check step...
+18.01 19:13:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:24 TIMER: Check step: 0ms
+18.01 19:13:25 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 162 }, _type => vdl/cache.battle.findRandom }
+18.01 19:13:25 DB: SELECT nextval('Battle_id_seq') AS id
+18.01 19:13:25 READDB: SELECT ID FROM Battle WHERE ID = 35
+18.01 19:13:25 READDB: INSERT INTO Battle (ID) VALUES (35)
+18.01 19:13:25 STATS: cache [battle], get [3 calls, 1 cache hits, 1 cache misses, 0 same version, 0 not found]
+18.01 19:13:25 STATS: cache [battle], segments [4 calls, 2 hits, 1 misses]
+18.01 19:13:25 STATS: cache [battle], database [126 calls, 1 reads, 1 writes]
+18.01 19:13:25 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:13:25 READDB: SELECT * FROM Battle WHERE ID = 35
+18.01 19:13:25 DB: SELECT name FROM users WHERE id=162
+18.01 19:13:25 DB: SELECT name FROM users WHERE id=76
+18.01 19:13:25 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => uid162, enemy.id => 76, enemy.name => Aimer, id => 162, enemy.num => 2, battleId => 35, player => 1 }, _isNotify => true, id => 162, _type => battle.enemyEvent }
+18.01 19:13:25 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => Aimer, enemy.id => 162, enemy.name => uid162, id => 76, enemy.num => 1, battleId => 35, player => 2 }, _isNotify => true, id => 76, _type => battle.enemyEvent }
+18.01 19:13:25 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:13:25 TIME: vdl/cache.battle.findRandom : 10.46 ms
+18.01 19:13:29 TIMER: Check step...
+18.01 19:13:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:29 TIMER: Check step: 1ms
+18.01 19:13:30 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'76', turnid = E'162', finished = E'false', endtime = E'1488356.0053071', firstid = E'162', steptime = E'1484786.0053095', params = E'{}', avaliable = E'false' WHERE ID = 35
+18.01 19:13:34 TIMER: Check step...
+18.01 19:13:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:34 TIMER: Check step: 1ms
+18.01 19:13:35 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 35, _type => vdl/cache.battle.infoRoom }
+18.01 19:13:35 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 76, firstId => 162, _type => vdl/cache.battle.infoRoom, turnId => 162 }
+18.01 19:13:35 TIME: vdl/cache.battle.infoRoom : 0.21 ms
+18.01 19:13:39 TIMER: Check step...
+18.01 19:13:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:39 TIMER: Check step: 1ms
+18.01 19:13:44 TIMER: Check step...
+18.01 19:13:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:44 TIMER: Check step: 1ms
+18.01 19:13:45 BLOCKREMOVE: battle 35 removed
+18.01 19:13:48 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 35, _type => vdl/cache.battle.infoRoom }
+18.01 19:13:48 READDB: SELECT * FROM Battle WHERE ID = 35
+18.01 19:13:48 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 76, firstId => 162, _type => vdl/cache.battle.infoRoom, turnId => 162 }
+18.01 19:13:48 TIME: vdl/cache.battle.infoRoom : 1.84 ms
+18.01 19:13:48 NET: vdl.0 (thread) request vdl/cache.battle.setScores { scores => [0,0], _type => vdl/cache.battle.setScores, player1 => 162, player2 => 76, battleId => 35 }
+18.01 19:13:48 QUEUE: vdl.0 (thread) response vdl/cache.battle.setScores { errorCode => ok, _type => vdl/cache.battle.setScores }
+18.01 19:13:48 TIME: vdl/cache.battle.setScores : 0.12 ms
+18.01 19:13:49 TIMER: Check step...
+18.01 19:13:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:49 TIMER: Check step: 0ms
+18.01 19:13:50 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 35, _type => vdl/cache.battle.infoRoom }
+18.01 19:13:50 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 76, firstId => 162, _type => vdl/cache.battle.infoRoom, turnId => 162 }
+18.01 19:13:50 TIME: vdl/cache.battle.infoRoom : 0.1 ms
+18.01 19:13:50 NET: vdl.0 (thread) request vdl/cache.battle.makeTurn { userId => 162, roomId => 35, _type => vdl/cache.battle.makeTurn }
+18.01 19:13:50 QUEUE: vdl.0 (thread) response vdl/cache.battle.makeTurn { errorCode => ok, _type => vdl/cache.battle.makeTurn, turnId => 162 }
+18.01 19:13:50 TIME: vdl/cache.battle.makeTurn : 0.14 ms
+18.01 19:13:53 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'76', turnid = E'76', finished = E'false', endtime = E'1488360', firstid = E'162', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 35
+18.01 19:13:54 TIMER: Check step...
+18.01 19:13:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:54 TIMER: Check step: 1ms
+18.01 19:13:59 TIMER: Check step...
+18.01 19:13:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:13:59 TIMER: Check step: 1ms
+18.01 19:14:03 BLOCKREMOVE: battle 35 removed
+18.01 19:14:04 TIMER: Check step...
+18.01 19:14:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:04 TIMER: Check step: 1ms
+18.01 19:14:09 TIMER: Check step...
+18.01 19:14:09 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:09 TIMER: Check step: 0ms
+18.01 19:14:14 TIMER: Check step...
+18.01 19:14:14 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:14 TIMER: Check step: 0ms
+18.01 19:14:19 TIMER: Clans cache...
+18.01 19:14:19 TIMER: Clans cache: 0ms
+18.01 19:14:19 TIMER: Check step...
+18.01 19:14:19 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:19 TIMER: Check step: 0ms
+18.01 19:14:19 TIMER: Check round...
+18.01 19:14:19 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:14' OR rounddate = '2017-18-01 22:14' AND status <> 'finished'
+18.01 19:14:19 DB: SELECT * FROM battle WHERE endtime >= '1484756.05990803' AND avaliable = false AND finished <> true
+18.01 19:14:19 QUEUE: vdl.0 (thread) response battle.endEvent { type => winGame, typeBattle => battle, _isNotify => true, _type => battle.endEvent, win => 76, battleId => 35 }
+18.01 19:14:19 TIMER: Check round: 1ms
+18.01 19:14:19 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 1, _type => core/cache.get }
+18.01 19:14:19 STATS: cache [user], get [3 calls, 1 cache hits, 2 cache misses, 0 same version, 0 not found]
+18.01 19:14:19 STATS: cache [user], segments [8 calls, 2 hits, 4 misses]
+18.01 19:14:19 STATS: cache [user], database [181 calls, 2 reads, 2 writes]
+18.01 19:14:19 STATS: cache [user], lock [3 calls, 3 attempts, 0 failures]
+18.01 19:14:19 READDB: SELECT * FROM Users WHERE ID = 1
+18.01 19:14:19 STATS: cache manager [1], get [5 calls, total 0.01 sec spent, avg 1.27 ms]
+18.01 19:14:19 STATS: cache manager [1], update [2 calls, total 0 sec spent, avg 0.03 ms]
+18.01 19:14:19 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => --- DEFAULT ATTRIBUTES ---, deleted => false, email => , networktype =>   , password => , isbanned => false, regdate => 2016-08-30 15:45:16.008574+03, language =>   , networkid => , params => { inventory => { list => [] }, attrs => {}, effects => { list => [] } }}, version => 0, id => 1 } }
+18.01 19:14:19 TIME: core/cache.get : 0.75 ms
+18.01 19:14:19 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 1, _type => core/cache.get }
+18.01 19:14:19 STATS: cache [questdata], get [2 calls, 0 cache hits, 2 cache misses, 0 same version, 0 not found]
+18.01 19:14:19 STATS: cache [questdata], segments [5 calls, 0 hits, 4 misses]
+18.01 19:14:19 STATS: cache [questdata], database [181 calls, 2 reads, 0 writes]
+18.01 19:14:19 STATS: cache [questdata], lock [3 calls, 3 attempts, 0 failures]
+18.01 19:14:19 READDB: SELECT * FROM UserQuests WHERE ID = 1
+18.01 19:14:19 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 1 } }
+18.01 19:14:19 TIME: core/cache.get : 0.77 ms
+18.01 19:14:19 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 35, _type => vdl/cache.battle.infoRoom }
+18.01 19:14:19 READDB: SELECT * FROM Battle WHERE ID = 35
+18.01 19:14:19 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 76, firstId => 162, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:14:19 TIME: vdl/cache.battle.infoRoom : 0.4 ms
+18.01 19:14:19 NET: vdl.0 (thread) request vdl/cache.battle.finishRoom { roomId => 35, _type => vdl/cache.battle.finishRoom }
+18.01 19:14:19 QUEUE: vdl.0 (thread) response vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+18.01 19:14:19 TIME: vdl/cache.battle.finishRoom : 0.05 ms
+18.01 19:14:24 TIMER: Check step...
+18.01 19:14:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:24 TIMER: Check step: 0ms
+18.01 19:14:25 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'76', turnid = E'76', finished = E'true', endtime = E'1488360', firstid = E'162', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 35
+18.01 19:14:29 TIMER: Check step...
+18.01 19:14:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:29 TIMER: Check step: 1ms
+18.01 19:14:34 TIMER: Check step...
+18.01 19:14:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:34 TIMER: Check step: 1ms
+18.01 19:14:35 BLOCKREMOVE: battle 35 removed
+18.01 19:14:39 TIMER: Check step...
+18.01 19:14:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:39 TIMER: Check step: 1ms
+18.01 19:14:44 TIMER: Check step...
+18.01 19:14:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:44 TIMER: Check step: 1ms
+18.01 19:14:49 TIMER: Check step...
+18.01 19:14:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:49 TIMER: Check step: 1ms
+18.01 19:14:54 TIMER: Check step...
+18.01 19:14:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:54 TIMER: Check step: 1ms
+18.01 19:14:59 TIMER: Check step...
+18.01 19:14:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:14:59 TIMER: Check step: 0ms
+18.01 19:15:04 TIMER: Check step...
+18.01 19:15:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:04 TIMER: Check step: 1ms
+18.01 19:15:09 TIMER: Check step...
+18.01 19:15:09 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:09 TIMER: Check step: 1ms
+18.01 19:15:14 TIMER: Check step...
+18.01 19:15:14 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:14 TIMER: Check step: 1ms
+18.01 19:15:19 TIMER: Clans cache...
+18.01 19:15:19 TIMER: Clans cache: 0ms
+18.01 19:15:19 TIMER: Check step...
+18.01 19:15:19 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:19 TIMER: Check step: 0ms
+18.01 19:15:19 TIMER: Check round...
+18.01 19:15:19 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:15' OR rounddate = '2017-18-01 22:15' AND status <> 'finished'
+18.01 19:15:19 DB: SELECT * FROM battle WHERE endtime >= '1484756.11994479' AND avaliable = false AND finished <> true
+18.01 19:15:19 TIMER: Check round: 1ms
+18.01 19:15:24 TIMER: Check step...
+18.01 19:15:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:24 TIMER: Check step: 1ms
+18.01 19:15:29 TIMER: Check step...
+18.01 19:15:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:29 TIMER: Check step: 1ms
+18.01 19:15:34 TIMER: Check step...
+18.01 19:15:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:34 TIMER: Check step: 1ms
+18.01 19:15:39 TIMER: Check step...
+18.01 19:15:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:39 TIMER: Check step: 1ms
+18.01 19:15:44 TIMER: Check step...
+18.01 19:15:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:44 TIMER: Check step: 1ms
+18.01 19:15:49 TIMER: Check step...
+18.01 19:15:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:49 TIMER: Check step: 1ms
+18.01 19:15:54 TIMER: Check step...
+18.01 19:15:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:54 TIMER: Check step: 1ms
+18.01 19:15:59 TIMER: Check step...
+18.01 19:15:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:15:59 TIMER: Check step: 1ms
+18.01 19:16:04 TIMER: Check step...
+18.01 19:16:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:04 TIMER: Check step: 0ms
+18.01 19:16:09 TIMER: Check step...
+18.01 19:16:09 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:09 TIMER: Check step: 1ms
+18.01 19:16:14 TIMER: Check step...
+18.01 19:16:14 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:14 TIMER: Check step: 0ms
+18.01 19:16:19 TIMER: Clans cache...
+18.01 19:16:19 TIMER: Clans cache: 0ms
+18.01 19:16:19 TIMER: Check step...
+18.01 19:16:19 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:19 TIMER: Check step: 0ms
+18.01 19:16:19 TIMER: Check round...
+18.01 19:16:19 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:16' OR rounddate = '2017-18-01 22:16' AND status <> 'finished'
+18.01 19:16:19 DB: SELECT * FROM battle WHERE endtime >= '1484756.17997771' AND avaliable = false AND finished <> true
+18.01 19:16:19 TIMER: Check round: 1ms
+18.01 19:16:24 TIMER: Check step...
+18.01 19:16:24 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:24 TIMER: Check step: 2ms
+18.01 19:16:29 TIMER: Check step...
+18.01 19:16:29 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:29 TIMER: Check step: 0ms
+18.01 19:16:34 TIMER: Check step...
+18.01 19:16:34 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:34 TIMER: Check step: 1ms
+18.01 19:16:39 TIMER: Check step...
+18.01 19:16:39 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:39 TIMER: Check step: 0ms
+18.01 19:16:44 TIMER: Check step...
+18.01 19:16:44 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:44 TIMER: Check step: 0ms
+18.01 19:16:49 TIMER: Check step...
+18.01 19:16:49 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:49 TIMER: Check step: 1ms
+18.01 19:16:54 TIMER: Check step...
+18.01 19:16:54 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:54 TIMER: Check step: 1ms
+18.01 19:16:59 TIMER: Check step...
+18.01 19:16:59 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:16:59 TIMER: Check step: 1ms
+18.01 19:17:04 TIMER: Check step...
+18.01 19:17:04 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:04 TIMER: Check step: 1ms
+18.01 19:17:10 TIMER: Check step...
+18.01 19:17:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:10 TIMER: Check step: 1ms
+18.01 19:17:15 TIMER: Check step...
+18.01 19:17:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:15 TIMER: Check step: 1ms
+18.01 19:17:20 TIMER: Clans cache...
+18.01 19:17:20 TIMER: Clans cache: 0ms
+18.01 19:17:20 TIMER: Check step...
+18.01 19:17:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:20 TIMER: Check step: 0ms
+18.01 19:17:20 TIMER: Check round...
+18.01 19:17:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:17' OR rounddate = '2017-18-01 22:17' AND status <> 'finished'
+18.01 19:17:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.24000975' AND avaliable = false AND finished <> true
+18.01 19:17:20 TIMER: Check round: 0ms
+18.01 19:17:25 TIMER: Check step...
+18.01 19:17:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:25 TIMER: Check step: 0ms
+18.01 19:17:30 TIMER: Check step...
+18.01 19:17:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:30 TIMER: Check step: 0ms
+18.01 19:17:35 TIMER: Check step...
+18.01 19:17:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:35 TIMER: Check step: 1ms
+18.01 19:17:40 TIMER: Check step...
+18.01 19:17:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:40 TIMER: Check step: 1ms
+18.01 19:17:45 TIMER: Check step...
+18.01 19:17:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:45 TIMER: Check step: 0ms
+18.01 19:17:50 TIMER: Check step...
+18.01 19:17:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:50 TIMER: Check step: 1ms
+18.01 19:17:55 TIMER: Check step...
+18.01 19:17:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:17:55 TIMER: Check step: 1ms
+18.01 19:18:00 TIMER: Check step...
+18.01 19:18:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:00 TIMER: Check step: 1ms
+18.01 19:18:05 TIMER: Check step...
+18.01 19:18:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:05 TIMER: Check step: 1ms
+18.01 19:18:10 TIMER: Check step...
+18.01 19:18:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:10 TIMER: Check step: 1ms
+18.01 19:18:15 TIMER: Check step...
+18.01 19:18:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:15 TIMER: Check step: 1ms
+18.01 19:18:20 TIMER: Clans cache...
+18.01 19:18:20 TIMER: Clans cache: 0ms
+18.01 19:18:20 TIMER: Check step...
+18.01 19:18:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:20 TIMER: Check step: 0ms
+18.01 19:18:20 TIMER: Check round...
+18.01 19:18:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:18' OR rounddate = '2017-18-01 22:18' AND status <> 'finished'
+18.01 19:18:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.30003793' AND avaliable = false AND finished <> true
+18.01 19:18:20 TIMER: Check round: 1ms
+18.01 19:18:25 TIMER: Check step...
+18.01 19:18:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:25 TIMER: Check step: 1ms
+18.01 19:18:30 TIMER: Check step...
+18.01 19:18:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:30 TIMER: Check step: 1ms
+18.01 19:18:35 TIMER: Check step...
+18.01 19:18:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:35 TIMER: Check step: 1ms
+18.01 19:18:40 TIMER: Check step...
+18.01 19:18:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:40 TIMER: Check step: 0ms
+18.01 19:18:45 TIMER: Check step...
+18.01 19:18:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:45 TIMER: Check step: 1ms
+18.01 19:18:50 TIMER: Check step...
+18.01 19:18:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:50 TIMER: Check step: 1ms
+18.01 19:18:55 TIMER: Check step...
+18.01 19:18:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:18:55 TIMER: Check step: 1ms
+18.01 19:19:00 TIMER: Check step...
+18.01 19:19:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:00 TIMER: Check step: 1ms
+18.01 19:19:05 TIMER: Check step...
+18.01 19:19:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:05 TIMER: Check step: 0ms
+18.01 19:19:10 TIMER: Check step...
+18.01 19:19:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:10 TIMER: Check step: 0ms
+18.01 19:19:15 TIMER: Check step...
+18.01 19:19:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:15 TIMER: Check step: 1ms
+18.01 19:19:20 TIMER: Clans cache...
+18.01 19:19:20 TIMER: Clans cache: 0ms
+18.01 19:19:20 TIMER: Check step...
+18.01 19:19:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:20 TIMER: Check step: 0ms
+18.01 19:19:20 TIMER: Check round...
+18.01 19:19:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:19' OR rounddate = '2017-18-01 22:19' AND status <> 'finished'
+18.01 19:19:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.36007007' AND avaliable = false AND finished <> true
+18.01 19:19:20 TIMER: Check round: 0ms
+18.01 19:19:25 TIMER: Check step...
+18.01 19:19:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:25 TIMER: Check step: 1ms
+18.01 19:19:30 TIMER: Check step...
+18.01 19:19:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:30 TIMER: Check step: 0ms
+18.01 19:19:35 TIMER: Check step...
+18.01 19:19:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:35 TIMER: Check step: 1ms
+18.01 19:19:40 TIMER: Check step...
+18.01 19:19:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:40 TIMER: Check step: 1ms
+18.01 19:19:45 TIMER: Check step...
+18.01 19:19:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:45 TIMER: Check step: 1ms
+18.01 19:19:50 TIMER: Check step...
+18.01 19:19:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:50 TIMER: Check step: 1ms
+18.01 19:19:55 TIMER: Check step...
+18.01 19:19:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:19:55 TIMER: Check step: 1ms
+18.01 19:20:00 TIMER: Check step...
+18.01 19:20:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:00 TIMER: Check step: 1ms
+18.01 19:20:05 TIMER: Check step...
+18.01 19:20:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:05 TIMER: Check step: 1ms
+18.01 19:20:10 TIMER: Check step...
+18.01 19:20:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:10 TIMER: Check step: 0ms
+18.01 19:20:15 TIMER: Check step...
+18.01 19:20:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:15 TIMER: Check step: 1ms
+18.01 19:20:20 TIMER: Clans cache...
+18.01 19:20:20 TIMER: Clans cache: 0ms
+18.01 19:20:20 TIMER: Check step...
+18.01 19:20:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:20 TIMER: Check step: 0ms
+18.01 19:20:20 TIMER: Check round...
+18.01 19:20:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:20' OR rounddate = '2017-18-01 22:20' AND status <> 'finished'
+18.01 19:20:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.4201058' AND avaliable = false AND finished <> true
+18.01 19:20:20 TIMER: Check round: 0ms
+18.01 19:20:25 TIMER: Check step...
+18.01 19:20:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:25 TIMER: Check step: 1ms
+18.01 19:20:30 TIMER: Check step...
+18.01 19:20:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:30 TIMER: Check step: 1ms
+18.01 19:20:35 TIMER: Check step...
+18.01 19:20:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:35 TIMER: Check step: 0ms
+18.01 19:20:40 TIMER: Check step...
+18.01 19:20:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:40 TIMER: Check step: 0ms
+18.01 19:20:45 TIMER: Check step...
+18.01 19:20:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:45 TIMER: Check step: 1ms
+18.01 19:20:49 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 162 }, _type => vdl/cache.battle.findRandom }
+18.01 19:20:49 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:20:49 TIME: vdl/cache.battle.findRandom : 0.06 ms
+18.01 19:20:50 TIMER: Check step...
+18.01 19:20:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:50 TIMER: Check step: 0ms
+18.01 19:20:55 TIMER: Check step...
+18.01 19:20:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:20:55 TIMER: Check step: 1ms
+18.01 19:20:55 NET: vdl.0 (thread) request vdl/cache.battle.findRandom { user => { time => 60, player => 76 }, _type => vdl/cache.battle.findRandom }
+18.01 19:20:55 DB: SELECT nextval('Battle_id_seq') AS id
+18.01 19:20:55 READDB: SELECT ID FROM Battle WHERE ID = 36
+18.01 19:20:55 READDB: INSERT INTO Battle (ID) VALUES (36)
+18.01 19:20:55 STATS: cache [battle], get [11 calls, 6 cache hits, 4 cache misses, 0 same version, 0 not found]
+18.01 19:20:55 STATS: cache [battle], segments [17 calls, 12 hits, 4 misses]
+18.01 19:20:55 STATS: cache [battle], database [576 calls, 4 reads, 4 writes]
+18.01 19:20:55 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:20:55 READDB: SELECT * FROM Battle WHERE ID = 36
+18.01 19:20:55 DB: SELECT name FROM users WHERE id=76
+18.01 19:20:55 DB: SELECT name FROM users WHERE id=162
+18.01 19:20:55 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => Aimer, enemy.id => 162, enemy.name => uid162, id => 76, enemy.num => 2, battleId => 36, player => 1 }, _isNotify => true, id => 76, _type => battle.enemyEvent }
+18.01 19:20:55 QUEUE: vdl.0 (thread) response battle.enemyEvent { data => { name => uid162, enemy.id => 76, enemy.name => Aimer, id => 162, enemy.num => 1, battleId => 36, player => 2 }, _isNotify => true, id => 162, _type => battle.enemyEvent }
+18.01 19:20:55 QUEUE: vdl.0 (thread) response vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+18.01 19:20:55 TIME: vdl/cache.battle.findRandom : 10.58 ms
+18.01 19:21:00 TIMER: Check step...
+18.01 19:21:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:00 TIMER: Check step: 1ms
+18.01 19:21:01 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'false', endtime = E'1488356.4557594', firstid = E'76', steptime = E'1484786.45576161', params = E'{}', avaliable = E'false' WHERE ID = 36
+18.01 19:21:05 TIMER: Check step...
+18.01 19:21:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:05 TIMER: Check step: 1ms
+18.01 19:21:10 TIMER: Check step...
+18.01 19:21:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:10 TIMER: Check step: 1ms
+18.01 19:21:11 BLOCKREMOVE: battle 36 removed
+18.01 19:21:15 TIMER: Check step...
+18.01 19:21:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:15 TIMER: Check step: 1ms
+18.01 19:21:20 TIMER: Clans cache...
+18.01 19:21:20 TIMER: Clans cache: 0ms
+18.01 19:21:20 TIMER: Check step...
+18.01 19:21:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:20 TIMER: Check step: 0ms
+18.01 19:21:20 TIMER: Check round...
+18.01 19:21:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:21' OR rounddate = '2017-18-01 22:21' AND status <> 'finished'
+18.01 19:21:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.48014178' AND avaliable = false AND finished <> true
+18.01 19:21:20 TRACE: Check round timer exception:
+18.01 19:21:20 TRACE: Invalid field access : player1
+
+18.01 19:21:20 TIMER: Check round: 0ms
+18.01 19:21:25 TIMER: Check step...
+18.01 19:21:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:25 TIMER: Check step: 1ms
+18.01 19:21:30 TIMER: Check step...
+18.01 19:21:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:30 TIMER: Check step: 0ms
+18.01 19:21:35 TIMER: Check step...
+18.01 19:21:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:35 TIMER: Check step: 1ms
+18.01 19:21:40 TIMER: Check step...
+18.01 19:21:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:40 TIMER: Check step: 1ms
+18.01 19:21:45 TIMER: Check step...
+18.01 19:21:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:45 TIMER: Check step: 1ms
+18.01 19:21:50 TIMER: Check step...
+18.01 19:21:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:50 TIMER: Check step: 1ms
+18.01 19:21:55 TIMER: Check step...
+18.01 19:21:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:21:55 TIMER: Check step: 1ms
+18.01 19:22:00 TIMER: Check step...
+18.01 19:22:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:00 TIMER: Check step: 1ms
+18.01 19:22:05 TIMER: Check step...
+18.01 19:22:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:05 TIMER: Check step: 0ms
+18.01 19:22:10 TIMER: Check step...
+18.01 19:22:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:10 TIMER: Check step: 0ms
+18.01 19:22:15 TIMER: Check step...
+18.01 19:22:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:15 TIMER: Check step: 0ms
+18.01 19:22:20 TIMER: Clans cache...
+18.01 19:22:20 TIMER: Clans cache: 0ms
+18.01 19:22:20 TIMER: Check step...
+18.01 19:22:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:20 TIMER: Check step: 0ms
+18.01 19:22:20 TIMER: Check round...
+18.01 19:22:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:22' OR rounddate = '2017-18-01 22:22' AND status <> 'finished'
+18.01 19:22:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.54017215' AND avaliable = false AND finished <> true
+18.01 19:22:20 TRACE: Check round timer exception:
+18.01 19:22:20 TRACE: Invalid field access : player1
+
+18.01 19:22:20 TIMER: Check round: 1ms
+18.01 19:22:25 TIMER: Check step...
+18.01 19:22:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:25 TIMER: Check step: 0ms
+18.01 19:22:30 TIMER: Check step...
+18.01 19:22:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:30 TIMER: Check step: 1ms
+18.01 19:22:35 TIMER: Check step...
+18.01 19:22:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:35 TIMER: Check step: 0ms
+18.01 19:22:40 TIMER: Check step...
+18.01 19:22:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:40 TIMER: Check step: 1ms
+18.01 19:22:45 TIMER: Check step...
+18.01 19:22:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:45 TIMER: Check step: 1ms
+18.01 19:22:50 TIMER: Check step...
+18.01 19:22:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:50 TIMER: Check step: 1ms
+18.01 19:22:55 TIMER: Check step...
+18.01 19:22:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:22:55 TIMER: Check step: 5ms
+18.01 19:23:00 TIMER: Check step...
+18.01 19:23:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:00 TIMER: Check step: 2ms
+18.01 19:23:03 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 36, _type => vdl/cache.battle.infoRoom }
+18.01 19:23:03 STATS: cache [battle], get [13 calls, 7 cache hits, 5 cache misses, 0 same version, 0 not found]
+18.01 19:23:03 STATS: cache [battle], segments [22 calls, 16 hits, 5 misses]
+18.01 19:23:03 STATS: cache [battle], database [704 calls, 5 reads, 5 writes]
+18.01 19:23:03 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:23:03 READDB: SELECT * FROM Battle WHERE ID = 36
+18.01 19:23:03 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:23:03 TIME: vdl/cache.battle.infoRoom : 1.29 ms
+18.01 19:23:03 NET: vdl.0 (thread) request vdl/cache.battle.makeTurn { userId => 76, roomId => 36, _type => vdl/cache.battle.makeTurn }
+18.01 19:23:03 QUEUE: vdl.0 (thread) response vdl/cache.battle.makeTurn { errorCode => ok, _type => vdl/cache.battle.makeTurn, turnId => 76 }
+18.01 19:23:03 TIME: vdl/cache.battle.makeTurn : 0.09 ms
+18.01 19:23:05 TIMER: Check step...
+18.01 19:23:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:05 TIMER: Check step: 0ms
+18.01 19:23:09 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'162', finished = E'false', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 36
+18.01 19:23:10 TIMER: Check step...
+18.01 19:23:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:10 TIMER: Check step: 0ms
+18.01 19:23:15 TIMER: Check step...
+18.01 19:23:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:15 TIMER: Check step: 0ms
+18.01 19:23:19 BLOCKREMOVE: battle 36 removed
+18.01 19:23:20 TIMER: Clans cache...
+18.01 19:23:20 TIMER: Clans cache: 0ms
+18.01 19:23:20 TIMER: Check step...
+18.01 19:23:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:20 TIMER: Check step: 0ms
+18.01 19:23:20 TIMER: Check round...
+18.01 19:23:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:23' OR rounddate = '2017-18-01 22:23' AND status <> 'finished'
+18.01 19:23:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.60021395' AND avaliable = false AND finished <> true
+18.01 19:23:20 TRACE: Check round timer exception:
+18.01 19:23:20 TRACE: Invalid field access : player1
+
+18.01 19:23:20 TIMER: Check round: 2ms
+18.01 19:23:25 TIMER: Check step...
+18.01 19:23:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:25 TIMER: Check step: 1ms
+18.01 19:23:30 TIMER: Check step...
+18.01 19:23:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:30 TIMER: Check step: 1ms
+18.01 19:23:35 TIMER: Check step...
+18.01 19:23:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:35 TIMER: Check step: 1ms
+18.01 19:23:40 TIMER: Check step...
+18.01 19:23:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:40 TIMER: Check step: 1ms
+18.01 19:23:45 TIMER: Check step...
+18.01 19:23:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:45 TIMER: Check step: 0ms
+18.01 19:23:50 TIMER: Check step...
+18.01 19:23:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:50 TIMER: Check step: 1ms
+18.01 19:23:55 TIMER: Check step...
+18.01 19:23:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:23:55 TIMER: Check step: 0ms
+18.01 19:24:00 TIMER: Check step...
+18.01 19:24:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:00 TIMER: Check step: 0ms
+18.01 19:24:05 TIMER: Check step...
+18.01 19:24:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:05 TIMER: Check step: 1ms
+18.01 19:24:10 TIMER: Check step...
+18.01 19:24:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:10 TIMER: Check step: 0ms
+18.01 19:24:15 TIMER: Check step...
+18.01 19:24:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:15 TIMER: Check step: 1ms
+18.01 19:24:20 TIMER: Clans cache...
+18.01 19:24:20 TIMER: Clans cache: 0ms
+18.01 19:24:20 TIMER: Check step...
+18.01 19:24:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:20 TIMER: Check step: 0ms
+18.01 19:24:20 TIMER: Check round...
+18.01 19:24:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:24' OR rounddate = '2017-18-01 22:24' AND status <> 'finished'
+18.01 19:24:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.66024643' AND avaliable = false AND finished <> true
+18.01 19:24:20 TRACE: Check round timer exception:
+18.01 19:24:20 TRACE: Invalid field access : player1
+
+18.01 19:24:20 TIMER: Check round: 1ms
+18.01 19:24:25 TIMER: Check step...
+18.01 19:24:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:25 TIMER: Check step: 0ms
+18.01 19:24:30 TIMER: Check step...
+18.01 19:24:30 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:30 TIMER: Check step: 0ms
+18.01 19:24:35 TIMER: Check step...
+18.01 19:24:35 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:35 TIMER: Check step: 0ms
+18.01 19:24:40 TIMER: Check step...
+18.01 19:24:40 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:40 TIMER: Check step: 0ms
+18.01 19:24:45 TIMER: Check step...
+18.01 19:24:45 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:45 TIMER: Check step: 1ms
+18.01 19:24:50 TIMER: Check step...
+18.01 19:24:50 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:50 TIMER: Check step: 0ms
+18.01 19:24:55 TIMER: Check step...
+18.01 19:24:55 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:24:55 TIMER: Check step: 0ms
+18.01 19:25:00 TIMER: Check step...
+18.01 19:25:00 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:00 TIMER: Check step: 1ms
+18.01 19:25:05 TIMER: Check step...
+18.01 19:25:05 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:05 TIMER: Check step: 1ms
+18.01 19:25:06 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 36, _type => vdl/cache.battle.infoRoom }
+18.01 19:25:06 STATS: cache [battle], get [15 calls, 8 cache hits, 6 cache misses, 0 same version, 0 not found]
+18.01 19:25:06 STATS: cache [battle], segments [25 calls, 18 hits, 6 misses]
+18.01 19:25:06 STATS: cache [battle], database [827 calls, 6 reads, 6 writes]
+18.01 19:25:06 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:25:06 READDB: SELECT * FROM Battle WHERE ID = 36
+18.01 19:25:06 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 162 }
+18.01 19:25:06 TIME: vdl/cache.battle.infoRoom : 1.27 ms
+18.01 19:25:06 NET: vdl.0 (thread) request vdl/cache.battle.makeTurn { userId => 162, roomId => 36, _type => vdl/cache.battle.makeTurn }
+18.01 19:25:06 QUEUE: vdl.0 (thread) response vdl/cache.battle.makeTurn { errorCode => ok, _type => vdl/cache.battle.makeTurn, turnId => 76 }
+18.01 19:25:06 TIME: vdl/cache.battle.makeTurn : 0.17 ms
+18.01 19:25:10 TIMER: Check step...
+18.01 19:25:10 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:10 TIMER: Check step: 0ms
+18.01 19:25:12 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'false', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 36
+18.01 19:25:15 TIMER: Check step...
+18.01 19:25:15 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:15 TIMER: Check step: 1ms
+18.01 19:25:20 TIMER: Clans cache...
+18.01 19:25:20 TIMER: Clans cache: 0ms
+18.01 19:25:20 TIMER: Check step...
+18.01 19:25:20 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:20 TIMER: Check step: 0ms
+18.01 19:25:20 TIMER: Check round...
+18.01 19:25:20 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:25' OR rounddate = '2017-18-01 22:25' AND status <> 'finished'
+18.01 19:25:20 DB: SELECT * FROM battle WHERE endtime >= '1484756.72027156' AND avaliable = false AND finished <> true
+18.01 19:25:20 TRACE: Check round timer exception:
+18.01 19:25:20 TRACE: Invalid field access : player1
+
+18.01 19:25:20 TIMER: Check round: 1ms
+18.01 19:25:22 BLOCKREMOVE: battle 36 removed
+18.01 19:25:25 TIMER: Check step...
+18.01 19:25:25 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:25 TIMER: Check step: 1ms
+18.01 19:25:38 TIMER: Starting timer...
+18.01 19:25:38 TIMER: Timer running...
+18.01 19:25:38 DB: SELECT * FROM GameVars
+18.01 19:25:38 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd + '1day'::interval) AS TimeEnd FROM CalendarEvents ORDER BY ID
+18.01 19:25:38 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+18.01 19:25:38 DB: SELECT * FROM Shops WHERE ID = 1
+18.01 19:25:38 TEMP: load ./tmp/quest_daily_ids
+18.01 19:25:38 DB: SELECT ID FROM QuestChains WHERE IsEnabled = 't' AND Params LIKE '%"isDaily":true%' ORDER BY ID
+18.01 19:25:38 TEMP: save ./tmp/quest_daily_ids
+18.01 19:25:38 NET: ??? request core/server.login { host => 172.16.20.171, name => vdl.0, port => 2030, type => game, _type => core/server.login, externalHost => 172.16.20.171, externalPort => 2030 }
+18.01 19:25:38 QUEUE: vdl.0 (thread) response server.login
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM LocalizationStrings
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 5.44 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM GameVars
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.47 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.56 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.44 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.42 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.82 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/quest.getDaily { _type => core/quest.getDaily }
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/quest.getDaily
+18.01 19:25:38 TIME: core/quest.getDaily : 0.02 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM UserAttributeTypes
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.26 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM UserVariableTypes
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.44 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.78 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM ItemGroups
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.42 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM Bundles ORDER BY ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.51 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM BundleItems ORDER BY ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.54 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/shop.getList { _type => core/shop.getList }
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/shop.getList
+18.01 19:25:38 TIME: core/shop.getList : 0.03 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM EffectAttributeTypes
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.3 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM Effects
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.48 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.92 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+18.01 19:25:38 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.8 ms
+18.01 19:25:38 NET: vdl.0 (thread) request core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+18.01 19:25:38 DB: SELECT * FROM Badges
+18.01 19:25:38 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:38 TIME: core/server.query : 0.45 ms
+18.01 19:25:43 TIMER: Check step...
+18.01 19:25:43 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:43 TIMER: Check step: 3ms
+18.01 19:25:48 TIMER: Check step...
+18.01 19:25:48 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:48 TIMER: Check step: 3ms
+18.01 19:25:51 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162', _type => core/server.query }
+18.01 19:25:51 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid162' AND Password = E'uid162'
+18.01 19:25:51 QUEUE: vdl.0 (thread) response core/server.query
+18.01 19:25:51 TIME: core/server.query : 1.36 ms
+18.01 19:25:51 NET: vdl.0 (thread) request core/user.isOnlineID { id => 162, _type => core/user.isOnlineID }
+18.01 19:25:51 QUEUE: vdl.0 (thread) response core/user.isOnlineID
+18.01 19:25:51 TIME: core/user.isOnlineID : 0.22 ms
+18.01 19:25:51 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 162, _type => core/cache.get }
+18.01 19:25:51 READDB: SELECT * FROM Users WHERE ID = 162
+18.01 19:25:51 QUEUE: vdl.0 (thread) response core/cache.get
+18.01 19:25:51 TIME: core/cache.get : 1.8 ms
+18.01 19:25:51 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 162, _type => core/cache.get }
+18.01 19:25:51 READDB: SELECT * FROM UserQuests WHERE ID = 162
+18.01 19:25:51 QUEUE: vdl.0 (thread) response core/cache.get
+18.01 19:25:51 TIME: core/cache.get : 1.26 ms
+18.01 19:25:51 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 162, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:25:51 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:25:51 TIME: core/user.loginPost : 0.14 ms
+18.01 19:25:53 TIMER: Check step...
+18.01 19:25:53 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:53 TIMER: Check step: 4ms
+18.01 19:25:58 TIMER: Check step...
+18.01 19:25:58 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:25:58 TIMER: Check step: 0ms
+18.01 19:25:58 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 162, _type => core/cache.update }
+18.01 19:25:58 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:25:58 TIME: core/cache.update : 0.1 ms
+18.01 19:25:59 NET: vdl.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true, _type => core/server.query }
+18.01 19:25:59 DB: SELECT id FROM battle WHERE firstid=162 OR secondid=162 AND finished <> true
+18.01 19:25:59 QUEUE: vdl.0 (thread) response core/server.query { list => {{ id => 35 }, { id => 36 }}, errorCode => ok, _type => core/server.query }
+18.01 19:25:59 TIME: core/server.query : 1.21 ms
+18.01 19:25:59 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 36, _type => vdl/cache.battle.infoRoom }
+18.01 19:25:59 READDB: SELECT * FROM Battle WHERE ID = 36
+18.01 19:25:59 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:25:59 TIME: vdl/cache.battle.infoRoom : 2.03 ms
+18.01 19:25:59 NET: vdl.0 (thread) request vdl/cache.battle.deleteRoom { roomId => 36, _type => vdl/cache.battle.deleteRoom }
+18.01 19:25:59 ROOM: deleted room 36
+18.01 19:25:59 DB: DELETE FROM Battle WHERE ID = 36
+18.01 19:25:59 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:25:59 QUEUE: vdl.0 (thread) response vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+18.01 19:25:59 TIME: vdl/cache.battle.deleteRoom : 6.4 ms
+18.01 19:25:59 NET: vdl.0 (thread) request vdl/cache.battle.finishRoom { roomId => 36, _type => vdl/cache.battle.finishRoom }
+18.01 19:25:59 QUEUE: vdl.0 (thread) response vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+18.01 19:25:59 TIME: vdl/cache.battle.finishRoom : 0.18 ms
+18.01 19:25:59 NET: vdl.0 (thread) request core/user.sendTo { id => 76, _type => core/user.sendTo, msg => { _type => battle.leave } }
+18.01 19:25:59 QUEUE: vdl.0 (thread) response core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+18.01 19:25:59 TIME: core/user.sendTo : 0.12 ms
+18.01 19:25:59 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:25:59 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+18.01 19:25:59 TIME: core/cache.update : 0.18 ms
+18.01 19:25:59 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 162, _type => core/cache.update }
+18.01 19:25:59 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:25:59 TIME: core/cache.update : 2.86 ms
+18.01 19:25:59 NET: vdl.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 162, _type => core/user.logoutPost }
+18.01 19:25:59 QUEUE: vdl.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+18.01 19:25:59 TIME: core/user.logoutPost : 0.12 ms
+18.01 19:26:00 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 162
+18.01 19:26:03 TIMER: Check step...
+18.01 19:26:03 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:03 TIMER: Check step: 2ms
+18.01 19:26:04 WRITEDB: UPDATE Users SET name = E'uid162', deleted = E'false', email = E'', networktype = E'  ', password = E'uid162', isbanned = E'false', regdate = E'2017-01-18 17:10:44.031496+03', language = E'en', networkid = E'', params = E'{"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484748644,"lastLoginDate":18,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 162
+18.01 19:26:04 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'true', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 36
+18.01 19:26:08 TIMER: Check step...
+18.01 19:26:08 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:08 TIMER: Check step: 1ms
+18.01 19:26:10 BLOCKREMOVE: questdata 162 removed
+18.01 19:26:13 TIMER: Check step...
+18.01 19:26:13 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:13 TIMER: Check step: 1ms
+18.01 19:26:14 BLOCKREMOVE: user 162 removed
+18.01 19:26:14 BLOCKREMOVE: battle 36 removed
+18.01 19:26:18 TIMER: Check step...
+18.01 19:26:18 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:18 TIMER: Check step: 4ms
+18.01 19:26:23 TIMER: Check step...
+18.01 19:26:23 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:23 TIMER: Check step: 2ms
+18.01 19:26:28 TIMER: Check step...
+18.01 19:26:28 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:28 TIMER: Check step: 1ms
+18.01 19:26:31 NET: vdl.0 (thread) request core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf', _type => core/server.query }
+18.01 19:26:31 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'kO2YJdf'
+18.01 19:26:31 QUEUE: vdl.0 (thread) response core/server.query { list => {{ name => Aimer, networkid => , isbanned => false, id => 76 }}, errorCode => ok, _type => core/server.query }
+18.01 19:26:31 TIME: core/server.query : 3.09 ms
+18.01 19:26:31 NET: vdl.0 (thread) request core/user.isOnlineID { id => 76, _type => core/user.isOnlineID }
+18.01 19:26:31 QUEUE: vdl.0 (thread) response core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+18.01 19:26:31 TIME: core/user.isOnlineID : 0.12 ms
+18.01 19:26:31 NET: vdl.0 (thread) request core/cache.get { type => user, v => -1, id => 76, _type => core/cache.get }
+18.01 19:26:31 READDB: SELECT * FROM Users WHERE ID = 76
+18.01 19:26:31 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => Aimer, deleted => false, email => , networktype =>   , password => kO2YJdf, isbanned => false, regdate => 2016-10-19 18:05:38.946809+03, language => en, networkid => , params => { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1484755454, lastLoginDate => 18, money => 3, lastLoadDate => 119 }, effects => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:26:31 TIME: core/cache.get : 2.81 ms
+18.01 19:26:31 NET: vdl.0 (thread) request core/cache.get { type => questdata, v => -1, id => 76, _type => core/cache.get }
+18.01 19:26:31 READDB: SELECT * FROM UserQuests WHERE ID = 76
+18.01 19:26:31 QUEUE: vdl.0 (thread) response core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 76 } }
+18.01 19:26:31 TIME: core/cache.get : 1.13 ms
+18.01 19:26:31 NET: vdl.0 (thread) request core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 76, _type => core/user.loginPost, ipAddr => 172.16.20.200 }
+18.01 19:26:31 QUEUE: vdl.0 (thread) response core/user.loginPost { _type => core/user.loginPost }
+18.01 19:26:31 TIME: core/user.loginPost : 0.09 ms
+18.01 19:26:31 NET: vdl.0 (thread) request vdl/cache.user.getData { userId => 76, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:26:31 QUEUE: vdl.0 (thread) response vdl/cache.user.getData { info => { city => Kazan, year => 1993, email => rabpoll1@ya.ru }, errorCode => ok, _type => vdl/cache.user.getData, money => 3 }
+18.01 19:26:31 TIME: vdl/cache.user.getData : 0.12 ms
+18.01 19:26:33 TIMER: Check step...
+18.01 19:26:33 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:33 TIMER: Check step: 1ms
+18.01 19:26:38 TIMER: Clans cache...
+18.01 19:26:38 TIMER: Clans cache: 0ms
+18.01 19:26:38 TIMER: Check step...
+18.01 19:26:38 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:38 TIMER: Check step: 0ms
+18.01 19:26:38 TIMER: Check round...
+18.01 19:26:38 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:26' OR rounddate = '2017-18-01 22:26' AND status <> 'finished'
+18.01 19:26:38 DB: SELECT * FROM battle WHERE endtime >= '1484756.79824366' AND avaliable = false AND finished <> true
+18.01 19:26:38 TIMER: Check round: 1ms
+18.01 19:26:38 NET: vdl.0 (thread) request core/cache.update { diff => {language => en}, type => user, unlock => false, id => 76, _type => core/cache.update }
+18.01 19:26:38 STATS: cache [user], get [3 calls, 1 cache hits, 2 cache misses, 0 same version, 0 not found]
+18.01 19:26:38 STATS: cache [user], segments [9 calls, 3 hits, 4 misses]
+18.01 19:26:38 STATS: cache [user], database [61 calls, 2 reads, 2 writes]
+18.01 19:26:38 STATS: cache [user], lock [2 calls, 2 attempts, 0 failures]
+18.01 19:26:38 STATS: cache manager [1], get [4 calls, total 0.01 sec spent, avg 1.58 ms]
+18.01 19:26:38 STATS: cache manager [1], update [4 calls, total 0 sec spent, avg 0.07 ms]
+18.01 19:26:38 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:26:38 TIME: core/cache.update : 0.29 ms
+18.01 19:26:39 WRITEDB: UPDATE Users SET name = E'Aimer', deleted = E'false', email = E'', networktype = E'  ', password = E'kO2YJdf', isbanned = E'false', regdate = E'2016-10-19 18:05:38.946809+03', language = E'en', networkid = E'', params = E'{"info":{"city":"Kazan","year":"1993","email":"rabpoll1@ya.ru"},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484755454,"lastLoginDate":18,"money":3,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 76
+18.01 19:26:43 TIMER: Check step...
+18.01 19:26:43 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:43 TIMER: Check step: 1ms
+18.01 19:26:48 TIMER: Check step...
+18.01 19:26:48 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:48 TIMER: Check step: 1ms
+18.01 19:26:53 TIMER: Check step...
+18.01 19:26:53 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:53 TIMER: Check step: 1ms
+18.01 19:26:55 NET: vdl.0 (thread) request core/server.query { q => SELECT id FROM battle WHERE firstid=76 OR secondid=76 AND finished <> true, _type => core/server.query }
+18.01 19:26:55 DB: SELECT id FROM battle WHERE firstid=76 OR secondid=76 AND finished <> true
+18.01 19:26:55 QUEUE: vdl.0 (thread) response core/server.query { list => {{ id => 33 }, { id => 34 }}, errorCode => ok, _type => core/server.query }
+18.01 19:26:55 TIME: core/server.query : 2.12 ms
+18.01 19:26:55 NET: vdl.0 (thread) request vdl/cache.battle.infoRoom { roomId => 34, _type => vdl/cache.battle.infoRoom }
+18.01 19:26:55 STATS: cache [battle], get [3 calls, 1 cache hits, 1 cache misses, 0 same version, 0 not found]
+18.01 19:26:55 STATS: cache [battle], segments [5 calls, 3 hits, 1 misses]
+18.01 19:26:55 STATS: cache [battle], database [77 calls, 1 reads, 1 writes]
+18.01 19:26:55 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]
+18.01 19:26:55 READDB: SELECT * FROM Battle WHERE ID = 34
+18.01 19:26:55 QUEUE: vdl.0 (thread) response vdl/cache.battle.infoRoom { secondId => 162, firstId => 76, _type => vdl/cache.battle.infoRoom, turnId => 76 }
+18.01 19:26:55 TIME: vdl/cache.battle.infoRoom : 1.82 ms
+18.01 19:26:55 NET: vdl.0 (thread) request vdl/cache.battle.deleteRoom { roomId => 34, _type => vdl/cache.battle.deleteRoom }
+18.01 19:26:55 ROOM: deleted room 34
+18.01 19:26:55 DB: DELETE FROM Battle WHERE ID = 34
+18.01 19:26:55 QUEUE: vdl.0 (thread) response vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+18.01 19:26:55 TIME: vdl/cache.battle.deleteRoom : 3.67 ms
+18.01 19:26:55 NET: vdl.0 (thread) request vdl/cache.battle.finishRoom { roomId => 34, _type => vdl/cache.battle.finishRoom }
+18.01 19:26:55 QUEUE: vdl.0 (thread) response vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+18.01 19:26:55 TIME: vdl/cache.battle.finishRoom : 0.86 ms
+18.01 19:26:55 NET: vdl.0 (thread) request core/user.sendTo { id => 162, _type => core/user.sendTo, msg => { _type => battle.leave } }
+18.01 19:26:55 QUEUE: vdl.0 (thread) response core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+18.01 19:26:55 TIME: core/user.sendTo : 0.22 ms
+18.01 19:26:55 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => user, unlock => true, id => 76, _type => core/cache.update }
+18.01 19:26:55 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+18.01 19:26:55 TIME: core/cache.update : 0.33 ms
+18.01 19:26:55 NET: vdl.0 (thread) request core/cache.update { diff => {}, type => questdata, unlock => true, id => 76, _type => core/cache.update }
+18.01 19:26:55 STATS: cache [questdata], get [2 calls, 0 cache hits, 2 cache misses, 0 same version, 0 not found]
+18.01 19:26:55 STATS: cache [questdata], segments [7 calls, 2 hits, 4 misses]
+18.01 19:26:55 STATS: cache [questdata], database [77 calls, 2 reads, 1 writes]
+18.01 19:26:55 STATS: cache [questdata], lock [2 calls, 2 attempts, 0 failures]
+18.01 19:26:55 QUEUE: vdl.0 (thread) response core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+18.01 19:26:55 TIME: core/cache.update : 0.49 ms
+18.01 19:26:55 NET: vdl.0 (thread) request core/user.logoutPost { networkid => , networktype =>   , id => 76, _type => core/user.logoutPost }
+18.01 19:26:55 QUEUE: vdl.0 (thread) response core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+18.01 19:26:55 TIME: core/user.logoutPost : 0.28 ms
+18.01 19:26:55 WRITEDB: UPDATE Users SET name = E'Aimer', deleted = E'false', email = E'', networktype = E'  ', password = E'kO2YJdf', isbanned = E'false', regdate = E'2016-10-19 18:05:38.946809+03', language = E'en', networkid = E'', params = E'{"info":{"city":"Kazan","year":"1993","email":"rabpoll1@ya.ru"},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1484755454,"lastLoginDate":18,"money":3,"lastLoadDate":119},"effects":{"list":[]}}' WHERE ID = 76
+18.01 19:26:55 WRITEDB: UPDATE UserQuests SET params = E'oy6:questsoy4:listahgg' WHERE ID = 76
+18.01 19:26:58 TIMER: Check step...
+18.01 19:26:58 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:26:58 TIMER: Check step: 1ms
+18.01 19:27:00 WRITEDB: UPDATE Battle SET tournamentid = E'-1', roundtime = E'60', secondid = E'162', turnid = E'76', finished = E'true', endtime = E'1488360', firstid = E'76', steptime = E'1484790', params = E'{}', avaliable = E'false' WHERE ID = 34
+18.01 19:27:03 TIMER: Check step...
+18.01 19:27:03 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:03 TIMER: Check step: 2ms
+18.01 19:27:05 BLOCKREMOVE: user 76 removed
+18.01 19:27:05 BLOCKREMOVE: questdata 76 removed
+18.01 19:27:08 TIMER: Check step...
+18.01 19:27:08 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:08 TIMER: Check step: 1ms
+18.01 19:27:10 BLOCKREMOVE: battle 34 removed
+18.01 19:27:13 TIMER: Check step...
+18.01 19:27:13 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:13 TIMER: Check step: 2ms
+18.01 19:27:18 TIMER: Check step...
+18.01 19:27:18 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:18 TIMER: Check step: 1ms
+18.01 19:27:23 TIMER: Check step...
+18.01 19:27:23 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:23 TIMER: Check step: 2ms
+18.01 19:27:28 TIMER: Check step...
+18.01 19:27:28 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:28 TIMER: Check step: 1ms
+18.01 19:27:33 TIMER: Check step...
+18.01 19:27:33 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:33 TIMER: Check step: 3ms
+18.01 19:27:38 TIMER: Clans cache...
+18.01 19:27:38 TIMER: Clans cache: 0ms
+18.01 19:27:38 TIMER: Check step...
+18.01 19:27:38 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:38 TIMER: Check step: 0ms
+18.01 19:27:38 TIMER: Check round...
+18.01 19:27:38 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:27' OR rounddate = '2017-18-01 22:27' AND status <> 'finished'
+18.01 19:27:38 DB: SELECT * FROM battle WHERE endtime >= '1484756.85828708' AND avaliable = false AND finished <> true
+18.01 19:27:38 TIMER: Check round: 1ms
+18.01 19:27:43 TIMER: Check step...
+18.01 19:27:43 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:43 TIMER: Check step: 1ms
+18.01 19:27:48 TIMER: Check step...
+18.01 19:27:48 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:48 TIMER: Check step: 1ms
+18.01 19:27:53 TIMER: Check step...
+18.01 19:27:53 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:53 TIMER: Check step: 1ms
+18.01 19:27:58 TIMER: Check step...
+18.01 19:27:58 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:27:58 TIMER: Check step: 2ms
+18.01 19:28:03 TIMER: Check step...
+18.01 19:28:03 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:03 TIMER: Check step: 1ms
+18.01 19:28:08 TIMER: Check step...
+18.01 19:28:08 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:08 TIMER: Check step: 1ms
+18.01 19:28:13 TIMER: Check step...
+18.01 19:28:13 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:13 TIMER: Check step: 1ms
+18.01 19:28:18 TIMER: Check step...
+18.01 19:28:18 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:18 TIMER: Check step: 1ms
+18.01 19:28:23 TIMER: Check step...
+18.01 19:28:23 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:23 TIMER: Check step: 0ms
+18.01 19:28:28 TIMER: Check step...
+18.01 19:28:28 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:28 TIMER: Check step: 1ms
+18.01 19:28:33 TIMER: Check step...
+18.01 19:28:33 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:33 TIMER: Check step: 2ms
+18.01 19:28:38 TIMER: Clans cache...
+18.01 19:28:38 TIMER: Clans cache: 0ms
+18.01 19:28:38 TIMER: Check step...
+18.01 19:28:38 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:38 TIMER: Check step: 1ms
+18.01 19:28:38 TIMER: Check round...
+18.01 19:28:38 DB: SELECT * FROM tournament WHERE startdate = '2017-18-01 22:28' OR rounddate = '2017-18-01 22:28' AND status <> 'finished'
+18.01 19:28:38 DB: SELECT * FROM battle WHERE endtime >= '1484756.9183261' AND avaliable = false AND finished <> true
+18.01 19:28:38 TIMER: Check round: 2ms
+18.01 19:28:43 TIMER: Check step...
+18.01 19:28:43 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:43 TIMER: Check step: 1ms
+18.01 19:28:48 TIMER: Check step...
+18.01 19:28:48 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:48 TIMER: Check step: 1ms
+18.01 19:28:53 TIMER: Check step...
+18.01 19:28:53 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:53 TIMER: Check step: 1ms
+18.01 19:28:58 TIMER: Check step...
+18.01 19:28:58 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:28:58 TIMER: Check step: 1ms
+18.01 19:29:03 TIMER: Check step...
+18.01 19:29:03 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:03 TIMER: Check step: 1ms
+18.01 19:29:08 TIMER: Check step...
+18.01 19:29:08 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:08 TIMER: Check step: 1ms
+18.01 19:29:13 TIMER: Check step...
+18.01 19:29:13 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:13 TIMER: Check step: 1ms
+18.01 19:29:18 TIMER: Check step...
+18.01 19:29:18 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:18 TIMER: Check step: 2ms
+18.01 19:29:23 TIMER: Check step...
+18.01 19:29:23 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:23 TIMER: Check step: 1ms
+18.01 19:29:28 TIMER: Check step...
+18.01 19:29:28 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:28 TIMER: Check step: 1ms
+18.01 19:29:33 TIMER: Check step...
+18.01 19:29:33 DB: SELECT * FROM battle WHERE avaliable = true AND finished <> true AND steptime <> -1
+18.01 19:29:33 TIMER: Check step: 1ms

@@ -1,0 +1,33 @@
+26.01 12:02:18 TRACE: Invalid field access : split
+26.01 12:02:18 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 12:02:18 TRACE: Could not register.
+26.01 12:02:18 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 12:09:20 TRACE: Invalid field access : split
+26.01 12:09:20 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 12:09:20 TRACE: Could not register.
+26.01 12:09:20 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 12:21:33 TRACE: Invalid field access : split
+26.01 12:21:33 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 12:21:33 TRACE: Could not register.
+26.01 12:21:33 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

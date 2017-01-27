@@ -1,0 +1,254 @@
+03.10 16:00:07 TIMER: Check auto-disconnect...
+03.10 16:00:25 STATS: vdl.0 cache, locks:0
+03.10 16:01:07 TIMER: Check auto-disconnect...
+03.10 16:01:25 STATS: vdl.0 cache, locks:0
+03.10 16:02:07 TIMER: Check auto-disconnect...
+03.10 16:02:25 STATS: vdl.0 cache, locks:0
+03.10 16:03:07 TIMER: Check auto-disconnect...
+03.10 16:03:25 STATS: vdl.0 cache, locks:0
+03.10 16:04:07 TIMER: Check auto-disconnect...
+03.10 16:04:25 STATS: vdl.0 cache, locks:0
+03.10 16:05:07 TIMER: Check auto-disconnect...
+03.10 16:05:25 STATS: vdl.0 cache, locks:0
+03.10 16:06:07 TIMER: Check auto-disconnect...
+03.10 16:06:25 STATS: vdl.0 cache, locks:0
+03.10 16:07:07 TIMER: Check auto-disconnect...
+03.10 16:07:25 STATS: vdl.0 cache, locks:0
+03.10 16:08:07 TIMER: Check auto-disconnect...
+03.10 16:08:25 STATS: vdl.0 cache, locks:0
+03.10 16:09:07 TIMER: Check auto-disconnect...
+03.10 16:09:25 STATS: vdl.0 cache, locks:0
+03.10 16:10:07 TIMER: Check auto-disconnect...
+03.10 16:10:25 STATS: vdl.0 cache, locks:0
+03.10 16:11:07 TIMER: Check auto-disconnect...
+03.10 16:11:25 STATS: vdl.0 cache, locks:0
+03.10 16:12:07 TIMER: Check auto-disconnect...
+03.10 16:12:25 STATS: vdl.0 cache, locks:0
+03.10 16:13:07 TIMER: Check auto-disconnect...
+03.10 16:13:25 STATS: vdl.0 cache, locks:0
+03.10 16:14:07 TIMER: Check auto-disconnect...
+03.10 16:14:25 STATS: vdl.0 cache, locks:0
+03.10 16:15:07 TIMER: Check auto-disconnect...
+03.10 16:15:25 STATS: vdl.0 cache, locks:0
+03.10 16:16:07 TIMER: Check auto-disconnect...
+03.10 16:16:25 STATS: vdl.0 cache, locks:0
+03.10 16:16:52 NET: Client (conid:62771437) connected to vdl.0 (clients:1)
+03.10 16:16:57 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:16:57 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:16:57 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:16:57 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:16:57 STATS: vdl.0 cache connection, 988 calls, total 0.920037746429443 sec spent, avg 0.93 ms
+03.10 16:16:57 TRACE: Invalid field access : name
+03.10 16:16:57 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:16:57 TRACE: Could not login.
+03.10 16:16:57 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:17:07 TIMER: Check auto-disconnect...
+03.10 16:17:25 STATS: vdl.0 cache, locks:0
+03.10 16:17:55 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:17:55 TRACE: User not logon yet.
+03.10 16:17:55 NET: Client (name:null conid:62771437 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:18:07 TIMER: Check auto-disconnect...
+03.10 16:18:25 STATS: vdl.0 cache, locks:0
+03.10 16:19:07 TIMER: Check auto-disconnect...
+03.10 16:19:25 STATS: vdl.0 cache, locks:0
+03.10 16:20:07 TIMER: Check auto-disconnect...
+03.10 16:20:25 STATS: vdl.0 cache, locks:0
+03.10 16:21:07 TIMER: Check auto-disconnect...
+03.10 16:21:25 STATS: vdl.0 cache, locks:0
+03.10 16:22:07 TIMER: Check auto-disconnect...
+03.10 16:22:25 STATS: vdl.0 cache, locks:0
+03.10 16:23:07 TIMER: Check auto-disconnect...
+03.10 16:23:25 STATS: vdl.0 cache, locks:0
+03.10 16:24:07 TIMER: Check auto-disconnect...
+03.10 16:24:25 STATS: vdl.0 cache, locks:0
+03.10 16:25:07 TIMER: Check auto-disconnect...
+03.10 16:25:25 STATS: vdl.0 cache, locks:0
+03.10 16:26:07 TIMER: Check auto-disconnect...
+03.10 16:26:25 STATS: vdl.0 cache, locks:0
+03.10 16:27:07 TIMER: Check auto-disconnect...
+03.10 16:27:25 STATS: vdl.0 cache, locks:0
+03.10 16:28:07 TIMER: Check auto-disconnect...
+03.10 16:28:11 NET: Client (conid:40829339) connected to vdl.0 (clients:1)
+03.10 16:28:18 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:28:18 TRACE: User not logon yet.
+03.10 16:28:18 NET: Client (name:null conid:40829339 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:28:25 STATS: vdl.0 cache, locks:0
+03.10 16:29:07 TIMER: Check auto-disconnect...
+03.10 16:29:25 STATS: vdl.0 cache, locks:0
+03.10 16:30:07 TIMER: Check auto-disconnect...
+03.10 16:30:25 STATS: vdl.0 cache, locks:0
+03.10 16:31:07 TIMER: Check auto-disconnect...
+03.10 16:31:25 STATS: vdl.0 cache, locks:0
+03.10 16:32:07 TIMER: Check auto-disconnect...
+03.10 16:32:25 STATS: vdl.0 cache, locks:0
+03.10 16:33:07 TIMER: Check auto-disconnect...
+03.10 16:33:25 STATS: vdl.0 cache, locks:0
+03.10 16:33:59 NET: Client (conid:59979265) connected to vdl.0 (clients:1)
+03.10 16:34:02 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:34:02 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:34:02 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:34:02 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:34:02 STATS: vdl.0 cache connection, 989 calls, total 0.92114782333374 sec spent, avg 0.93 ms
+03.10 16:34:02 TRACE: Invalid field access : name
+03.10 16:34:02 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:34:02 TRACE: Could not login.
+03.10 16:34:02 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:34:07 TIMER: Check auto-disconnect...
+03.10 16:34:25 STATS: vdl.0 cache, locks:0
+03.10 16:35:06 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:35:06 TRACE: User not logon yet.
+03.10 16:35:06 NET: Client (name:null conid:59979265 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:35:07 TIMER: Check auto-disconnect...
+03.10 16:35:25 STATS: vdl.0 cache, locks:0
+03.10 16:36:07 TIMER: Check auto-disconnect...
+03.10 16:36:25 STATS: vdl.0 cache, locks:0
+03.10 16:37:07 TIMER: Check auto-disconnect...
+03.10 16:37:25 STATS: vdl.0 cache, locks:0
+03.10 16:38:07 TIMER: Check auto-disconnect...
+03.10 16:38:25 STATS: vdl.0 cache, locks:0
+03.10 16:39:07 TIMER: Check auto-disconnect...
+03.10 16:39:25 STATS: vdl.0 cache, locks:0
+03.10 16:40:07 TIMER: Check auto-disconnect...
+03.10 16:40:25 STATS: vdl.0 cache, locks:0
+03.10 16:41:07 TIMER: Check auto-disconnect...
+03.10 16:41:25 STATS: vdl.0 cache, locks:0
+03.10 16:42:03 NET: Client (conid:95171735) connected to vdl.0 (clients:1)
+03.10 16:42:07 TIMER: Check auto-disconnect...
+03.10 16:42:23 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:42:23 TRACE: User not logon yet.
+03.10 16:42:23 NET: Client (name:null conid:95171735 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:42:25 STATS: vdl.0 cache, locks:0
+03.10 16:43:07 TIMER: Check auto-disconnect...
+03.10 16:43:25 STATS: vdl.0 cache, locks:0
+03.10 16:44:07 TIMER: Check auto-disconnect...
+03.10 16:44:25 STATS: vdl.0 cache, locks:0
+03.10 16:45:07 TIMER: Check auto-disconnect...
+03.10 16:45:25 STATS: vdl.0 cache, locks:0
+03.10 16:45:40 NET: Client (conid:70141224) connected to vdl.0 (clients:1)
+03.10 16:45:47 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:45:47 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:45:47 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:45:47 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:45:47 STATS: vdl.0 cache connection, 990 calls, total 0.922098636627197 sec spent, avg 0.93 ms
+03.10 16:45:47 TRACE: Invalid field access : name
+03.10 16:45:47 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:45:47 TRACE: Could not login.
+03.10 16:45:47 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:45:55 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:45:55 TRACE: User not logon yet.
+03.10 16:45:55 NET: Client (name:null conid:70141224 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:46:00 NET: Client (conid:40287795) connected to vdl.0 (clients:1)
+03.10 16:46:07 TIMER: Check auto-disconnect...
+03.10 16:46:25 STATS: vdl.0 cache, locks:0
+03.10 16:47:07 TIMER: Check auto-disconnect...
+03.10 16:47:25 STATS: vdl.0 cache, locks:0
+03.10 16:47:33 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:47:33 TRACE: User not logon yet.
+03.10 16:47:33 NET: Client (name:null conid:40287795 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:47:38 NET: Client (conid:75409728) connected to vdl.0 (clients:1)
+03.10 16:48:06 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:48:06 TRACE: User not logon yet.
+03.10 16:48:06 NET: Client (name:null conid:75409728 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:48:07 TIMER: Check auto-disconnect...
+03.10 16:48:11 NET: Client (conid:60152240) connected to vdl.0 (clients:1)
+03.10 16:48:17 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:48:17 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:48:17 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:48:17 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:48:17 STATS: vdl.0 cache connection, 991 calls, total 0.923337697982788 sec spent, avg 0.93 ms
+03.10 16:48:17 TRACE: Invalid field access : name
+03.10 16:48:17 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:48:17 TRACE: Could not login.
+03.10 16:48:17 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:48:25 STATS: vdl.0 cache, locks:0
+03.10 16:49:07 TIMER: Check auto-disconnect...
+03.10 16:49:25 STATS: vdl.0 cache, locks:0
+03.10 16:49:26 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:49:26 TRACE: User not logon yet.
+03.10 16:49:26 NET: Client (name:null conid:60152240 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:49:54 NET: Client (conid:38167067) connected to vdl.0 (clients:1)
+03.10 16:50:07 TIMER: Check auto-disconnect...
+03.10 16:50:25 STATS: vdl.0 cache, locks:0
+03.10 16:51:07 TIMER: Check auto-disconnect...
+03.10 16:51:25 STATS: vdl.0 cache, locks:0
+03.10 16:52:07 TIMER: Check auto-disconnect...
+03.10 16:52:25 STATS: vdl.0 cache, locks:0
+03.10 16:52:55 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:52:55 TRACE: User not logon yet.
+03.10 16:52:55 NET: Client (name:null conid:38167067 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:53:07 TIMER: Check auto-disconnect...
+03.10 16:53:25 STATS: vdl.0 cache, locks:0
+03.10 16:54:05 NET: Client (conid:95069637) connected to vdl.0 (clients:1)
+03.10 16:54:07 TIMER: Check auto-disconnect...
+03.10 16:54:08 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:54:08 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:54:08 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:54:08 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:54:08 STATS: vdl.0 cache connection, 992 calls, total 0.924412727355957 sec spent, avg 0.93 ms
+03.10 16:54:08 TRACE: Invalid field access : name
+03.10 16:54:08 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:54:08 TRACE: Could not login.
+03.10 16:54:08 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:54:25 STATS: vdl.0 cache, locks:0
+03.10 16:55:07 TIMER: Check auto-disconnect...
+03.10 16:55:25 STATS: vdl.0 cache, locks:0
+03.10 16:56:07 TIMER: Check auto-disconnect...
+03.10 16:56:25 STATS: vdl.0 cache, locks:0
+03.10 16:57:07 TIMER: Check auto-disconnect...
+03.10 16:57:25 STATS: vdl.0 cache, locks:0
+03.10 16:57:50 ++ NET: null req: user.logout { messageType => user.logout }
+03.10 16:57:50 TRACE: User not logon yet.
+03.10 16:57:51 NET: Client (name:null conid:95069637 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:58:04 NET: Client (conid:7000188) connected to vdl.0 (clients:1)
+03.10 16:58:07 TIMER: Check auto-disconnect...
+03.10 16:58:09 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:58:09 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:58:09 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:58:09 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:58:09 STATS: vdl.0 cache connection, 993 calls, total 0.92540979385376 sec spent, avg 0.93 ms
+03.10 16:58:09 TRACE: Invalid field access : name
+03.10 16:58:09 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:58:09 TRACE: Could not login.
+03.10 16:58:09 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+03.10 16:58:25 STATS: vdl.0 cache, locks:0
+03.10 16:59:07 TIMER: Check auto-disconnect...
+03.10 16:59:25 STATS: vdl.0 cache, locks:0
+03.10 16:59:38 NET: Client (name:null conid:7000188 TCP) disconnected from vdl.0 (clients:0)
+03.10 16:59:46 NET: Client (conid:9046334) connected to vdl.0 (clients:1)
+03.10 16:59:51 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+03.10 16:59:51 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+03.10 16:59:51 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+03.10 16:59:51 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.10 16:59:51 STATS: vdl.0 cache connection, 994 calls, total 0.926314830780029 sec spent, avg 0.93 ms
+03.10 16:59:51 TRACE: Invalid field access : name
+03.10 16:59:51 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+03.10 16:59:51 TRACE: Could not login.
+03.10 16:59:51 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

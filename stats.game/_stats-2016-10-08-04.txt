@@ -1,0 +1,17 @@
+08.10 04:43:09 STATS: vdl.0 cache, locks:0
+08.10 04:44:09 STATS: vdl.0 cache, locks:0
+08.10 04:45:09 STATS: vdl.0 cache, locks:0
+08.10 04:46:09 STATS: vdl.0 cache, locks:0
+08.10 04:47:09 STATS: vdl.0 cache, locks:0
+08.10 04:48:09 STATS: vdl.0 cache, locks:0
+08.10 04:49:09 STATS: vdl.0 cache, locks:0
+08.10 04:50:09 STATS: vdl.0 cache, locks:0
+08.10 04:51:09 STATS: vdl.0 cache, locks:0
+08.10 04:52:09 STATS: vdl.0 cache, locks:0
+08.10 04:53:09 STATS: vdl.0 cache, locks:0
+08.10 04:54:09 STATS: vdl.0 cache, locks:0
+08.10 04:55:09 STATS: vdl.0 cache, locks:0
+08.10 04:56:09 STATS: vdl.0 cache, locks:0
+08.10 04:57:09 STATS: vdl.0 cache, locks:0
+08.10 04:58:09 STATS: vdl.0 cache, locks:0
+08.10 04:59:09 STATS: vdl.0 cache, locks:0

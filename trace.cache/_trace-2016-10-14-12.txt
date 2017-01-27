@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+14.10 12:31:10 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.10 12:31:10 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 110
+Called from modules/VDLCache.hx line 103
+Called from modules/VDLCache.hx line 72
+Called from snipe/cache/CacheServer.hx line 487
+14.10 12:31:24 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.10 12:31:24 TRACE: vdl/cache.battle.infoRoom : 
+=======
+14.10 12:40:03 TRACE: vdl/cache.tournament.getAvailableTournament : Invalid field access : length
+14.10 12:40:03 TRACE: vdl/cache.tournament.getAvailableTournament : 
+Called from modules/VDLCache.hx line 175
+Called from modules/VDLCache.hx line 78
+Called from snipe/cache/CacheServer.hx line 487
+14.10 12:42:57 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.10 12:42:57 TRACE: vdl/cache.battle.infoRoom : 
+>>>>>>> d8dd5f2cef87bf846119ec65a7adf149bc370c79
+Called from modules/VDLCache.hx line 110
+Called from modules/VDLCache.hx line 103
+Called from modules/VDLCache.hx line 72
+Called from snipe/cache/CacheServer.hx line 487
+<<<<<<< HEAD
+14.10 12:35:17 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.10 12:35:17 TRACE: vdl/cache.battle.infoRoom : 
+=======
+14.10 12:50:39 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.10 12:50:39 TRACE: vdl/cache.battle.infoRoom : 
+>>>>>>> d8dd5f2cef87bf846119ec65a7adf149bc370c79
+Called from modules/VDLCache.hx line 110
+Called from modules/VDLCache.hx line 103
+Called from modules/VDLCache.hx line 72
+Called from snipe/cache/CacheServer.hx line 487
+<<<<<<< HEAD
+14.10 12:51:38 TRACE: ============ GAME = vdl
+=======
+14.10 12:58:19 TRACE: vdl/cache.tournament.getAvailableTournament : Invalid field access : get
+14.10 12:58:19 TRACE: vdl/cache.tournament.getAvailableTournament : 
+Called from modules/VDLCache.hx line 173
+Called from modules/VDLCache.hx line 78
+Called from snipe/cache/CacheServer.hx line 487
+>>>>>>> d8dd5f2cef87bf846119ec65a7adf149bc370c79

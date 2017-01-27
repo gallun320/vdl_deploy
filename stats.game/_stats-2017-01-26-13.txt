@@ -1,0 +1,4 @@
+26.01 13:13:17 STATS: vdl.0 cache, locks:0
+26.01 13:14:17 STATS: vdl.0 cache, locks:0
+26.01 13:15:17 STATS: vdl.0 cache, locks:0
+26.01 13:16:17 STATS: vdl.0 cache, locks:0

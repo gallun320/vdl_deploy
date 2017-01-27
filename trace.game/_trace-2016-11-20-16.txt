@@ -1,0 +1,701 @@
+20.11 16:45:08 TRACE: User not logon yet.
+20.11 16:48:10 TRACE: Invalid field access : token
+20.11 16:48:10 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:10 TRACE: Could not login.
+20.11 16:48:10 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:15 TRACE: Invalid field access : token
+20.11 16:48:15 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:15 TRACE: Could not login.
+20.11 16:48:15 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:17 TRACE: User not logon yet.
+20.11 16:48:18 TRACE: Invalid field access : token
+20.11 16:48:18 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:18 TRACE: Could not login.
+20.11 16:48:18 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:20 TRACE: Invalid field access : token
+20.11 16:48:20 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:20 TRACE: Could not login.
+20.11 16:48:20 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:21 TRACE: Invalid field access : token
+20.11 16:48:21 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:21 TRACE: Could not login.
+20.11 16:48:21 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:23 TRACE: Invalid field access : token
+20.11 16:48:23 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:23 TRACE: Could not login.
+20.11 16:48:23 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:24 TRACE: Invalid field access : token
+20.11 16:48:24 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:24 TRACE: Could not login.
+20.11 16:48:24 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:26 TRACE: Invalid field access : token
+20.11 16:48:26 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:26 TRACE: Could not login.
+20.11 16:48:26 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:27 TRACE: Invalid field access : token
+20.11 16:48:27 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:27 TRACE: Could not login.
+20.11 16:48:27 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:30 TRACE: Invalid field access : token
+20.11 16:48:30 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:30 TRACE: Could not login.
+20.11 16:48:30 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:30 TRACE: Invalid field access : token
+20.11 16:48:30 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:30 TRACE: Could not login.
+20.11 16:48:30 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:33 TRACE: Invalid field access : token
+20.11 16:48:33 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:33 TRACE: Could not login.
+20.11 16:48:33 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:33 TRACE: Invalid field access : token
+20.11 16:48:33 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:33 TRACE: Could not login.
+20.11 16:48:33 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:36 TRACE: Invalid field access : token
+20.11 16:48:36 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:36 TRACE: Could not login.
+20.11 16:48:36 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:48:36 TRACE: Invalid field access : token
+20.11 16:48:36 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:48:36 TRACE: Could not login.
+20.11 16:48:36 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:49:03 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:49:03 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+20.11 16:49:07 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:49:07 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+20.11 16:49:49 TRACE: Invalid field access : token
+20.11 16:49:49 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:49:49 TRACE: Could not login.
+20.11 16:49:49 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:49:53 TRACE: Invalid field access : token
+20.11 16:49:53 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:49:53 TRACE: Could not login.
+20.11 16:49:53 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:49:56 TRACE: User not logon yet.
+20.11 16:49:57 TRACE: Invalid field access : token
+20.11 16:49:57 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:49:57 TRACE: Could not login.
+20.11 16:49:57 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:00 TRACE: Invalid field access : token
+20.11 16:50:00 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:00 TRACE: Could not login.
+20.11 16:50:00 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:00 TRACE: Invalid field access : token
+20.11 16:50:00 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:00 TRACE: Could not login.
+20.11 16:50:00 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:02 TRACE: Invalid field access : token
+20.11 16:50:02 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:02 TRACE: Could not login.
+20.11 16:50:02 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:03 TRACE: Invalid field access : token
+20.11 16:50:03 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:03 TRACE: Could not login.
+20.11 16:50:03 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:05 TRACE: Invalid field access : token
+20.11 16:50:05 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:05 TRACE: Could not login.
+20.11 16:50:05 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:06 TRACE: Invalid field access : token
+20.11 16:50:06 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:06 TRACE: Could not login.
+20.11 16:50:06 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:08 TRACE: Invalid field access : token
+20.11 16:50:08 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:08 TRACE: Could not login.
+20.11 16:50:08 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:09 TRACE: Invalid field access : token
+20.11 16:50:09 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:09 TRACE: Could not login.
+20.11 16:50:09 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:12 TRACE: Invalid field access : token
+20.11 16:50:12 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:12 TRACE: Could not login.
+20.11 16:50:12 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:12 TRACE: Invalid field access : token
+20.11 16:50:12 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:12 TRACE: Could not login.
+20.11 16:50:12 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:50:13 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:50:13 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+20.11 16:50:15 TRACE: Invalid field access : token
+20.11 16:50:15 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:50:15 TRACE: Could not login.
+20.11 16:50:15 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:51:00 TRACE: User not logon yet.
+20.11 16:51:03 TRACE: Invalid field access : token
+20.11 16:51:03 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:51:03 TRACE: Could not login.
+20.11 16:51:03 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:51:06 TRACE: Invalid field access : token
+20.11 16:51:06 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:51:06 TRACE: Could not login.
+20.11 16:51:06 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:51:18 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:51:18 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+20.11 16:51:23 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:51:23 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+20.11 16:53:57 TRACE: Invalid field access : token
+20.11 16:53:57 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:53:57 TRACE: Could not login.
+20.11 16:53:57 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:02 TRACE: Invalid field access : token
+20.11 16:54:02 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:02 TRACE: Could not login.
+20.11 16:54:02 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:05 TRACE: User not logon yet.
+20.11 16:54:06 TRACE: Invalid field access : token
+20.11 16:54:06 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:06 TRACE: Could not login.
+20.11 16:54:06 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:08 TRACE: Invalid field access : token
+20.11 16:54:08 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:08 TRACE: Could not login.
+20.11 16:54:08 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:09 TRACE: Invalid field access : token
+20.11 16:54:09 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:09 TRACE: Could not login.
+20.11 16:54:09 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:11 TRACE: Invalid field access : token
+20.11 16:54:11 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:11 TRACE: Could not login.
+20.11 16:54:11 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:12 TRACE: Invalid field access : token
+20.11 16:54:12 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:12 TRACE: Could not login.
+20.11 16:54:12 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:14 TRACE: Invalid field access : token
+20.11 16:54:14 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:14 TRACE: Could not login.
+20.11 16:54:14 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:15 TRACE: Invalid field access : token
+20.11 16:54:15 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:15 TRACE: Could not login.
+20.11 16:54:15 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:17 TRACE: Invalid field access : token
+20.11 16:54:17 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:17 TRACE: Could not login.
+20.11 16:54:17 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:18 TRACE: Invalid field access : token
+20.11 16:54:18 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:18 TRACE: Could not login.
+20.11 16:54:18 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:21 TRACE: Invalid field access : token
+20.11 16:54:21 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:21 TRACE: Could not login.
+20.11 16:54:21 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:21 TRACE: Invalid field access : token
+20.11 16:54:21 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:21 TRACE: Could not login.
+20.11 16:54:21 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:24 TRACE: Invalid field access : token
+20.11 16:54:24 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:24 TRACE: Could not login.
+20.11 16:54:24 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:54:24 TRACE: Invalid field access : token
+20.11 16:54:24 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:54:24 TRACE: Could not login.
+20.11 16:54:24 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:00 TRACE: Invalid field access : token
+20.11 16:56:00 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:00 TRACE: Could not login.
+20.11 16:56:00 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:00 TRACE: Invalid field access : token
+20.11 16:56:00 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:00 TRACE: Could not login.
+20.11 16:56:00 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:03 TRACE: Invalid field access : token
+20.11 16:56:03 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:03 TRACE: Could not login.
+20.11 16:56:03 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:03 TRACE: Invalid field access : token
+20.11 16:56:03 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:03 TRACE: Could not login.
+20.11 16:56:03 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:06 TRACE: Invalid field access : token
+20.11 16:56:06 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:06 TRACE: Could not login.
+20.11 16:56:06 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:07 TRACE: Invalid field access : token
+20.11 16:56:07 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:07 TRACE: Could not login.
+20.11 16:56:07 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:22 TRACE: Invalid field access : token
+20.11 16:56:22 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:22 TRACE: Could not login.
+20.11 16:56:22 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:22 TRACE: Invalid field access : token
+20.11 16:56:22 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:22 TRACE: Could not login.
+20.11 16:56:22 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:25 TRACE: Invalid field access : token
+20.11 16:56:25 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:25 TRACE: Could not login.
+20.11 16:56:25 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:25 TRACE: Invalid field access : token
+20.11 16:56:25 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:25 TRACE: Could not login.
+20.11 16:56:25 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:28 TRACE: Invalid field access : token
+20.11 16:56:28 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:28 TRACE: Could not login.
+20.11 16:56:28 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:28 TRACE: Invalid field access : token
+20.11 16:56:28 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:28 TRACE: Could not login.
+20.11 16:56:28 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:31 TRACE: Invalid field access : token
+20.11 16:56:31 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:31 TRACE: Could not login.
+20.11 16:56:31 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:31 TRACE: Invalid field access : token
+20.11 16:56:31 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:31 TRACE: Could not login.
+20.11 16:56:31 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:34 TRACE: Invalid field access : token
+20.11 16:56:34 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:34 TRACE: Could not login.
+20.11 16:56:34 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:34 TRACE: Invalid field access : token
+20.11 16:56:34 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:34 TRACE: Could not login.
+20.11 16:56:34 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:37 TRACE: Invalid field access : token
+20.11 16:56:37 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:37 TRACE: Could not login.
+20.11 16:56:37 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:37 TRACE: Invalid field access : token
+20.11 16:56:37 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:37 TRACE: Could not login.
+20.11 16:56:37 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:40 TRACE: Invalid field access : token
+20.11 16:56:40 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:40 TRACE: Could not login.
+20.11 16:56:40 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:56:40 TRACE: Invalid field access : token
+20.11 16:56:40 TRACE: 
+Called from snipe/slave/Server.hx line 931
+Called from snipe/slave/Server.hx line 903
+Called from snipe/slave/Server.hx line 1173
+20.11 16:56:40 TRACE: Could not login.
+20.11 16:56:40 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+20.11 16:58:29 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+20.11 16:58:29 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009

@@ -1,0 +1,322 @@
+28.09 15:00:05 TIMER: Check auto-disconnect...
+28.09 15:00:24 STATS: vdl.0 cache, locks:0
+28.09 15:01:05 TIMER: Check auto-disconnect...
+28.09 15:01:24 STATS: vdl.0 cache, locks:0
+28.09 15:02:05 TIMER: Check auto-disconnect...
+28.09 15:02:24 STATS: vdl.0 cache, locks:0
+28.09 15:03:05 TIMER: Check auto-disconnect...
+28.09 15:03:24 STATS: vdl.0 cache, locks:0
+28.09 15:04:05 TIMER: Check auto-disconnect...
+28.09 15:04:24 STATS: vdl.0 cache, locks:0
+28.09 15:05:05 TIMER: Check auto-disconnect...
+28.09 15:05:10 NET: Client (conid:47898853) connected to vdl.0 (clients:1)
+28.09 15:05:15 ++ NET: null req: user.login { type => token, messageType => user.login, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:05:15 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c')
+28.09 15:05:15 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c'), _type => core/server.query }
+28.09 15:05:15 -<<-: core/server.query { list => {{ password => random32, name => player22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:05:15 STATS: vdl.0 cache connection, 695 calls, total 0.583467960357666 sec spent, avg 0.84 ms
+28.09 15:05:15 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32'
+28.09 15:05:15 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32', _type => core/server.query }
+28.09 15:05:15 -<<-: core/server.query { list => {{ name => player22, networkid => , isbanned => false, id => 22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:05:15 ->>-: core/user.isOnlineID { id => 22, _type => core/user.isOnlineID }
+28.09 15:05:15 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+28.09 15:05:15 ->>-: core/cache.get { type => user, v => -1, id => 22, _type => core/cache.get }
+28.09 15:05:15 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1475055394, lastLoginDate => 272, lastLoadDate => 929 }, effects => { list => [] } }, name => player22, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => random32, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => mail, mathrating => 0, regdate => 2016-09-21 15:52:11.205117+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 22 } }
+28.09 15:05:15 ->>-: core/cache.get { type => questdata, v => -1, id => 22, _type => core/cache.get }
+28.09 15:05:15 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 22 } }
+28.09 15:05:15 NET: Client login (conid:47898853, id:22, name:player22)
+28.09 15:05:15 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 22, _type => core/user.loginPost, ipAddr => 188.162.39.220 }
+28.09 15:05:15 -<<-: core/user.loginPost { _type => core/user.loginPost }
+28.09 15:05:15 DB: SELECT token FROM tokens WHERE userid = 22
+28.09 15:05:15 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 22, _type => core/server.query }
+28.09 15:05:15 -<<-: core/server.query { list => {{ token => eabff67fd4352cc58225f2033da8e02c }}, errorCode => ok, _type => core/server.query }
+28.09 15:05:15 == NET: player22 ret: user.login { name => player22, type => user.login, errorCode => ok, id => 22, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:05:15 == NET: player22 ret: user.join { name => player22, type => user.join }
+28.09 15:05:24 STATS: vdl.0 cache, locks:2
+28.09 15:05:24 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 22, _type => core/cache.update }
+28.09 15:05:24 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:06:05 TIMER: Check auto-disconnect...
+28.09 15:06:06 ++ NET: player22 req: user.logout { messageType => user.logout }
+28.09 15:06:06 TRACE: user.logout : No such module: user
+28.09 15:06:06 NET: Client (name:player22 conid:47898853 TCP) disconnected from vdl.0 (clients:0)
+28.09 15:06:06 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 15:06:06 DB: SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true
+28.09 15:06:06 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true, _type => core/server.query }
+28.09 15:06:06 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+28.09 15:06:06 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+28.09 15:06:06 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+28.09 15:06:06 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:06:06 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+28.09 15:06:06 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:06:06 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:06:06 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 22, _type => core/user.logoutPost }
+28.09 15:06:06 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+28.09 15:06:24 STATS: vdl.0 cache, locks:0
+28.09 15:06:36 NET: Client (conid:75766969) connected to vdl.0 (clients:1)
+28.09 15:06:46 ++ NET: null req: user.login { type => token, messageType => user.login, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:06:46 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c')
+28.09 15:06:46 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c'), _type => core/server.query }
+28.09 15:06:46 -<<-: core/server.query { list => {{ password => random32, name => player22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:06:46 STATS: vdl.0 cache connection, 708 calls, total 0.593714952468872 sec spent, avg 0.84 ms
+28.09 15:06:46 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32'
+28.09 15:06:46 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32', _type => core/server.query }
+28.09 15:06:46 -<<-: core/server.query { list => {{ name => player22, networkid => , isbanned => false, id => 22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:06:46 ->>-: core/user.isOnlineID { id => 22, _type => core/user.isOnlineID }
+28.09 15:06:46 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+28.09 15:06:46 ->>-: core/cache.get { type => user, v => -1, id => 22, _type => core/cache.get }
+28.09 15:06:46 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1475055394, lastLoginDate => 272, lastLoadDate => 929 }, effects => { list => [] } }, name => player22, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => random32, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => mail, mathrating => 0, regdate => 2016-09-21 15:52:11.205117+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 22 } }
+28.09 15:06:46 ->>-: core/cache.get { type => questdata, v => -1, id => 22, _type => core/cache.get }
+28.09 15:06:46 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 22 } }
+28.09 15:06:46 NET: Client login (conid:75766969, id:22, name:player22)
+28.09 15:06:46 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 22, _type => core/user.loginPost, ipAddr => 188.162.39.220 }
+28.09 15:06:46 -<<-: core/user.loginPost { _type => core/user.loginPost }
+28.09 15:06:46 DB: SELECT token FROM tokens WHERE userid = 22
+28.09 15:06:46 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 22, _type => core/server.query }
+28.09 15:06:46 -<<-: core/server.query { list => {{ token => eabff67fd4352cc58225f2033da8e02c }}, errorCode => ok, _type => core/server.query }
+28.09 15:06:46 == NET: player22 ret: user.login { name => player22, type => user.login, errorCode => ok, id => 22, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:06:46 == NET: player22 ret: user.join { name => player22, type => user.join }
+28.09 15:06:54 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 22, _type => core/cache.update }
+28.09 15:06:54 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:07:05 TIMER: Check auto-disconnect...
+28.09 15:07:24 STATS: vdl.0 cache, locks:2
+28.09 15:08:05 TIMER: Check auto-disconnect...
+28.09 15:08:24 STATS: vdl.0 cache, locks:2
+28.09 15:08:52 ++ NET: player22 req: user.logout { messageType => user.logout }
+28.09 15:08:52 TRACE: user.logout : No such module: user
+28.09 15:08:52 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 15:08:52 NET: Client (name:player22 conid:75766969 TCP) disconnected from vdl.0 (clients:0)
+28.09 15:08:52 DB: SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true
+28.09 15:08:52 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true, _type => core/server.query }
+28.09 15:08:52 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+28.09 15:08:52 STATS: vdl.0 cache connection, 716 calls, total 0.599791049957275 sec spent, avg 0.84 ms
+28.09 15:08:52 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+28.09 15:08:52 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+28.09 15:08:52 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:08:52 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+28.09 15:08:52 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:08:52 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:08:52 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 22, _type => core/user.logoutPost }
+28.09 15:08:52 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+28.09 15:08:57 NET: Client (conid:30327266) connected to vdl.0 (clients:1)
+28.09 15:09:05 TIMER: Check auto-disconnect...
+28.09 15:09:22 ++ NET: null req: user.login { type => token, messageType => user.login, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:09:22 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c')
+28.09 15:09:22 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c'), _type => core/server.query }
+28.09 15:09:22 -<<-: core/server.query { list => {{ password => random32, name => player22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:09:22 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32'
+28.09 15:09:22 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32', _type => core/server.query }
+28.09 15:09:22 -<<-: core/server.query { list => {{ name => player22, networkid => , isbanned => false, id => 22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:09:22 ->>-: core/user.isOnlineID { id => 22, _type => core/user.isOnlineID }
+28.09 15:09:22 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+28.09 15:09:22 ->>-: core/cache.get { type => user, v => -1, id => 22, _type => core/cache.get }
+28.09 15:09:22 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1475055394, lastLoginDate => 272, lastLoadDate => 929 }, effects => { list => [] } }, name => player22, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => random32, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => mail, mathrating => 0, regdate => 2016-09-21 15:52:11.205117+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 22 } }
+28.09 15:09:22 ->>-: core/cache.get { type => questdata, v => -1, id => 22, _type => core/cache.get }
+28.09 15:09:22 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 22 } }
+28.09 15:09:22 NET: Client login (conid:30327266, id:22, name:player22)
+28.09 15:09:22 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 22, _type => core/user.loginPost, ipAddr => 188.162.39.220 }
+28.09 15:09:22 -<<-: core/user.loginPost { _type => core/user.loginPost }
+28.09 15:09:22 DB: SELECT token FROM tokens WHERE userid = 22
+28.09 15:09:22 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 22, _type => core/server.query }
+28.09 15:09:22 -<<-: core/server.query { list => {{ token => eabff67fd4352cc58225f2033da8e02c }}, errorCode => ok, _type => core/server.query }
+28.09 15:09:22 == NET: player22 ret: user.login { name => player22, type => user.login, errorCode => ok, id => 22, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:09:22 == NET: player22 ret: user.join { name => player22, type => user.join }
+28.09 15:09:24 STATS: vdl.0 cache, locks:2
+28.09 15:09:29 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 22, _type => core/cache.update }
+28.09 15:09:29 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:10:05 TIMER: Check auto-disconnect...
+28.09 15:10:13 NET: Client (name:player22 conid:30327266 TCP) disconnected from vdl.0 (clients:0)
+28.09 15:10:13 DB: SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true
+28.09 15:10:13 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true, _type => core/server.query }
+28.09 15:10:13 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+28.09 15:10:13 STATS: vdl.0 cache connection, 729 calls, total 0.608798027038574 sec spent, avg 0.84 ms
+28.09 15:10:13 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+28.09 15:10:13 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+28.09 15:10:13 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:10:13 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+28.09 15:10:13 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:10:13 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:10:13 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 22, _type => core/user.logoutPost }
+28.09 15:10:13 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+28.09 15:10:23 NET: Client (conid:62269226) connected to vdl.0 (clients:1)
+28.09 15:10:24 STATS: vdl.0 cache, locks:0
+28.09 15:10:31 ++ NET: null req: user.login { type => token, messageType => user.login, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:10:31 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c')
+28.09 15:10:31 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c'), _type => core/server.query }
+28.09 15:10:31 -<<-: core/server.query { list => {{ password => random32, name => player22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:10:31 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32'
+28.09 15:10:31 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32', _type => core/server.query }
+28.09 15:10:31 -<<-: core/server.query { list => {{ name => player22, networkid => , isbanned => false, id => 22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:10:31 ->>-: core/user.isOnlineID { id => 22, _type => core/user.isOnlineID }
+28.09 15:10:31 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+28.09 15:10:31 ->>-: core/cache.get { type => user, v => -1, id => 22, _type => core/cache.get }
+28.09 15:10:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1475055394, lastLoginDate => 272, lastLoadDate => 929 }, effects => { list => [] } }, name => player22, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => random32, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => mail, mathrating => 0, regdate => 2016-09-21 15:52:11.205117+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 22 } }
+28.09 15:10:31 ->>-: core/cache.get { type => questdata, v => -1, id => 22, _type => core/cache.get }
+28.09 15:10:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 22 } }
+28.09 15:10:31 NET: Client login (conid:62269226, id:22, name:player22)
+28.09 15:10:31 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 22, _type => core/user.loginPost, ipAddr => 188.162.39.220 }
+28.09 15:10:31 -<<-: core/user.loginPost { _type => core/user.loginPost }
+28.09 15:10:31 DB: SELECT token FROM tokens WHERE userid = 22
+28.09 15:10:31 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 22, _type => core/server.query }
+28.09 15:10:31 -<<-: core/server.query { list => {{ token => eabff67fd4352cc58225f2033da8e02c }}, errorCode => ok, _type => core/server.query }
+28.09 15:10:31 == NET: player22 ret: user.login { name => player22, type => user.login, errorCode => ok, id => 22, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:10:31 == NET: player22 ret: user.join { name => player22, type => user.join }
+28.09 15:10:39 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 22, _type => core/cache.update }
+28.09 15:10:39 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:11:05 TIMER: Check auto-disconnect...
+28.09 15:11:24 STATS: vdl.0 cache, locks:2
+28.09 15:11:55 ++ NET: player22 req: user.logout { messageType => user.logout }
+28.09 15:11:55 TRACE: user.logout : No such module: user
+28.09 15:11:55 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 15:11:55 NET: Client (name:player22 conid:62269226 TCP) disconnected from vdl.0 (clients:0)
+28.09 15:11:55 DB: SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true
+28.09 15:11:55 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true, _type => core/server.query }
+28.09 15:11:55 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+28.09 15:11:55 STATS: vdl.0 cache connection, 742 calls, total 0.618377447128296 sec spent, avg 0.83 ms
+28.09 15:11:55 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+28.09 15:11:55 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+28.09 15:11:55 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:11:55 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+28.09 15:11:55 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:11:55 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:11:55 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 22, _type => core/user.logoutPost }
+28.09 15:11:55 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+28.09 15:12:05 TIMER: Check auto-disconnect...
+28.09 15:12:24 NET: Client (conid:91871113) connected to vdl.0 (clients:1)
+28.09 15:12:24 STATS: vdl.0 cache, locks:0
+28.09 15:12:32 ++ NET: null req: user.login { type => token, messageType => user.login, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:12:32 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c')
+28.09 15:12:32 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = 'eabff67fd4352cc58225f2033da8e02c'), _type => core/server.query }
+28.09 15:12:32 -<<-: core/server.query { list => {{ password => random32, name => player22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:12:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32'
+28.09 15:12:32 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'player22' AND Password = 'random32', _type => core/server.query }
+28.09 15:12:32 -<<-: core/server.query { list => {{ name => player22, networkid => , isbanned => false, id => 22 }}, errorCode => ok, _type => core/server.query }
+28.09 15:12:32 ->>-: core/user.isOnlineID { id => 22, _type => core/user.isOnlineID }
+28.09 15:12:32 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+28.09 15:12:32 ->>-: core/cache.get { type => user, v => -1, id => 22, _type => core/cache.get }
+28.09 15:12:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1475055394, lastLoginDate => 272, lastLoadDate => 929 }, effects => { list => [] } }, name => player22, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => random32, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => mail, mathrating => 0, regdate => 2016-09-21 15:52:11.205117+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 22 } }
+28.09 15:12:32 ->>-: core/cache.get { type => questdata, v => -1, id => 22, _type => core/cache.get }
+28.09 15:12:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 22 } }
+28.09 15:12:32 NET: Client login (conid:91871113, id:22, name:player22)
+28.09 15:12:32 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 22, _type => core/user.loginPost, ipAddr => 188.162.39.220 }
+28.09 15:12:32 -<<-: core/user.loginPost { _type => core/user.loginPost }
+28.09 15:12:32 DB: SELECT token FROM tokens WHERE userid = 22
+28.09 15:12:32 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 22, _type => core/server.query }
+28.09 15:12:32 -<<-: core/server.query { list => {{ token => eabff67fd4352cc58225f2033da8e02c }}, errorCode => ok, _type => core/server.query }
+28.09 15:12:32 == NET: player22 ret: user.login { name => player22, type => user.login, errorCode => ok, id => 22, token => eabff67fd4352cc58225f2033da8e02c }
+28.09 15:12:32 == NET: player22 ret: user.join { name => player22, type => user.join }
+28.09 15:12:39 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 22, _type => core/cache.update }
+28.09 15:12:39 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:13:05 TIMER: Check auto-disconnect...
+28.09 15:13:24 STATS: vdl.0 cache, locks:2
+28.09 15:13:35 ++ NET: player22 req: user.logout { messageType => user.logout }
+28.09 15:13:35 NET: Client (name:player22 conid:91871113 TCP) disconnected from vdl.0 (clients:0)
+28.09 15:13:35 TRACE: user.logout : No such module: user
+28.09 15:13:35 TRACE: user.logout : 
+Called from snipe/slave/Server.hx line 1206
+28.09 15:13:35 DB: SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true
+28.09 15:13:35 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=22 OR secondid=22 AND finished <> true, _type => core/server.query }
+28.09 15:13:35 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+28.09 15:13:35 STATS: vdl.0 cache connection, 755 calls, total 0.624578237533569 sec spent, avg 0.83 ms
+28.09 15:13:35 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+28.09 15:13:35 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+28.09 15:13:35 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:13:35 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+28.09 15:13:35 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 22, _type => core/cache.update }
+28.09 15:13:35 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+28.09 15:13:35 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 22, _type => core/user.logoutPost }
+28.09 15:13:35 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+28.09 15:14:05 TIMER: Check auto-disconnect...
+28.09 15:14:24 STATS: vdl.0 cache, locks:0
+28.09 15:15:05 TIMER: Check auto-disconnect...
+28.09 15:15:24 STATS: vdl.0 cache, locks:0
+28.09 15:16:05 TIMER: Check auto-disconnect...
+28.09 15:16:24 STATS: vdl.0 cache, locks:0
+28.09 15:17:05 TIMER: Check auto-disconnect...
+28.09 15:17:24 STATS: vdl.0 cache, locks:0
+28.09 15:18:05 TIMER: Check auto-disconnect...
+28.09 15:18:24 STATS: vdl.0 cache, locks:0
+28.09 15:19:05 TIMER: Check auto-disconnect...
+28.09 15:19:24 STATS: vdl.0 cache, locks:0
+28.09 15:20:05 TIMER: Check auto-disconnect...
+28.09 15:20:24 STATS: vdl.0 cache, locks:0
+28.09 15:21:05 TIMER: Check auto-disconnect...
+28.09 15:21:24 STATS: vdl.0 cache, locks:0
+28.09 15:22:05 TIMER: Check auto-disconnect...
+28.09 15:22:25 STATS: vdl.0 cache, locks:0
+28.09 15:23:05 TIMER: Check auto-disconnect...
+28.09 15:23:25 STATS: vdl.0 cache, locks:0
+28.09 15:24:05 TIMER: Check auto-disconnect...
+28.09 15:24:25 STATS: vdl.0 cache, locks:0
+28.09 15:25:05 TIMER: Check auto-disconnect...
+28.09 15:25:25 STATS: vdl.0 cache, locks:0
+28.09 15:26:05 TIMER: Check auto-disconnect...
+28.09 15:26:25 STATS: vdl.0 cache, locks:0
+28.09 15:27:05 TIMER: Check auto-disconnect...
+28.09 15:27:25 STATS: vdl.0 cache, locks:0
+28.09 15:28:05 TIMER: Check auto-disconnect...
+28.09 15:28:25 STATS: vdl.0 cache, locks:0
+28.09 15:29:05 TIMER: Check auto-disconnect...
+28.09 15:29:25 STATS: vdl.0 cache, locks:0
+28.09 15:30:05 TIMER: Check auto-disconnect...
+28.09 15:30:25 STATS: vdl.0 cache, locks:0
+28.09 15:31:05 TIMER: Check auto-disconnect...
+28.09 15:31:25 STATS: vdl.0 cache, locks:0
+28.09 15:32:05 TIMER: Check auto-disconnect...
+28.09 15:32:25 STATS: vdl.0 cache, locks:0
+28.09 15:33:05 TIMER: Check auto-disconnect...
+28.09 15:33:25 STATS: vdl.0 cache, locks:0
+28.09 15:34:05 TIMER: Check auto-disconnect...
+28.09 15:34:25 STATS: vdl.0 cache, locks:0
+28.09 15:35:05 TIMER: Check auto-disconnect...
+28.09 15:35:25 STATS: vdl.0 cache, locks:0
+28.09 15:36:05 TIMER: Check auto-disconnect...
+28.09 15:36:25 STATS: vdl.0 cache, locks:0
+28.09 15:37:05 TIMER: Check auto-disconnect...
+28.09 15:37:25 STATS: vdl.0 cache, locks:0
+28.09 15:38:05 TIMER: Check auto-disconnect...
+28.09 15:38:25 STATS: vdl.0 cache, locks:0
+28.09 15:39:05 TIMER: Check auto-disconnect...
+28.09 15:39:25 STATS: vdl.0 cache, locks:0
+28.09 15:40:05 TIMER: Check auto-disconnect...
+28.09 15:40:25 STATS: vdl.0 cache, locks:0
+28.09 15:41:05 TIMER: Check auto-disconnect...
+28.09 15:41:25 STATS: vdl.0 cache, locks:0
+28.09 15:42:05 TIMER: Check auto-disconnect...
+28.09 15:42:25 STATS: vdl.0 cache, locks:0
+28.09 15:43:05 TIMER: Check auto-disconnect...
+28.09 15:43:25 STATS: vdl.0 cache, locks:0
+28.09 15:44:05 TIMER: Check auto-disconnect...
+28.09 15:44:25 STATS: vdl.0 cache, locks:0
+28.09 15:45:05 TIMER: Check auto-disconnect...
+28.09 15:45:25 STATS: vdl.0 cache, locks:0
+28.09 15:46:05 TIMER: Check auto-disconnect...
+28.09 15:46:25 STATS: vdl.0 cache, locks:0
+28.09 15:47:05 TIMER: Check auto-disconnect...
+28.09 15:47:25 STATS: vdl.0 cache, locks:0
+28.09 15:48:05 TIMER: Check auto-disconnect...
+28.09 15:48:25 STATS: vdl.0 cache, locks:0
+28.09 15:49:05 TIMER: Check auto-disconnect...
+28.09 15:49:25 STATS: vdl.0 cache, locks:0
+28.09 15:50:05 TIMER: Check auto-disconnect...
+28.09 15:50:25 STATS: vdl.0 cache, locks:0
+28.09 15:51:05 TIMER: Check auto-disconnect...
+28.09 15:51:25 STATS: vdl.0 cache, locks:0
+28.09 15:52:05 TIMER: Check auto-disconnect...
+28.09 15:52:25 STATS: vdl.0 cache, locks:0
+28.09 15:53:05 TIMER: Check auto-disconnect...
+28.09 15:53:25 STATS: vdl.0 cache, locks:0
+28.09 15:54:05 TIMER: Check auto-disconnect...
+28.09 15:54:25 STATS: vdl.0 cache, locks:0
+28.09 15:55:05 TIMER: Check auto-disconnect...
+28.09 15:55:25 STATS: vdl.0 cache, locks:0
+28.09 15:56:05 TIMER: Check auto-disconnect...
+28.09 15:56:25 STATS: vdl.0 cache, locks:0
+28.09 15:57:05 TIMER: Check auto-disconnect...
+28.09 15:57:25 STATS: vdl.0 cache, locks:0
+28.09 15:58:05 TIMER: Check auto-disconnect...
+28.09 15:58:25 STATS: vdl.0 cache, locks:0
+28.09 15:59:05 TIMER: Check auto-disconnect...
+28.09 15:59:25 STATS: vdl.0 cache, locks:0

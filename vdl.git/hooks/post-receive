@@ -1,0 +1,2 @@
+#!/bin/sh
+git --work-tree=/opt/projects/VDL --git-dir=/opt/projects/VDL/vdl.git checkout -f

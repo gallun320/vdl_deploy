@@ -1,0 +1,31 @@
+16.11 12:08:42 TRACE: battle.find : cacheRequest exception { user => { time => 60, player => 12 }, _type => vdl/cache.battle.findRandom }
+16.11 12:08:42 TRACE: battle.find : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 221
+Called from modules/VDLBattleModule.hx line 170
+Called from modules/VDLBattleModule.hx line 58
+Called from modules/VDLBattleModule.hx line 40
+Called from snipe/slave/Server.hx line 1225
+16.11 12:08:46 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+16.11 12:08:46 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+16.11 12:09:26 TRACE: battle.find : cacheRequest exception { user => { time => 60, player => 12 }, _type => vdl/cache.battle.findRandom }
+16.11 12:09:26 TRACE: battle.find : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 221
+Called from modules/VDLBattleModule.hx line 170
+Called from modules/VDLBattleModule.hx line 58
+Called from modules/VDLBattleModule.hx line 40
+Called from snipe/slave/Server.hx line 1225
+16.11 12:27:25 TRACE: battle.find : cacheRequest exception { user => { time => 60, player => 12 }, _type => vdl/cache.battle.findRandom }
+16.11 12:27:25 TRACE: battle.find : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 221
+Called from modules/VDLBattleModule.hx line 170
+Called from modules/VDLBattleModule.hx line 58
+Called from modules/VDLBattleModule.hx line 40
+Called from snipe/slave/Server.hx line 1225
+16.11 12:27:43 TRACE: User not logon yet.

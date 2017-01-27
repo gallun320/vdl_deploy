@@ -1,0 +1,13 @@
+19.11 08:37:11 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+19.11 08:37:11 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+19.11 08:37:26 TRACE: Invalid field access : id
+19.11 08:37:26 TRACE: 
+Called from modules/VDLTournamentModule.hx line 101
+Called from a C function
+Called from snipe/slave/Server.hx line 688
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202

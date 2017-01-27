@@ -1,0 +1,1365 @@
+26.01 17:05:35 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:05:35 -<<-: server.login ok
+26.01 17:05:35 DB: SELECT * FROM LocalizationStrings
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 TIMER: Starting timer...
+26.01 17:05:35 DB: SELECT * FROM GameVars
+26.01 17:05:35 TIMER: Timer running...
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:05:35 -<<-: core/quest.getDaily ok
+26.01 17:05:35 DB: SELECT * FROM UserAttributeTypes
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM UserVariableTypes
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM ItemGroups
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 SHOP: loading items...
+26.01 17:05:35 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:05:35 -<<-: core/shop.getList ok
+26.01 17:05:35 SHOP: 0 items loaded (0 sec)
+26.01 17:05:35 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM Effects
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:05:35 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:35 DB: SELECT * FROM Badges
+26.01 17:05:35 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:05:35 -<<-: core/server.query ok
+26.01 17:05:46 NET: Client (conid:97937403) connected to vdl.0 (clients:1)
+26.01 17:05:47 ++ NET: null req: user.register { password => 111111, name => 111111, messageType => user.register, token => dWlkMTY0 }
+26.01 17:05:47 DB: SELECT ID FROM Users WHERE Name = '111111'
+26.01 17:05:47 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = '111111', _type => core/server.query }
+26.01 17:05:47 -<<-: core/server.query ok
+26.01 17:05:47 TRACE: Invalid field access : split
+26.01 17:05:47 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:05:47 TRACE: Could not register.
+26.01 17:05:47 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:12:12 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:12:12 -<<-: server.login ok
+26.01 17:12:12 DB: SELECT * FROM LocalizationStrings
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 TIMER: Starting timer...
+26.01 17:12:12 DB: SELECT * FROM GameVars
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:12:12 TIMER: Timer running...
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:12:12 -<<-: core/quest.getDaily ok
+26.01 17:12:12 DB: SELECT * FROM UserAttributeTypes
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM UserVariableTypes
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM ItemGroups
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 SHOP: loading items...
+26.01 17:12:12 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:12:12 -<<-: core/shop.getList ok
+26.01 17:12:12 SHOP: 0 items loaded (0 sec)
+26.01 17:12:12 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM Effects
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:12:12 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:12 DB: SELECT * FROM Badges
+26.01 17:12:12 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:12:12 -<<-: core/server.query ok
+26.01 17:12:20 NET: Client (conid:89329359) connected to vdl.0 (clients:1)
+26.01 17:12:21 ++ NET: null req: user.register { password => 111111, name => 111111, messageType => user.register, token => dWlkMTY0 }
+26.01 17:12:21 DB: SELECT ID FROM Users WHERE Name = '111111'
+26.01 17:12:21 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = '111111', _type => core/server.query }
+26.01 17:12:21 -<<-: core/server.query ok
+26.01 17:12:21 TRACE: Invalid field access : split
+26.01 17:12:21 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:12:21 TRACE: Could not register.
+26.01 17:12:21 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:13:12 TIMER: Check auto-disconnect...
+26.01 17:13:12 STATS: vdl.0 cache, locks:0
+26.01 17:13:12 TIMER: Check auto-disconnect...
+26.01 17:13:12 STATS: vdl.0 cache, locks:0
+26.01 17:14:47 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:14:47 -<<-: server.login ok
+26.01 17:14:47 DB: SELECT * FROM LocalizationStrings
+26.01 17:14:47 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 TIMER: Starting timer...
+26.01 17:14:48 DB: SELECT * FROM GameVars
+26.01 17:14:48 TIMER: Timer running...
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:14:48 -<<-: core/quest.getDaily ok
+26.01 17:14:48 DB: SELECT * FROM UserAttributeTypes
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM UserVariableTypes
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM ItemGroups
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 SHOP: loading items...
+26.01 17:14:48 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:14:48 -<<-: core/shop.getList ok
+26.01 17:14:48 SHOP: 0 items loaded (0.001 sec)
+26.01 17:14:48 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM Effects
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:14:48 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:14:48 DB: SELECT * FROM Badges
+26.01 17:14:48 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:14:48 -<<-: core/server.query ok
+26.01 17:15:10 NET: Client (conid:93170762) connected to vdl.0 (clients:1)
+26.01 17:15:11 ++ NET: null req: user.register { password => 111111, name => name1, messageType => user.register }
+26.01 17:15:11 DB: SELECT ID FROM Users WHERE Name = 'name1'
+26.01 17:15:11 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'name1', _type => core/server.query }
+26.01 17:15:11 -<<-: core/server.query ok
+26.01 17:15:11 TRACE: Invalid field access : split
+26.01 17:15:11 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:15:11 TRACE: Could not register.
+26.01 17:15:11 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:21:53 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:21:53 -<<-: server.login ok
+26.01 17:21:53 DB: SELECT * FROM LocalizationStrings
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 TIMER: Starting timer...
+26.01 17:21:53 DB: SELECT * FROM GameVars
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 TIMER: Timer running...
+26.01 17:21:53 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:21:53 -<<-: core/quest.getDaily ok
+26.01 17:21:53 DB: SELECT * FROM UserAttributeTypes
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM UserVariableTypes
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM ItemGroups
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 SHOP: loading items...
+26.01 17:21:53 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:21:53 -<<-: core/shop.getList ok
+26.01 17:21:53 SHOP: 0 items loaded (0 sec)
+26.01 17:21:53 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM Effects
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:21:53 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:21:53 DB: SELECT * FROM Badges
+26.01 17:21:53 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:21:53 -<<-: core/server.query ok
+26.01 17:22:04 NET: Client (conid:13752956) connected to vdl.0 (clients:1)
+26.01 17:22:05 ++ NET: null req: user.register { password => , name => , messageType => user.register }
+26.01 17:22:18 NET: Client (name:null conid:13752956 TCP) disconnected from vdl.0 (clients:0)
+26.01 17:22:49 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:22:49 -<<-: server.login ok
+26.01 17:22:49 DB: SELECT * FROM LocalizationStrings
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 TIMER: Starting timer...
+26.01 17:22:49 TIMER: Timer running...
+26.01 17:22:49 DB: SELECT * FROM GameVars
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:22:49 -<<-: core/quest.getDaily ok
+26.01 17:22:49 DB: SELECT * FROM UserAttributeTypes
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM UserVariableTypes
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM ItemGroups
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 SHOP: loading items...
+26.01 17:22:49 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:22:49 -<<-: core/shop.getList ok
+26.01 17:22:49 SHOP: 0 items loaded (0 sec)
+26.01 17:22:49 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM Effects
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:22:49 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:49 DB: SELECT * FROM Badges
+26.01 17:22:49 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:22:49 -<<-: core/server.query ok
+26.01 17:22:55 NET: Client (conid:22321293) connected to vdl.0 (clients:1)
+26.01 17:22:55 ++ NET: null req: user.register { password => , name => , messageType => user.register }
+26.01 17:23:19 NET: Client (name:null conid:22321293 TCP) disconnected from vdl.0 (clients:0)
+26.01 17:23:23 NET: Client (conid:24782300) connected to vdl.0 (clients:1)
+26.01 17:23:24 ++ NET: null req: user.register { password => , name => 1, messageType => user.register }
+26.01 17:23:24 == NET: null ret: user.register { type => user.register, errorCode => nameExists }
+26.01 17:31:47 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:31:47 -<<-: server.login ok
+26.01 17:31:47 DB: SELECT * FROM LocalizationStrings
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 TIMER: Starting timer...
+26.01 17:31:47 TIMER: Timer running...
+26.01 17:31:47 DB: SELECT * FROM GameVars
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:31:47 -<<-: core/quest.getDaily ok
+26.01 17:31:47 DB: SELECT * FROM UserAttributeTypes
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM UserVariableTypes
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:31:47 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM ItemGroups
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 SHOP: loading items...
+26.01 17:31:47 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:31:47 -<<-: core/shop.getList ok
+26.01 17:31:47 SHOP: 0 items loaded (0.001 sec)
+26.01 17:31:47 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT * FROM Effects
+26.01 17:31:47 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:31:47 -<<-: core/server.query ok
+26.01 17:31:47 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, da26.01 17:31:53 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:31:53 -<<-: server.login ok
+26.01 17:31:53 DB: SELECT * FROM LocalizationStrings
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 TIMER: Starting timer...
+26.01 17:31:53 DB: SELECT * FROM GameVars
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:31:53 TIMER: Timer running...
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:31:53 -<<-: core/quest.getDaily ok
+26.01 17:31:53 DB: SELECT * FROM UserAttributeTypes
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM UserVariableTypes
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:31:53 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM ItemGroups
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 SHOP: loading items...
+26.01 17:31:53 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:31:53 -<<-: core/shop.getList ok
+26.01 17:31:53 SHOP: 0 items loaded (0 sec)
+26.01 17:31:53 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT * FROM Effects
+26.01 17:31:53 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:31:53 -<<-: core/server.query ok
+26.01 17:31:53 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_p26.01 17:32:25 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:32:25 -<<-: server.login ok
+26.01 17:32:25 DB: SELECT * FROM LocalizationStrings
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 TIMER: Starting timer...
+26.01 17:32:25 TIMER: Timer running...
+26.01 17:32:25 DB: SELECT * FROM GameVars
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:32:25 -<<-: core/quest.getDaily ok
+26.01 17:32:25 DB: SELECT * FROM UserAttributeTypes
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM UserVariableTypes
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM ItemGroups
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 SHOP: loading items...
+26.01 17:32:25 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:32:25 -<<-: core/shop.getList ok
+26.01 17:32:25 SHOP: 0 items loaded (0 sec)
+26.01 17:32:25 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM Effects
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:32:25 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:32:25 DB: SELECT * FROM Badges
+26.01 17:32:25 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:32:25 -<<-: core/server.query ok
+26.01 17:33:05 NET: Client (conid:38903553) connected to vdl.0 (clients:1)
+26.01 17:33:05 ++ NET: null req: user.register { password => , name => , messageType => user.register }
+26.01 17:33:15 NET: Client (name:null conid:38903553 TCP) disconnected from vdl.0 (clients:0)
+26.01 17:33:18 NET: Client (conid:10481488) connected to vdl.0 (clients:1)
+26.01 17:33:19 ++ NET: null req: user.register { password => , name => , messageType => user.register }
+26.01 17:34:11 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:34:11 -<<-: server.login ok
+26.01 17:34:11 DB: SELECT * FROM LocalizationStrings
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 TIMER: Starting timer...
+26.01 17:34:11 TIMER: Timer running...
+26.01 17:34:11 DB: SELECT * FROM GameVars
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:34:11 -<<-: core/quest.getDaily ok
+26.01 17:34:11 DB: SELECT * FROM UserAttributeTypes
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM UserVariableTypes
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:34:11 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM ItemGroups
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 SHOP: loading items...
+26.01 17:34:11 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:34:11 -<<-: core/shop.getList ok
+26.01 17:34:11 SHOP: 0 items loaded (0 sec)
+26.01 17:34:11 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT * FROM Effects
+26.01 17:34:11 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:34:11 -<<-: core/server.query ok
+26.01 17:34:11 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_p26.01 17:34:42 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:34:42 -<<-: server.login ok
+26.01 17:34:42 DB: SELECT * FROM LocalizationStrings
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 TIMER: Starting timer...
+26.01 17:34:42 TIMER: Timer running...
+26.01 17:34:42 DB: SELECT * FROM GameVars
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:34:42 -<<-: core/quest.getDaily ok
+26.01 17:34:42 DB: SELECT * FROM UserAttributeTypes
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM UserVariableTypes
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM ItemGroups
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 SHOP: loading items...
+26.01 17:34:42 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:34:42 -<<-: core/shop.getList ok
+26.01 17:34:42 SHOP: 0 items loaded (0 sec)
+26.01 17:34:42 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM Effects
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:34:42 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 DB: SELECT * FROM Badges
+26.01 17:34:42 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:34:42 -<<-: core/server.query ok
+26.01 17:34:42 TIMER: Check auto-disconnect...
+26.01 17:34:42 STATS: vdl.0 cache, locks:0
+26.01 17:36:08 NET: Client (conid:72525658) connected to vdl.0 (clients:1)
+26.01 17:36:22 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:36:22 -<<-: server.login ok
+26.01 17:36:22 DB: SELECT * FROM LocalizationStrings
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 TIMER: Starting timer...
+26.01 17:36:22 DB: SELECT * FROM GameVars
+26.01 17:36:22 TIMER: Timer running...
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:36:22 -<<-: core/quest.getDaily ok
+26.01 17:36:22 DB: SELECT * FROM UserAttributeTypes
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM UserVariableTypes
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM ItemGroups
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 SHOP: loading items...
+26.01 17:36:22 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:36:22 -<<-: core/shop.getList ok
+26.01 17:36:22 SHOP: 0 items loaded (0 sec)
+26.01 17:36:22 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM Effects
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:36:22 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:22 DB: SELECT * FROM Badges
+26.01 17:36:22 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:36:22 -<<-: core/server.query ok
+26.01 17:36:29 NET: Client (conid:66167113) connected to vdl.0 (clients:1)
+26.01 17:37:06 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:37:06 -<<-: server.login ok
+26.01 17:37:06 DB: SELECT * FROM LocalizationStrings
+26.01 17:37:06 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 TIMER: Starting timer...
+26.01 17:37:07 TIMER: Timer running...
+26.01 17:37:07 DB: SELECT * FROM GameVars
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:37:07 -<<-: core/quest.getDaily ok
+26.01 17:37:07 DB: SELECT * FROM UserAttributeTypes
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM UserVariableTypes
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM ItemGroups
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 SHOP: loading items...
+26.01 17:37:07 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:37:07 -<<-: core/shop.getList ok
+26.01 17:37:07 SHOP: 0 items loaded (0 sec)
+26.01 17:37:07 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM Effects
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:37:07 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:07 DB: SELECT * FROM Badges
+26.01 17:37:07 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:37:07 -<<-: core/server.query ok
+26.01 17:37:19 NET: Client (conid:94861294) connected to vdl.0 (clients:1)
+26.01 17:37:56 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:37:56 -<<-: server.login ok
+26.01 17:37:56 DB: SELECT * FROM LocalizationStrings
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 TIMER: Starting timer...
+26.01 17:37:56 TIMER: Timer running...
+26.01 17:37:56 DB: SELECT * FROM GameVars
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:37:56 -<<-: core/quest.getDaily ok
+26.01 17:37:56 DB: SELECT * FROM UserAttributeTypes
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM UserVariableTypes
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM ItemGroups
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 SHOP: loading items...
+26.01 17:37:56 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:37:56 -<<-: core/shop.getList ok
+26.01 17:37:56 SHOP: 0 items loaded (0 sec)
+26.01 17:37:56 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM Effects
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:37:56 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:37:56 DB: SELECT * FROM Badges
+26.01 17:37:56 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:37:56 -<<-: core/server.query ok
+26.01 17:38:59 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:38:59 -<<-: server.login ok
+26.01 17:38:59 DB: SELECT * FROM LocalizationStrings
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 TIMER: Starting timer...
+26.01 17:38:59 DB: SELECT * FROM GameVars
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:38:59 TIMER: Timer running...
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:38:59 -<<-: core/quest.getDaily ok
+26.01 17:38:59 DB: SELECT * FROM UserAttributeTypes
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM UserVariableTypes
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM ItemGroups
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 SHOP: loading items...
+26.01 17:38:59 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:38:59 -<<-: core/shop.getList ok
+26.01 17:38:59 SHOP: 0 items loaded (0 sec)
+26.01 17:38:59 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM Effects
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:38:59 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:38:59 DB: SELECT * FROM Badges
+26.01 17:38:59 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:38:59 -<<-: core/server.query ok
+26.01 17:39:05 NET: Client (conid:26785142) connected to vdl.0 (clients:1)
+26.01 17:39:29 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:39:29 -<<-: server.login ok
+26.01 17:39:29 DB: SELECT * FROM LocalizationStrings
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 TIMER: Starting timer...
+26.01 17:39:29 DB: SELECT * FROM GameVars
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:39:29 TIMER: Timer running...
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:39:29 -<<-: core/quest.getDaily ok
+26.01 17:39:29 DB: SELECT * FROM UserAttributeTypes
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM UserVariableTypes
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM ItemGroups
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 SHOP: loading items...
+26.01 17:39:29 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:39:29 -<<-: core/shop.getList ok
+26.01 17:39:29 SHOP: 0 items loaded (0 sec)
+26.01 17:39:29 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM Effects
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:39:29 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:29 DB: SELECT * FROM Badges
+26.01 17:39:29 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:39:29 -<<-: core/server.query ok
+26.01 17:39:36 NET: Client (conid:45216557) connected to vdl.0 (clients:1)
+26.01 17:39:36 ++ NET: null req: user.register { messageType => user.register }
+26.01 17:40:57 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:40:57 -<<-: server.login ok
+26.01 17:40:57 DB: SELECT * FROM LocalizationStrings
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 TIMER: Starting timer...
+26.01 17:40:57 TIMER: Timer running...
+26.01 17:40:57 DB: SELECT * FROM GameVars
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:40:57 -<<-: core/quest.getDaily ok
+26.01 17:40:57 DB: SELECT * FROM UserAttributeTypes
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM UserVariableTypes
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM ItemGroups
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 SHOP: loading items...
+26.01 17:40:57 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:40:57 -<<-: core/shop.getList ok
+26.01 17:40:57 SHOP: 0 items loaded (0 sec)
+26.01 17:40:57 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM Effects
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:40:57 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:40:57 DB: SELECT * FROM Badges
+26.01 17:40:57 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:40:57 -<<-: core/server.query ok
+26.01 17:41:06 NET: Client (conid:42647934) connected to vdl.0 (clients:1)
+26.01 17:41:06 ++ NET: null req: user.register { messageType => user.register }
+26.01 17:41:06 DB: SELECT * FROM users
+26.01 17:41:06 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+26.01 17:41:06 -<<-: core/server.query ok
+26.01 17:41:06 DB: SELECT ID FROM Users WHERE Name = 'uid164'
+26.01 17:41:06 == NET: null ret: user.auth { type => user.auth, token => dWlkMTY0 }
+26.01 17:41:06 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid164', _type => core/server.query }
+26.01 17:41:06 -<<-: core/server.query ok
+26.01 17:41:06 TRACE: Invalid field access : split
+26.01 17:41:06 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:41:06 TRACE: Could not register.
+26.01 17:41:06 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:43:28 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:43:28 -<<-: server.login ok
+26.01 17:43:28 DB: SELECT * FROM LocalizationStrings
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 TIMER: Starting timer...
+26.01 17:43:28 DB: SELECT * FROM GameVars
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:43:28 TIMER: Timer running...
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:43:28 -<<-: core/quest.getDaily ok
+26.01 17:43:28 DB: SELECT * FROM UserAttributeTypes
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM UserVariableTypes
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM ItemGroups
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 SHOP: loading items...
+26.01 17:43:28 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:43:28 -<<-: core/shop.getList ok
+26.01 17:43:28 SHOP: 0 items loaded (0.001 sec)
+26.01 17:43:28 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM Effects
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:43:28 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:28 DB: SELECT * FROM Badges
+26.01 17:43:28 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:43:28 -<<-: core/server.query ok
+26.01 17:43:39 NET: Client (conid:8829256) connected to vdl.0 (clients:1)
+26.01 17:43:40 ++ NET: null req: user.register { messageType => user.register }
+26.01 17:43:40 DB: SELECT * FROM users
+26.01 17:43:40 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+26.01 17:43:40 -<<-: core/server.query ok
+26.01 17:43:40 DB: SELECT ID FROM Users WHERE Name = 'uid164'
+26.01 17:43:40 == NET: null ret: user.auth { type => user.auth, token => dWlkMTY0 }
+26.01 17:43:40 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid164', _type => core/server.query }
+26.01 17:43:40 -<<-: core/server.query ok
+26.01 17:43:40 TRACE: Invalid field access : split
+26.01 17:43:40 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:43:40 TRACE: Could not register.
+26.01 17:43:40 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:46:42 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:46:42 -<<-: server.login ok
+26.01 17:46:42 DB: SELECT * FROM LocalizationStrings
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 TIMER: Starting timer...
+26.01 17:46:42 TIMER: Timer running...
+26.01 17:46:42 DB: SELECT * FROM GameVars
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:46:42 -<<-: core/quest.getDaily ok
+26.01 17:46:42 DB: SELECT * FROM UserAttributeTypes
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM UserVariableTypes
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM ItemGroups
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 SHOP: loading items...
+26.01 17:46:42 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:46:42 -<<-: core/shop.getList ok
+26.01 17:46:42 SHOP: 0 items loaded (0 sec)
+26.01 17:46:42 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM Effects
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:46:42 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:42 DB: SELECT * FROM Badges
+26.01 17:46:42 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:46:42 -<<-: core/server.query ok
+26.01 17:46:52 NET: Client (conid:35739365) connected to vdl.0 (clients:1)
+26.01 17:46:53 ++ NET: null req: user.register { messageType => user.register }
+26.01 17:46:53 DB: SELECT * FROM users
+26.01 17:46:53 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+26.01 17:46:53 -<<-: core/server.query ok
+26.01 17:46:53 DB: SELECT ID FROM Users WHERE Name = 'uid164'
+26.01 17:46:53 == NET: null ret: user.auth { type => user.auth, token => dWlkMTY0 }
+26.01 17:46:53 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid164', _type => core/server.query }
+26.01 17:46:53 -<<-: core/server.query ok
+26.01 17:46:53 TRACE: Invalid field access : split
+26.01 17:46:53 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 759
+Called from snipe/slave/modules/UserModuleCore.hx line 278
+Called from snipe/slave/modules/UserModuleCore.hx line 203
+Called from snipe/slave/Server.hx line 1116
+26.01 17:46:53 TRACE: Could not register.
+26.01 17:46:53 TRACE: 
+Called from snipe/slave/Server.hx line 1131
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+26.01 17:58:15 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+26.01 17:58:15 -<<-: server.login ok
+26.01 17:58:15 DB: SELECT * FROM LocalizationStrings
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 TIMER: Starting timer...
+26.01 17:58:15 DB: SELECT * FROM GameVars
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 TIMER: Timer running...
+26.01 17:58:15 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+26.01 17:58:15 -<<-: core/quest.getDaily ok
+26.01 17:58:15 DB: SELECT * FROM UserAttributeTypes
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM UserVariableTypes
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM ItemGroups
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM Bundles ORDER BY ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM BundleItems ORDER BY ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 SHOP: loading items...
+26.01 17:58:15 ->>-: core/shop.getList { _type => core/shop.getList }
+26.01 17:58:15 -<<-: core/shop.getList ok
+26.01 17:58:15 SHOP: 0 items loaded (0 sec)
+26.01 17:58:15 DB: SELECT * FROM EffectAttributeTypes
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM Effects
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+26.01 17:58:15 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:15 DB: SELECT * FROM Badges
+26.01 17:58:15 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+26.01 17:58:15 -<<-: core/server.query ok
+26.01 17:58:23 NET: Client (conid:59487511) connected to vdl.0 (clients:1)
+26.01 17:58:24 ++ NET: null req: user.register { messageType => user.register }
+26.01 17:58:24 DB: SELECT * FROM users
+26.01 17:58:24 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+26.01 17:58:24 -<<-: core/server.query ok
+26.01 17:58:24 == NET: null ret: user.auth { type => user.auth, token => dWlkMTY0 }
+26.01 17:58:24 DB: SELECT ID FROM Users WHERE Name = 'uid164'
+26.01 17:58:24 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid164', _type => core/server.query }
+26.01 17:58:24 -<<-: core/server.query ok
+26.01 17:58:24 DB: SELECT nextval('Users_id_seq') AS id
+26.01 17:58:24 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+26.01 17:58:24 -<<-: core/server.query ok
+26.01 17:58:24 ->>-: core/user.register { password => uid164, name => uid164, fullParams => { password => uid164, name => uid164, networkid => , networktype => , messageType => user.register, id => 164 }, networkid => , connectionID => 59487511, networktype => , email => , id => 164, _type => core/user.register }
+26.01 17:58:24 -<<-: core/user.register ok
+26.01 17:58:24 -<<-: core/user.registerResponse null
+26.01 17:58:24 DB: SELECT token FROM tokens WHERE userid = 164
+26.01 17:58:24 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 164, _type => core/server.query }
+26.01 17:58:24 -<<-: core/server.query ok
+26.01 17:58:24 == NET: null ret: user.register { type => user.register, errorCode => ok, token => a429b9bc93dc9ccb20a1475f96ad151f }
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 NET: Client (name:null conid:59487511 TCP) disconnected from vdl.0 (clients:0)
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...
+26.01 17:59:15 STATS: vdl.0 cache, locks:0
+26.01 17:59:15 TIMER: Check auto-disconnect...

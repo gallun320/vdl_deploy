@@ -1,0 +1,74 @@
+21.09 15:02:06 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random89, name => player, fullParams => { game => vdl, password => random89, name => player, networkid => , networktype => , messageType => user.register, id => 7 }, networkid => , connectionID => 56302026, networktype => , email => , id => 7, _type => core/user.register } }
+21.09 15:02:06 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 200
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:09:31 TRACE:  =========== params  =  { password => random48, name => player, fullParams => { game => vdl, password => random48, name => player, networkid => , networktype => , messageType => user.register, id => 8 }, networkid => , connectionID => 41906592, networktype => , email => , id => 8, _type => core/user.register }
+21.09 15:09:31 TRACE:  =========== fullParams  =  { game => vdl, password => random48, name => player, networkid => , networktype => , messageType => user.register, id => 8 }
+21.09 15:09:31 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random48, name => player, fullParams => { game => vdl, password => random48, name => player, networkid => , networktype => , messageType => user.register, id => 8 }, networkid => , connectionID => 41906592, networktype => , email => , id => 8, _type => core/user.register } }
+21.09 15:09:31 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 202
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:13:19 TRACE:  =========== params  =  { password => random90, name => player, fullParams => { game => vdl, password => random90, name => player, networkid => , networktype => , messageType => user.register, id => 9 }, networkid => , connectionID => 22306312, networktype => , email => , id => 9, _type => core/user.register }
+21.09 15:13:19 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random90, name => player, fullParams => { game => vdl, password => random90, name => player, networkid => , networktype => , messageType => user.register, id => 9 }, networkid => , connectionID => 22306312, networktype => , email => , id => 9, _type => core/user.register } }
+21.09 15:13:19 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 201
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:13:19 TRACE:  =========== params  =  { password => random92, name => player, fullParams => { game => vdl, password => random92, name => player, networkid => , networktype => , messageType => user.register, id => 10 }, networkid => , connectionID => 22306312, networktype => , email => , id => 10, _type => core/user.register }
+21.09 15:13:19 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random92, name => player, fullParams => { game => vdl, password => random92, name => player, networkid => , networktype => , messageType => user.register, id => 10 }, networkid => , connectionID => 22306312, networktype => , email => , id => 10, _type => core/user.register } }
+21.09 15:13:19 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 201
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:15:52 TRACE:  =========== params  =  { password => random40, name => player, fullParams => { game => vdl, password => random40, name => player, networkid => , networktype => , messageType => user.register, id => 11 }, networkid => , connectionID => 63265855, networktype => , email => , id => 11, _type => core/user.register }
+21.09 15:15:52 TRACE:  =========== fullParams  =  vdl
+21.09 15:15:52 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random40, name => player, fullParams => { game => vdl, password => random40, name => player, networkid => , networktype => , messageType => user.register, id => 11 }, networkid => , connectionID => 63265855, networktype => , email => , id => 11, _type => core/user.register } }
+21.09 15:15:52 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 202
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:19:36 TRACE:  =========== params  =  { password => random21, name => player, fullParams => { game => vdl, password => random21, name => player, networkid => , networktype => , messageType => user.register, id => 12 }, networkid => , connectionID => 77951787, networktype => , email => , id => 12, _type => core/user.register }
+21.09 15:19:36 TRACE:  =========== fullParams  =  vdl
+21.09 15:19:36 TRACE: Async worker exception Invalid call req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random21, name => player, fullParams => { game => vdl, password => random21, name => player, networkid => , networktype => , messageType => user.register, id => 12 }, networkid => , connectionID => 77951787, networktype => , email => , id => 12, _type => core/user.register } }
+21.09 15:19:36 TRACE: 
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 202
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:21:13 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random67, name => player, fullParams => { game => vdl, password => random67, name => player, networkid => , networktype => , messageType => user.register, id => 13 }, networkid => , connectionID => 26737896, networktype => , email => , id => 13, _type => core/user.register } }
+21.09 15:21:13 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 212
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:24:48 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random90, name => player, fullParams => { game => vdl, password => random90, name => player, networkid => , networktype => , messageType => user.register, id => 14 }, networkid => , connectionID => 42756610, networktype => , email => , id => 14, _type => core/user.register } }
+21.09 15:24:48 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 212
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:24:48 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random25, name => player, fullParams => { game => vdl, password => random25, name => player, networkid => , networktype => , messageType => user.register, id => 15 }, networkid => , connectionID => 42756610, networktype => , email => , id => 15, _type => core/user.register } }
+21.09 15:24:48 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 212
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:25:36 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random17, name => player, fullParams => { game => vdl, password => random17, name => player, networkid => , networktype => , messageType => user.register, id => 16 }, networkid => , connectionID => 98405358, networktype => , email => , id => 16, _type => core/user.register } }
+21.09 15:25:36 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 212
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:27:28 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random1, name => player, fullParams => { game => vdl, password => random1, name => player, networkid => , networktype => , messageType => user.register, id => 17 }, networkid => , connectionID => 47246429, networktype => , email => , id => 17, _type => core/user.register } }
+21.09 15:27:28 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 212
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:33:38 TRACE: ============ GAME = vdl
+21.09 15:33:38 TRACE: Async worker exception Invalid field access : split req:{ responseFunc => #function:2, name => user.register, serverID => 1, workerFunc => #function:2, params => { password => random52, name => player, fullParams => { game => vdl, password => random52, name => player, networkid => , networktype => , messageType => user.register, id => 18 }, networkid => , connectionID => 75671079, networktype => , email => , id => 18, _type => core/user.register } }
+21.09 15:33:38 TRACE: 
+Called from sys/db/Postgresql.hx line 167
+Called from sys/db/Postgresql.hx line 171
+Called from snipe/cache/modules/UserModuleCacheCore.hx line 214
+Called from snipe/cache/AsyncWorker.hx line 170
+21.09 15:36:43 TRACE: ============ GAME = vdl
+21.09 15:46:53 TRACE: ============ GAME = vdl
+21.09 15:50:56 TRACE: ============ GAME = vdl
+21.09 15:52:11 TRACE: ============ GAME = vdl
+21.09 15:54:25 TRACE: ============ GAME = vdl

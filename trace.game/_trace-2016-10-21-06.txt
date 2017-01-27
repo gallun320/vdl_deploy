@@ -1,0 +1,11 @@
+21.10 06:45:04 TRACE: Invalid field access : token
+21.10 06:45:04 TRACE: 
+Called from snipe/slave/Server.hx line 929
+Called from snipe/slave/Server.hx line 901
+Called from snipe/slave/Server.hx line 1171
+21.10 06:45:04 TRACE: Could not login.
+21.10 06:45:04 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.10 06:45:31 TRACE: User not logon yet.

@@ -1,0 +1,251 @@
+09.10 20:00:09 TIMER: Check auto-disconnect...
+09.10 20:00:30 STATS: vdl.0 cache, locks:0
+09.10 20:01:09 TIMER: Check auto-disconnect...
+09.10 20:01:30 STATS: vdl.0 cache, locks:0
+09.10 20:02:09 TIMER: Check auto-disconnect...
+09.10 20:02:30 STATS: vdl.0 cache, locks:0
+09.10 20:03:09 TIMER: Check auto-disconnect...
+09.10 20:03:30 STATS: vdl.0 cache, locks:0
+09.10 20:04:09 TIMER: Check auto-disconnect...
+09.10 20:04:30 STATS: vdl.0 cache, locks:0
+09.10 20:05:09 TIMER: Check auto-disconnect...
+09.10 20:05:30 STATS: vdl.0 cache, locks:0
+09.10 20:06:09 TIMER: Check auto-disconnect...
+09.10 20:06:30 STATS: vdl.0 cache, locks:0
+09.10 20:07:09 TIMER: Check auto-disconnect...
+09.10 20:07:30 STATS: vdl.0 cache, locks:0
+09.10 20:08:09 TIMER: Check auto-disconnect...
+09.10 20:08:30 STATS: vdl.0 cache, locks:0
+09.10 20:09:09 TIMER: Check auto-disconnect...
+09.10 20:09:30 STATS: vdl.0 cache, locks:0
+09.10 20:10:09 TIMER: Check auto-disconnect...
+09.10 20:10:30 STATS: vdl.0 cache, locks:0
+09.10 20:11:09 TIMER: Check auto-disconnect...
+09.10 20:11:30 STATS: vdl.0 cache, locks:0
+09.10 20:12:09 TIMER: Check auto-disconnect...
+09.10 20:12:30 STATS: vdl.0 cache, locks:0
+09.10 20:13:09 TIMER: Check auto-disconnect...
+09.10 20:13:30 STATS: vdl.0 cache, locks:0
+09.10 20:14:09 TIMER: Check auto-disconnect...
+09.10 20:14:30 STATS: vdl.0 cache, locks:0
+09.10 20:15:09 TIMER: Check auto-disconnect...
+09.10 20:15:30 STATS: vdl.0 cache, locks:0
+09.10 20:16:09 TIMER: Check auto-disconnect...
+09.10 20:16:30 STATS: vdl.0 cache, locks:0
+09.10 20:17:09 TIMER: Check auto-disconnect...
+09.10 20:17:30 STATS: vdl.0 cache, locks:0
+09.10 20:18:09 TIMER: Check auto-disconnect...
+09.10 20:18:30 STATS: vdl.0 cache, locks:0
+09.10 20:19:09 TIMER: Check auto-disconnect...
+09.10 20:19:30 STATS: vdl.0 cache, locks:0
+09.10 20:20:09 TIMER: Check auto-disconnect...
+09.10 20:20:30 STATS: vdl.0 cache, locks:0
+09.10 20:21:09 TIMER: Check auto-disconnect...
+09.10 20:21:30 STATS: vdl.0 cache, locks:0
+09.10 20:22:09 TIMER: Check auto-disconnect...
+09.10 20:22:30 STATS: vdl.0 cache, locks:0
+09.10 20:23:09 TIMER: Check auto-disconnect...
+09.10 20:23:30 STATS: vdl.0 cache, locks:0
+09.10 20:24:09 TIMER: Check auto-disconnect...
+09.10 20:24:30 STATS: vdl.0 cache, locks:0
+09.10 20:25:09 TIMER: Check auto-disconnect...
+09.10 20:25:30 STATS: vdl.0 cache, locks:0
+09.10 20:26:09 TIMER: Check auto-disconnect...
+09.10 20:26:30 STATS: vdl.0 cache, locks:0
+09.10 20:27:09 TIMER: Check auto-disconnect...
+09.10 20:27:30 STATS: vdl.0 cache, locks:0
+09.10 20:28:09 TIMER: Check auto-disconnect...
+09.10 20:28:30 STATS: vdl.0 cache, locks:0
+09.10 20:29:09 TIMER: Check auto-disconnect...
+09.10 20:29:30 STATS: vdl.0 cache, locks:0
+09.10 20:30:09 TIMER: Check auto-disconnect...
+09.10 20:30:30 STATS: vdl.0 cache, locks:0
+09.10 20:31:09 TIMER: Check auto-disconnect...
+09.10 20:31:30 STATS: vdl.0 cache, locks:0
+09.10 20:32:09 TIMER: Check auto-disconnect...
+09.10 20:32:30 STATS: vdl.0 cache, locks:0
+09.10 20:33:09 TIMER: Check auto-disconnect...
+09.10 20:33:30 STATS: vdl.0 cache, locks:0
+09.10 20:34:09 TIMER: Check auto-disconnect...
+09.10 20:34:30 STATS: vdl.0 cache, locks:0
+09.10 20:35:09 TIMER: Check auto-disconnect...
+09.10 20:35:30 STATS: vdl.0 cache, locks:0
+09.10 20:36:09 TIMER: Check auto-disconnect...
+09.10 20:36:30 STATS: vdl.0 cache, locks:0
+09.10 20:37:09 TIMER: Check auto-disconnect...
+09.10 20:37:30 STATS: vdl.0 cache, locks:0
+09.10 20:38:09 TIMER: Check auto-disconnect...
+09.10 20:38:31 STATS: vdl.0 cache, locks:0
+09.10 20:39:09 TIMER: Check auto-disconnect...
+09.10 20:39:31 STATS: vdl.0 cache, locks:0
+09.10 20:40:09 TIMER: Check auto-disconnect...
+09.10 20:40:31 STATS: vdl.0 cache, locks:0
+09.10 20:41:09 TIMER: Check auto-disconnect...
+09.10 20:41:31 STATS: vdl.0 cache, locks:0
+09.10 20:42:09 TIMER: Check auto-disconnect...
+09.10 20:42:31 STATS: vdl.0 cache, locks:0
+09.10 20:43:09 TIMER: Check auto-disconnect...
+09.10 20:43:31 STATS: vdl.0 cache, locks:0
+09.10 20:44:09 TIMER: Check auto-disconnect...
+09.10 20:44:31 STATS: vdl.0 cache, locks:0
+09.10 20:45:16 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+09.10 20:45:16 -<<-: server.login ok
+09.10 20:45:16 DB: SELECT * FROM LocalizationStrings
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 TIMER: Starting timer...
+09.10 20:45:16 TIMER: Timer running...
+09.10 20:45:16 DB: SELECT * FROM GameVars
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+09.10 20:45:16 -<<-: core/quest.getDaily ok
+09.10 20:45:16 DB: SELECT * FROM UserAttributeTypes
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM UserVariableTypes
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+09.10 20:45:16 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM ItemGroups
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM Bundles ORDER BY ID
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM BundleItems ORDER BY ID
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 SHOP: loading items...
+09.10 20:45:16 ->>-: core/shop.getList { _type => core/shop.getList }
+09.10 20:45:16 -<<-: core/shop.getList ok
+09.10 20:45:16 SHOP: 0 items loaded (0 sec)
+09.10 20:45:16 DB: SELECT * FROM EffectAttributeTypes
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT * FROM Effects
+09.10 20:45:16 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+09.10 20:45:16 -<<-: core/server.query ok
+09.10 20:45:16 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_p09.10 20:45:09 TIMER: Check auto-disconnect...
+09.10 20:45:41 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+09.10 20:45:41 -<<-: server.login ok
+09.10 20:45:41 DB: SELECT * FROM LocalizationStrings
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 TIMER: Starting timer...
+09.10 20:45:41 TIMER: Timer running...
+09.10 20:45:41 DB: SELECT * FROM GameVars
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+09.10 20:45:41 -<<-: core/quest.getDaily ok
+09.10 20:45:41 DB: SELECT * FROM UserAttributeTypes
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM UserVariableTypes
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM ItemGroups
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM Bundles ORDER BY ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM BundleItems ORDER BY ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 SHOP: loading items...
+09.10 20:45:41 ->>-: core/shop.getList { _type => core/shop.getList }
+09.10 20:45:41 -<<-: core/shop.getList ok
+09.10 20:45:41 SHOP: 0 items loaded (0 sec)
+09.10 20:45:41 DB: SELECT * FROM EffectAttributeTypes
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM Effects
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_p09.10 20:45:31 STATS: vdl.0 cache, locks:0
+09.10 20:46:09 TIMER: Check auto-disconnect...
+09.10 20:46:31 STATS: vdl.0 cache, locks:0
+09.10 20:47:09 TIMER: Check auto-disconnect...
+09.10 20:47:31 STATS: vdl.0 cache, locks:0
+art('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+09.10 20:45:41 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 DB: SELECT * FROM Badges
+09.10 20:45:41 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+09.10 20:45:41 -<<-: core/server.query ok
+09.10 20:45:41 TIMER: Check auto-disconnect...
+09.10 20:45:41 STATS: vdl.0 cache, locks:0
+09.10 20:45:41 TIMER: Check auto-disconnect...
+09.10 20:45:41 STATS: vdl.0 cache, locks:0
+09.10 20:48:09 TIMER: Check auto-disconnect...
+09.10 20:48:10 NET: Client (conid:19644285) connected to vdl.0 (clients:1)
+09.10 20:48:10 ++ NET: null req: user.login { type => token, messageType => user.login, token =>  }
+09.10 20:48:10 DB: SELECT name, password FROM users WHERE id = (select userid from tokens where token = '')
+09.10 20:48:10 ->>-: core/server.query { q => SELECT name, password FROM users WHERE id = (select userid from tokens where token = ''), _type => core/server.query }
+09.10 20:48:10 -<<-: core/server.query ok
+09.10 20:48:10 STATS: vdl.0 cache connection, 21 calls, total 0.0232925415039062 sec spent, avg 1.11 ms
+09.10 20:48:10 TRACE: Invalid field access : name
+09.10 20:48:10 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+09.10 20:48:10 TRACE: Could not login.
+09.10 20:48:10 TRACE: 
+Called from snipe/slave/Server.hx line 1200
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+09.10 20:48:31 STATS: vdl.0 cache, locks:0
+09.10 20:49:09 TIMER: Check auto-disconnect...
+09.10 20:49:31 STATS: vdl.0 cache, locks:0
+09.10 20:50:09 TIMER: Check auto-disconnect...
+09.10 20:50:31 STATS: vdl.0 cache, locks:0
+09.10 20:51:09 TIMER: Check auto-disconnect...
+09.10 20:51:31 STATS: vdl.0 cache, locks:0
+09.10 20:52:09 TIMER: Check auto-disconnect...
+09.10 20:52:31 STATS: vdl.0 cache, locks:0
+09.10 20:53:09 TIMER: Check auto-disconnect...
+09.10 20:53:31 STATS: vdl.0 cache, locks:0
+09.10 20:54:09 TIMER: Check auto-disconnect...
+09.10 20:54:31 STATS: vdl.0 cache, locks:0
+09.10 20:55:09 TIMER: Check auto-disconnect...
+09.10 20:55:31 STATS: vdl.0 cache, locks:0
+09.10 20:56:09 TIMER: Check auto-disconnect...
+09.10 20:56:31 STATS: vdl.0 cache, locks:0
+09.10 20:57:09 TIMER: Check auto-disconnect...
+09.10 20:57:31 STATS: vdl.0 cache, locks:0
+09.10 20:58:09 TIMER: Check auto-disconnect...
+09.10 20:58:31 STATS: vdl.0 cache, locks:0
+09.10 20:59:09 TIMER: Check auto-disconnect...
+09.10 20:59:31 STATS: vdl.0 cache, locks:0

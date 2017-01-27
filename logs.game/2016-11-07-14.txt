@@ -1,0 +1,1104 @@
+07.11 14:32:31 NET: Client (conid:44335151) connected to vdl.0 (clients:1)
+07.11 14:32:38 NET: Client (conid:44335151) switched protocol to WS
+07.11 14:33:04 ++ NET: null req: user.register { messageType => user.register }
+07.11 14:33:04 DB: SELECT * FROM users
+07.11 14:33:04 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+07.11 14:33:04 -<<-: core/server.query ok
+07.11 14:33:04 STATS: vdl.0 cache connection, 21 calls, total 0.0178239345550537 sec spent, avg 0.85 ms
+07.11 14:33:04 DB: SELECT ID FROM Users WHERE Name = 'uid8'
+07.11 14:33:04 == NET: null ret: user.auth { type => user.auth, token => dWlkOA== }
+07.11 14:33:04 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid8', _type => core/server.query }
+07.11 14:33:04 -<<-: core/server.query ok
+07.11 14:33:04 DB: SELECT nextval('Users_id_seq') AS id
+07.11 14:33:04 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+07.11 14:33:04 -<<-: core/server.query ok
+07.11 14:33:04 ->>-: core/user.register { password => uid8, name => uid8, fullParams => { password => uid8, name => uid8, networkid => , networktype => , messageType => user.register, id => 8 }, networkid => , connectionID => 44335151, networktype => , email => , id => 8, _type => core/user.register }
+07.11 14:33:04 -<<-: core/user.register ok
+07.11 14:33:04 -<<-: core/user.registerResponse null
+07.11 14:33:04 DB: SELECT token FROM tokens WHERE userid = 8
+07.11 14:33:04 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 8, _type => core/server.query }
+07.11 14:33:04 -<<-: core/server.query ok
+07.11 14:33:04 == NET: null ret: user.register { type => user.register, errorCode => ok, token => 058548312aa4a2fccab3e39b3a52888f }
+07.11 14:33:05 ++ NET: null req: user.login { messageType => user.login, token => dWlkOA== }
+07.11 14:33:05 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8'
+07.11 14:33:05 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8', _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {{ name => uid8, networkid => , isbanned => false, id => 8 }}, errorCode => ok, _type => core/server.query }
+07.11 14:33:05 ->>-: core/user.isOnlineID { id => 8, _type => core/user.isOnlineID }
+07.11 14:33:05 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:33:05 ->>-: core/cache.get { type => user, v => -1, id => 8, _type => core/cache.get }
+07.11 14:33:05 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid8, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid8, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, city => 1, language =>   , region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, hints => 15 }, effects => { list => [] } }}, version => 19, id => 8 } }
+07.11 14:33:05 ->>-: core/cache.get { type => questdata, v => -1, id => 8, _type => core/cache.get }
+07.11 14:33:05 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 8 } }
+07.11 14:33:05 NET: Client login (conid:44335151, id:8, name:uid8)
+07.11 14:33:05 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 8, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:33:05 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:33:05 DB: SELECT token FROM tokens WHERE userid = 8
+07.11 14:33:05 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 8, _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {{ token => 058548312aa4a2fccab3e39b3a52888f }}, errorCode => ok, _type => core/server.query }
+07.11 14:33:05 DB: SELECT ID FROM TempUserLogins WHERE UserID = 8 AND Date = 'today'::timestamp
+07.11 14:33:05 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 8 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:33:05 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (8, 'today'::timestamp)
+07.11 14:33:05 == NET: uid8 ret: user.login { name => uid8, type => user.login, errorCode => ok, id => 8, token => 058548312aa4a2fccab3e39b3a52888f }
+07.11 14:33:05 == NET: uid8 ret: user.join { name => uid8, type => user.join }
+07.11 14:33:05 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (8, 'today'::timestamp), _type => core/server.pending }} }
+07.11 14:33:05 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+07.11 14:33:05 ++ NET: uid8 req: user.login { messageType => user.login, token => dWlkOA== }
+07.11 14:33:05 DB: SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true
+07.11 14:33:05 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true, _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:33:05 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:33:05 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:33:05 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:33:05 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:33:05 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478529185, lastLoginDate => 312, lastLoadDate => 1108 } }}, type => user, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:33:05 -<<-: core/cache.update { errorCode => ok, version => 20, _type => core/cache.update }
+07.11 14:33:05 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:33:05 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:33:05 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 8, _type => core/user.logoutPost }
+07.11 14:33:05 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:33:05 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8'
+07.11 14:33:05 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8', _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {{ name => uid8, networkid => , isbanned => false, id => 8 }}, errorCode => ok, _type => core/server.query }
+07.11 14:33:05 ->>-: core/user.isOnlineID { id => 8, _type => core/user.isOnlineID }
+07.11 14:33:05 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:33:05 ->>-: core/cache.get { type => user, v => -1, id => 8, _type => core/cache.get }
+07.11 14:33:05 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid8, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid8, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, city => 1, language => en, region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1478529185, lastLoginDate => 312, lastLoadDate => 1108, hints => 15 }, effects => { list => [] } }}, version => 20, id => 8 } }
+07.11 14:33:05 ->>-: core/cache.get { type => questdata, v => -1, id => 8, _type => core/cache.get }
+07.11 14:33:05 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 1, id => 8 } }
+07.11 14:33:05 NET: Client login (conid:44335151, id:8, name:uid8)
+07.11 14:33:05 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 8, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:33:05 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:33:05 DB: SELECT token FROM tokens WHERE userid = 8
+07.11 14:33:05 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 8, _type => core/server.query }
+07.11 14:33:05 -<<-: core/server.query { list => {{ token => 058548312aa4a2fccab3e39b3a52888f }}, errorCode => ok, _type => core/server.query }
+07.11 14:33:10 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:33:10 TIME: user.ping 0.13 ms
+07.11 14:33:12 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 8, _type => core/cache.update }
+07.11 14:33:12 -<<-: core/cache.update { errorCode => ok, version => 21, _type => core/cache.update }
+07.11 14:33:27 TIMER: Check auto-disconnect...
+07.11 14:33:27 STATS: vdl.0 cache, locks:2
+07.11 14:33:30 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:33:30 TIME: user.ping 0.12 ms
+07.11 14:33:39 ++ NET: uid8 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:33:39 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 8 }, _type => vdl/cache.battle.findRandom }
+07.11 14:33:39 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:33:39 TIME: battle.find 0.25 ms
+07.11 14:33:50 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:33:50 TIME: user.ping 0.11 ms
+07.11 14:33:55 NET: Client (conid:41352062) connected to vdl.0 (clients:2)
+07.11 14:33:55 NET: Client (conid:41352062) switched protocol to WS
+07.11 14:33:56 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA3 }
+07.11 14:33:56 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid107' AND Password = 'uid107'
+07.11 14:33:56 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid107' AND Password = 'uid107', _type => core/server.query }
+07.11 14:33:56 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:33:56 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+07.11 14:33:58 NET: Client (name:null conid:41352062 WS) disconnected from vdl.0 (clients:1)
+07.11 14:34:03 NET: Client (conid:25290437) connected to vdl.0 (clients:2)
+07.11 14:34:03 NET: Client (conid:25290437) switched protocol to WS
+07.11 14:34:04 ++ NET: null req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:34:04 TRACE: User not logon yet.
+07.11 14:34:11 NET: Client (name:null conid:25290437 WS) disconnected from vdl.0 (clients:1)
+07.11 14:34:16 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:34:16 TIME: user.ping 0.15 ms
+07.11 14:34:27 TIMER: Check auto-disconnect...
+07.11 14:34:27 STATS: vdl.0 cache, locks:2
+07.11 14:34:36 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:34:36 TIME: user.ping 0.17 ms
+07.11 14:34:50 NET: Client (name:uid8 conid:44335151 WS) disconnected from vdl.0 (clients:0)
+07.11 14:34:50 DB: SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true
+07.11 14:34:50 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true, _type => core/server.query }
+07.11 14:34:50 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:34:50 STATS: vdl.0 cache connection, 48 calls, total 0.0375504493713379 sec spent, avg 0.78 ms
+07.11 14:34:50 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:34:50 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:34:50 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:34:50 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:34:50 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:34:50 -<<-: core/cache.update { errorCode => ok, version => 22, _type => core/cache.update }
+07.11 14:34:50 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:34:50 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+07.11 14:34:50 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 8, _type => core/user.logoutPost }
+07.11 14:34:50 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:35:27 TIMER: Check auto-disconnect...
+07.11 14:35:27 STATS: vdl.0 cache, locks:0
+07.11 14:35:27 TIMER: Check auto-disconnect...
+07.11 14:35:27 STATS: vdl.0 cache, locks:0
+07.11 14:37:15 NET: Client (conid:48371497) connected to vdl.0 (clients:1)
+07.11 14:37:17 NET: Client (conid:48371497) switched protocol to WS
+07.11 14:37:18 ++ NET: null req: user.login { messageType => user.login, token => dWlkOA== }
+07.11 14:37:18 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8'
+07.11 14:37:18 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8', _type => core/server.query }
+07.11 14:37:18 -<<-: core/server.query { list => {{ name => uid8, networkid => , isbanned => false, id => 8 }}, errorCode => ok, _type => core/server.query }
+07.11 14:37:18 STATS: vdl.0 cache connection, 53 calls, total 0.0397274494171143 sec spent, avg 0.75 ms
+07.11 14:37:18 ->>-: core/user.isOnlineID { id => 8, _type => core/user.isOnlineID }
+07.11 14:37:18 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:37:18 ->>-: core/cache.get { type => user, v => -1, id => 8, _type => core/cache.get }
+07.11 14:37:18 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid8, deleted => false, year => , email => mail, networktype =>   , password => uid8, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, city => , language =>   , networkid => , params => {}}, version => 0, id => 8 } }
+07.11 14:37:18 ->>-: core/cache.get { type => questdata, v => -1, id => 8, _type => core/cache.get }
+07.11 14:37:18 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 8 } }
+07.11 14:37:18 NET: Client login (conid:48371497, id:8, name:uid8)
+07.11 14:37:18 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 8, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:37:18 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:37:18 DB: SELECT token FROM tokens WHERE userid = 8
+07.11 14:37:18 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 8, _type => core/server.query }
+07.11 14:37:18 -<<-: core/server.query { list => {{ token => 058548312aa4a2fccab3e39b3a52888f }}, errorCode => ok, _type => core/server.query }
+07.11 14:37:18 DB: SELECT ID FROM TempUserLogins WHERE UserID = 8 AND Date = 'today'::timestamp
+07.11 14:37:18 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 8 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:37:18 -<<-: core/server.query { list => {{ id => 113 }}, errorCode => ok, _type => core/server.query }
+07.11 14:37:18 == NET: uid8 ret: user.login { name => uid8, type => user.login, errorCode => ok, id => 8, token => 058548312aa4a2fccab3e39b3a52888f }
+07.11 14:37:18 == NET: uid8 ret: user.join { name => uid8, type => user.join }
+07.11 14:37:23 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:37:23 TIME: user.ping 0.13 ms
+07.11 14:37:23 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:37:27 TIMER: Check auto-disconnect...
+07.11 14:37:27 STATS: vdl.0 cache, locks:2
+07.11 14:37:27 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478529438, lastLoginDate => 312, lastLoadDate => 1108 }, effects => { list => [] } }}, type => user, unlock => false, id => 8, _type => core/cache.update }
+07.11 14:37:27 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:37:43 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:37:43 TIME: user.ping 0.13 ms
+07.11 14:37:43 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:38:03 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:38:03 TIME: user.ping 0.13 ms
+07.11 14:38:03 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:38:27 TIMER: Check auto-disconnect...
+07.11 14:38:27 STATS: vdl.0 cache, locks:2
+07.11 14:38:29 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:38:29 TIME: user.ping 0.11 ms
+07.11 14:38:29 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:38:52 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:38:52 TIME: user.ping 0.17 ms
+07.11 14:38:52 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:39:13 NET: Client (name:uid8 conid:48371497 WS) disconnected from vdl.0 (clients:0)
+07.11 14:39:13 DB: SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true
+07.11 14:39:13 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=8 OR secondid=8 AND finished <> true, _type => core/server.query }
+07.11 14:39:13 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:39:13 STATS: vdl.0 cache connection, 61 calls, total 0.0439114570617676 sec spent, avg 0.72 ms
+07.11 14:39:13 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:39:13 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:39:13 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:39:13 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:39:13 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:39:13 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+07.11 14:39:13 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 8, _type => core/cache.update }
+07.11 14:39:13 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:39:13 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 8, _type => core/user.logoutPost }
+07.11 14:39:13 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:39:27 STATS: vdl.0 cache, locks:0
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:39:27 STATS: vdl.0 cache, locks:0
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:39:27 STATS: vdl.0 cache, locks:0
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:39:27 STATS: vdl.0 cache, locks:0
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:39:27 STATS: vdl.0 cache, locks:0
+07.11 14:39:27 TIMER: Check auto-disconnect...
+07.11 14:44:28 STATS: vdl.0 cache, locks:0
+07.11 14:44:37 NET: Client (conid:98258697) connected to vdl.0 (clients:1)
+07.11 14:44:37 NET: Client (conid:98258697) switched protocol to WS
+07.11 14:44:43 ++ NET: null req: user.register { messageType => user.register }
+07.11 14:44:43 DB: SELECT * FROM users
+07.11 14:44:43 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ city => , password => , name => --- DEFAULT ATTRIBUTES ---, year => , networkid => , params => {"attrs":{},"inventory":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2016-11-01 09:46:34.649034+00, language =>   , id => 1, deleted => false }, { city => , password => uid2, name => uid2, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478241985,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:30:28.926728+00, language => en, id => 2, deleted => false }, { city => , password => uid5, name => uid5, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478242996,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:50:49.832936+00, language => en, id => 5, deleted => false }, { city => , password => uid4, name => uid4, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478242307,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:43:10.450435+00, language => en, id => 4, deleted => false }, { city => , password => uid3, name => uid3, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478241272,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:32:57.383511+00, language => en, id => 3, deleted => false }, { city => , password => uid6, name => uid6, year => , networkid => , params => , networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 08:27:06.517881+00, language =>   , id => 6, deleted => false }, { city => , password => uid7, name => uid7, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478364807,"lastLoginDate":310,"lastLoadDate":1106},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-05 00:45:47.596212+00, language => en, id => 7, deleted => false }, { city => , password => uid8, name => uid8, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478529438,"lastLoginDate":312,"lastLoadDate":1108},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, language => en, id => 8, deleted => false }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 STATS: vdl.0 cache connection, 66 calls, total 0.0462164878845215 sec spent, avg 0.7 ms
+07.11 14:44:43 == NET: null ret: user.auth { type => user.auth, token => dWlkOQ== }
+07.11 14:44:43 DB: SELECT ID FROM Users WHERE Name = 'uid9'
+07.11 14:44:43 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid9', _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 DB: SELECT nextval('Users_id_seq') AS id
+07.11 14:44:43 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ id => 9 }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 ->>-: core/user.register { password => uid9, name => uid9, fullParams => { password => uid9, name => uid9, networkid => , networktype => , messageType => user.register, id => 9 }, networkid => , connectionID => 98258697, networktype => , email => , id => 9, _type => core/user.register }
+07.11 14:44:43 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+07.11 14:44:43 -<<-: core/user.registerResponse { password => uid9, name => uid9, _isNotify => true, fullParams => { password => uid9, name => uid9, networkid => , networktype => , messageType => user.register, id => 9 }, networkid => , connectionID => 98258697, networktype => , email => , id => 9, _type => core/user.registerResponse }
+07.11 14:44:43 DB: SELECT token FROM tokens WHERE userid = 9
+07.11 14:44:43 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 9, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ token => 14986be1f511949a68de9e64382036dc }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 == NET: null ret: user.register { type => user.register, errorCode => ok, token => 14986be1f511949a68de9e64382036dc }
+07.11 14:44:43 ++ NET: null req: user.login { messageType => user.login, token => dWlkOQ== }
+07.11 14:44:43 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9'
+07.11 14:44:43 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9', _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ name => uid9, networkid => , isbanned => false, id => 9 }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 ->>-: core/user.isOnlineID { id => 9, _type => core/user.isOnlineID }
+07.11 14:44:43 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:44:43 ->>-: core/cache.get { type => user, v => -1, id => 9, _type => core/cache.get }
+07.11 14:44:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid9, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid9, isbanned => false, regdate => 2016-11-07 14:44:43.112805+00, city => 1, language =>   , region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, hints => 15 }, effects => { list => [] } }}, version => 19, id => 9 } }
+07.11 14:44:43 ->>-: core/cache.get { type => questdata, v => -1, id => 9, _type => core/cache.get }
+07.11 14:44:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 9 } }
+07.11 14:44:43 NET: Client login (conid:98258697, id:9, name:uid9)
+07.11 14:44:43 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 9, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:44:43 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:44:43 DB: SELECT token FROM tokens WHERE userid = 9
+07.11 14:44:43 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 9, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ token => 14986be1f511949a68de9e64382036dc }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 DB: SELECT ID FROM TempUserLogins WHERE UserID = 9 AND Date = 'today'::timestamp
+07.11 14:44:43 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 9 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (9, 'today'::timestamp)
+07.11 14:44:43 == NET: uid9 ret: user.login { name => uid9, type => user.login, errorCode => ok, id => 9, token => 14986be1f511949a68de9e64382036dc }
+07.11 14:44:43 == NET: uid9 ret: user.join { name => uid9, type => user.join }
+07.11 14:44:43 ++ NET: uid9 req: user.login { messageType => user.login, token => dWlkOQ== }
+07.11 14:44:43 DB: SELECT id FROM battle WHERE firstid=9 OR secondid=9 AND finished <> true
+07.11 14:44:43 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=9 OR secondid=9 AND finished <> true, _type => core/server.query, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (9, 'today'::timestamp), _type => core/server.pending }} }
+07.11 14:44:43 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:44:43 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:44:43 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:44:43 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:44:43 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478529883, lastLoginDate => 312, lastLoadDate => 1108 } }}, type => user, unlock => true, id => 9, _type => core/cache.update }
+07.11 14:44:43 -<<-: core/cache.update { errorCode => ok, version => 20, _type => core/cache.update }
+07.11 14:44:43 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 9, _type => core/cache.update }
+07.11 14:44:43 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:44:43 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 9, _type => core/user.logoutPost }
+07.11 14:44:43 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:44:43 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9'
+07.11 14:44:43 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9', _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ name => uid9, networkid => , isbanned => false, id => 9 }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:43 ->>-: core/user.isOnlineID { id => 9, _type => core/user.isOnlineID }
+07.11 14:44:43 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:44:43 ->>-: core/cache.get { type => user, v => -1, id => 9, _type => core/cache.get }
+07.11 14:44:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid9, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid9, isbanned => false, regdate => 2016-11-07 14:44:43.112805+00, city => 1, language => en, region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1478529883, lastLoginDate => 312, lastLoadDate => 1108, hints => 15 }, effects => { list => [] } }}, version => 20, id => 9 } }
+07.11 14:44:43 ->>-: core/cache.get { type => questdata, v => -1, id => 9, _type => core/cache.get }
+07.11 14:44:43 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 1, id => 9 } }
+07.11 14:44:43 NET: Client login (conid:98258697, id:9, name:uid9)
+07.11 14:44:43 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 9, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:44:43 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:44:43 DB: SELECT token FROM tokens WHERE userid = 9
+07.11 14:44:43 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 9, _type => core/server.query }
+07.11 14:44:43 -<<-: core/server.query { list => {{ token => 14986be1f511949a68de9e64382036dc }}, errorCode => ok, _type => core/server.query }
+07.11 14:44:49 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:44:49 TIME: user.ping 0.14 ms
+07.11 14:44:53 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 9, _type => core/cache.update }
+07.11 14:44:53 -<<-: core/cache.update { errorCode => ok, version => 21, _type => core/cache.update }
+07.11 14:45:10 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:45:10 TIME: user.ping 0.12 ms
+07.11 14:45:27 TIMER: Check auto-disconnect...
+07.11 14:45:28 STATS: vdl.0 cache, locks:2
+07.11 14:45:31 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:45:31 TIME: user.ping 0.1 ms
+07.11 14:45:52 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:45:52 TIME: user.ping 0.13 ms
+07.11 14:46:01 ++ NET: uid9 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:46:01 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 9 }, _type => vdl/cache.battle.findRandom }
+07.11 14:46:01 -<<-: battle.enemyEvent { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 7, player => 1 }, _isNotify => true, id => 9, _type => battle.enemyEvent }
+07.11 14:46:01 -<<-: tournament.leaveEvent { type => winGame, typeBattle => battle, _isNotify => true, id => 9, _type => tournament.leaveEvent, battleId => 7 }
+07.11 14:46:01 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:46:01 STATS: vdl.0 cache connection, 90 calls, total 0.0709199905395508 sec spent, avg 0.79 ms
+07.11 14:46:01 TIME: battle.find 6.82 ms
+07.11 14:46:01 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 7, player => 1 }, _type => battle.enemy } }
+07.11 14:46:01 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 7, player => 1 }, _type => battle.enemy } }
+07.11 14:46:01 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:46:01 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { _type => battle.leave } }
+07.11 14:46:01 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { _type => battle.leave } }
+07.11 14:46:01 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:46:01 ->>-: core/cache.get { type => user, v => -1, id => 1, _type => core/cache.get }
+07.11 14:46:01 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => --- DEFAULT ATTRIBUTES ---, deleted => false, year => , email => , networktype =>   , password => , isbanned => false, regdate => 2016-11-01 09:46:34.649034+00, city => , language =>   , networkid => , params => { inventory => { list => [] }, attrs => {} }}, version => 0, id => 1 } }
+07.11 14:46:01 ->>-: core/cache.get { type => questdata, v => -1, id => 1, _type => core/cache.get }
+07.11 14:46:01 -<<-: core/cache.get { errorCode => notFound, _type => core/cache.get }
+07.11 14:46:01 ->>-: core/cache.create { type => questdata, id => 1, _type => core/cache.create }
+07.11 14:46:01 -<<-: core/cache.create { errorCode => ok, _type => core/cache.create }
+07.11 14:46:01 ->>-: core/cache.get { type => questdata, v => -1, id => 1, _type => core/cache.get }
+07.11 14:46:01 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 1 } }
+07.11 14:46:01 ->>-: vdl/cache.battle.infoRoom { roomId => 7, _type => vdl/cache.battle.infoRoom }
+07.11 14:46:01 -<<-: vdl/cache.battle.infoRoom { secondId => 8, firstId => 9, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:46:01 ->>-: core/user.sendTo { id => 8, _type => core/user.sendTo, msg => { _type => battle.end } }
+07.11 14:46:01 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+07.11 14:46:01 ->>-: vdl/cache.battle.finishRoom { roomId => 7, _type => vdl/cache.battle.finishRoom }
+07.11 14:46:01 -<<-: vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+07.11 14:46:02 ++ NET: uid9 req: battle.sendtask { dice => 0, from => [0,0], name => skip, side => 2, messageType => battle.sendtask, to => [0,0], battleId => 0 }
+07.11 14:46:02 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:46:02 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:46:02 TRACE: battle.sendtask : cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:46:02 TRACE: battle.sendtask : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 255
+Called from modules/VDLBattleModule.hx line 64
+Called from modules/VDLBattleModule.hx line 42
+Called from snipe/slave/Server.hx line 1225
+07.11 14:46:08 ->>-: core/cache.update { diff => {params => { effects => { list => [] } }}, type => user, unlock => false, id => 1, _type => core/cache.update }
+07.11 14:46:08 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:46:13 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:46:13 TIME: user.ping 0.13 ms
+07.11 14:46:27 TIMER: Check auto-disconnect...
+07.11 14:46:28 STATS: vdl.0 cache, locks:4
+07.11 14:46:33 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:46:33 TIME: user.ping 0.11 ms
+07.11 14:46:53 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:46:53 TIME: user.ping 0.11 ms
+07.11 14:46:55 NET: Client (conid:3492471) connected to vdl.0 (clients:2)
+07.11 14:46:57 NET: Client (conid:3492471) switched protocol to WS
+07.11 14:46:58 ++ NET: null req: user.login { messageType => user.login, token => dWlkOA== }
+07.11 14:46:58 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8'
+07.11 14:46:58 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid8' AND Password = 'uid8', _type => core/server.query }
+07.11 14:46:58 -<<-: core/server.query { list => {{ name => uid8, networkid => , isbanned => false, id => 8 }}, errorCode => ok, _type => core/server.query }
+07.11 14:46:58 ->>-: core/user.isOnlineID { id => 8, _type => core/user.isOnlineID }
+07.11 14:46:58 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:46:58 ->>-: core/cache.get { type => user, v => -1, id => 8, _type => core/cache.get }
+07.11 14:46:58 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid8, deleted => false, year => , email => mail, networktype =>   , password => uid8, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, city => , language => en, networkid => , params => { attrs => { _lastTime.24hr => 1478529438, lastLoginDate => 312, lastLoadDate => 1108 }, effects => { list => [] } }}, version => 0, id => 8 } }
+07.11 14:46:58 ->>-: core/cache.get { type => questdata, v => -1, id => 8, _type => core/cache.get }
+07.11 14:46:58 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 8 } }
+07.11 14:46:58 NET: Client login (conid:3492471, id:8, name:uid8)
+07.11 14:46:58 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 8, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:46:58 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:46:58 DB: SELECT token FROM tokens WHERE userid = 8
+07.11 14:46:58 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 8, _type => core/server.query }
+07.11 14:46:58 -<<-: core/server.query { list => {{ token => 058548312aa4a2fccab3e39b3a52888f }}, errorCode => ok, _type => core/server.query }
+07.11 14:46:58 == NET: uid8 ret: user.login { name => uid8, type => user.login, errorCode => ok, id => 8, token => 058548312aa4a2fccab3e39b3a52888f }
+07.11 14:46:58 == NET: uid8 ret: user.join { name => uid8, type => user.join }
+07.11 14:47:03 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:03 TIME: user.ping 0.14 ms
+07.11 14:47:03 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:47:07 ++ NET: uid8 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:47:07 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 8 }, _type => vdl/cache.battle.findRandom }
+07.11 14:47:07 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:47:07 STATS: vdl.0 cache connection, 108 calls, total 0.082606315612793 sec spent, avg 0.76 ms
+07.11 14:47:07 TIME: battle.find 0.31 ms
+07.11 14:47:07 == NET: uid8 ret: battle.find { type => battle.find, errorCode => ok }
+07.11 14:47:08 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 8, _type => core/cache.update }
+07.11 14:47:08 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:47:13 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:13 TIME: user.ping 0.11 ms
+07.11 14:47:23 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:23 TIME: user.ping 0.15 ms
+07.11 14:47:23 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:47:27 TIMER: Check auto-disconnect...
+07.11 14:47:28 STATS: vdl.0 cache, locks:6
+07.11 14:47:33 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:33 TIME: user.ping 0.12 ms
+07.11 14:47:43 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:43 TIME: user.ping 0.13 ms
+07.11 14:47:43 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:47:53 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:47:53 TIME: user.ping 0.1 ms
+07.11 14:48:03 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:03 TIME: user.ping 0.14 ms
+07.11 14:48:03 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:48:14 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:14 TIME: user.ping 0.12 ms
+07.11 14:48:23 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:23 TIME: user.ping 0.14 ms
+07.11 14:48:23 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:48:27 TIMER: Check auto-disconnect...
+07.11 14:48:28 STATS: vdl.0 cache, locks:6
+07.11 14:48:34 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:34 TIME: user.ping 0.12 ms
+07.11 14:48:43 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:43 TIME: user.ping 0.12 ms
+07.11 14:48:43 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:48:54 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:48:54 TIME: user.ping 0.11 ms
+07.11 14:49:03 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:49:03 TIME: user.ping 0.14 ms
+07.11 14:49:03 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:49:24 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:49:24 TIME: user.ping 0.17 ms
+07.11 14:49:24 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:49:27 TIMER: Check auto-disconnect...
+07.11 14:49:28 STATS: vdl.0 cache, locks:6
+07.11 14:49:39 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:49:39 TIME: user.ping 0.13 ms
+07.11 14:49:44 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:49:44 TIME: user.ping 0.14 ms
+07.11 14:49:44 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:49:59 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:49:59 TIME: user.ping 0.11 ms
+07.11 14:50:00 ++ NET: uid9 req: battle.end { type => leaveGame, typeBattle => battle, tournamentId => 0, messageType => battle.end, battleId => 0 }
+07.11 14:50:00 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:00 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:00 STATS: vdl.0 cache connection, 110 calls, total 0.0841264724731445 sec spent, avg 0.76 ms
+07.11 14:50:00 TRACE: battle.end : cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:00 TRACE: battle.end : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 84
+Called from modules/VDLBattleModule.hx line 50
+Called from snipe/slave/Server.hx line 1225
+07.11 14:50:03 ++ NET: uid9 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:50:03 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 9 }, _type => vdl/cache.battle.findRandom }
+07.11 14:50:03 -<<-: battle.enemyEvent { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 8, player => 1 }, _isNotify => true, id => 9, _type => battle.enemyEvent }
+07.11 14:50:03 -<<-: battle.enemyEvent { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 1, battleId => 8, player => 2 }, _isNotify => true, id => 8, _type => battle.enemyEvent }
+07.11 14:50:03 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:50:03 TIME: battle.find 6.41 ms
+07.11 14:50:03 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 8, player => 1 }, _type => battle.enemy } }
+07.11 14:50:03 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 2, battleId => 8, player => 1 }, _type => battle.enemy } }
+07.11 14:50:03 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:50:03 == NET: uid8 ret: battle.enemy { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 1, battleId => 8, player => 2 }, type => battle.enemy }
+07.11 14:50:04 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:50:04 TIME: user.ping 0.12 ms
+07.11 14:50:04 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:50:20 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:50:20 TIME: user.ping 0.91 ms
+07.11 14:50:24 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:50:24 TIME: user.ping 0.14 ms
+07.11 14:50:24 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:50:27 TIMER: Check auto-disconnect...
+07.11 14:50:28 STATS: vdl.0 cache, locks:6
+07.11 14:50:40 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:50:40 TIME: user.ping 0.13 ms
+07.11 14:50:44 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:50:44 TIME: user.ping 0.12 ms
+07.11 14:50:44 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:50:53 NET: Client (conid:19838977) connected to vdl.0 (clients:3)
+07.11 14:50:54 NET: Client (conid:19838977) switched protocol to WS
+07.11 14:50:55 ++ NET: uid8 req: battle.end { type => leaveGame, typeBattle => battle, tournamentId => 0, messageType => battle.end, battleId => 8 }
+07.11 14:50:55 ->>-: vdl/cache.battle.infoRoom { roomId => 8, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:55 -<<-: vdl/cache.battle.infoRoom { secondId => 8, firstId => 9, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:50:55 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { _type => battle.leave } }
+07.11 14:50:55 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { _type => battle.leave } }
+07.11 14:50:55 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:50:55 ->>-: vdl/cache.battle.finishRoom { roomId => 8, _type => vdl/cache.battle.finishRoom }
+07.11 14:50:55 -<<-: vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+07.11 14:50:55 TIME: battle.end 1.35 ms
+07.11 14:50:55 == NET: uid8 ret: battle.end { type => battle.end, errorCode => ok }
+07.11 14:50:55 ++ NET: null req: user.register { messageType => user.register }
+07.11 14:50:55 DB: SELECT * FROM users
+07.11 14:50:55 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {{ city => , password => uid2, name => uid2, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478241985,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:30:28.926728+00, language => en, id => 2, deleted => false }, { city => , password => uid5, name => uid5, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478242996,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:50:49.832936+00, language => en, id => 5, deleted => false }, { city => , password => uid4, name => uid4, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478242307,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:43:10.450435+00, language => en, id => 4, deleted => false }, { city => , password => uid3, name => uid3, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478241272,"lastLoginDate":309,"lastLoadDate":1105},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 06:32:57.383511+00, language => en, id => 3, deleted => false }, { city => , password => uid6, name => uid6, year => , networkid => , params => , networktype =>   , email => mail, isbanned => false, regdate => 2016-11-04 08:27:06.517881+00, language =>   , id => 6, deleted => false }, { city => , password => uid7, name => uid7, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478364807,"lastLoginDate":310,"lastLoadDate":1106},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-05 00:45:47.596212+00, language => en, id => 7, deleted => false }, { city => , password => uid9, name => uid9, year => , networkid => , params => , networktype =>   , email => mail, isbanned => false, regdate => 2016-11-07 14:44:43.112805+00, language =>   , id => 9, deleted => false }, { city => , password => , name => --- DEFAULT ATTRIBUTES ---, year => , networkid => , params => {"inventory":{"list":[]},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2016-11-01 09:46:34.649034+00, language =>   , id => 1, deleted => false }, { city => , password => uid8, name => uid8, year => , networkid => , params => {"attrs":{"_lastTime.24hr":1478529438,"lastLoginDate":312,"lastLoadDate":1108},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2016-11-07 14:33:04.917648+00, language => en, id => 8, deleted => false }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 DB: SELECT ID FROM Users WHERE Name = 'uid10'
+07.11 14:50:55 == NET: null ret: user.auth { type => user.auth, token => dWlkMTA= }
+07.11 14:50:55 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid10', _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 DB: SELECT nextval('Users_id_seq') AS id
+07.11 14:50:55 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {{ id => 10 }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 ->>-: core/user.register { password => uid10, name => uid10, fullParams => { password => uid10, name => uid10, networkid => , networktype => , messageType => user.register, id => 10 }, networkid => , connectionID => 19838977, networktype => , email => , id => 10, _type => core/user.register }
+07.11 14:50:55 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+07.11 14:50:55 -<<-: core/user.registerResponse { password => uid10, name => uid10, _isNotify => true, fullParams => { password => uid10, name => uid10, networkid => , networktype => , messageType => user.register, id => 10 }, networkid => , connectionID => 19838977, networktype => , email => , id => 10, _type => core/user.registerResponse }
+07.11 14:50:55 DB: SELECT token FROM tokens WHERE userid = 10
+07.11 14:50:55 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 10, _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {{ token => 7d07835a7ac504860eca00797571652e }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 == NET: null ret: user.register { type => user.register, errorCode => ok, token => 7d07835a7ac504860eca00797571652e }
+07.11 14:50:55 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA= }
+07.11 14:50:55 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10'
+07.11 14:50:55 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10', _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {{ name => uid10, networkid => , isbanned => false, id => 10 }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 ->>-: core/user.isOnlineID { id => 10, _type => core/user.isOnlineID }
+07.11 14:50:55 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:50:55 ->>-: core/cache.get { type => user, v => -1, id => 10, _type => core/cache.get }
+07.11 14:50:55 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid10, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid10, isbanned => false, regdate => 2016-11-07 14:50:55.832911+00, city => 1, language =>   , region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, hints => 15 }, effects => { list => [] } }}, version => 19, id => 10 } }
+07.11 14:50:55 ->>-: core/cache.get { type => questdata, v => -1, id => 10, _type => core/cache.get }
+07.11 14:50:55 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 10 } }
+07.11 14:50:55 NET: Client login (conid:19838977, id:10, name:uid10)
+07.11 14:50:55 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 10, _type => core/user.loginPost, ipAddr => 109.62.244.94 }
+07.11 14:50:55 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:50:55 DB: SELECT token FROM tokens WHERE userid = 10
+07.11 14:50:55 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 10, _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {{ token => 7d07835a7ac504860eca00797571652e }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 DB: SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp
+07.11 14:50:55 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:50:55 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:50:55 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (10, 'today'::timestamp)
+07.11 14:50:55 == NET: uid10 ret: user.login { name => uid10, type => user.login, errorCode => ok, id => 10, token => 7d07835a7ac504860eca00797571652e }
+07.11 14:50:55 == NET: uid10 ret: user.join { name => uid8, type => user.join }
+07.11 14:50:55 == NET: uid10 ret: user.join { name => uid10, type => user.join }
+07.11 14:50:55 == NET: uid8 ret: user.join { name => uid10, type => user.join }
+07.11 14:50:56 ++ NET: uid10 req: user.login { messageType => user.login, token => dWlkMTA= }
+07.11 14:50:56 DB: SELECT id FROM battle WHERE firstid=10 OR secondid=10 AND finished <> true
+07.11 14:50:56 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=10 OR secondid=10 AND finished <> true, _type => core/server.query, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (10, 'today'::timestamp), _type => core/server.pending }} }
+07.11 14:50:56 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:50:56 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:56 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:56 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:50:56 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:50:56 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478530255, lastLoginDate => 312, lastLoadDate => 1108 } }}, type => user, unlock => true, id => 10, _type => core/cache.update }
+07.11 14:50:56 -<<-: core/cache.update { errorCode => ok, version => 20, _type => core/cache.update }
+07.11 14:50:56 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 10, _type => core/cache.update }
+07.11 14:50:56 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:50:56 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 10, _type => core/user.logoutPost }
+07.11 14:50:56 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:50:56 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10'
+07.11 14:50:56 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10', _type => core/server.query }
+07.11 14:50:56 -<<-: core/server.query { list => {{ name => uid10, networkid => , isbanned => false, id => 10 }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:56 ->>-: core/user.isOnlineID { id => 10, _type => core/user.isOnlineID }
+07.11 14:50:56 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:50:56 ->>-: core/cache.get { type => user, v => -1, id => 10, _type => core/cache.get }
+07.11 14:50:56 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid10, deleted => false, school => 1, year => null, email => null, networktype =>   , password => uid10, isbanned => false, regdate => 2016-11-07 14:50:55.832911+00, city => 1, language => en, region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1478530255, lastLoginDate => 312, lastLoadDate => 1108, hints => 15 }, effects => { list => [] } }}, version => 20, id => 10 } }
+07.11 14:50:56 ->>-: core/cache.get { type => questdata, v => -1, id => 10, _type => core/cache.get }
+07.11 14:50:56 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 1, id => 10 } }
+07.11 14:50:56 NET: Client login (conid:19838977, id:10, name:uid10)
+07.11 14:50:56 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 10, _type => core/user.loginPost, ipAddr => 109.62.244.94 }
+07.11 14:50:56 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:50:56 DB: SELECT token FROM tokens WHERE userid = 10
+07.11 14:50:56 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 10, _type => core/server.query }
+07.11 14:50:56 -<<-: core/server.query { list => {{ token => 7d07835a7ac504860eca00797571652e }}, errorCode => ok, _type => core/server.query }
+07.11 14:50:56 == NET: uid8 ret: user.join { name => uid10, type => user.join }
+07.11 14:51:00 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:00 TIME: user.ping 0.15 ms
+07.11 14:51:01 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:01 TIME: user.ping 0.12 ms
+07.11 14:51:03 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 10, _type => core/cache.update }
+07.11 14:51:03 -<<-: core/cache.update { errorCode => ok, version => 21, _type => core/cache.update }
+07.11 14:51:03 STATS: vdl.0 cache connection, 139 calls, total 0.110815048217773 sec spent, avg 0.8 ms
+07.11 14:51:04 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:04 TIME: user.ping 0.15 ms
+07.11 14:51:04 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:51:10 ++ NET: uid9 req: battle.end { type => leaveGame, typeBattle => battle, tournamentId => 0, messageType => battle.end, battleId => 0 }
+07.11 14:51:10 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:51:10 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:51:10 TRACE: battle.end : cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:51:10 TRACE: battle.end : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 84
+Called from modules/VDLBattleModule.hx line 50
+Called from snipe/slave/Server.hx line 1225
+07.11 14:51:16 ++ NET: uid9 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:51:16 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 9 }, _type => vdl/cache.battle.findRandom }
+07.11 14:51:16 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:51:16 TIME: battle.find 0.32 ms
+07.11 14:51:21 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:21 TIME: user.ping 0.11 ms
+07.11 14:51:21 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:21 TIME: user.ping 0.07 ms
+07.11 14:51:24 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:24 TIME: user.ping 0.24 ms
+07.11 14:51:24 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:51:24 ++ NET: uid8 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:51:24 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 8 }, _type => vdl/cache.battle.findRandom }
+07.11 14:51:24 -<<-: battle.enemyEvent { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 2, battleId => 9, player => 1 }, _isNotify => true, id => 8, _type => battle.enemyEvent }
+07.11 14:51:24 -<<-: battle.enemyEvent { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 1, battleId => 9, player => 2 }, _isNotify => true, id => 9, _type => battle.enemyEvent }
+07.11 14:51:24 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:51:24 TIME: battle.find 9.04 ms
+07.11 14:51:24 == NET: uid8 ret: battle.find { type => battle.find, errorCode => ok }
+07.11 14:51:24 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 1, battleId => 9, player => 2 }, _type => battle.enemy } }
+07.11 14:51:24 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 1, battleId => 9, player => 2 }, _type => battle.enemy } }
+07.11 14:51:24 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:51:24 == NET: uid8 ret: battle.enemy { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 2, battleId => 9, player => 1 }, type => battle.enemy }
+07.11 14:51:25 ++ NET: uid8 req: battle.sendtask { dice => 0, from => [0,0], name => skip, side => 2, messageType => battle.sendtask, to => [0,0], battleId => 9 }
+07.11 14:51:25 ->>-: vdl/cache.battle.infoRoom { roomId => 9, _type => vdl/cache.battle.infoRoom }
+07.11 14:51:25 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:51:25 ->>-: core/user.sendTo { id => 9, _type => core/user.sendTo, msg => { dice => 0, from => [0,0], name => skip, side => 2, type => battle.task, messageType => battle.sendtask, to => [0,0], _type => battle.task, battleId => 9 } }
+07.11 14:51:25 -<<-: core/user.sendTo { _isNotify => true, id => 9, _type => core/user.sendTo, msg => { dice => 0, from => [0,0], name => skip, side => 2, type => battle.task, messageType => battle.sendtask, to => [0,0], _type => battle.task, battleId => 9 } }
+07.11 14:51:25 -<<-: core/user.sendTo { errorCode => ok, _type => core/user.sendTo }
+07.11 14:51:25 ->>-: vdl/cache.battle.makeTurn { userId => 8, roomId => 9, _type => vdl/cache.battle.makeTurn }
+07.11 14:51:25 -<<-: vdl/cache.battle.makeTurn { errorCode => true, _type => vdl/cache.battle.makeTurn, turnId => 9 }
+07.11 14:51:25 TIME: battle.sendtask 1.16 ms
+07.11 14:51:25 == NET: uid8 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:51:27 TIMER: Check auto-disconnect...
+07.11 14:51:28 STATS: vdl.0 cache, locks:8
+07.11 14:51:41 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:41 TIME: user.ping 0.12 ms
+07.11 14:51:41 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:41 TIME: user.ping 0.11 ms
+07.11 14:51:44 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:51:44 TIME: user.ping 0.12 ms
+07.11 14:51:44 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:52:01 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:01 TIME: user.ping 0.1 ms
+07.11 14:52:01 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:01 TIME: user.ping 0.11 ms
+07.11 14:52:04 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:04 TIME: user.ping 0.17 ms
+07.11 14:52:04 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:52:21 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:21 TIME: user.ping 0.16 ms
+07.11 14:52:22 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:22 TIME: user.ping 0.11 ms
+07.11 14:52:25 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:25 TIME: user.ping 0.12 ms
+07.11 14:52:25 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:52:27 TIMER: Check auto-disconnect...
+07.11 14:52:28 STATS: vdl.0 cache, locks:8
+07.11 14:52:35 NET: Client (name:uid9 conid:98258697 WS) disconnected from vdl.0 (clients:2)
+07.11 14:52:35 DB: SELECT id FROM battle WHERE firstid=9 OR secondid=9 AND finished <> true
+07.11 14:52:35 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=9 OR secondid=9 AND finished <> true, _type => core/server.query }
+07.11 14:52:35 -<<-: core/server.query { list => {{ id => 7 }, { id => 8 }, { id => 9 }}, errorCode => ok, _type => core/server.query }
+07.11 14:52:35 STATS: vdl.0 cache connection, 147 calls, total 0.12332010269165 sec spent, avg 0.84 ms
+07.11 14:52:35 ->>-: vdl/cache.battle.infoRoom { roomId => 9, _type => vdl/cache.battle.infoRoom }
+07.11 14:52:35 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:52:35 ->>-: vdl/cache.battle.deleteRoom { roomId => 9, _type => vdl/cache.battle.deleteRoom }
+07.11 14:52:35 -<<-: vdl/cache.battle.deleteRoom { errorCode => ok, _type => vdl/cache.battle.deleteRoom }
+07.11 14:52:35 ->>-: vdl/cache.battle.finishRoom { roomId => 9, _type => vdl/cache.battle.finishRoom }
+07.11 14:52:35 -<<-: vdl/cache.battle.finishRoom { errorCode => ok, _type => vdl/cache.battle.finishRoom }
+07.11 14:52:35 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 9, _type => core/cache.update }
+07.11 14:52:35 -<<-: core/cache.update { errorCode => ok, version => 22, _type => core/cache.update }
+07.11 14:52:35 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 9, _type => core/cache.update }
+07.11 14:52:35 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+07.11 14:52:35 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 9, _type => core/user.logoutPost }
+07.11 14:52:35 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:52:35 == NET: uid8 ret: battle.leave { type => battle.leave }
+07.11 14:52:41 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:41 TIME: user.ping 0.12 ms
+07.11 14:52:45 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:52:45 TIME: user.ping 0.14 ms
+07.11 14:52:45 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:53:05 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:53:05 TIME: user.ping 0.13 ms
+07.11 14:53:05 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:53:25 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:53:25 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:53:25 TIME: user.ping 0.22 ms
+07.11 14:53:26 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:53:26 TIME: user.ping 0.12 ms
+07.11 14:53:27 TIMER: Check auto-disconnect...
+07.11 14:53:28 STATS: vdl.0 cache, locks:6
+07.11 14:53:45 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:53:45 TIME: user.ping 0.15 ms
+07.11 14:53:45 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:53:46 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:53:46 TIME: user.ping 0.14 ms
+07.11 14:54:05 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:05 TIME: user.ping 0.17 ms
+07.11 14:54:05 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:54:06 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:06 TIME: user.ping 0.13 ms
+07.11 14:54:17 NET: Client (conid:42783717) connected to vdl.0 (clients:3)
+07.11 14:54:17 NET: Client (conid:42783717) switched protocol to WS
+07.11 14:54:21 ++ NET: null req: user.login { messageType => user.login, token => dWlkOQ== }
+07.11 14:54:21 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9'
+07.11 14:54:21 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid9' AND Password = 'uid9', _type => core/server.query }
+07.11 14:54:21 -<<-: core/server.query { list => {{ name => uid9, networkid => , isbanned => false, id => 9 }}, errorCode => ok, _type => core/server.query }
+07.11 14:54:21 STATS: vdl.0 cache connection, 154 calls, total 0.127991914749146 sec spent, avg 0.83 ms
+07.11 14:54:21 ->>-: core/user.isOnlineID { id => 9, _type => core/user.isOnlineID }
+07.11 14:54:21 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:54:21 ->>-: core/cache.get { type => user, v => -1, id => 9, _type => core/cache.get }
+07.11 14:54:21 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid9, deleted => false, year => , email => mail, networktype =>   , password => uid9, isbanned => false, regdate => 2016-11-07 14:44:43.112805+00, city => , language =>   , networkid => , params => {}}, version => 0, id => 9 } }
+07.11 14:54:21 ->>-: core/cache.get { type => questdata, v => -1, id => 9, _type => core/cache.get }
+07.11 14:54:21 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 9 } }
+07.11 14:54:21 NET: Client login (conid:42783717, id:9, name:uid9)
+07.11 14:54:21 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 9, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+07.11 14:54:21 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:54:21 DB: SELECT token FROM tokens WHERE userid = 9
+07.11 14:54:21 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 9, _type => core/server.query }
+07.11 14:54:21 -<<-: core/server.query { list => {{ token => 14986be1f511949a68de9e64382036dc }}, errorCode => ok, _type => core/server.query }
+07.11 14:54:21 DB: SELECT ID FROM TempUserLogins WHERE UserID = 9 AND Date = 'today'::timestamp
+07.11 14:54:21 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 9 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:54:21 -<<-: core/server.query { list => {{ id => 114 }}, errorCode => ok, _type => core/server.query }
+07.11 14:54:21 == NET: uid9 ret: user.login { name => uid9, type => user.login, errorCode => ok, id => 9, token => 14986be1f511949a68de9e64382036dc }
+07.11 14:54:21 == NET: uid8 ret: user.join { name => uid9, type => user.join }
+07.11 14:54:21 == NET: uid9 ret: user.join { name => uid8, type => user.join }
+07.11 14:54:21 == NET: uid9 ret: user.join { name => uid9, type => user.join }
+07.11 14:54:25 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:25 TIME: user.ping 0.13 ms
+07.11 14:54:25 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:54:26 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:26 TIME: user.ping 0.13 ms
+07.11 14:54:27 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:27 TIME: user.ping 0.16 ms
+07.11 14:54:27 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:54:27 TIMER: Check auto-disconnect...
+07.11 14:54:28 STATS: vdl.0 cache, locks:8
+07.11 14:54:28 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478530461, lastLoginDate => 312, lastLoadDate => 1108 }, effects => { list => [] } }}, type => user, unlock => false, id => 9, _type => core/cache.update }
+07.11 14:54:28 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:54:39 ++ NET: uid9 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+07.11 14:54:39 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+07.11 14:54:39 -<<-: vdl/cache.tournament.getAvailableTournament { list => [], count => 0, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+07.11 14:54:39 TIME: tournament.getAvailableTournament 1.62 ms
+07.11 14:54:39 == NET: uid9 ret: tournament.getAvailableTournament { list => [], count => 0, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+07.11 14:54:45 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:45 TIME: user.ping 0.12 ms
+07.11 14:54:45 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:54:46 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:46 TIME: user.ping 0.13 ms
+07.11 14:54:48 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:54:48 TIME: user.ping 0.15 ms
+07.11 14:54:48 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:05 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:05 TIME: user.ping 0.14 ms
+07.11 14:55:05 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:09 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:09 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:09 TIME: user.ping 0.13 ms
+07.11 14:55:13 ++ NET: uid9 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:55:13 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 9 }, _type => vdl/cache.battle.findRandom }
+07.11 14:55:13 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:55:13 TIME: battle.find 0.27 ms
+07.11 14:55:13 == NET: uid9 ret: battle.find { type => battle.find, errorCode => ok }
+07.11 14:55:16 ++ NET: uid8 req: battle.find { type => random, messageType => battle.find, roundTime => 30 }
+07.11 14:55:16 ->>-: vdl/cache.battle.findRandom { user => { time => 30, player => 8 }, _type => vdl/cache.battle.findRandom }
+07.11 14:55:16 -<<-: battle.enemyEvent { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 2, battleId => 10, player => 1 }, _isNotify => true, id => 8, _type => battle.enemyEvent }
+07.11 14:55:16 -<<-: battle.enemyEvent { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 1, battleId => 10, player => 2 }, _isNotify => true, id => 9, _type => battle.enemyEvent }
+07.11 14:55:16 -<<-: vdl/cache.battle.findRandom { errorCode => ok, _type => vdl/cache.battle.findRandom }
+07.11 14:55:16 TIME: battle.find 9.16 ms
+07.11 14:55:16 == NET: uid8 ret: battle.find { type => battle.find, errorCode => ok }
+07.11 14:55:16 == NET: uid8 ret: battle.enemy { data => { name => uid8, enemy.id => 9, enemy.name => uid9, id => 8, enemy.num => 2, battleId => 10, player => 1 }, type => battle.enemy }
+07.11 14:55:16 == NET: uid9 ret: battle.enemy { data => { name => uid9, enemy.id => 8, enemy.name => uid8, id => 9, enemy.num => 1, battleId => 10, player => 2 }, type => battle.enemy }
+07.11 14:55:17 ++ NET: uid8 req: battle.sendtask { dice => 0, from => [0,0], name => skip, side => 2, messageType => battle.sendtask, to => [0,0], battleId => 10 }
+07.11 14:55:17 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:17 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:55:17 ->>-: vdl/cache.battle.makeTurn { userId => 8, roomId => 10, _type => vdl/cache.battle.makeTurn }
+07.11 14:55:17 -<<-: vdl/cache.battle.makeTurn { errorCode => true, _type => vdl/cache.battle.makeTurn, turnId => 9 }
+07.11 14:55:17 TIME: battle.sendtask 0.65 ms
+07.11 14:55:17 == NET: uid8 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:17 == NET: uid9 ret: battle.task { dice => 0, from => [0,0], name => skip, side => 2, type => battle.task, messageType => battle.sendtask, to => [0,0], battleId => 10 }
+07.11 14:55:26 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:26 TIME: user.ping 0.12 ms
+07.11 14:55:26 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:27 ++ NET: uid8 req: battle.sendtask { dice => 0, from => [1,4], name => swap, side => 2, messageType => battle.sendtask, to => [1,5], battleId => 10 }
+07.11 14:55:27 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:27 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:27 STATS: vdl.0 cache connection, 167 calls, total 0.146691083908081 sec spent, avg 0.88 ms
+07.11 14:55:27 TRACE: battle.sendtask : Invalid field access : copy
+07.11 14:55:27 TRACE: battle.sendtask : 
+Called from modules/VDLBattleModule.hx line 306
+Called from modules/VDLBattleModule.hx line 64
+Called from modules/VDLBattleModule.hx line 42
+Called from snipe/slave/Server.hx line 1225
+07.11 14:55:27 ++ NET: uid9 req: battle.sendtask { dice => 0, from => [0,0], name => throw, side => 1, messageType => battle.sendtask, to => [0,0], battleId => 10 }
+07.11 14:55:27 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:27 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:27 TIME: battle.sendtask 0.31 ms
+07.11 14:55:27 == NET: uid9 ret: battle.sendtask { name => throw, type => battle.task, dices => [3,5,2,1,3,0], errorCode => ok }
+07.11 14:55:27 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:27 == NET: uid8 ret: battle.task { name => throw, type => battle.task, dices => [3,5,2,1,3,0], errorCode => ok }
+07.11 14:55:27 TIMER: Check auto-disconnect...
+07.11 14:55:28 STATS: vdl.0 cache, locks:8
+07.11 14:55:29 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:29 TIME: user.ping 0.17 ms
+07.11 14:55:30 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:30 TIME: user.ping 0.1 ms
+07.11 14:55:30 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:32 ++ NET: uid9 req: battle.sendtask { dice => 5, from => [2,6], name => swap, side => 1, messageType => battle.sendtask, to => [1,6], battleId => 10 }
+07.11 14:55:32 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:32 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:32 ->>-: vdl/cache.battle.setScores { scores => [0,0], _type => vdl/cache.battle.setScores, player1 => 8, player2 => 9, battleId => 10 }
+07.11 14:55:32 -<<-: vdl/cache.battle.setScores { errorCode => ok, _type => vdl/cache.battle.setScores }
+07.11 14:55:32 TIME: battle.sendtask 1.17 ms
+07.11 14:55:32 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:32 == NET: uid8 ret: battle.task { dice => 5, from => [2,6], name => swap, side => 1, type => battle.task, dices => [3,2,1,3,0], messageType => battle.sendtask, to => [1,6], battleId => 10 }
+07.11 14:55:35 ++ NET: uid9 req: battle.sendtask { dice => 3, from => [4,2], name => swap, side => 1, messageType => battle.sendtask, to => [4,1], battleId => 10 }
+07.11 14:55:35 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:35 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:35 ->>-: vdl/cache.battle.setScores { scores => [0,0], _type => vdl/cache.battle.setScores, player1 => 8, player2 => 9, battleId => 10 }
+07.11 14:55:35 -<<-: vdl/cache.battle.setScores { errorCode => ok, _type => vdl/cache.battle.setScores }
+07.11 14:55:35 TIME: battle.sendtask 1.07 ms
+07.11 14:55:35 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:35 == NET: uid8 ret: battle.task { dice => 3, from => [4,2], name => swap, side => 1, type => battle.task, dices => [2,1,3,0], messageType => battle.sendtask, to => [4,1], battleId => 10 }
+07.11 14:55:36 ++ NET: uid9 req: battle.sendtask { dice => 2, from => [4,2], name => swap, side => 1, messageType => battle.sendtask, to => [4,1], battleId => 10 }
+07.11 14:55:36 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:36 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:36 ->>-: vdl/cache.battle.setScores { scores => [0,0], _type => vdl/cache.battle.setScores, player1 => 8, player2 => 9, battleId => 10 }
+07.11 14:55:36 -<<-: vdl/cache.battle.setScores { errorCode => ok, _type => vdl/cache.battle.setScores }
+07.11 14:55:36 TIME: battle.sendtask 1.14 ms
+07.11 14:55:36 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:36 == NET: uid8 ret: battle.task { dice => 2, from => [4,2], name => swap, side => 1, type => battle.task, dices => [1,3,0], messageType => battle.sendtask, to => [4,1], battleId => 10 }
+07.11 14:55:39 ++ NET: uid9 req: battle.sendtask { dice => 3, from => [4,7], name => swap, side => 1, messageType => battle.sendtask, to => [4,8], battleId => 10 }
+07.11 14:55:39 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:39 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:39 ->>-: vdl/cache.battle.setScores { scores => [0,0], _type => vdl/cache.battle.setScores, player1 => 8, player2 => 9, battleId => 10 }
+07.11 14:55:39 -<<-: vdl/cache.battle.setScores { errorCode => ok, _type => vdl/cache.battle.setScores }
+07.11 14:55:39 TIME: battle.sendtask 1.32 ms
+07.11 14:55:39 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:39 == NET: uid8 ret: battle.task { dice => 3, from => [4,7], name => swap, side => 1, type => battle.task, dices => [1,0], messageType => battle.sendtask, to => [4,8], battleId => 10 }
+07.11 14:55:41 ++ NET: uid10 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+07.11 14:55:41 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+07.11 14:55:41 -<<-: vdl/cache.tournament.getAvailableTournament { list => [], count => 0, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+07.11 14:55:41 TIME: tournament.getAvailableTournament 0.79 ms
+07.11 14:55:42 ++ NET: uid9 req: battle.sendtask { dice => 0, from => [4,8], name => swap, side => 1, messageType => battle.sendtask, to => [4,7], battleId => 10 }
+07.11 14:55:42 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:42 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:42 TIME: battle.sendtask 0.58 ms
+07.11 14:55:42 == NET: uid9 ret: battle.sendtask { pole => [[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,5,0,0,0],[0,0,10,5,5,5,0,15,0,0],[0,0,5,10,5,5,15,5,0,0],[0,5,0,5,10,15,5,2,3,0],[0,0,5,5,15,10,5,5,0,0],[0,0,5,15,5,5,10,5,0,0],[0,0,15,5,5,5,5,10,0,0],[0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0]], type => battle.sendtask, dices => [1,0], errorCode => cannotSwap }
+07.11 14:55:46 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:46 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:46 TIME: user.ping 0.12 ms
+07.11 14:55:50 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:50 TIME: user.ping 0.11 ms
+07.11 14:55:51 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:55:51 TIME: user.ping 0.13 ms
+07.11 14:55:51 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:55:57 NET: Client (name:uid10 conid:19838977 WS) disconnected from vdl.0 (clients:2)
+07.11 14:55:57 DB: SELECT id FROM battle WHERE firstid=10 OR secondid=10 AND finished <> true
+07.11 14:55:57 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=10 OR secondid=10 AND finished <> true, _type => core/server.query }
+07.11 14:55:57 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+07.11 14:55:57 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:57 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:57 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:57 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 14:55:57 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 10, _type => core/cache.update }
+07.11 14:55:57 -<<-: core/cache.update { errorCode => ok, version => 22, _type => core/cache.update }
+07.11 14:55:57 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 10, _type => core/cache.update }
+07.11 14:55:57 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+07.11 14:55:57 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 10, _type => core/user.logoutPost }
+07.11 14:55:57 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+07.11 14:55:58 ++ NET: uid9 req: battle.sendtask { dice => 0, from => [0,0], name => skip, side => 1, messageType => battle.sendtask, to => [0,0], battleId => 10 }
+07.11 14:55:58 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:55:58 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 9 }
+07.11 14:55:58 ->>-: vdl/cache.battle.makeTurn { userId => 9, roomId => 10, _type => vdl/cache.battle.makeTurn }
+07.11 14:55:58 -<<-: vdl/cache.battle.makeTurn { errorCode => true, _type => vdl/cache.battle.makeTurn, turnId => 9 }
+07.11 14:55:58 == NET: uid9 ret: battle.sendtask { type => battle.sendtask, errorCode => ok }
+07.11 14:55:58 TIME: battle.sendtask 1.32 ms
+07.11 14:55:58 == NET: uid8 ret: battle.task { dice => 0, from => [0,0], name => skip, side => 1, type => battle.task, messageType => battle.sendtask, to => [0,0], battleId => 10 }
+07.11 14:56:06 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:06 TIME: user.ping 0.13 ms
+07.11 14:56:06 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:12 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:12 TIME: user.ping 0.12 ms
+07.11 14:56:12 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:26 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:26 TIME: user.ping 0.13 ms
+07.11 14:56:26 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:27 TIMER: Check auto-disconnect...
+07.11 14:56:28 STATS: vdl.0 cache, locks:6
+07.11 14:56:29 NET: Client (conid:76805363) connected to vdl.0 (clients:3)
+07.11 14:56:30 NET: Client (conid:76805363) switched protocol to WS
+07.11 14:56:31 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTA= }
+07.11 14:56:31 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10'
+07.11 14:56:31 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid10' AND Password = 'uid10', _type => core/server.query }
+07.11 14:56:31 -<<-: core/server.query { list => {{ name => uid10, networkid => , isbanned => false, id => 10 }}, errorCode => ok, _type => core/server.query }
+07.11 14:56:31 STATS: vdl.0 cache connection, 186 calls, total 0.153300523757935 sec spent, avg 0.82 ms
+07.11 14:56:31 ->>-: core/user.isOnlineID { id => 10, _type => core/user.isOnlineID }
+07.11 14:56:31 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+07.11 14:56:31 ->>-: core/cache.get { type => user, v => -1, id => 10, _type => core/cache.get }
+07.11 14:56:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid10, deleted => false, year => , email => mail, networktype =>   , password => uid10, isbanned => false, regdate => 2016-11-07 14:50:55.832911+00, city => , language =>   , networkid => , params => {}}, version => 0, id => 10 } }
+07.11 14:56:31 ->>-: core/cache.get { type => questdata, v => -1, id => 10, _type => core/cache.get }
+07.11 14:56:31 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 10 } }
+07.11 14:56:31 NET: Client login (conid:76805363, id:10, name:uid10)
+07.11 14:56:31 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 10, _type => core/user.loginPost, ipAddr => 109.62.244.94 }
+07.11 14:56:31 -<<-: core/user.loginPost { _type => core/user.loginPost }
+07.11 14:56:31 DB: SELECT token FROM tokens WHERE userid = 10
+07.11 14:56:31 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 10, _type => core/server.query }
+07.11 14:56:31 -<<-: core/server.query { list => {{ token => 7d07835a7ac504860eca00797571652e }}, errorCode => ok, _type => core/server.query }
+07.11 14:56:31 DB: SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp
+07.11 14:56:31 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 10 AND Date = 'today'::timestamp, _type => core/server.query }
+07.11 14:56:31 -<<-: core/server.query { list => {{ id => 115 }}, errorCode => ok, _type => core/server.query }
+07.11 14:56:31 == NET: uid10 ret: user.login { name => uid10, type => user.login, errorCode => ok, id => 10, token => 7d07835a7ac504860eca00797571652e }
+07.11 14:56:31 == NET: uid8 ret: user.join { name => uid10, type => user.join }
+07.11 14:56:31 == NET: uid9 ret: user.join { name => uid10, type => user.join }
+07.11 14:56:31 == NET: uid10 ret: user.join { name => uid8, type => user.join }
+07.11 14:56:31 == NET: uid10 ret: user.join { name => uid9, type => user.join }
+07.11 14:56:31 == NET: uid10 ret: user.join { name => uid10, type => user.join }
+07.11 14:56:36 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:36 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:36 TIME: user.ping 0.15 ms
+07.11 14:56:38 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1478530591, lastLoginDate => 312, lastLoadDate => 1108 }, effects => { list => [] } }}, type => user, unlock => false, id => 10, _type => core/cache.update }
+07.11 14:56:38 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+07.11 14:56:46 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:46 TIME: user.ping 0.12 ms
+07.11 14:56:46 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:46 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:46 TIME: user.ping 0.12 ms
+07.11 14:56:46 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:56:57 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:56:57 TIME: user.ping 0.13 ms
+07.11 14:56:57 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:06 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:06 TIME: user.ping 0.14 ms
+07.11 14:57:06 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:07 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:07 TIME: user.ping 0.19 ms
+07.11 14:57:07 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:17 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:17 TIME: user.ping 0.19 ms
+07.11 14:57:17 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:26 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:26 TIME: user.ping 0.14 ms
+07.11 14:57:26 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:27 TIMER: Check auto-disconnect...
+07.11 14:57:28 STATS: vdl.0 cache, locks:8
+07.11 14:57:37 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:37 TIME: user.ping 0.12 ms
+07.11 14:57:37 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:46 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:46 TIME: user.ping 0.13 ms
+07.11 14:57:46 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:57 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:57 TIME: user.ping 0.13 ms
+07.11 14:57:57 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:57:58 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:57:58 TIME: user.ping 0.16 ms
+07.11 14:57:58 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:06 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:06 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:06 TIME: user.ping 0.12 ms
+07.11 14:58:17 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:17 TIME: user.ping 0.13 ms
+07.11 14:58:17 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:18 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:18 TIME: user.ping 0.13 ms
+07.11 14:58:18 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:26 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:26 TIME: user.ping 0.14 ms
+07.11 14:58:26 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:27 TIMER: Check auto-disconnect...
+07.11 14:58:28 STATS: vdl.0 cache, locks:8
+07.11 14:58:37 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:37 TIME: user.ping 0.12 ms
+07.11 14:58:37 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:46 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:46 TIME: user.ping 0.17 ms
+07.11 14:58:46 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:49 ++ NET: uid9 req: battle.message { messageType => battle.message, message => апарапр, battleId => 10 }
+07.11 14:58:49 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:49 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:49 STATS: vdl.0 cache connection, 194 calls, total 0.156893491744995 sec spent, avg 0.81 ms
+07.11 14:58:49 TIME: battle.message 1.16 ms
+07.11 14:58:49 == NET: uid9 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:49 == NET: uid8 ret: battle.message { type => battle.message, message => апарапр, player => 2 }
+07.11 14:58:50 ++ NET: uid8 req: battle.message { messageType => battle.message, message => dsafdsaf, battleId => 10 }
+07.11 14:58:50 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:50 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:50 TIME: battle.message 0.32 ms
+07.11 14:58:50 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:50 == NET: uid9 ret: battle.message { type => battle.message, message => dsafdsaf, player => 1 }
+07.11 14:58:51 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:51 TIME: user.ping 0.14 ms
+07.11 14:58:51 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:54 ++ NET: uid9 req: battle.message { messageType => battle.message, message => авпва, battleId => 10 }
+07.11 14:58:54 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:54 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:54 TIME: battle.message 0.31 ms
+07.11 14:58:54 == NET: uid9 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:54 == NET: uid8 ret: battle.message { type => battle.message, message => авпва, player => 2 }
+07.11 14:58:56 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:58:56 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:56 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:56 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:56 TIME: battle.message 0.36 ms
+07.11 14:58:56 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:58:56 ++ NET: uid9 req: battle.message { messageType => battle.message, message => авпварожл, battleId => 10 }
+07.11 14:58:56 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:56 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:56 TIME: battle.message 0.27 ms
+07.11 14:58:56 == NET: uid9 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:56 == NET: uid8 ret: battle.message { type => battle.message, message => авпварожл, player => 2 }
+07.11 14:58:57 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:58:57 TIME: user.ping 0.12 ms
+07.11 14:58:57 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:58:58 ++ NET: uid9 req: battle.message { messageType => battle.message, message => авпварожл, battleId => 10 }
+07.11 14:58:58 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:58 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:58 == NET: uid9 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:58 TIME: battle.message 0.31 ms
+07.11 14:58:58 == NET: uid8 ret: battle.message { type => battle.message, message => авпварожл, player => 2 }
+07.11 14:58:58 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:58:58 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:58 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:58 TIME: battle.message 0.29 ms
+07.11 14:58:58 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:58 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:58:59 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:58:59 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:59 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:59 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:59 TIME: battle.message 0.29 ms
+07.11 14:58:59 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:58:59 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:58:59 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:58:59 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:58:59 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:58:59 TIME: battle.message 0.33 ms
+07.11 14:58:59 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:59:00 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:59:00 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:00 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:00 TIME: battle.message 0.27 ms
+07.11 14:59:00 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:00 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:59:00 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:59:00 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:00 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:00 TIME: battle.message 0.31 ms
+07.11 14:59:00 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:00 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:59:00 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:59:00 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:00 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:00 TIME: battle.message 0.29 ms
+07.11 14:59:00 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:00 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:59:01 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adfsvdf, battleId => 10 }
+07.11 14:59:01 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:01 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:01 TIME: battle.message 0.32 ms
+07.11 14:59:01 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:01 == NET: uid9 ret: battle.message { type => battle.message, message => adfsvdf, player => 1 }
+07.11 14:59:05 ++ NET: uid8 req: battle.message { messageType => battle.message, message => sfgsbsdfb, battleId => 10 }
+07.11 14:59:05 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:05 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:05 TIME: battle.message 0.25 ms
+07.11 14:59:05 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:05 == NET: uid9 ret: battle.message { type => battle.message, message => sfgsbsdfb, player => 1 }
+07.11 14:59:06 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:06 TIME: user.ping 0.15 ms
+07.11 14:59:06 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:15 ++ NET: uid8 req: battle.message { messageType => battle.message, message => absvjnsd, battleId => 10 }
+07.11 14:59:15 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:15 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:15 TIME: battle.message 0.35 ms
+07.11 14:59:15 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:15 == NET: uid9 ret: battle.message { type => battle.message, message => absvjnsd, player => 1 }
+07.11 14:59:17 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:17 TIME: user.ping 0.12 ms
+07.11 14:59:17 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:18 ++ NET: uid8 req: battle.message { messageType => battle.message, message => test, battleId => 10 }
+07.11 14:59:18 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:18 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:18 TIME: battle.message 0.31 ms
+07.11 14:59:18 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:18 == NET: uid9 ret: battle.message { type => battle.message, message => test, player => 1 }
+07.11 14:59:21 ++ NET: uid8 req: battle.message { messageType => battle.message, message => 2, battleId => 10 }
+07.11 14:59:21 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:21 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:21 TIME: battle.message 0.33 ms
+07.11 14:59:21 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:21 == NET: uid9 ret: battle.message { type => battle.message, message => 2, player => 1 }
+07.11 14:59:23 ++ NET: uid8 req: battle.message { messageType => battle.message, message => 1, battleId => 10 }
+07.11 14:59:23 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:23 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:23 TIME: battle.message 0.32 ms
+07.11 14:59:23 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:23 == NET: uid9 ret: battle.message { type => battle.message, message => 1, player => 1 }
+07.11 14:59:26 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:26 TIME: user.ping 0.12 ms
+07.11 14:59:26 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:26 ++ NET: uid8 req: battle.message { messageType => battle.message, message => 4, battleId => 10 }
+07.11 14:59:26 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:26 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:26 TIME: battle.message 0.33 ms
+07.11 14:59:26 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:26 == NET: uid9 ret: battle.message { type => battle.message, message => 4, player => 1 }
+07.11 14:59:27 TIMER: Check auto-disconnect...
+07.11 14:59:28 STATS: vdl.0 cache, locks:8
+07.11 14:59:29 ++ NET: uid8 req: battle.message { messageType => battle.message, message => adsf, battleId => 10 }
+07.11 14:59:29 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:29 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:29 TIME: battle.message 0.26 ms
+07.11 14:59:29 == NET: uid8 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:29 == NET: uid9 ret: battle.message { type => battle.message, message => adsf, player => 1 }
+07.11 14:59:37 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:37 TIME: user.ping 0.13 ms
+07.11 14:59:37 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:44 ++ NET: uid9 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:44 TIME: user.ping 0.13 ms
+07.11 14:59:44 == NET: uid9 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:46 ++ NET: uid8 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:46 TIME: user.ping 0.14 ms
+07.11 14:59:46 == NET: uid8 ret: user.ping { type => user.ping, errorCode => ok }
+07.11 14:59:52 ++ NET: uid9 req: battle.message { messageType => battle.message, message => авпварожл, battleId => 10 }
+07.11 14:59:52 ->>-: vdl/cache.battle.infoRoom { roomId => 10, _type => vdl/cache.battle.infoRoom }
+07.11 14:59:52 -<<-: vdl/cache.battle.infoRoom { secondId => 9, firstId => 8, _type => vdl/cache.battle.infoRoom, turnId => 8 }
+07.11 14:59:52 STATS: vdl.0 cache connection, 214 calls, total 0.162014961242676 sec spent, avg 0.76 ms
+07.11 14:59:52 TIME: battle.message 1.18 ms
+07.11 14:59:52 == NET: uid9 ret: battle.message { type => battle.message, errorCode => ok }
+07.11 14:59:52 == NET: uid8 ret: battle.message { type => battle.message, message => авпварожл, player => 2 }
+07.11 14:59:57 ++ NET: uid10 req: user.ping { messageType => user.ping, msg => ok }
+07.11 14:59:57 TIME: user.ping 0.13 ms
+07.11 14:59:57 == NET: uid10 ret: user.ping { type => user.ping, errorCode => ok }

@@ -1,0 +1,275 @@
+27.10 16:08:34 STATS: vdl.0 cache, locks:0
+27.10 16:09:33 TIMER: Check auto-disconnect...
+27.10 16:09:34 STATS: vdl.0 cache, locks:0
+27.10 16:10:33 TIMER: Check auto-disconnect...
+27.10 16:10:34 STATS: vdl.0 cache, locks:0
+27.10 16:11:33 TIMER: Check auto-disconnect...
+27.10 16:11:34 STATS: vdl.0 cache, locks:0
+27.10 16:12:33 TIMER: Check auto-disconnect...
+27.10 16:12:34 STATS: vdl.0 cache, locks:0
+27.10 16:13:33 TIMER: Check auto-disconnect...
+27.10 16:13:34 STATS: vdl.0 cache, locks:0
+27.10 16:14:33 TIMER: Check auto-disconnect...
+27.10 16:14:34 STATS: vdl.0 cache, locks:0
+27.10 16:15:33 TIMER: Check auto-disconnect...
+27.10 16:15:34 STATS: vdl.0 cache, locks:0
+27.10 16:16:33 TIMER: Check auto-disconnect...
+27.10 16:16:34 STATS: vdl.0 cache, locks:0
+27.10 16:17:33 TIMER: Check auto-disconnect...
+27.10 16:17:34 STATS: vdl.0 cache, locks:0
+27.10 16:18:33 TIMER: Check auto-disconnect...
+27.10 16:18:34 STATS: vdl.0 cache, locks:0
+27.10 16:19:33 TIMER: Check auto-disconnect...
+27.10 16:19:34 STATS: vdl.0 cache, locks:0
+27.10 16:20:33 TIMER: Check auto-disconnect...
+27.10 16:20:34 STATS: vdl.0 cache, locks:0
+27.10 16:21:33 TIMER: Check auto-disconnect...
+27.10 16:21:34 STATS: vdl.0 cache, locks:0
+27.10 16:22:33 TIMER: Check auto-disconnect...
+27.10 16:22:34 STATS: vdl.0 cache, locks:0
+27.10 16:23:33 TIMER: Check auto-disconnect...
+27.10 16:23:34 STATS: vdl.0 cache, locks:0
+27.10 16:24:33 TIMER: Check auto-disconnect...
+27.10 16:24:34 STATS: vdl.0 cache, locks:0
+27.10 16:25:33 TIMER: Check auto-disconnect...
+27.10 16:25:34 STATS: vdl.0 cache, locks:0
+27.10 16:26:33 TIMER: Check auto-disconnect...
+27.10 16:26:34 STATS: vdl.0 cache, locks:0
+27.10 16:27:33 TIMER: Check auto-disconnect...
+27.10 16:27:34 STATS: vdl.0 cache, locks:0
+27.10 16:28:33 TIMER: Check auto-disconnect...
+27.10 16:28:34 STATS: vdl.0 cache, locks:0
+27.10 16:29:33 TIMER: Check auto-disconnect...
+27.10 16:29:34 STATS: vdl.0 cache, locks:0
+27.10 16:30:33 TIMER: Check auto-disconnect...
+27.10 16:30:34 STATS: vdl.0 cache, locks:0
+27.10 16:31:33 TIMER: Check auto-disconnect...
+27.10 16:31:34 STATS: vdl.0 cache, locks:0
+27.10 16:32:33 TIMER: Check auto-disconnect...
+27.10 16:32:34 STATS: vdl.0 cache, locks:0
+27.10 16:33:21 NET: Client (conid:657371) connected to vdl.0 (clients:1)
+27.10 16:33:24 ++ NET: null req: user.login { password => 7777, name => forest, messageType => user.login }
+27.10 16:33:24 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'forest' AND Password = '7777'
+27.10 16:33:24 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'forest' AND Password = '7777', _type => core/server.query }
+27.10 16:33:24 -<<-: core/server.query { list => {{ name => forest, networkid => , isbanned => false, id => 90 }}, errorCode => ok, _type => core/server.query }
+27.10 16:33:24 STATS: vdl.0 cache connection, 298 calls, total 0.303287029266357 sec spent, avg 1.02 ms
+27.10 16:33:24 ->>-: core/user.isOnlineID { id => 90, _type => core/user.isOnlineID }
+27.10 16:33:24 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.10 16:33:24 ->>-: core/cache.get { type => user, v => -1, id => 90, _type => core/cache.get }
+27.10 16:33:24 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => Москва, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1477579013, lastLoginDate => 301, lastLoadDate => 1028, hints => 15 }, effects => { list => [] } }, name => forest, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => 7777, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => ga.forest@mail.ru, mathrating => 0, regdate => 2016-10-27 14:36:52.850365+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 90 } }
+27.10 16:33:24 ->>-: core/cache.get { type => questdata, v => -1, id => 90, _type => core/cache.get }
+27.10 16:33:24 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 90 } }
+27.10 16:33:24 NET: Client login (conid:657371, id:90, name:forest)
+27.10 16:33:24 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 90, _type => core/user.loginPost, ipAddr => 94.253.127.149 }
+27.10 16:33:24 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.10 16:33:24 DB: SELECT token FROM tokens WHERE userid = 90
+27.10 16:33:24 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 90, _type => core/server.query }
+27.10 16:33:24 -<<-: core/server.query { list => {{ token => 3e7d6cb760648735655f55ef0dc1dfa2 }}, errorCode => ok, _type => core/server.query }
+27.10 16:33:24 == NET: forest ret: user.login { name => forest, type => user.login, errorCode => ok, id => 90, token => 3e7d6cb760648735655f55ef0dc1dfa2 }
+27.10 16:33:24 == NET: forest ret: user.join { name => forest, type => user.join }
+27.10 16:33:28 ++ NET: forest req: user.data { messageType => user.data }
+27.10 16:33:28 ->>-: vdl/cache.user.getData { userId => 90, _type => vdl/cache.user.getData }
+27.10 16:33:28 -<<-: vdl/cache.user.getData { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, errorCode => ok, _type => vdl/cache.user.getData }
+27.10 16:33:28 TIME: user.data 0.3 ms
+27.10 16:33:28 == NET: forest ret: user.data { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData }
+27.10 16:33:33 TIMER: Check auto-disconnect...
+27.10 16:33:34 ++ NET: forest req: user.ping { messageType => user.ping, msg => ok }
+27.10 16:33:34 TIME: user.ping 0.14 ms
+27.10 16:33:34 == NET: forest ret: user.ping { type => user.ping, errorCode => ok }
+27.10 16:33:34 STATS: vdl.0 cache, locks:2
+27.10 16:33:34 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 90, _type => core/cache.update }
+27.10 16:33:34 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.10 16:33:40 ++ NET: forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.10 16:33:40 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:33:40 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:33:40 TIME: tournament.getAvailableTournament 3.4 ms
+27.10 16:33:40 == NET: forest ret: tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:33:51 ++ NET: forest req: tournament.grid { tournamentId => 1, round => 1, messageType => tournament.grid }
+27.10 16:33:51 ->>-: vdl/cache.tournament.getStatus { tournamentId => 1, _type => vdl/cache.tournament.getStatus }
+27.10 16:33:51 -<<-: vdl/cache.tournament.getStatus { errorCode => ok, _type => vdl/cache.tournament.getStatus, status => starting }
+27.10 16:33:51 ->>-: vdl/cache.tournament.getAvailableTournamentUsers { tournamentId => 1, _type => vdl/cache.tournament.getAvailableTournamentUsers }
+27.10 16:33:51 -<<-: vdl/cache.tournament.getAvailableTournamentUsers { errorCode => ok, _type => vdl/cache.tournament.getAvailableTournamentUsers, users => [86,87,89,90] }
+27.10 16:33:51 ->>-: vdl/cache.tournament.setGrid { battles => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], tournamentId => 1, round => 1, _type => vdl/cache.tournament.setGrid, status => starting }
+27.10 16:33:51 -<<-: vdl/cache.tournament.setGrid { list => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], tournamentId => 1, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+27.10 16:33:51 TIME: tournament.grid 0.74 ms
+27.10 16:33:51 == NET: forest ret: tournament.grid { list => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], type => tournament.grid, tournamentId => 1, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+27.10 16:34:10 ++ NET: forest req: user.ping { messageType => user.ping, msg => ok }
+27.10 16:34:10 TIME: user.ping 0.11 ms
+27.10 16:34:10 == NET: forest ret: user.ping { type => user.ping, errorCode => ok }
+27.10 16:34:11 ++ NET: forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.10 16:34:11 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:34:11 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:34:11 TIME: tournament.getAvailableTournament 3.3 ms
+27.10 16:34:11 == NET: forest ret: tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:34:33 TIMER: Check auto-disconnect...
+27.10 16:34:34 STATS: vdl.0 cache, locks:2
+27.10 16:35:33 TIMER: Check auto-disconnect...
+27.10 16:35:34 STATS: vdl.0 cache, locks:2
+27.10 16:36:33 TIMER: Check auto-disconnect...
+27.10 16:36:34 STATS: vdl.0 cache, locks:2
+27.10 16:37:33 TIMER: Check auto-disconnect...
+27.10 16:37:33 NET: Client (name:forest conid:657371 TCP) disconnected from vdl.0 (clients:0)
+27.10 16:37:33 DB: SELECT id FROM battle WHERE firstid=90 OR secondid=90 AND finished <> true
+27.10 16:37:33 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=90 OR secondid=90 AND finished <> true, _type => core/server.query }
+27.10 16:37:33 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+27.10 16:37:33 STATS: vdl.0 cache connection, 311 calls, total 0.317204713821411 sec spent, avg 1.02 ms
+27.10 16:37:33 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.10 16:37:33 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+27.10 16:37:33 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.10 16:37:33 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 265
+Called from modules/VDLBattleModule.hx line 278
+Called from snipe/slave/Server.hx line 1009
+27.10 16:37:33 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 90, _type => core/cache.update }
+27.10 16:37:33 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+27.10 16:37:33 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 90, _type => core/cache.update }
+27.10 16:37:33 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.10 16:37:33 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 90, _type => core/user.logoutPost }
+27.10 16:37:33 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+27.10 16:37:34 STATS: vdl.0 cache, locks:0
+27.10 16:38:33 TIMER: Check auto-disconnect...
+27.10 16:38:34 STATS: vdl.0 cache, locks:0
+27.10 16:39:33 TIMER: Check auto-disconnect...
+27.10 16:39:34 STATS: vdl.0 cache, locks:0
+27.10 16:40:33 TIMER: Check auto-disconnect...
+27.10 16:40:34 STATS: vdl.0 cache, locks:0
+27.10 16:41:33 TIMER: Check auto-disconnect...
+27.10 16:41:34 STATS: vdl.0 cache, locks:0
+27.10 16:42:01 NET: Client (conid:70454889) connected to vdl.0 (clients:1)
+27.10 16:42:03 ++ NET: null req: user.login { messageType => user.login, token => dWlkNzA= }
+27.10 16:42:03 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid70' AND Password = 'uid70'
+27.10 16:42:03 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid70' AND Password = 'uid70', _type => core/server.query }
+27.10 16:42:03 -<<-: core/server.query { list => {{ name => uid70, networkid => , isbanned => false, id => 86 }}, errorCode => ok, _type => core/server.query }
+27.10 16:42:03 STATS: vdl.0 cache connection, 316 calls, total 0.319752931594849 sec spent, avg 1.01 ms
+27.10 16:42:03 ->>-: core/user.isOnlineID { id => 86, _type => core/user.isOnlineID }
+27.10 16:42:03 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.10 16:42:03 ->>-: core/cache.get { type => user, v => -1, id => 86, _type => core/cache.get }
+27.10 16:42:03 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { info => { city => null, year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1477577032, lastLoginDate => 301, lastLoadDate => 1028, hints => 15 }, effects => { list => [] } }, name => uid70, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => uid70, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => null, mathrating => 0, regdate => 2016-10-27 14:03:50.430235+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 86 } }
+27.10 16:42:03 ->>-: core/cache.get { type => questdata, v => -1, id => 86, _type => core/cache.get }
+27.10 16:42:03 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 86 } }
+27.10 16:42:03 NET: Client login (conid:70454889, id:86, name:uid70)
+27.10 16:42:03 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 86, _type => core/user.loginPost, ipAddr => 217.118.93.182 }
+27.10 16:42:03 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.10 16:42:03 DB: SELECT token FROM tokens WHERE userid = 86
+27.10 16:42:03 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 86, _type => core/server.query }
+27.10 16:42:03 -<<-: core/server.query { list => {{ token => 550010dd4bfac4f06e90c8188d1de10c }}, errorCode => ok, _type => core/server.query }
+27.10 16:42:03 == NET: uid70 ret: user.login { name => uid70, type => user.login, errorCode => ok, id => 86, token => 550010dd4bfac4f06e90c8188d1de10c }
+27.10 16:42:03 == NET: uid70 ret: user.join { name => uid70, type => user.join }
+27.10 16:42:09 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 86, _type => core/cache.update }
+27.10 16:42:09 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.10 16:42:10 ++ NET: uid70 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.10 16:42:10 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:42:10 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:42:10 TIME: tournament.getAvailableTournament 2.97 ms
+27.10 16:42:10 == NET: uid70 ret: tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:42:12 ++ NET: uid70 req: user.ping { messageType => user.ping, msg => ok }
+27.10 16:42:12 TIME: user.ping 0.12 ms
+27.10 16:42:12 == NET: uid70 ret: user.ping { type => user.ping, errorCode => ok }
+27.10 16:42:33 TIMER: Check auto-disconnect...
+27.10 16:42:34 STATS: vdl.0 cache, locks:2
+27.10 16:43:33 TIMER: Check auto-disconnect...
+27.10 16:43:34 STATS: vdl.0 cache, locks:2
+27.10 16:44:33 TIMER: Check auto-disconnect...
+27.10 16:44:34 STATS: vdl.0 cache, locks:2
+27.10 16:45:33 TIMER: Check auto-disconnect...
+27.10 16:45:33 NET: Client (name:uid70 conid:70454889 TCP) disconnected from vdl.0 (clients:0)
+27.10 16:45:33 DB: SELECT id FROM battle WHERE firstid=86 OR secondid=86 AND finished <> true
+27.10 16:45:33 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=86 OR secondid=86 AND finished <> true, _type => core/server.query }
+27.10 16:45:33 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+27.10 16:45:33 STATS: vdl.0 cache connection, 324 calls, total 0.327172994613647 sec spent, avg 1.01 ms
+27.10 16:45:33 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.10 16:45:33 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+27.10 16:45:33 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.10 16:45:33 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 265
+Called from modules/VDLBattleModule.hx line 278
+Called from snipe/slave/Server.hx line 1009
+27.10 16:45:33 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 86, _type => core/cache.update }
+27.10 16:45:33 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+27.10 16:45:33 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 86, _type => core/cache.update }
+27.10 16:45:33 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.10 16:45:33 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 86, _type => core/user.logoutPost }
+27.10 16:45:33 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+27.10 16:45:34 STATS: vdl.0 cache, locks:0
+27.10 16:46:33 TIMER: Check auto-disconnect...
+27.10 16:46:34 STATS: vdl.0 cache, locks:0
+27.10 16:47:33 TIMER: Check auto-disconnect...
+27.10 16:47:34 STATS: vdl.0 cache, locks:0
+27.10 16:48:33 TIMER: Check auto-disconnect...
+27.10 16:48:34 STATS: vdl.0 cache, locks:0
+27.10 16:49:33 TIMER: Check auto-disconnect...
+27.10 16:49:34 STATS: vdl.0 cache, locks:0
+27.10 16:50:33 TIMER: Check auto-disconnect...
+27.10 16:50:34 STATS: vdl.0 cache, locks:0
+27.10 16:51:33 TIMER: Check auto-disconnect...
+27.10 16:51:34 STATS: vdl.0 cache, locks:0
+27.10 16:52:33 TIMER: Check auto-disconnect...
+27.10 16:52:34 STATS: vdl.0 cache, locks:0
+27.10 16:53:33 TIMER: Check auto-disconnect...
+27.10 16:53:34 STATS: vdl.0 cache, locks:0
+27.10 16:54:33 TIMER: Check auto-disconnect...
+27.10 16:54:34 STATS: vdl.0 cache, locks:0
+27.10 16:55:33 TIMER: Check auto-disconnect...
+27.10 16:55:34 STATS: vdl.0 cache, locks:0
+27.10 16:56:33 TIMER: Check auto-disconnect...
+27.10 16:56:34 STATS: vdl.0 cache, locks:0
+27.10 16:57:33 TIMER: Check auto-disconnect...
+27.10 16:57:34 STATS: vdl.0 cache, locks:0
+27.10 16:58:33 TIMER: Check auto-disconnect...
+27.10 16:58:34 STATS: vdl.0 cache, locks:0
+27.10 16:58:50 NET: Client (conid:459666) connected to vdl.0 (clients:1)
+27.10 16:58:53 ++ NET: null req: user.login { password => 7777, name => forest, messageType => user.login }
+27.10 16:58:53 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'forest' AND Password = '7777'
+27.10 16:58:53 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'forest' AND Password = '7777', _type => core/server.query }
+27.10 16:58:53 -<<-: core/server.query { list => {{ name => forest, networkid => , isbanned => false, id => 90 }}, errorCode => ok, _type => core/server.query }
+27.10 16:58:53 STATS: vdl.0 cache connection, 329 calls, total 0.329687356948853 sec spent, avg 1 ms
+27.10 16:58:53 ->>-: core/user.isOnlineID { id => 90, _type => core/user.isOnlineID }
+27.10 16:58:53 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.10 16:58:53 ->>-: core/cache.get { type => user, v => -1, id => 90, _type => core/cache.get }
+27.10 16:58:53 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => Москва, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1477579013, lastLoginDate => 301, lastLoadDate => 1028, hints => 15 }, effects => { list => [] } }, name => forest, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => 7777, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => ga.forest@mail.ru, mathrating => 0, regdate => 2016-10-27 14:36:52.850365+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 90 } }
+27.10 16:58:53 ->>-: core/cache.get { type => questdata, v => -1, id => 90, _type => core/cache.get }
+27.10 16:58:53 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 90 } }
+27.10 16:58:53 NET: Client login (conid:459666, id:90, name:forest)
+27.10 16:58:53 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 90, _type => core/user.loginPost, ipAddr => 94.253.127.149 }
+27.10 16:58:53 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.10 16:58:53 DB: SELECT token FROM tokens WHERE userid = 90
+27.10 16:58:53 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 90, _type => core/server.query }
+27.10 16:58:53 -<<-: core/server.query { list => {{ token => 3e7d6cb760648735655f55ef0dc1dfa2 }}, errorCode => ok, _type => core/server.query }
+27.10 16:58:53 == NET: forest ret: user.login { name => forest, type => user.login, errorCode => ok, id => 90, token => 3e7d6cb760648735655f55ef0dc1dfa2 }
+27.10 16:58:53 == NET: forest ret: user.join { name => forest, type => user.join }
+27.10 16:58:58 ++ NET: forest req: user.data { messageType => user.data }
+27.10 16:58:58 ->>-: vdl/cache.user.getData { userId => 90, _type => vdl/cache.user.getData }
+27.10 16:58:58 -<<-: vdl/cache.user.getData { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, errorCode => ok, _type => vdl/cache.user.getData }
+27.10 16:58:58 == NET: forest ret: user.data { info => { city => Москва, year => 1975, email => ga.forest@mail.ru }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData }
+27.10 16:58:58 TIME: user.data 0.39 ms
+27.10 16:58:59 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 90, _type => core/cache.update }
+27.10 16:58:59 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.10 16:59:03 ++ NET: forest req: user.ping { messageType => user.ping, msg => ok }
+27.10 16:59:03 TIME: user.ping 0.17 ms
+27.10 16:59:03 == NET: forest ret: user.ping { type => user.ping, errorCode => ok }
+27.10 16:59:04 ++ NET: forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.10 16:59:04 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:59:04 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:59:04 TIME: tournament.getAvailableTournament 3.34 ms
+27.10 16:59:04 == NET: forest ret: tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:59:32 ++ NET: forest req: user.ping { messageType => user.ping, msg => ok }
+27.10 16:59:32 TIME: user.ping 0.19 ms
+27.10 16:59:32 == NET: forest ret: user.ping { type => user.ping, errorCode => ok }
+27.10 16:59:33 TIMER: Check auto-disconnect...
+27.10 16:59:34 STATS: vdl.0 cache, locks:2
+27.10 16:59:39 ++ NET: forest req: tournament.grid { tournamentId => 1, round => 1, messageType => tournament.grid }
+27.10 16:59:39 ->>-: vdl/cache.tournament.getStatus { tournamentId => 1, _type => vdl/cache.tournament.getStatus }
+27.10 16:59:39 -<<-: vdl/cache.tournament.getStatus { errorCode => ok, _type => vdl/cache.tournament.getStatus, status => starting }
+27.10 16:59:39 ->>-: vdl/cache.tournament.getAvailableTournamentUsers { tournamentId => 1, _type => vdl/cache.tournament.getAvailableTournamentUsers }
+27.10 16:59:39 -<<-: vdl/cache.tournament.getAvailableTournamentUsers { errorCode => ok, _type => vdl/cache.tournament.getAvailableTournamentUsers, users => [86,87,89,90] }
+27.10 16:59:39 ->>-: vdl/cache.tournament.setGrid { battles => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], tournamentId => 1, round => 1, _type => vdl/cache.tournament.setGrid, status => starting }
+27.10 16:59:39 -<<-: vdl/cache.tournament.setGrid { list => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], tournamentId => 1, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+27.10 16:59:39 TIME: tournament.grid 1.43 ms
+27.10 16:59:39 == NET: forest ret: tournament.grid { list => [{ winner => -1, round => 1, player1 => 89, player2 => 90 },{ winner => -1, round => 1, player1 => 86, player2 => 87 }], type => tournament.grid, tournamentId => 1, errorCode => ok, _type => vdl/cache.tournament.setGrid }
+27.10 16:59:45 ++ NET: forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.10 16:59:45 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:59:45 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.10 16:59:45 TIME: tournament.getAvailableTournament 2.96 ms
+27.10 16:59:45 == NET: forest ret: tournament.getAvailableTournament { list => [{ name => test, winner => -1, battleFinished => null, round => 1, id => 1, status => starting, userList => [{ name => uid70, id => 86 },{ name => uid71, id => 87 },{ name => uid73, id => 89 },{ name => forest, id => 90 }], battleActive => null, rounddate => 2016-27-10 20:00, startdate => 2016-27-10 20:00 }], count => 1, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }

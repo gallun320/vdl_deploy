@@ -1,0 +1,248 @@
+03.09 15:00:06 TIMER: Check auto-disconnect...
+03.09 15:00:13 STATS: vdl.0 cache, locks:0
+03.09 15:01:06 TIMER: Check auto-disconnect...
+03.09 15:01:13 STATS: vdl.0 cache, locks:0
+03.09 15:02:06 TIMER: Check auto-disconnect...
+03.09 15:02:13 STATS: vdl.0 cache, locks:0
+03.09 15:03:06 TIMER: Check auto-disconnect...
+03.09 15:03:13 STATS: vdl.0 cache, locks:0
+03.09 15:04:06 TIMER: Check auto-disconnect...
+03.09 15:04:13 STATS: vdl.0 cache, locks:0
+03.09 15:05:06 TIMER: Check auto-disconnect...
+03.09 15:05:13 STATS: vdl.0 cache, locks:0
+03.09 15:06:06 TIMER: Check auto-disconnect...
+03.09 15:06:13 STATS: vdl.0 cache, locks:0
+03.09 15:07:06 TIMER: Check auto-disconnect...
+03.09 15:07:13 STATS: vdl.0 cache, locks:0
+03.09 15:08:06 TIMER: Check auto-disconnect...
+03.09 15:08:13 STATS: vdl.0 cache, locks:0
+03.09 15:09:06 TIMER: Check auto-disconnect...
+03.09 15:09:13 STATS: vdl.0 cache, locks:0
+03.09 15:10:06 TIMER: Check auto-disconnect...
+03.09 15:10:13 STATS: vdl.0 cache, locks:0
+03.09 15:11:06 TIMER: Check auto-disconnect...
+03.09 15:11:13 STATS: vdl.0 cache, locks:0
+03.09 15:12:06 TIMER: Check auto-disconnect...
+03.09 15:12:13 STATS: vdl.0 cache, locks:0
+03.09 15:13:06 TIMER: Check auto-disconnect...
+03.09 15:13:13 STATS: vdl.0 cache, locks:0
+03.09 15:14:06 TIMER: Check auto-disconnect...
+03.09 15:14:13 STATS: vdl.0 cache, locks:0
+03.09 15:15:06 TIMER: Check auto-disconnect...
+03.09 15:15:13 STATS: vdl.0 cache, locks:0
+03.09 15:16:06 TIMER: Check auto-disconnect...
+03.09 15:16:13 STATS: vdl.0 cache, locks:0
+03.09 15:17:06 TIMER: Check auto-disconnect...
+03.09 15:17:13 STATS: vdl.0 cache, locks:0
+03.09 15:18:06 TIMER: Check auto-disconnect...
+03.09 15:18:13 STATS: vdl.0 cache, locks:0
+03.09 15:19:06 TIMER: Check auto-disconnect...
+03.09 15:19:13 STATS: vdl.0 cache, locks:0
+03.09 15:20:06 TIMER: Check auto-disconnect...
+03.09 15:20:13 STATS: vdl.0 cache, locks:0
+03.09 15:21:06 TIMER: Check auto-disconnect...
+03.09 15:21:13 STATS: vdl.0 cache, locks:0
+03.09 15:22:06 TIMER: Check auto-disconnect...
+03.09 15:22:13 STATS: vdl.0 cache, locks:0
+03.09 15:23:06 TIMER: Check auto-disconnect...
+03.09 15:23:13 STATS: vdl.0 cache, locks:0
+03.09 15:24:06 TIMER: Check auto-disconnect...
+03.09 15:24:13 STATS: vdl.0 cache, locks:0
+03.09 15:25:06 TIMER: Check auto-disconnect...
+03.09 15:25:13 STATS: vdl.0 cache, locks:0
+03.09 15:26:06 TIMER: Check auto-disconnect...
+03.09 15:26:13 STATS: vdl.0 cache, locks:0
+03.09 15:27:06 TIMER: Check auto-disconnect...
+03.09 15:27:13 STATS: vdl.0 cache, locks:0
+03.09 15:28:06 TIMER: Check auto-disconnect...
+03.09 15:28:13 STATS: vdl.0 cache, locks:0
+03.09 15:29:06 TIMER: Check auto-disconnect...
+03.09 15:29:13 STATS: vdl.0 cache, locks:0
+03.09 15:30:06 TIMER: Check auto-disconnect...
+03.09 15:30:13 STATS: vdl.0 cache, locks:0
+03.09 15:30:21 NET: Client (conid:53586267) connected to vdl.0 (clients:1)
+03.09 15:30:22 NET: Client (name:null conid:53586267 TCP) disconnected from vdl.0 (clients:0)
+03.09 15:30:22 NET: Client (conid:64955452) connected to vdl.0 (clients:1)
+03.09 15:30:25 ++ NET: null req: user.login { password => test, name => test1, messageType => user.login }
+03.09 15:30:25 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'test1' AND Password = E'test'
+03.09 15:30:25 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'test1' AND Password = E'test', _type => core/server.query }
+03.09 15:30:25 -<<-: core/server.query { list => {{ name => test1, networkid => , isbanned => false, id => 3 }}, errorCode => ok, _type => core/server.query }
+03.09 15:30:25 STATS: vdl.0 cache connection, 1210 calls, total 1.09409403800964 sec spent, avg 0.9 ms
+03.09 15:30:25 ->>-: core/user.isOnlineID { id => 3, _type => core/user.isOnlineID }
+03.09 15:30:25 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+03.09 15:30:25 ->>-: core/cache.get { type => user, v => -1, id => 3, _type => core/cache.get }
+03.09 15:30:25 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {chemrating => 0, biorating => 0, networktype =>   , level => 0, sex => male, networkid => , skinbase => {"body_skin": 1, "head_skin": 1, "hair": 1, "eyes": 1, "mouth": 1}, informaticrating => 0, isbanned => false, params => { attrs => { _lastTime.24hr => 1472843470, lastLoginDate => 247, lastLoadDate => 904 }, effects => { list => [] } }, name => test1, skinaddavaliable => {"head : null; dress : null; weapon : null; acess : null"}, deleted => false, historyrating => 0, school => 1, rang => 0, georating => 0, password => test, language => en, region => 1, skinadditional => {"head": 0, "dress": 0, "acces": 0, "weapon": 0}, rangname => новичок                       , rusrating => 0, email => , mathrating => 0, regdate => 2016-09-02 18:16:02.951845+00, expirience => 0, city => 1, physrating => 0}, version => 0, id => 3 } }
+03.09 15:30:25 ->>-: core/cache.get { type => questdata, v => -1, id => 3, _type => core/cache.get }
+03.09 15:30:25 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 3 } }
+03.09 15:30:25 NET: Client login (conid:64955452, id:3, name:test1)
+03.09 15:30:25 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 3, _type => core/user.loginPost, ipAddr => 188.162.39.131 }
+03.09 15:30:25 -<<-: core/user.loginPost { _type => core/user.loginPost }
+03.09 15:30:25 == NET: test1 ret: user.login { name => test1, type => user.login, errorCode => ok, id => 3 }
+03.09 15:30:25 == NET: test1 ret: user.join { name => test1, type => user.join }
+03.09 15:30:25 ++ NET: test1 req: battle.find { messageType => battle.find }
+03.09 15:30:25 ->>-: vdl/cache.battle.find { _type => vdl/cache.battle.find }
+03.09 15:30:25 -<<-: vdl/cache.battle.find { list => {}, count => 0, errorCode => not, _type => vdl/cache.battle.find }
+03.09 15:30:25 ->>-: vdl/cache.battle.create { selfId => 3, _type => vdl/cache.battle.create }
+03.09 15:30:25 -<<-: vdl/cache.battle.create { room => 39, errorCode => ok, _type => vdl/cache.battle.create, player => 1 }
+03.09 15:30:25 TIME: battle.find 7.69 ms
+03.09 15:30:25 == NET: test1 ret: battle.find { room => 39, type => battle.find, errorCode => ok, _type => vdl/cache.battle.create, player => 1 }
+03.09 15:30:33 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 3, _type => core/cache.update }
+03.09 15:30:33 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+03.09 15:30:39 ++ NET: test1 req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 39, name => throw, side => 2, dices => 254230, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+03.09 15:30:39 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:39 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:39 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 0, from => (0.0, 0.0), roomId => 39, name => throw, side => 2, type => battle.task, dices => 254230, to => (0.0, 0.0), _type => battle.task, diceID => 0 } }
+03.09 15:30:39 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:39 TIME: battle.sendtask 0.43 ms
+03.09 15:30:39 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:43 ++ NET: test1 req: battle.sendtask { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:43 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:43 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:43 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:43 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:43 TIME: battle.sendtask 0.42 ms
+03.09 15:30:43 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:44 ++ NET: test1 req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 39, name => dslct, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+03.09 15:30:44 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:44 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:44 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 0, from => (0.0, 0.0), roomId => 39, name => dslct, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 0 } }
+03.09 15:30:44 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:44 TIME: battle.sendtask 0.36 ms
+03.09 15:30:44 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:44 ++ NET: test1 req: battle.sendtask { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:44 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:44 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:44 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:44 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:44 TIME: battle.sendtask 2.32 ms
+03.09 15:30:44 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:45 ++ NET: test1 req: battle.sendtask { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:45 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:45 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:45 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:45 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:45 TIME: battle.sendtask 0.42 ms
+03.09 15:30:45 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:46 ++ NET: test1 req: battle.sendtask { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:46 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:46 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:46 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:46 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:46 TIME: battle.sendtask 0.41 ms
+03.09 15:30:46 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:47 ++ NET: test1 req: battle.sendtask { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:47 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:47 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:47 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (0.0, 0.0), roomId => 39, name => choose, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:47 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:47 TIME: battle.sendtask 0.4 ms
+03.09 15:30:47 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:49 ++ NET: test1 req: battle.sendtask { dice => 5, from => (2.0, 5.0), roomId => 39, name => take, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 1 }
+03.09 15:30:49 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:49 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:49 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 5, from => (2.0, 5.0), roomId => 39, name => take, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 1 } }
+03.09 15:30:49 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:49 TIME: battle.sendtask 0.41 ms
+03.09 15:30:49 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:30:52 ++ NET: test1 req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 39, name => skip, side => 2, dices => null, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+03.09 15:30:52 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:30:52 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:30:52 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { dice => 0, from => (0.0, 0.0), roomId => 39, name => skip, side => 2, type => battle.task, dices => null, to => (0.0, 0.0), _type => battle.task, diceID => 0 } }
+03.09 15:30:52 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:30:52 TIME: battle.sendtask 0.45 ms
+03.09 15:30:52 == NET: test1 ret: battle.sendtask { type => battle.sendtask, errorCode => true }
+03.09 15:31:06 TIMER: Check auto-disconnect...
+03.09 15:31:13 STATS: vdl.0 cache, locks:2
+03.09 15:32:02 ++ NET: test1 req: battle.end { roomId => 39, scoreSecondPlayer => 0, messageType => battle.end, scoreFirstPlayer => 0 }
+03.09 15:32:02 ->>-: vdl/cache.battle.infoRoom { roomId => 39, _type => vdl/cache.battle.infoRoom }
+03.09 15:32:02 -<<-: vdl/cache.battle.infoRoom { secondId => 0, firstId => 3, _type => vdl/cache.battle.infoRoom, turnId => 3 }
+03.09 15:32:02 STATS: vdl.0 cache connection, 1236 calls, total 1.10915613174438 sec spent, avg 0.9 ms
+03.09 15:32:02 DB: INSERT INTO statistics (id, firstid,secondid, roomid, params) VALUES ('', 3,0,39,{ scoresSecond => null, scoresFirst => null })
+03.09 15:32:02 ->>-: core/server.query { q => INSERT INTO statistics (id, firstid,secondid, roomid, params) VALUES ('', 3,0,39,{ scoresSecond => null, scoresFirst => null }), _type => core/server.query }
+03.09 15:32:02 -<<-: core/server.query { errorCode => ok, _type => core/server.query }
+03.09 15:32:02 ->>-: vdl/cache.battle.finishRoom { roomId => 39, _type => vdl/cache.battle.finishRoom }
+03.09 15:32:02 -<<-: vdl/cache.battle.finishRoom { errorCode => true, _type => vdl/cache.battle.finishRoom }
+03.09 15:32:02 ->>-: vdl/cache.battle.deleteRoom { roomId => 39, _type => vdl/cache.battle.deleteRoom }
+03.09 15:32:02 -<<-: vdl/cache.battle.deleteRoom { errorCode => true, _type => vdl/cache.battle.deleteRoom }
+03.09 15:32:02 ->>-: core/user.sendTo { id => 0, _type => core/user.sendTo, msg => { _type => battle.end } }
+03.09 15:32:02 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+03.09 15:32:02 TIME: battle.end 15.19 ms
+03.09 15:32:02 == NET: test1 ret: battle.end { type => battle.end, errorCode => ok }
+03.09 15:32:03 NET: Client (name:test1 conid:64955452 TCP) disconnected from vdl.0 (clients:0)
+03.09 15:32:03 DB: SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true
+03.09 15:32:03 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=3 OR secondid=3 AND finished <> true, _type => core/server.query }
+03.09 15:32:03 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+03.09 15:32:03 ->>-: vdl/cache.battle.deleteRoom { roomId => 0, _type => vdl/cache.battle.deleteRoom }
+03.09 15:32:03 -<<-: vdl/cache.battle.deleteRoom { errorCode => true, _type => vdl/cache.battle.deleteRoom }
+03.09 15:32:03 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 3, _type => core/cache.update }
+03.09 15:32:03 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+03.09 15:32:03 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 3, _type => core/cache.update }
+03.09 15:32:03 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+03.09 15:32:03 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 3, _type => core/user.logoutPost }
+03.09 15:32:03 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+03.09 15:32:03 NET: Client (conid:14181110) connected to vdl.0 (clients:1)
+03.09 15:32:06 TIMER: Check auto-disconnect...
+03.09 15:32:06 ++ NET: null req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 39, name => throw, side => 2, dices => 051250, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+03.09 15:32:06 TRACE: User not logon yet.
+03.09 15:32:13 STATS: vdl.0 cache, locks:0
+03.09 15:33:06 TIMER: Check auto-disconnect...
+03.09 15:33:13 STATS: vdl.0 cache, locks:0
+03.09 15:34:06 TIMER: Check auto-disconnect...
+03.09 15:34:13 STATS: vdl.0 cache, locks:0
+03.09 15:35:06 TIMER: Check auto-disconnect...
+03.09 15:35:13 STATS: vdl.0 cache, locks:0
+03.09 15:36:06 TIMER: Check auto-disconnect...
+03.09 15:36:06 NET: Client (name:null conid:14181110 TCP) disconnected from vdl.0 (clients:0)
+03.09 15:36:13 STATS: vdl.0 cache, locks:0
+03.09 15:37:06 TIMER: Check auto-disconnect...
+03.09 15:37:13 STATS: vdl.0 cache, locks:0
+03.09 15:38:06 TIMER: Check auto-disconnect...
+03.09 15:38:13 STATS: vdl.0 cache, locks:0
+03.09 15:39:04 NET: Client (conid:16390147) connected to vdl.0 (clients:1)
+03.09 15:39:04 NET: Client (name:null conid:16390147 TCP) disconnected from vdl.0 (clients:0)
+03.09 15:39:04 NET: Client (conid:48441294) connected to vdl.0 (clients:1)
+03.09 15:39:06 TIMER: Check auto-disconnect...
+03.09 15:39:13 STATS: vdl.0 cache, locks:0
+03.09 15:40:02 ++ NET: null req: battle.sendtask { dice => 0, from => (0.0, 0.0), roomId => 0, name => throw, side => 2, dices => 444341, messageType => battle.sendtask, to => (0.0, 0.0), diceID => 0 }
+03.09 15:40:02 TRACE: User not logon yet.
+03.09 15:40:06 TIMER: Check auto-disconnect...
+03.09 15:40:13 STATS: vdl.0 cache, locks:0
+03.09 15:41:06 TIMER: Check auto-disconnect...
+03.09 15:41:13 STATS: vdl.0 cache, locks:0
+03.09 15:42:06 TIMER: Check auto-disconnect...
+03.09 15:42:13 STATS: vdl.0 cache, locks:0
+03.09 15:43:06 TIMER: Check auto-disconnect...
+03.09 15:43:06 NET: Client (name:null conid:48441294 TCP) disconnected from vdl.0 (clients:0)
+03.09 15:43:13 STATS: vdl.0 cache, locks:0
+03.09 15:44:06 TIMER: Check auto-disconnect...
+03.09 15:44:13 STATS: vdl.0 cache, locks:0
+03.09 15:45:06 TIMER: Check auto-disconnect...
+03.09 15:45:13 STATS: vdl.0 cache, locks:0
+03.09 15:46:06 TIMER: Check auto-disconnect...
+03.09 15:46:13 STATS: vdl.0 cache, locks:0
+03.09 15:47:06 TIMER: Check auto-disconnect...
+03.09 15:47:13 STATS: vdl.0 cache, locks:0
+03.09 15:48:06 TIMER: Check auto-disconnect...
+03.09 15:48:13 STATS: vdl.0 cache, locks:0
+03.09 15:49:06 TIMER: Check auto-disconnect...
+03.09 15:49:13 STATS: vdl.0 cache, locks:0
+03.09 15:50:06 TIMER: Check auto-disconnect...
+03.09 15:50:13 STATS: vdl.0 cache, locks:0
+03.09 15:51:06 TIMER: Check auto-disconnect...
+03.09 15:51:13 STATS: vdl.0 cache, locks:0
+03.09 15:52:06 TIMER: Check auto-disconnect...
+03.09 15:52:13 STATS: vdl.0 cache, locks:0
+03.09 15:53:06 TIMER: Check auto-disconnect...
+03.09 15:53:13 STATS: vdl.0 cache, locks:0
+03.09 15:54:06 TIMER: Check auto-disconnect...
+03.09 15:54:13 STATS: vdl.0 cache, locks:0
+03.09 15:55:06 TIMER: Check auto-disconnect...
+03.09 15:55:13 STATS: vdl.0 cache, locks:0
+03.09 15:56:06 TIMER: Check auto-disconnect...
+03.09 15:56:13 STATS: vdl.0 cache, locks:0
+03.09 15:57:06 TIMER: Check auto-disconnect...
+03.09 15:57:13 STATS: vdl.0 cache, locks:0
+03.09 15:58:06 TIMER: Check auto-disconnect...
+03.09 15:58:13 STATS: vdl.0 cache, locks:0
+03.09 15:59:06 TIMER: Check auto-disconnect...
+03.09 15:59:13 STATS: vdl.0 cache, locks:0

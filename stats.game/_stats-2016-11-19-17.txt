@@ -1,0 +1,37 @@
+19.11 17:00:11 STATS: vdl.0 cache, locks:2
+19.11 17:00:56 STATS: vdl.0 cache connection, 62 calls, total 0.106082439422607 sec spent, avg 1.71 ms
+19.11 17:01:12 STATS: vdl.0 cache, locks:4
+19.11 17:02:12 STATS: vdl.0 cache, locks:4
+19.11 17:03:12 STATS: vdl.0 cache, locks:4
+19.11 17:04:12 STATS: vdl.0 cache, locks:4
+19.11 17:05:12 STATS: vdl.0 cache, locks:4
+19.11 17:06:12 STATS: vdl.0 cache, locks:4
+19.11 17:07:12 STATS: vdl.0 cache, locks:4
+19.11 17:08:12 STATS: vdl.0 cache, locks:4
+19.11 17:09:12 STATS: vdl.0 cache, locks:4
+19.11 17:10:12 STATS: vdl.0 cache, locks:4
+19.11 17:11:12 STATS: vdl.0 cache, locks:4
+19.11 17:12:12 STATS: vdl.0 cache, locks:4
+19.11 17:13:12 STATS: vdl.0 cache, locks:4
+19.11 17:14:12 STATS: vdl.0 cache, locks:4
+19.11 17:15:12 STATS: vdl.0 cache, locks:4
+19.11 17:16:11 STATS: vdl.0 cache connection, 78 calls, total 1.31738209724426 sec spent, avg 16.89 ms
+19.11 17:16:12 STATS: vdl.0 cache, locks:2
+19.11 17:17:12 STATS: vdl.0 cache, locks:2
+19.11 17:18:12 STATS: vdl.0 cache, locks:2
+19.11 17:19:12 STATS: vdl.0 cache, locks:2
+19.11 17:20:12 STATS: vdl.0 cache, locks:2
+19.11 17:20:43 STATS: vdl.0 cache connection, 83 calls, total 1.32368516921997 sec spent, avg 15.95 ms
+19.11 17:21:12 STATS: vdl.0 cache, locks:1
+19.11 17:21:47 STATS: vdl.0 cache connection, 142 calls, total 1.47407507896423 sec spent, avg 10.38 ms
+19.11 17:22:12 STATS: vdl.0 cache, locks:1
+19.11 17:22:47 STATS: vdl.0 cache connection, 154 calls, total 1.48334693908691 sec spent, avg 9.63 ms
+19.11 17:23:12 STATS: vdl.0 cache, locks:1
+19.11 17:24:44 STATS: vdl.0 cache, locks:0
+19.11 17:24:49 STATS: vdl.0 cache connection, 33 calls, total 0.0518844127655029 sec spent, avg 1.57 ms
+19.11 17:25:44 STATS: vdl.0 cache, locks:4
+19.11 17:25:50 STATS: vdl.0 cache connection, 64 calls, total 0.175875663757324 sec spent, avg 2.75 ms
+19.11 17:51:13 STATS: vdl.0 cache, locks:4
+19.11 17:54:08 STATS: vdl.0 cache, locks:4
+19.11 17:55:59 STATS: vdl.0 cache, locks:4
+19.11 17:56:03 STATS: vdl.0 cache connection, 40 calls, total 0.0801501274108887 sec spent, avg 2 ms

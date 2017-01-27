@@ -1,0 +1,202 @@
+27.12 09:56:11 ->>-: core/server.login { host => 188.225.38.160, name => vdl.0, port => 3020, type => game, _type => core/server.login, externalHost => 188.225.38.160, externalPort => 3020 }
+27.12 09:56:11 -<<-: server.login ok
+27.12 09:56:11 DB: SELECT * FROM LocalizationStrings
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM LocalizationStrings, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 TIMER: Starting timer...
+27.12 09:56:11 DB: SELECT * FROM GameVars
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM GameVars, _type => core/server.query }
+27.12 09:56:11 TIMER: Timer running...
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM QuestParameterTypes ORDER BY ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM QuestParameterTypes ORDER BY ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM QuestConditionTypes ORDER BY ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM QuestConditionTypes ORDER BY ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM QuestChains WHERE IsEnabled = 't'
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM QuestChains WHERE IsEnabled = 't', _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f')
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM Quests WHERE ChainID NOT IN (SELECT ID FROM QuestChains WHERE IsEnabled = 'f'), _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 ->>-: core/quest.getDaily { _type => core/quest.getDaily }
+27.12 09:56:11 -<<-: core/quest.getDaily ok
+27.12 09:56:11 DB: SELECT * FROM UserAttributeTypes
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM UserAttributeTypes, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM UserVariableTypes
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM UserVariableTypes, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT i.ID, i.GroupID, i.StringID, i.Name, i.Note, i.Params, i.TypeID, it.StringID AS Type, it.SlotID AS SlotID, ig.Name AS Group FROM Items AS i JOIN ItemTypes AS it ON i.TypeID = it.ID JOIN ItemGroups AS ig ON i.GroupID = ig.ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM ItemGroups
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM ItemGroups, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM Bundles ORDER BY ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM Bundles ORDER BY ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM BundleItems ORDER BY ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM BundleItems ORDER BY ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 SHOP: loading items...
+27.12 09:56:11 ->>-: core/shop.getList { _type => core/shop.getList }
+27.12 09:56:11 -<<-: core/shop.getList ok
+27.12 09:56:11 SHOP: 0 items loaded (0 sec)
+27.12 09:56:11 DB: SELECT * FROM EffectAttributeTypes
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM EffectAttributeTypes, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM Effects
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM Effects, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT *, date_part('epoch', DateStart) AS TimeStart, date_part('epoch', DateEnd) AS TimeEnd FROM CalendarEvents ORDER BY ID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID
+27.12 09:56:11 ->>-: core/server.query { q => SELECT *, date_part('epoch', Date) AS TimeStart FROM CalendarEventStages ORDER BY EventID, StageID, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:11 DB: SELECT * FROM Badges
+27.12 09:56:11 ->>-: core/server.query { q => SELECT * FROM Badges, _type => core/server.query }
+27.12 09:56:11 -<<-: core/server.query ok
+27.12 09:56:19 NET: Client (conid:36697893) connected to vdl.0 (clients:1)
+27.12 09:56:19 ++ NET: null req: user.register { messageType => user.register }
+27.12 09:56:19 DB: SELECT * FROM users
+27.12 09:56:19 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+27.12 09:56:19 -<<-: core/server.query ok
+27.12 09:56:19 DB: SELECT ID FROM Users WHERE Name = 'uid144'
+27.12 09:56:19 == NET: null ret: user.auth { type => user.auth, token => dWlkMTQ0 }
+27.12 09:56:19 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = 'uid144', _type => core/server.query }
+27.12 09:56:19 -<<-: core/server.query ok
+27.12 09:56:19 DB: SELECT nextval('Users_id_seq') AS id
+27.12 09:56:19 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+27.12 09:56:19 -<<-: core/server.query ok
+27.12 09:56:19 ->>-: core/user.register { password => uid144, name => uid144, fullParams => { password => uid144, name => uid144, networkid => , networktype => , messageType => user.register, id => 144 }, networkid => , connectionID => 36697893, networktype => , email => , id => 144, _type => core/user.register }
+27.12 09:56:19 -<<-: core/user.register ok
+27.12 09:56:20 -<<-: core/user.registerResponse null
+27.12 09:56:20 DB: SELECT token FROM tokens WHERE userid = 144
+27.12 09:56:20 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 144, _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query ok
+27.12 09:56:20 == NET: null ret: user.register { type => user.register, errorCode => ok, token => 93b9ab33c3846f66927741bf01120485 }
+27.12 09:56:20 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTQ0 }
+27.12 09:56:20 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144'
+27.12 09:56:20 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144', _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query { list => {{ name => uid144, networkid => , isbanned => false, id => 144 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:20 ->>-: core/user.isOnlineID { id => 144, _type => core/user.isOnlineID }
+27.12 09:56:20 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.12 09:56:20 ->>-: core/cache.get { type => user, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:20 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid144, deleted => false, school => 1, year => , email => null, networktype =>   , password => uid144, isbanned => false, regdate => 2016-12-27 09:56:19.989516+00, city => 1, language =>   , region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, hints => 15 }, effects => { list => [] } }}, version => 16, id => 144 } }
+27.12 09:56:20 ->>-: core/cache.get { type => questdata, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:20 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 144 } }
+27.12 09:56:20 NET: Client login (conid:36697893, id:144, name:uid144)
+27.12 09:56:20 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 144, _type => core/user.loginPost, ipAddr => 188.162.39.244 }
+27.12 09:56:20 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.12 09:56:20 DB: SELECT token FROM tokens WHERE userid = 144
+27.12 09:56:20 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 144, _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query { list => {{ token => 93b9ab33c3846f66927741bf01120485 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:20 DB: SELECT ID FROM TempUserLogins WHERE UserID = 144 AND Date = 'today'::timestamp
+27.12 09:56:20 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 144 AND Date = 'today'::timestamp, _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+27.12 09:56:20 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (144, 'today'::timestamp)
+27.12 09:56:20 ++ NET: uid144 req: user.login { messageType => user.login, token => dWlkMTQ0 }
+27.12 09:56:20 DB: SELECT id FROM battle WHERE firstid=144 OR secondid=144 AND finished <> true
+27.12 09:56:20 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=144 OR secondid=144 AND finished <> true, _type => core/server.query, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (144, 'today'::timestamp), _type => core/server.pending }} }
+27.12 09:56:20 == NET: uid144 ret: user.login { name => uid144, type => user.login, errorCode => ok, id => 144, token => 93b9ab33c3846f66927741bf01120485 }
+27.12 09:56:20 == NET: uid144 ret: user.join { name => uid144, type => user.join }
+27.12 09:56:20 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+27.12 09:56:20 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:20 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:20 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:20 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+27.12 09:56:20 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1482832580, lastLoginDate => 362, lastLoadDate => 1228 } }}, type => user, unlock => true, id => 144, _type => core/cache.update }
+27.12 09:56:20 -<<-: core/cache.update { errorCode => ok, version => 17, _type => core/cache.update }
+27.12 09:56:20 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 144, _type => core/cache.update }
+27.12 09:56:20 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+27.12 09:56:20 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 144, _type => core/user.logoutPost }
+27.12 09:56:20 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+27.12 09:56:20 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144'
+27.12 09:56:20 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144', _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query { list => {{ name => uid144, networkid => , isbanned => false, id => 144 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:20 ->>-: core/user.isOnlineID { id => 144, _type => core/user.isOnlineID }
+27.12 09:56:20 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.12 09:56:20 ->>-: core/cache.get { type => user, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:20 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid144, deleted => false, school => 1, year => , email => null, networktype =>   , password => uid144, isbanned => false, regdate => 2016-12-27 09:56:19.989516+00, city => 1, language => en, region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1482832580, lastLoginDate => 362, lastLoadDate => 1228, hints => 15 }, effects => { list => [] } }}, version => 17, id => 144 } }
+27.12 09:56:20 ->>-: core/cache.get { type => questdata, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:20 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 1, id => 144 } }
+27.12 09:56:20 NET: Client login (conid:36697893, id:144, name:uid144)
+27.12 09:56:20 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 144, _type => core/user.loginPost, ipAddr => 188.162.39.244 }
+27.12 09:56:20 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.12 09:56:20 DB: SELECT token FROM tokens WHERE userid = 144
+27.12 09:56:20 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 144, _type => core/server.query }
+27.12 09:56:20 -<<-: core/server.query { list => {{ token => 93b9ab33c3846f66927741bf01120485 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:26 ++ NET: uid144 req: user.ping { messageType => user.ping, msg => ok }
+27.12 09:56:26 TIME: user.ping 0.13 ms
+27.12 09:56:26 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 144, _type => core/cache.update }
+27.12 09:56:26 -<<-: core/cache.update { errorCode => ok, version => 18, _type => core/cache.update }
+27.12 09:56:36 ++ NET: uid144 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.12 09:56:36 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.12 09:56:36 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.12 09:56:36 TIME: tournament.getAvailableTournament 16.85 ms
+27.12 09:56:39 NET: Client (name:uid144 conid:36697893 TCP) disconnected from vdl.0 (clients:0)
+27.12 09:56:39 DB: SELECT id FROM battle WHERE firstid=144 OR secondid=144 AND finished <> true
+27.12 09:56:39 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=144 OR secondid=144 AND finished <> true, _type => core/server.query }
+27.12 09:56:39 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+27.12 09:56:39 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:39 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:39 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+27.12 09:56:39 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 502
+Called from modules/VDLBattleModule.hx line 515
+Called from snipe/slave/Server.hx line 1009
+27.12 09:56:39 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 144, _type => core/cache.update }
+27.12 09:56:39 -<<-: core/cache.update { errorCode => ok, version => 19, _type => core/cache.update }
+27.12 09:56:39 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 144, _type => core/cache.update }
+27.12 09:56:39 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+27.12 09:56:39 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 144, _type => core/user.logoutPost }
+27.12 09:56:39 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+27.12 09:56:40 NET: Client (conid:74753908) connected to vdl.0 (clients:1)
+27.12 09:56:40 ++ NET: null req: user.login { messageType => user.login, token => dWlkMTQ0 }
+27.12 09:56:40 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144'
+27.12 09:56:40 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = 'uid144' AND Password = 'uid144', _type => core/server.query }
+27.12 09:56:40 -<<-: core/server.query { list => {{ name => uid144, networkid => , isbanned => false, id => 144 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:40 ->>-: core/user.isOnlineID { id => 144, _type => core/user.isOnlineID }
+27.12 09:56:40 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+27.12 09:56:40 ->>-: core/cache.get { type => user, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:40 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid144, deleted => false, school => 1, year => , email => null, networktype =>   , password => uid144, isbanned => false, regdate => 2016-12-27 09:56:19.989516+00, city => 1, language => en, region => 1, networkid => , params => { info => { city => , year => null, email => null }, inventory => { list => [] }, vars => { addAccess => , regionName => null, addDress => , cityName => null, schoolName => null, friendList => [], addWeapon => , addHeader =>  }, attrs => { level => 1, _lastTime.24hr => 1482832580, lastLoginDate => 362, lastLoadDate => 1228, hints => 15 }, effects => { list => [] } }}, version => 19, id => 144 } }
+27.12 09:56:40 ->>-: core/cache.get { type => questdata, v => -1, id => 144, _type => core/cache.get }
+27.12 09:56:40 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 2, id => 144 } }
+27.12 09:56:40 NET: Client login (conid:74753908, id:144, name:uid144)
+27.12 09:56:40 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 144, _type => core/user.loginPost, ipAddr => 188.162.39.244 }
+27.12 09:56:40 -<<-: core/user.loginPost { _type => core/user.loginPost }
+27.12 09:56:40 DB: SELECT token FROM tokens WHERE userid = 144
+27.12 09:56:40 ->>-: core/server.query { q => SELECT token FROM tokens WHERE userid = 144, _type => core/server.query }
+27.12 09:56:40 -<<-: core/server.query { list => {{ token => 93b9ab33c3846f66927741bf01120485 }}, errorCode => ok, _type => core/server.query }
+27.12 09:56:40 == NET: uid144 ret: user.login { name => uid144, type => user.login, errorCode => ok, id => 144, token => 93b9ab33c3846f66927741bf01120485 }
+27.12 09:56:40 == NET: uid144 ret: user.join { name => uid144, type => user.join }
+27.12 09:56:43 ++ NET: uid144 req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+27.12 09:56:43 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+27.12 09:56:43 -<<-: vdl/cache.tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.12 09:56:43 TIME: tournament.getAvailableTournament 2.68 ms
+27.12 09:56:43 == NET: uid144 ret: tournament.getAvailableTournament { list => [{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 3, status => starting, userList => [], battleActive => null, rounddate => 2016-21-11 19:00, startdate => 2016-21-11 15:00 },{ price => -1, name => test, type => once, winner => -1, battleFinished => null, round => 1, id => 6, status => starting, userList => [{ name => nelli, id => 124 },{ name => forest, id => 117 }], battleActive => null, rounddate => 2016-23-11 17:00, startdate => 2016-23-11 14:00 },{ price => -1, name => test2, type => once, winner => -1, battleFinished => null, round => 1, id => 7, status => starting, userList => [{ name => nelli, id => 124 }], battleActive => null, rounddate => 2016-24-11 14:18, startdate => 2016-23-11 14:19 },{ price => -1, name => вап, type => once, winner => -1, battleFinished => null, round => 1, id => 8, status => starting, userList => [], battleActive => null, rounddate => 2016-11-16 18:34, startdate => 2016-11-09 18:34 },{ price => -1, name => впреаон, type => once, winner => -1, battleFinished => null, round => 1, id => 9, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 18:34, startdate => 2016-11-23 18:34 },{ price => -1, name => 12, type => once, winner => -1, battleFinished => null, round => 1, id => 4, status => starting, userList => [], battleActive => null, rounddate => 2016-11-12 15:15, startdate => 2016-11-19 15:15 },{ price => -1, name => test, type => periodically, winner => -1, battleFinished => null, round => 1, id => 11, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 15:44, startdate => 2016-11-24 15:44 },{ price => -1, name => sec, type => security, winner => -1, battleFinished => null, round => 1, id => 10, status => starting, userList => [], battleActive => null, rounddate => 2016-11-24 16:02, startdate => 2016-11-24 16:02 },{ price => 100, name => test3, type => once, winner => -1, battleFinished => null, round => 1, id => 12, status => starting, userList => [], battleActive => null, rounddate => 2016-11-25 16:53, startdate => 2016-11-25 16:53 }], count => 9, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+27.12 09:56:46 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 144, _type => core/cache.update }
+27.12 09:56:46 -<<-: core/cache.update { errorCode => ok, version => 20, _type => core/cache.update }
+27.12 09:56:56 ++ NET: uid144 req: user.data { messageType => user.data }
+27.12 09:56:56 ->>-: vdl/cache.user.getData { userId => 144, _type => vdl/cache.user.getData, money => 0 }
+27.12 09:56:56 -<<-: vdl/cache.user.getData { info => { city => , year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+27.12 09:56:56 TIME: user.data 0.4 ms
+27.12 09:56:56 == NET: uid144 ret: user.data { info => { city => , year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+27.12 09:57:11 TIMER: Check auto-disconnect...
+27.12 09:57:11 STATS: vdl.0 cache, locks:2
+27.12 09:57:43 ++ NET: uid144 req: user.ping { messageType => user.ping, msg => ok }
+27.12 09:57:43 TIME: user.ping 0.13 ms
+27.12 09:57:43 == NET: uid144 ret: user.ping { type => user.ping, errorCode => ok }
+27.12 09:58:11 TIMER: Check auto-disconnect...
+27.12 09:58:11 STATS: vdl.0 cache, locks:2
+27.12 09:58:53 ++ NET: uid144 req: user.ping { messageType => user.ping, msg => ok }
+27.12 09:58:53 TIME: user.ping 0.12 ms
+27.12 09:58:53 == NET: uid144 ret: user.ping { type => user.ping, errorCode => ok }

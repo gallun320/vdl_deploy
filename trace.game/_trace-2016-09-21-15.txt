@@ -1,0 +1,50 @@
+21.09 15:10:20 TRACE: User not logon yet.
+21.09 15:36:49 TRACE: Invalid field access : name
+21.09 15:36:49 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:36:49 TRACE: Could not login.
+21.09 15:36:49 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.09 15:37:00 TRACE: User not logon yet.
+21.09 15:38:37 TRACE: Invalid field access : name
+21.09 15:38:37 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:38:37 TRACE: Could not login.
+21.09 15:38:37 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.09 15:38:56 TRACE: Invalid field access : name
+21.09 15:38:56 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:38:56 TRACE: Could not login.
+21.09 15:38:56 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.09 15:45:54 TRACE: Invalid field access : name
+21.09 15:45:54 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:45:54 TRACE: Could not login.
+21.09 15:45:54 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.09 15:46:58 TRACE: Invalid field access : name
+21.09 15:46:58 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:46:58 TRACE: Could not login.
+21.09 15:46:58 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+21.09 15:51:01 TRACE: Invalid field access : name
+21.09 15:51:01 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+21.09 15:51:01 TRACE: Could not login.
+21.09 15:51:01 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

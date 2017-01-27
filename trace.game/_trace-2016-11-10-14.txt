@@ -1,0 +1,8 @@
+10.11 14:04:25 TRACE: battle.find : cacheRequest exception { user => { time => 60, player => 6 }, _type => vdl/cache.battle.findRandom }
+10.11 14:04:25 TRACE: battle.find : 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 221
+Called from modules/VDLBattleModule.hx line 170
+Called from modules/VDLBattleModule.hx line 58
+Called from modules/VDLBattleModule.hx line 40
+Called from snipe/slave/Server.hx line 1225

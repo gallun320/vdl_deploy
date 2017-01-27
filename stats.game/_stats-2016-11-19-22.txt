@@ -1,0 +1,10 @@
+19.11 22:03:57 STATS: vdl.0 cache, locks:2
+19.11 22:04:57 STATS: vdl.0 cache, locks:2
+19.11 22:05:57 STATS: vdl.0 cache, locks:2
+19.11 22:08:40 STATS: vdl.0 cache, locks:4
+19.11 22:08:52 STATS: vdl.0 cache connection, 33 calls, total 0.0461089611053467 sec spent, avg 1.4 ms
+19.11 22:09:40 STATS: vdl.0 cache, locks:4
+19.11 22:10:40 STATS: vdl.0 cache, locks:4
+19.11 22:11:40 STATS: vdl.0 cache, locks:4
+19.11 22:11:44 STATS: vdl.0 cache connection, 35 calls, total 0.091033935546875 sec spent, avg 2.6 ms
+19.11 22:12:40 STATS: vdl.0 cache, locks:4

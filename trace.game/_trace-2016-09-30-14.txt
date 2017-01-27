@@ -1,0 +1,10 @@
+30.09 14:04:55 TRACE: User not logon yet.
+30.09 14:27:14 TRACE: User not logon yet.
+30.09 14:58:33 TRACE: Invalid field access : name
+30.09 14:58:33 TRACE: 
+Called from snipe/slave/Server.hx line 1149
+30.09 14:58:33 TRACE: Could not login.
+30.09 14:58:33 TRACE: 
+Called from snipe/slave/Server.hx line 1198
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

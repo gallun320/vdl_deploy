@@ -1,0 +1,41 @@
+<<<<<<< HEAD
+07.11 15:00:11 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 15:00:11 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 15:02:00 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 15:02:00 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 15:03:01 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 15:03:01 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 15:20:06 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+07.11 15:20:06 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 472
+Called from modules/VDLBattleModule.hx line 485
+Called from snipe/slave/Server.hx line 1009
+07.11 15:20:19 TRACE: User not logon yet.
+07.11 15:20:39 TRACE: User not logon yet.
+07.11 15:20:59 TRACE: User not logon yet.
+07.11 15:21:19 TRACE: User not logon yet.
+=======
+07.11 15:47:03 TRACE: registerResponse(): c == null! 24310035
+07.11 15:47:08 TRACE: User not logon yet.
+07.11 15:47:28 TRACE: User not logon yet.
+07.11 15:47:48 TRACE: User not logon yet.
+07.11 15:48:08 TRACE: User not logon yet.
+07.11 15:48:29 TRACE: User not logon yet.
+07.11 15:48:50 TRACE: User not logon yet.
+07.11 15:49:10 TRACE: User not logon yet.
+07.11 15:58:52 TRACE: User not logon yet.
+07.11 15:58:56 TRACE: User not logon yet.
+>>>>>>> d8dd5f2cef87bf846119ec65a7adf149bc370c79

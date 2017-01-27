@@ -1,0 +1,8 @@
+23.11 14:00:17 STATS: cache [tournament], get [232 calls, 52 cache hits, 179 cache misses, 0 same version, 0 not found]
+23.11 14:00:17 STATS: cache [tournament], segments [247 calls, 67 hits, 179 misses]
+23.11 14:00:17 STATS: cache [tournament], database [249119 calls, 179 reads, 7 writes]
+23.11 14:00:17 STATS: cache [tournament], lock [0 calls, 0 attempts, 0 failures]
+23.11 14:00:17 STATS: cache [battle], get [106 calls, 2 cache hits, 103 cache misses, 0 same version, 101 not found]
+23.11 14:00:17 STATS: cache [battle], segments [111 calls, 7 hits, 103 misses]
+23.11 14:00:17 STATS: cache [battle], database [249119 calls, 103 reads, 2 writes]
+23.11 14:00:17 STATS: cache [battle], lock [0 calls, 0 attempts, 0 failures]

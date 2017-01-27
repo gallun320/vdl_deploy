@@ -1,0 +1,121 @@
+20.11 13:36:20 TRACE: ============ GAME = null
+20.11 13:36:21 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:36:21 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:36:29 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:36:29 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:37:15 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:37:15 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:37:15 TRACE: ============ GAME = null
+20.11 13:37:15 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:37:15 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:37:29 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:37:29 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:37:30 TRACE: ============ GAME = null
+20.11 13:37:30 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:37:30 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:38:30 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:38:30 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:38:34 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:38:34 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:38:40 TRACE: ============ GAME = null
+20.11 13:38:40 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:38:40 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:38:49 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:38:49 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:39:00 TRACE: ============ GAME = null
+20.11 13:39:01 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:39:01 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:39:21 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:39:21 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:41:18 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:41:18 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:48:55 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:48:55 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:52:19 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:52:19 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:52:24 TRACE: ============ GAME = null
+20.11 13:54:26 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:54:26 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:54:32 TRACE: ============ GAME = null
+20.11 13:54:32 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:54:32 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:54:37 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:54:37 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487
+20.11 13:55:09 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+20.11 13:55:09 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 223
+Called from modules/VDLCache.hx line 216
+Called from modules/VDLCache.hx line 153
+Called from snipe/cache/CacheServer.hx line 487

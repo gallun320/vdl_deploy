@@ -1,0 +1,4 @@
+15.10 10:22:59 STATS: cache [tournament], get [1 calls, 0 cache hits, 0 cache misses, 0 same version, 0 not found]
+15.10 10:22:59 STATS: cache [tournament], segments [1 calls, 0 hits, 0 misses]
+15.10 10:22:59 STATS: cache [tournament], database [22261 calls, 0 reads, 0 writes]
+15.10 10:22:59 STATS: cache [tournament], lock [0 calls, 0 attempts, 0 failures]
