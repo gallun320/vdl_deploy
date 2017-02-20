@@ -1,0 +1,6 @@
+16.02 00:00:09 STATS: cache [user], get [123 calls, 49 cache hits, 74 cache misses, 0 same version, 0 not found]
+16.02 00:00:09 STATS: cache [user], segments [433 calls, 268 hits, 144 misses]
+16.02 00:00:09 STATS: cache [user], database [461868 calls, 74 reads, 91 writes]
+16.02 00:00:09 STATS: cache [user], lock [94 calls, 94 attempts, 14 failures]
+16.02 00:00:09 STATS: cache manager [1], get [136 calls, total 0.08 sec spent, avg 0.57 ms]
+16.02 00:00:09 STATS: cache manager [1], update [209 calls, total 0.02 sec spent, avg 0.09 ms]

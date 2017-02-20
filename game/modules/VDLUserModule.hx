@@ -34,6 +34,8 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
             response = UserSearchEnemy(c, params);
           case "user.addFriend":
             response = UserFriends(c, params);
+          case "user.deleteFriend":
+            response = UserDelete(c, params);
           case "user.getAccessFriend":
             response = UserAccess(c, params);
           case "user.getFriendList":
@@ -57,10 +59,11 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
 
       public function UserData(c: VDLClient, params: Params): Dynamic {
         var userId = c.id;
+        var money = c.get_money();
         var ret = server.cacheRequest({
            _type: "vdl/cache.user.getData",
            userId: userId,
-           money: c.money
+           money: money
           });
         return ret;
       }
@@ -83,6 +86,8 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
         var money = c.get_money();
         money += count;
         c.set_money(money);
+        
+        
         return {errorCode: "ok", money: money};
       }
 
@@ -119,32 +124,40 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
 
       public function UserFriends(c: VDLClient, params: Params): Dynamic {
         var userId = params.get("userId");
+        trace('===========================');
+        trace('===========================');
+        trace(userId, c.id);
         var type = params.get("type");
         var friendPrepareList = [];
         switch (type) {
           case "add":
-            friendPrepareList = userPrepareFriend.get(c.id);
-            friendPrepareList.push(userId);
+            //friendPrepareList = userPrepareFriend.get(c.id);
+            //if(friendPrepareList == null) friendPrepareList = [];
+            //friendPrepareList.push(userId);
             FriendAdd(c.id, userId, "prepare");
             server.sendTo(userId, {
                player: c.id,
                _type: "user.friendAccess"
               });
           case "access":
-            friendPrepareList = userPrepareFriend.get(userId);
-            friendPrepareList.remove(c.id);
+            //friendPrepareList = userPrepareFriend.get(userId);
+            //friendPrepareList.remove(c.id);
             FriendAdd(c.id, userId, "add");
-            FriendAdd(userId, c.id, "add");
+            //FriendAdd(userId, c.id, "add");
             server.sendTo(c.id, {
                player: userId,
                _type: "user.friendAdd"
               });
           case "denied":
-            friendPrepareList = userPrepareFriend.get(userId);
-            friendPrepareList.remove(c.id);
-            FriendAdd(userId, c.id, "denied");
-            server.sendTo(c.id, {
-               player: userId,
+            //friendPrepareList = UserAccess(c.id, param);
+            //trace('==================================');
+            //trace(friendPrepareList);
+            //arr = friendPrepareList.list;
+            //arr.remove(userId);
+  
+            FriendAdd(c.id, userId, "denied");
+            server.sendTo(userId, {
+               player: c.id,
                _type: "user.friendDenied"
               });
         }
@@ -152,6 +165,19 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
         return {errorCode: "ok"};
 
       }
+
+      public function UserDelete(c: VDLClient, params: Params): Dynamic {
+          var userId: Int = params.get('userId');
+          var player: Int = c.id;
+          
+          var ret = server.cacheRequest({
+                    _type: "vdl/cache.user.deleteFriend",
+                    player: player,
+                    friend: userId
+                  });
+          
+          return ret;
+        }
 
         public function UserAccess(c: VDLClient, params: Params): Dynamic {
           var ret = server.cacheRequest({
@@ -171,13 +197,14 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
                   return ret;
         }
 
-      public function FriendAdd(player: Int, friend: Int, type: String): Void {
+      public function FriendAdd(player: Int, friend: Int, type: String): Dynamic {
         var ret = server.cacheRequest({
             _type: "vdl/cache.user.addFriend",
             player: player,
             friend: friend,
             type: type
           });
+        return {}
       }
 
       public function UserRewrite(c: VDLClient, params: Params): Dynamic {
@@ -195,6 +222,8 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
 
           return { errorCode: "ok", city: city, email: email, year: year };
       }
+
+    
 
 
 

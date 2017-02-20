@@ -1,0 +1,10 @@
+14.02 14:02:17 TRACE: vdl/cache.battle.infoRoom : Invalid field access : get
+14.02 14:02:17 TRACE: vdl/cache.battle.infoRoom : 
+Called from modules/VDLCache.hx line 259
+Called from modules/VDLCache.hx line 252
+Called from modules/VDLCache.hx line 187
+Called from snipe/cache/CacheServer.hx line 487
+14.02 14:03:26 TRACE: Check round timer exception:
+14.02 14:03:26 TRACE: Invalid field access : player1
+14.02 14:21:26 TRACE: Check round timer exception:
+14.02 14:21:26 TRACE: Invalid field access : player1

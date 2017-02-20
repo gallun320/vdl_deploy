@@ -1,0 +1,9 @@
+13.02 02:59:49 TRACE: User already logon.
+13.02 02:59:49 TRACE: 
+Called from snipe/slave/Server.hx line 870
+Called from snipe/slave/Server.hx line 1124
+13.02 02:59:49 TRACE: Could not login.
+13.02 02:59:49 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202

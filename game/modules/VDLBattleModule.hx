@@ -56,7 +56,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       }
 
       public function FindRoomCall(c: VDLClient, params: Params): Dynamic {
-
+        trace('====================================');
         var ret = FindBattle(c, c.id, params);
   		  return ret;
       }
@@ -159,6 +159,8 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       public function endEvent( msg: Dynamic) {
 
         var c: VDLClient = server.TournamentModule.getClient(server.slaveID);
+        trace('===========================');
+        trace(server.slaveID, c.id);
         c.id = msg.win;
         var params: Params = new Params({ typeBattle: msg.typeBattle, type: msg.type, tournamentId: msg.tournamentId, battleId: msg.battleId });
         var ret = EndCall(c, params);
@@ -210,16 +212,21 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       /*return {errorCode: "FindBattle"};*/
       var type: String = params.get('type');
       var roundTime: Int = params.get('roundTime');
+      trace('====================================');
+      trace(roundTime);
       switch (type) {
         case "random":
           FindRandomBattle(cid, roundTime);
         case "specific":
           var player2 = params.get('userId');
           var player1 = c.id;
+          var name = server.query('SELECT name FROM Users WHERE id = ' + player1);
+          name = name.first().name;
           server.sendTo(player2, {
              player1: player1,
              player2: player2,
              roundTime: roundTime,
+             name: name,
              _type: "battle.access"
             });
           //FindBattlCheck(player1, player2);
@@ -262,7 +269,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       return { errorCode: "ok" };
     }
 
-    public function FindRandomBattle(userId: Int, roundTime: Int): Void {
+    public function FindRandomBattle(userId: Int, ?roundTime: Int): Void {
       var user: Dynamic = { player: userId, time: roundTime };
       var ret = server.cacheRequest({
           _type: 'vdl/cache.battle.findRandom',
@@ -325,6 +332,8 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       }
 
       if(name == "skip") {
+        trace('==============================');
+        trace(cid, user.turnId);
         if(user.turnId == cid) {
           params.params.type = "battle.task";
           params.params._type = "battle.task";
@@ -373,7 +382,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         var dices: Array<Int> = CubesData.get(cid).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
 
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap1"};
+        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
         return obj;
       }
 
@@ -382,7 +391,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         var dices: Array<Int> = CubesData.get(cid).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
 
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap2"};
+        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
         return obj;
       }
 
@@ -394,7 +403,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         var dices: Array<Int> = CubesData.get(cid).copy();
         var field: Array<Array<Int>> = FieldFunc.Field;
 
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap3"};
+        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
         return obj;
       }
 

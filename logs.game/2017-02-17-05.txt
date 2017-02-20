@@ -1,0 +1,851 @@
+17.02 05:00:03 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:03 TIME: user.ping 0.1 ms
+17.02 05:00:03 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:08 TIME: user.ping 0.07 ms
+17.02 05:00:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:11 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:11 TIME: user.ping 0.08 ms
+17.02 05:00:11 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:13 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:13 TIME: user.ping 0.07 ms
+17.02 05:00:13 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:18 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:18 TIME: user.ping 0.09 ms
+17.02 05:00:18 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:19 NET: Client (conid:28684682) connected to vdl.0 (clients:3)
+17.02 05:00:19 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:00:19 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:00:19 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:00:19 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:00:19 STATS: vdl.0 cache connection, 2556 calls, total 1.70894169807434 sec spent, avg 0.67 ms
+17.02 05:00:19 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:00:19 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:00:19 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:00:19 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:00:19 NET: Client (name:uid94 conid:43057713 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:00:19 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:00:19 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:00:19 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:00:19 NET: Client login (conid:28684682, id:94, name:uid94)
+17.02 05:00:19 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:00:19 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:00:19 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:00:19 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:00:19 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:00:19 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:00:19 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:00:19 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:00:19 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:00:19 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:00:19 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:00:19 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:00:19 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:00:19 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:00:19 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:00:19 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:00:19 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:00:19 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:00:19 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:00:19 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:00:19 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:00:22 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:22 TIME: user.ping 0.12 ms
+17.02 05:00:22 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:27 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:27 TIME: user.ping 0.12 ms
+17.02 05:00:27 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:30 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:30 TIME: user.ping 0.15 ms
+17.02 05:00:30 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:34 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:34 TIME: user.ping 0.11 ms
+17.02 05:00:34 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:35 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:35 TIME: user.ping 0.11 ms
+17.02 05:00:35 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:39 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:39 TIME: user.ping 0.15 ms
+17.02 05:00:39 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:40 STATS: vdl.0 cache, locks:4
+17.02 05:00:43 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:43 TIME: user.ping 0.12 ms
+17.02 05:00:43 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:46 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:46 TIME: user.ping 0.13 ms
+17.02 05:00:46 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:48 TIMER: Check auto-disconnect...
+17.02 05:00:50 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:50 TIME: user.ping 0.1 ms
+17.02 05:00:50 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:51 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:51 TIME: user.ping 0.1 ms
+17.02 05:00:51 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:55 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:55 TIME: user.ping 0.11 ms
+17.02 05:00:55 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:00:58 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:00:58 TIME: user.ping 0.11 ms
+17.02 05:00:58 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:00 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:00 TIME: user.ping 0.13 ms
+17.02 05:01:00 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:04 NET: Client (conid:54885425) connected to vdl.0 (clients:3)
+17.02 05:01:04 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:01:04 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:01:04 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:01:04 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:01:04 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:01:04 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:01:04 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:01:04 NET: Client (name:uid94 conid:28684682 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:01:04 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:01:04 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:01:04 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:01:04 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:01:04 NET: Client login (conid:54885425, id:94, name:uid94)
+17.02 05:01:04 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:01:04 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:01:04 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:01:04 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:01:04 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:04 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:01:04 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:04 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:04 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:04 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:01:04 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:01:04 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:04 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:04 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:04 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:01:04 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:01:04 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:01:04 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:01:04 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:01:04 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:01:04 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:01:06 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:06 TIME: user.ping 0.12 ms
+17.02 05:01:06 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:12 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:12 TIME: user.ping 0.12 ms
+17.02 05:01:12 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:17 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:17 TIME: user.ping 0.14 ms
+17.02 05:01:17 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:20 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:20 TIME: user.ping 0.12 ms
+17.02 05:01:20 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:21 TIME: user.ping 0.11 ms
+17.02 05:01:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:23 NET: Client (conid:90673760) connected to vdl.0 (clients:3)
+17.02 05:01:23 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:01:23 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:01:23 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:01:23 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:01:23 STATS: vdl.0 cache connection, 2576 calls, total 1.72044706344604 sec spent, avg 0.67 ms
+17.02 05:01:23 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:01:23 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:01:23 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:01:23 NET: Client (name:uid94 conid:54885425 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:01:23 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:01:23 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:01:23 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:01:23 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:01:23 NET: Client login (conid:90673760, id:94, name:uid94)
+17.02 05:01:23 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:01:23 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:01:23 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:01:23 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:01:23 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:01:23 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:23 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:23 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:23 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:01:23 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:01:23 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:01:23 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:23 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:23 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:01:23 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:01:23 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:01:23 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:01:23 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:01:23 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:01:23 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:01:23 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:01:26 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:26 TIME: user.ping 0.08 ms
+17.02 05:01:26 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:32 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:32 TIME: user.ping 0.07 ms
+17.02 05:01:32 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:33 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:33 TIME: user.ping 0.15 ms
+17.02 05:01:33 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:38 TIME: user.ping 0.11 ms
+17.02 05:01:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:39 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:39 TIME: user.ping 0.1 ms
+17.02 05:01:39 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:40 STATS: vdl.0 cache, locks:4
+17.02 05:01:42 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:42 TIME: user.ping 0.15 ms
+17.02 05:01:42 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:48 TIMER: Check auto-disconnect...
+17.02 05:01:49 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:49 TIME: user.ping 0.09 ms
+17.02 05:01:49 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:50 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:50 TIME: user.ping 0.11 ms
+17.02 05:01:50 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:55 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:55 TIME: user.ping 0.19 ms
+17.02 05:01:55 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:01:58 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:01:58 TIME: user.ping 0.11 ms
+17.02 05:01:58 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:00 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:00 TIME: user.ping 0.11 ms
+17.02 05:02:00 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:08 TIME: user.ping 0.1 ms
+17.02 05:02:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:10 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:10 TIME: user.ping 0.11 ms
+17.02 05:02:10 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:14 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:14 TIME: user.ping 0.2 ms
+17.02 05:02:14 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:16 NET: Client (conid:5220948) connected to vdl.0 (clients:3)
+17.02 05:02:17 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:02:17 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:02:17 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:02:17 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:02:17 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:02:17 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:02:17 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:02:17 NET: Client (name:uid94 conid:90673760 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:02:17 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:02:17 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:02:17 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:02:17 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:02:17 NET: Client login (conid:5220948, id:94, name:uid94)
+17.02 05:02:17 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:02:17 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:02:17 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:02:17 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:02:17 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:02:17 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:17 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:17 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:17 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:02:17 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:17 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:02:17 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:17 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:17 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:17 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:02:17 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:02:17 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:02:17 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:02:17 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:02:17 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:02:17 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:02:19 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:19 TIME: user.ping 0.11 ms
+17.02 05:02:19 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:25 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:25 TIME: user.ping 0.12 ms
+17.02 05:02:25 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:32 TIME: user.ping 0.08 ms
+17.02 05:02:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:32 NET: Client (conid:39037882) connected to vdl.0 (clients:3)
+17.02 05:02:32 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:02:32 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:02:32 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:02:32 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:02:32 STATS: vdl.0 cache connection, 2596 calls, total 1.73646259307861 sec spent, avg 0.67 ms
+17.02 05:02:32 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:02:32 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:02:32 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:02:32 NET: Client (name:uid94 conid:5220948 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:02:32 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:02:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:02:32 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:02:32 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:02:32 NET: Client login (conid:39037882, id:94, name:uid94)
+17.02 05:02:32 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:02:32 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:02:32 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:02:32 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:02:32 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:32 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:32 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:02:32 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:02:32 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:32 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:02:32 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:02:32 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:32 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:32 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:02:32 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:02:32 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:02:32 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:02:32 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:02:32 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:02:32 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:02:32 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:02:35 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:35 TIME: user.ping 9.85 ms
+17.02 05:02:35 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:36 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:36 TIME: user.ping 0.1 ms
+17.02 05:02:36 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:40 STATS: vdl.0 cache, locks:4
+17.02 05:02:41 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:41 TIME: user.ping 14.16 ms
+17.02 05:02:41 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:43 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:43 TIME: user.ping 0.15 ms
+17.02 05:02:43 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:48 TIMER: Check auto-disconnect...
+17.02 05:02:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:49 TIME: user.ping 0.15 ms
+17.02 05:02:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:53 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:53 TIME: user.ping 0.13 ms
+17.02 05:02:53 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:53 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:53 TIME: user.ping 0.1 ms
+17.02 05:02:53 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:02:58 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:02:58 TIME: user.ping 0.1 ms
+17.02 05:02:58 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:00 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:00 TIME: user.ping 0.06 ms
+17.02 05:03:00 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:02 NET: Client (conid:76946048) connected to vdl.0 (clients:3)
+17.02 05:03:02 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:03:02 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:03:02 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:03:02 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:03:02 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:03:02 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:03:02 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:03:02 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:03:02 NET: Client (name:uid94 conid:39037882 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:03:02 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:03:02 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:03:02 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:03:02 NET: Client login (conid:76946048, id:94, name:uid94)
+17.02 05:03:02 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:03:02 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:03:02 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:03:02 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:03:02 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:02 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:03:02 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:02 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:02 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:02 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:03:02 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:03:02 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:02 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:02 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:02 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:03:02 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:03:02 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:03:02 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:03:02 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:03:02 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:03:02 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:03:03 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:03 TIME: user.ping 0.17 ms
+17.02 05:03:03 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:11 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:11 TIME: user.ping 0.07 ms
+17.02 05:03:11 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:16 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:16 TIME: user.ping 0.12 ms
+17.02 05:03:16 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:20 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:20 TIME: user.ping 0.18 ms
+17.02 05:03:20 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:21 TIME: user.ping 0.1 ms
+17.02 05:03:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:26 NET: Client (conid:90202653) connected to vdl.0 (clients:3)
+17.02 05:03:26 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTQ= }
+17.02 05:03:26 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94'
+17.02 05:03:26 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid94' AND Password = E'uid94', _type => core/server.query }
+17.02 05:03:26 -<<-: core/server.query { list => {{ name => uid94, networkid => , isbanned => false, id => 94 }}, errorCode => ok, _type => core/server.query }
+17.02 05:03:26 ->>-: core/user.isOnlineID { id => 94, _type => core/user.isOnlineID }
+17.02 05:03:26 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:03:26 == NET: uid94 ret: user.logout { type => user.logout, errorCode => ok }
+17.02 05:03:26 NET: Client (name:uid94 conid:76946048 TCP) disconnected from vdl.0 (clients:2)
+17.02 05:03:26 ->>-: core/cache.get { type => user, v => -1, id => 94, _type => core/cache.get }
+17.02 05:03:26 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid94, money => 0, deleted => false, year => , email => , networktype =>   , password => uid94, isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487324022, lastLoginDate => 48, lastLoadDate => 218 }, effects => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:03:26 ->>-: core/cache.get { type => questdata, v => -1, id => 94, _type => core/cache.get }
+17.02 05:03:26 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 94 } }
+17.02 05:03:26 NET: Client login (conid:90202653, id:94, name:uid94)
+17.02 05:03:26 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 94, _type => core/user.loginPost, ipAddr => 91.225.76.192 }
+17.02 05:03:26 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:03:26 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:03:26 == NET: uid94 ret: user.login { name => uid94, type => user.login, errorCode => ok, id => 94 }
+17.02 05:03:26 == NET: uid94 ret: user.join { name => uid60, type => user.join }
+17.02 05:03:26 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:26 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:26 == NET: uid60 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:26 == NET: uid94 ret: user.join { name => uid94, type => user.join }
+17.02 05:03:26 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:03:26 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:03:26 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:26 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:26 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:26 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:03:26 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:03:26 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:03:26 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:03:26 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:03:26 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:03:26 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:03:26 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:26 TIME: user.ping 0.07 ms
+17.02 05:03:26 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:33 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:33 TIME: user.ping 0.15 ms
+17.02 05:03:33 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:36 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:36 TIME: user.ping 0.1 ms
+17.02 05:03:36 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:38 TIME: user.ping 0.11 ms
+17.02 05:03:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:40 STATS: vdl.0 cache, locks:4
+17.02 05:03:43 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:43 TIME: user.ping 0.12 ms
+17.02 05:03:43 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:45 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:45 TIME: user.ping 0.1 ms
+17.02 05:03:45 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:48 TIMER: Check auto-disconnect...
+17.02 05:03:52 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:52 TIME: user.ping 0.09 ms
+17.02 05:03:52 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:56 ++ NET: uid94 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:56 TIME: user.ping 0.18 ms
+17.02 05:03:56 == NET: uid94 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:56 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:03:56 TIME: user.ping 0.1 ms
+17.02 05:03:56 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:03:59 NET: Client (name:uid60 conid:85426847 TCP) disconnected from vdl.0 (clients:1)
+17.02 05:03:59 DB: SELECT id FROM battle WHERE firstid=60 OR secondid=60 AND finished <> true
+17.02 05:03:59 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=60 OR secondid=60 AND finished <> true, _type => core/server.query }
+17.02 05:03:59 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:03:59 STATS: vdl.0 cache connection, 2626 calls, total 1.75234985351562 sec spent, avg 0.67 ms
+17.02 05:03:59 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:59 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:59 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:03:59 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:03:59 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 60, _type => core/cache.update }
+17.02 05:03:59 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+17.02 05:03:59 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 60, _type => core/cache.update }
+17.02 05:03:59 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:03:59 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 60, _type => core/user.logoutPost }
+17.02 05:03:59 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:04:01 NET: Client (name:uid94 conid:90202653 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:04:01 DB: SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true
+17.02 05:04:01 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=94 OR secondid=94 AND finished <> true, _type => core/server.query }
+17.02 05:04:01 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:04:01 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:04:01 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:04:01 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:04:01 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:04:01 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:04:01 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:04:01 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 94, _type => core/cache.update }
+17.02 05:04:01 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:04:01 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 94, _type => core/user.logoutPost }
+17.02 05:04:01 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:04:40 STATS: vdl.0 cache, locks:2
+17.02 05:04:48 TIMER: Check auto-disconnect...
+17.02 05:05:40 STATS: vdl.0 cache, locks:2
+17.02 05:05:48 TIMER: Check auto-disconnect...
+17.02 05:06:40 STATS: vdl.0 cache, locks:2
+17.02 05:06:48 TIMER: Check auto-disconnect...
+17.02 05:07:40 STATS: vdl.0 cache, locks:2
+17.02 05:07:48 TIMER: Check auto-disconnect...
+17.02 05:08:40 STATS: vdl.0 cache, locks:2
+17.02 05:08:48 TIMER: Check auto-disconnect...
+17.02 05:09:40 STATS: vdl.0 cache, locks:2
+17.02 05:09:48 TIMER: Check auto-disconnect...
+17.02 05:10:40 STATS: vdl.0 cache, locks:2
+17.02 05:10:48 TIMER: Check auto-disconnect...
+17.02 05:11:40 STATS: vdl.0 cache, locks:2
+17.02 05:11:48 TIMER: Check auto-disconnect...
+17.02 05:12:40 STATS: vdl.0 cache, locks:2
+17.02 05:12:48 TIMER: Check auto-disconnect...
+17.02 05:13:40 STATS: vdl.0 cache, locks:2
+17.02 05:13:48 TIMER: Check auto-disconnect...
+17.02 05:14:40 STATS: vdl.0 cache, locks:2
+17.02 05:14:48 TIMER: Check auto-disconnect...
+17.02 05:15:40 STATS: vdl.0 cache, locks:2
+17.02 05:15:48 TIMER: Check auto-disconnect...
+17.02 05:16:40 STATS: vdl.0 cache, locks:2
+17.02 05:16:48 TIMER: Check auto-disconnect...
+17.02 05:17:40 STATS: vdl.0 cache, locks:2
+17.02 05:17:48 TIMER: Check auto-disconnect...
+17.02 05:18:40 STATS: vdl.0 cache, locks:2
+17.02 05:18:48 TIMER: Check auto-disconnect...
+17.02 05:19:40 STATS: vdl.0 cache, locks:2
+17.02 05:19:48 TIMER: Check auto-disconnect...
+17.02 05:20:40 STATS: vdl.0 cache, locks:2
+17.02 05:20:48 TIMER: Check auto-disconnect...
+17.02 05:21:40 STATS: vdl.0 cache, locks:2
+17.02 05:21:48 TIMER: Check auto-disconnect...
+17.02 05:22:40 STATS: vdl.0 cache, locks:2
+17.02 05:22:48 TIMER: Check auto-disconnect...
+17.02 05:23:40 STATS: vdl.0 cache, locks:2
+17.02 05:23:48 TIMER: Check auto-disconnect...
+17.02 05:24:40 STATS: vdl.0 cache, locks:2
+17.02 05:24:48 TIMER: Check auto-disconnect...
+17.02 05:25:40 STATS: vdl.0 cache, locks:2
+17.02 05:25:48 TIMER: Check auto-disconnect...
+17.02 05:26:17 NET: Client (conid:58591619) connected to vdl.0 (clients:1)
+17.02 05:26:17 ++ NET: null req: user.login { password => qwertt, name => Aimer, messageType => user.login }
+17.02 05:26:17 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'qwertt'
+17.02 05:26:17 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'qwertt', _type => core/server.query }
+17.02 05:26:17 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:17 STATS: vdl.0 cache connection, 2636 calls, total 1.756432056427 sec spent, avg 0.67 ms
+17.02 05:26:17 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+17.02 05:26:17 NET: Client (name:null conid:58591619 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:26:17 NET: Client (conid:74584494) connected to vdl.0 (clients:1)
+17.02 05:26:17 ++ NET: null req: user.register { messageType => user.register }
+17.02 05:26:17 DB: SELECT * FROM users
+17.02 05:26:17 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+17.02 05:26:17 -<<-: core/server.query { list => {{ city => , password => uid4, name => uid4, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.793848-05, language =>   , id => 4, money => 0, deleted => false }, { city => , password => uid3, name => uid3, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.459825-05, language =>   , id => 3, money => 0, deleted => false }, { city => , password => uid2, name => uid2, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.101608-05, language =>   , id => 2, money => 0, deleted => false }, { city => , password => uid7, name => uid7, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.76259-05, language =>   , id => 7, money => 0, deleted => false }, { city => , password => uid6, name => uid6, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.437217-05, language =>   , id => 6, money => 0, deleted => false }, { city => , password => uid5, name => uid5, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.109987-05, language =>   , id => 5, money => 0, deleted => false }, { city => , password => uid10, name => uid10, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.735592-05, language =>   , id => 10, money => 0, deleted => false }, { city => , password => uid9, name => uid9, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.403347-05, language =>   , id => 9, money => 0, deleted => false }, { city => , password => uid8, name => uid8, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.083873-05, language =>   , id => 8, money => 0, deleted => false }, { city => , password => uid13, name => uid13, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.67559-05, language =>   , id => 13, money => 0, deleted => false }, { city => , password => uid12, name => uid12, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.363001-05, language =>   , id => 12, money => 0, deleted => false }, { city => , password => uid11, name => uid11, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.044099-05, language =>   , id => 11, money => 0, deleted => false }, { city => , password => uid16, name => uid16, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.662368-05, language =>   , id => 16, money => 0, deleted => false }, { city => , password => uid15, name => uid15, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.321183-05, language =>   , id => 15, money => 0, deleted => false }, { city => , password => uid14, name => uid14, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.99402-05, language =>   , id => 14, money => 0, deleted => false }, { city => , password => uid19, name => uid19, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:16.674693-05, language =>   , id => 19, money => 0, deleted => false }, { city => , password => uid18, name => uid18, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:16.349725-05, language =>   , id => 18, money => 0, deleted => false }, { city => , password => uid17, name => uid17, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.991021-05, language =>   , id => 17, money => 0, deleted => false }, { city => , password => uid22, name => uid22, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.665831-05, language =>   , id => 22, money => 0, deleted => false }, { city => , password => uid21, name => uid21, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.340501-05, language =>   , id => 21, money => 0, deleted => false }, { city => , password => uid20, name => uid20, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.021287-05, language =>   , id => 20, money => 0, deleted => false }, { city => , password => uid25, name => uid25, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.626759-05, language =>   , id => 25, money => 0, deleted => false }, { city => , password => uid24, name => uid24, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.307254-05, language =>   , id => 24, money => 0, deleted => false }, { city => , password => uid23, name => uid23, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.985274-05, language =>   , id => 23, money => 0, deleted => false }, { city => , password => uid27, name => uid27, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.29685-05, language =>   , id => 27, money => 0, deleted => false }, { city => , password => uid26, name => uid26, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.961177-05, language =>   , id => 26, money => 0, deleted => false }, { city => , password => uid28, name => uid28, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.645034-05, language =>   , id => 28, money => 0, deleted => false }, { city => , password => uid31, name => uid31, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.635252-05, language =>   , id => 31, money => 0, deleted => false }, { city => , password => uid30, name => uid30, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.298735-05, language =>   , id => 30, money => 0, deleted => false }, { city => , password => uid29, name => uid29, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.965299-05, language =>   , id => 29, money => 0, deleted => false }, { city => , password => uid34, name => uid34, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.637004-05, language =>   , id => 34, money => 0, deleted => false }, { city => , password => uid33, name => uid33, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.297997-05, language =>   , id => 33, money => 0, deleted => false }, { city => , password => uid32, name => uid32, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.959349-05, language =>   , id => 32, money => 0, deleted => false }, { city => , password => uid37, name => uid37, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.611041-05, language =>   , id => 37, money => 0, deleted => false }, { city => , password => uid35, name => uid35, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.972715-05, language =>   , id => 35, money => 0, deleted => false }, { city => , password => uid39, name => uid39, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.275852-05, language =>   , id => 39, money => 0, deleted => false }, { city => , password => uid43, name => uid43, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.614842-05, language =>   , id => 43, money => 0, deleted => false }, { city => , password => uid46, name => uid46, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.550909-05, language =>   , id => 46, money => 0, deleted => false }, { city => , password => uid50, name => uid50, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.893219-05, language =>   , id => 50, money => 0, deleted => false }, { city => , password => uid47, name => uid47, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.919935-05, language =>   , id => 47, money => 0, deleted => false }, { city => , password => uid51, name => uid51, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.276733-05, language =>   , id => 51, money => 0, deleted => false }, { city => , password => uid36, name => uid36, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.27566-05, language =>   , id => 36, money => 0, deleted => false }, { city => , password => uid40, name => uid40, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.629781-05, language =>   , id => 40, money => 0, deleted => false }, { city => , password => uid38, name => uid38, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.932048-05, language =>   , id => 38, money => 0, deleted => false }, { city => , password => uid41, name => uid41, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.960839-05, language =>   , id => 41, money => 0, deleted => false }, { city => , password => uid42, name => uid42, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.311632-05, language =>   , id => 42, money => 0, deleted => false }, { city => , password => uid45, name => uid45, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.231915-05, language =>   , id => 45, money => 0, deleted => false }, { city => , password => uid44, name => uid44, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.922462-05, language =>   , id => 44, money => 0, deleted => false }, { city => , password => uid49, name => uid49, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.563638-05, language =>   , id => 49, money => 0, deleted => false }, { city => , password => uid48, name => uid48, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.25379-05, language =>   , id => 48, money => 0, deleted => false }, { city => , password => uid52, name => uid52, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.647348-05, language =>   , id => 52, money => 0, deleted => false }, { city => , password => uid55, name => uid55, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:28.623469-05, language =>   , id => 55, money => 0, deleted => false }, { city => , password => uid54, name => uid54, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:28.304227-05, language =>   , id => 54, money => 0, deleted => false }, { city => , password => uid53, name => uid53, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.97266-05, language =>   , id => 53, money => 0, deleted => false }, { city => , password => uid56, name => uid56, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:05.794976-05, language =>   , id => 56, money => 0, deleted => false }, { city => , password => uid59, name => uid59, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.815017-05, language =>   , id => 59, money => 0, deleted => false }, { city => , password => uid58, name => uid58, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.478534-05, language =>   , id => 58, money => 0, deleted => false }, { city => , password => uid57, name => uid57, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.128981-05, language =>   , id => 57, money => 0, deleted => false }, { city => , password => uid61, name => uid61, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 14:16:55.785184-05, language =>   , id => 61, money => 0, deleted => false }, { city => , password => uid62, name => uid62, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 14:22:19.123091-05, language =>   , id => 62, money => 0, deleted => false }, { city => , password => qweqwe, name => Aimer, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486759954,"lastLoginDate":41,"money":100,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 15:52:33.973174-05, language => en, id => 65, money => 0, deleted => false }, { city => , password => uid63, name => uid63, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486755420,"lastLoginDate":41,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 14:36:33.648136-05, language => en, id => 63, money => 0, deleted => false }, { city => , password => uid66, name => uid66, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486818078,"lastLoginDate":42,"lastLoadDate":212},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-11 08:01:18.431347-05, language => en, id => 66, money => 0, deleted => false }, { city => , password => uid71, name => uid71, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486916893,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 11:28:13.257436-05, language => en, id => 71, money => 0, deleted => false }, { city => , password => uid75, name => uid75, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486929011,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:11.504677-05, language => en, id => 75, money => 0, deleted => false }, { city => , password => uid67, name => uid67, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486819206,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-11 08:20:06.728754-05, language => en, id => 67, money => 0, deleted => false }, { city => , password => uid64, name => uid64, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486755621,"lastLoginDate":41,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 14:40:21.41515-05, language => en, id => 64, money => 0, deleted => false }, { city => , password => uid72, name => uid72, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487320163,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:48:12.760178-05, language => en, id => 72, money => 0, deleted => false }, { city => , password => uid68, name => uid68, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486905439,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 08:17:19.33505-05, language => en, id => 68, money => 0, deleted => false }, { city => , password => uid69, name => uid69, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487320302,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 08:40:31.139347-05, language => en, id => 69, money => 0, deleted => false }, { city => , password => uid73, name => uid73, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486928941,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:49:00.579486-05, language => en, id => 73, money => 0, deleted => false }, { city => , password => uid70, name => uid70, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486913928,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 10:38:44.702712-05, language => en, id => 70, money => 0, deleted => false }, { city => , password => uid74, name => uid74, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486929002,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:02.441222-05, language => en, id => 74, money => 0, deleted => false }, { city => , password => uid77, name => uid77, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486972789,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 02:59:48.722404-05, language => en, id => 77, money => 0, deleted => false }, { city => , password => uid81, name => uid81, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975164,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:24.252721-05, language => en, id => 81, money => 0, deleted => false }, { city => , password => uid82, name => uid82, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975165,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:25.566784-05, language => en, id => 82, money => 0, deleted => false }, { city => , password => uid78, name => uid78, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975159,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:19.505058-05, language => en, id => 78, money => 0, deleted => false }, { city => , password => uid79, name => uid79, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975161,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:21.867915-05, language => en, id => 79, money => 0, deleted => false }, { city => , password => uid85, name => uid85, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486995431,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 09:17:08.343899-05, language => en, id => 85, money => 0, deleted => false }, { city => , password => uid80, name => uid80, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975163,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:23.2322-05, language => en, id => 80, money => 0, deleted => false }, { city => , password => uid83, name => uid83, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486976083,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:54:42.680187-05, language => en, id => 83, money => 0, deleted => false }, { city => , password => uid84, name => uid84, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486976653,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 04:04:12.501372-05, language => en, id => 84, money => 0, deleted => false }, { city => , password => uid90, name => uid90, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321286,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:05.98115-05, language => en, id => 90, money => 0, deleted => false }, { city => , password => uid87, name => uid87, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487073150,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 06:52:29.899108-05, language => en, id => 87, money => 0, deleted => false }, { city => , password => uid86, name => uid86, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487064718,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 04:31:56.112808-05, language => en, id => 86, money => 0, deleted => false }, { city => , password => uid91, name => uid91, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321287,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:07.057509-05, language => en, id => 91, money => 0, deleted => false }, { city => , password => , name => --- DEFAULT ATTRIBUTES ---, year => , networkid => , params => {"inventory":{"list":[]},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 05:32:53.904032-05, language =>   , id => 1, money => 0, deleted => false }, { city => , password => uid93, name => uid93, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321426,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:50:25.683083-05, language => en, id => 93, money => 0, deleted => false }, { city => , password => uid92, name => uid92, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321330,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:49.450121-05, language => en, id => 92, money => 0, deleted => false }, { city => , password => uid94, name => uid94, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487324022,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, language => en, id => 94, money => 0, deleted => false }, { city => , password => uid60, name => uid60, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487247134,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:07.153333-05, language => en, id => 60, money => 0, deleted => false }, { city => , password => 77779999, name => vvp75, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"params":{"friendPrepare":[76,76]},"attrs":{"_lastTime.24hr":1487098937,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 14:02:17.317416-05, language => en, id => 88, money => 0, deleted => false }, { city => , password => 77779999, name => ga.forest, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487071866,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:59.369023-05, language => en, id => 76, money => 0, deleted => false }, { city => , password => uid89, name => uid89, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487268382,"lastLoginDate":47,"lastLoadDate":217},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-15 03:47:42.00038-05, language => en, id => 89, money => 0, deleted => false }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:17 DB: SELECT ID FROM Users WHERE Name = E'uid95'
+17.02 05:26:17 == NET: null ret: user.auth { type => user.auth, token => dWlkOTU= }
+17.02 05:26:17 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'uid95', _type => core/server.query }
+17.02 05:26:17 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:17 DB: SELECT nextval('Users_id_seq') AS id
+17.02 05:26:17 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+17.02 05:26:17 -<<-: core/server.query { list => {{ id => 95 }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:17 ->>-: core/user.register { password => uid95, name => uid95, fullParams => { password => uid95, name => uid95, networkid => , networktype => , messageType => user.register, id => 95 }, networkid => , connectionID => 74584494, networktype => , email => , id => 95, _type => core/user.register }
+17.02 05:26:17 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+17.02 05:26:17 -<<-: core/user.registerResponse { password => uid95, name => uid95, _isNotify => true, fullParams => { password => uid95, name => uid95, networkid => , networktype => , messageType => user.register, id => 95 }, networkid => , connectionID => 74584494, networktype => , email => , id => 95, _type => core/user.registerResponse }
+17.02 05:26:17 == NET: null ret: user.register { type => user.register, errorCode => ok }
+17.02 05:26:18 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTU= }
+17.02 05:26:18 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid95' AND Password = E'uid95'
+17.02 05:26:18 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid95' AND Password = E'uid95', _type => core/server.query }
+17.02 05:26:18 -<<-: core/server.query { list => {{ name => uid95, networkid => , isbanned => false, id => 95 }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:18 ->>-: core/user.isOnlineID { id => 95, _type => core/user.isOnlineID }
+17.02 05:26:18 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:26:18 ->>-: core/cache.get { type => user, v => -1, id => 95, _type => core/cache.get }
+17.02 05:26:18 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid95, money => 0, deleted => false, year => , email => , networktype =>   , password => uid95, isbanned => false, regdate => 2017-02-17 05:26:17.812853-05, city => , language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 1, id => 95 } }
+17.02 05:26:18 ->>-: core/cache.get { type => questdata, v => -1, id => 95, _type => core/cache.get }
+17.02 05:26:18 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 95 } }
+17.02 05:26:18 NET: Client login (conid:74584494, id:95, name:uid95)
+17.02 05:26:18 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 95, _type => core/user.loginPost, ipAddr => 188.162.39.30 }
+17.02 05:26:18 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:26:18 DB: SELECT ID FROM TempUserLogins WHERE UserID = 95 AND Date = 'today'::timestamp
+17.02 05:26:18 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 95 AND Date = 'today'::timestamp, _type => core/server.query }
+17.02 05:26:18 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:18 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (95, 'today'::timestamp)
+17.02 05:26:18 ++ NET: uid95 req: user.login { messageType => user.login, token => dWlkOTU= }
+17.02 05:26:18 TRACE: User already logon.
+17.02 05:26:18 TRACE: 
+Called from snipe/slave/Server.hx line 870
+Called from snipe/slave/Server.hx line 1124
+17.02 05:26:18 == NET: uid95 ret: user.login { name => uid95, type => user.login, errorCode => ok, id => 95 }
+17.02 05:26:18 == NET: uid95 ret: user.join { name => uid95, type => user.join }
+17.02 05:26:18 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1487327178, lastLoginDate => 48, lastLoadDate => 218 } }}, type => user, unlock => true, id => 95, _type => core/cache.update, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (95, 'today'::timestamp), _type => core/server.pending }} }
+17.02 05:26:18 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+17.02 05:26:18 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 95, _type => core/cache.update }
+17.02 05:26:18 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:26:18 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 95, _type => core/user.logoutPost }
+17.02 05:26:18 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:26:18 TRACE: Could not login.
+17.02 05:26:18 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+17.02 05:26:26 NET: Client (name:uid95 conid:74584494 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:26:26 DB: SELECT id FROM battle WHERE firstid=95 OR secondid=95 AND finished <> true
+17.02 05:26:26 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=95 OR secondid=95 AND finished <> true, _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:26:26 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:26:26 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:26:26 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:26:26 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 95, _type => core/cache.update }
+17.02 05:26:26 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:26:26 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 95, _type => core/cache.update }
+17.02 05:26:26 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:26:26 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 95, _type => core/user.logoutPost }
+17.02 05:26:26 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:26:26 NET: Client (conid:34149378) connected to vdl.0 (clients:1)
+17.02 05:26:26 ++ NET: null req: user.login { password => qwerty, name => Aimer, messageType => user.login }
+17.02 05:26:26 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'qwerty'
+17.02 05:26:26 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'Aimer' AND Password = E'qwerty', _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 == NET: null ret: user.login { type => user.login, errorCode => userNotFound }
+17.02 05:26:26 NET: Client (name:null conid:34149378 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:26:26 NET: Client (conid:59157644) connected to vdl.0 (clients:1)
+17.02 05:26:26 ++ NET: null req: user.register { messageType => user.register }
+17.02 05:26:26 DB: SELECT * FROM users
+17.02 05:26:26 ->>-: core/server.query { q => SELECT * FROM users, _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {{ city => , password => uid4, name => uid4, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.793848-05, language =>   , id => 4, money => 0, deleted => false }, { city => , password => uid3, name => uid3, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.459825-05, language =>   , id => 3, money => 0, deleted => false }, { city => , password => uid2, name => uid2, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:11.101608-05, language =>   , id => 2, money => 0, deleted => false }, { city => , password => uid7, name => uid7, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.76259-05, language =>   , id => 7, money => 0, deleted => false }, { city => , password => uid6, name => uid6, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.437217-05, language =>   , id => 6, money => 0, deleted => false }, { city => , password => uid5, name => uid5, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:12.109987-05, language =>   , id => 5, money => 0, deleted => false }, { city => , password => uid10, name => uid10, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.735592-05, language =>   , id => 10, money => 0, deleted => false }, { city => , password => uid9, name => uid9, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.403347-05, language =>   , id => 9, money => 0, deleted => false }, { city => , password => uid8, name => uid8, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:13.083873-05, language =>   , id => 8, money => 0, deleted => false }, { city => , password => uid13, name => uid13, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.67559-05, language =>   , id => 13, money => 0, deleted => false }, { city => , password => uid12, name => uid12, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.363001-05, language =>   , id => 12, money => 0, deleted => false }, { city => , password => uid11, name => uid11, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.044099-05, language =>   , id => 11, money => 0, deleted => false }, { city => , password => uid16, name => uid16, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.662368-05, language =>   , id => 16, money => 0, deleted => false }, { city => , password => uid15, name => uid15, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.321183-05, language =>   , id => 15, money => 0, deleted => false }, { city => , password => uid14, name => uid14, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:14.99402-05, language =>   , id => 14, money => 0, deleted => false }, { city => , password => uid19, name => uid19, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:16.674693-05, language =>   , id => 19, money => 0, deleted => false }, { city => , password => uid18, name => uid18, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:16.349725-05, language =>   , id => 18, money => 0, deleted => false }, { city => , password => uid17, name => uid17, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:15.991021-05, language =>   , id => 17, money => 0, deleted => false }, { city => , password => uid22, name => uid22, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.665831-05, language =>   , id => 22, money => 0, deleted => false }, { city => , password => uid21, name => uid21, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.340501-05, language =>   , id => 21, money => 0, deleted => false }, { city => , password => uid20, name => uid20, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.021287-05, language =>   , id => 20, money => 0, deleted => false }, { city => , password => uid25, name => uid25, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.626759-05, language =>   , id => 25, money => 0, deleted => false }, { city => , password => uid24, name => uid24, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.307254-05, language =>   , id => 24, money => 0, deleted => false }, { city => , password => uid23, name => uid23, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:17.985274-05, language =>   , id => 23, money => 0, deleted => false }, { city => , password => uid27, name => uid27, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.29685-05, language =>   , id => 27, money => 0, deleted => false }, { city => , password => uid26, name => uid26, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:18.961177-05, language =>   , id => 26, money => 0, deleted => false }, { city => , password => uid28, name => uid28, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.645034-05, language =>   , id => 28, money => 0, deleted => false }, { city => , password => uid31, name => uid31, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.635252-05, language =>   , id => 31, money => 0, deleted => false }, { city => , password => uid30, name => uid30, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.298735-05, language =>   , id => 30, money => 0, deleted => false }, { city => , password => uid29, name => uid29, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:19.965299-05, language =>   , id => 29, money => 0, deleted => false }, { city => , password => uid34, name => uid34, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.637004-05, language =>   , id => 34, money => 0, deleted => false }, { city => , password => uid33, name => uid33, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.297997-05, language =>   , id => 33, money => 0, deleted => false }, { city => , password => uid32, name => uid32, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:20.959349-05, language =>   , id => 32, money => 0, deleted => false }, { city => , password => uid37, name => uid37, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.611041-05, language =>   , id => 37, money => 0, deleted => false }, { city => , password => uid35, name => uid35, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:21.972715-05, language =>   , id => 35, money => 0, deleted => false }, { city => , password => uid39, name => uid39, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.275852-05, language =>   , id => 39, money => 0, deleted => false }, { city => , password => uid43, name => uid43, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.614842-05, language =>   , id => 43, money => 0, deleted => false }, { city => , password => uid46, name => uid46, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.550909-05, language =>   , id => 46, money => 0, deleted => false }, { city => , password => uid50, name => uid50, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.893219-05, language =>   , id => 50, money => 0, deleted => false }, { city => , password => uid47, name => uid47, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.919935-05, language =>   , id => 47, money => 0, deleted => false }, { city => , password => uid51, name => uid51, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.276733-05, language =>   , id => 51, money => 0, deleted => false }, { city => , password => uid36, name => uid36, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.27566-05, language =>   , id => 36, money => 0, deleted => false }, { city => , password => uid40, name => uid40, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.629781-05, language =>   , id => 40, money => 0, deleted => false }, { city => , password => uid38, name => uid38, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:22.932048-05, language =>   , id => 38, money => 0, deleted => false }, { city => , password => uid41, name => uid41, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:23.960839-05, language =>   , id => 41, money => 0, deleted => false }, { city => , password => uid42, name => uid42, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.311632-05, language =>   , id => 42, money => 0, deleted => false }, { city => , password => uid45, name => uid45, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:25.231915-05, language =>   , id => 45, money => 0, deleted => false }, { city => , password => uid44, name => uid44, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:24.922462-05, language =>   , id => 44, money => 0, deleted => false }, { city => , password => uid49, name => uid49, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.563638-05, language =>   , id => 49, money => 0, deleted => false }, { city => , password => uid48, name => uid48, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:26.25379-05, language =>   , id => 48, money => 0, deleted => false }, { city => , password => uid52, name => uid52, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.647348-05, language =>   , id => 52, money => 0, deleted => false }, { city => , password => uid55, name => uid55, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:28.623469-05, language =>   , id => 55, money => 0, deleted => false }, { city => , password => uid54, name => uid54, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:28.304227-05, language =>   , id => 54, money => 0, deleted => false }, { city => , password => uid53, name => uid53, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:27:27.97266-05, language =>   , id => 53, money => 0, deleted => false }, { city => , password => uid56, name => uid56, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:05.794976-05, language =>   , id => 56, money => 0, deleted => false }, { city => , password => uid59, name => uid59, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.815017-05, language =>   , id => 59, money => 0, deleted => false }, { city => , password => uid58, name => uid58, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.478534-05, language =>   , id => 58, money => 0, deleted => false }, { city => , password => uid57, name => uid57, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:06.128981-05, language =>   , id => 57, money => 0, deleted => false }, { city => , password => uid61, name => uid61, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 14:16:55.785184-05, language =>   , id => 61, money => 0, deleted => false }, { city => , password => uid62, name => uid62, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 14:22:19.123091-05, language =>   , id => 62, money => 0, deleted => false }, { city => , password => qweqwe, name => Aimer, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486759954,"lastLoginDate":41,"money":100,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 15:52:33.973174-05, language => en, id => 65, money => 0, deleted => false }, { city => , password => uid63, name => uid63, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486755420,"lastLoginDate":41,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 14:36:33.648136-05, language => en, id => 63, money => 0, deleted => false }, { city => , password => uid66, name => uid66, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486818078,"lastLoginDate":42,"lastLoadDate":212},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-11 08:01:18.431347-05, language => en, id => 66, money => 0, deleted => false }, { city => , password => uid71, name => uid71, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486916893,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 11:28:13.257436-05, language => en, id => 71, money => 0, deleted => false }, { city => , password => uid75, name => uid75, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486929011,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:11.504677-05, language => en, id => 75, money => 0, deleted => false }, { city => , password => uid67, name => uid67, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486819206,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-11 08:20:06.728754-05, language => en, id => 67, money => 0, deleted => false }, { city => , password => uid64, name => uid64, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486755621,"lastLoginDate":41,"lastLoadDate":211},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 14:40:21.41515-05, language => en, id => 64, money => 0, deleted => false }, { city => , password => uid72, name => uid72, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487320163,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:48:12.760178-05, language => en, id => 72, money => 0, deleted => false }, { city => , password => uid68, name => uid68, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486905439,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 08:17:19.33505-05, language => en, id => 68, money => 0, deleted => false }, { city => , password => uid69, name => uid69, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487320302,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 08:40:31.139347-05, language => en, id => 69, money => 0, deleted => false }, { city => , password => uid73, name => uid73, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486928941,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:49:00.579486-05, language => en, id => 73, money => 0, deleted => false }, { city => , password => uid70, name => uid70, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486913928,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 10:38:44.702712-05, language => en, id => 70, money => 0, deleted => false }, { city => , password => uid74, name => uid74, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486929002,"lastLoginDate":43,"lastLoadDate":213},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:02.441222-05, language => en, id => 74, money => 0, deleted => false }, { city => , password => uid77, name => uid77, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486972789,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 02:59:48.722404-05, language => en, id => 77, money => 0, deleted => false }, { city => , password => uid81, name => uid81, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975164,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:24.252721-05, language => en, id => 81, money => 0, deleted => false }, { city => , password => uid82, name => uid82, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975165,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:25.566784-05, language => en, id => 82, money => 0, deleted => false }, { city => , password => uid78, name => uid78, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975159,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:19.505058-05, language => en, id => 78, money => 0, deleted => false }, { city => , password => uid79, name => uid79, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975161,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:21.867915-05, language => en, id => 79, money => 0, deleted => false }, { city => , password => uid85, name => uid85, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486995431,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 09:17:08.343899-05, language => en, id => 85, money => 0, deleted => false }, { city => , password => uid80, name => uid80, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486975163,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:39:23.2322-05, language => en, id => 80, money => 0, deleted => false }, { city => , password => uid83, name => uid83, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486976083,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 03:54:42.680187-05, language => en, id => 83, money => 0, deleted => false }, { city => , password => uid84, name => uid84, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1486976653,"lastLoginDate":44,"lastLoadDate":214},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-13 04:04:12.501372-05, language => en, id => 84, money => 0, deleted => false }, { city => , password => uid90, name => uid90, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321286,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:05.98115-05, language => en, id => 90, money => 0, deleted => false }, { city => , password => uid87, name => uid87, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487073150,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 06:52:29.899108-05, language => en, id => 87, money => 0, deleted => false }, { city => , password => uid86, name => uid86, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487064718,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 04:31:56.112808-05, language => en, id => 86, money => 0, deleted => false }, { city => , password => uid91, name => uid91, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321287,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:07.057509-05, language => en, id => 91, money => 0, deleted => false }, { city => , password => , name => --- DEFAULT ATTRIBUTES ---, year => , networkid => , params => {"inventory":{"list":[]},"attrs":{},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-10 05:32:53.904032-05, language =>   , id => 1, money => 0, deleted => false }, { city => , password => uid93, name => uid93, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321426,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:50:25.683083-05, language => en, id => 93, money => 0, deleted => false }, { city => , password => uid92, name => uid92, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487321330,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 03:48:49.450121-05, language => en, id => 92, money => 0, deleted => false }, { city => , password => uid94, name => uid94, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487324022,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 04:33:42.918653-05, language => en, id => 94, money => 0, deleted => false }, { city => , password => uid60, name => uid60, year => , networkid => , params => {"info":{"city":"","year":null,"email":null},"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487247134,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => mail, isbanned => false, regdate => 2017-02-10 11:28:07.153333-05, language => en, id => 60, money => 0, deleted => false }, { city => , password => 77779999, name => vvp75, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"params":{"friendPrepare":[76,76]},"attrs":{"_lastTime.24hr":1487098937,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-14 14:02:17.317416-05, language => en, id => 88, money => 0, deleted => false }, { city => , password => 77779999, name => ga.forest, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487071866,"lastLoginDate":45,"lastLoadDate":215},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-12 14:50:59.369023-05, language => en, id => 76, money => 0, deleted => false }, { city => , password => uid89, name => uid89, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487268382,"lastLoginDate":47,"lastLoadDate":217},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-15 03:47:42.00038-05, language => en, id => 89, money => 0, deleted => false }, { city => , password => uid95, name => uid95, year => , networkid => , params => {"inventory":{"list":[]},"vars":{},"attrs":{"_lastTime.24hr":1487327178,"lastLoginDate":48,"lastLoadDate":218},"effects":{"list":[]}}, networktype =>   , email => , isbanned => false, regdate => 2017-02-17 05:26:17.812853-05, language => en, id => 95, money => 0, deleted => false }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 DB: SELECT ID FROM Users WHERE Name = E'uid96'
+17.02 05:26:26 == NET: null ret: user.auth { type => user.auth, token => dWlkOTY= }
+17.02 05:26:26 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'uid96', _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 DB: SELECT nextval('Users_id_seq') AS id
+17.02 05:26:26 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {{ id => 96 }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 ->>-: core/user.register { password => uid96, name => uid96, fullParams => { password => uid96, name => uid96, networkid => , networktype => , messageType => user.register, id => 96 }, networkid => , connectionID => 59157644, networktype => , email => , id => 96, _type => core/user.register }
+17.02 05:26:26 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+17.02 05:26:26 -<<-: core/user.registerResponse { password => uid96, name => uid96, _isNotify => true, fullParams => { password => uid96, name => uid96, networkid => , networktype => , messageType => user.register, id => 96 }, networkid => , connectionID => 59157644, networktype => , email => , id => 96, _type => core/user.registerResponse }
+17.02 05:26:26 == NET: null ret: user.register { type => user.register, errorCode => ok }
+17.02 05:26:26 ++ NET: null req: user.login { messageType => user.login, token => dWlkOTY= }
+17.02 05:26:26 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid96' AND Password = E'uid96'
+17.02 05:26:26 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'uid96' AND Password = E'uid96', _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {{ name => uid96, networkid => , isbanned => false, id => 96 }}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 ->>-: core/user.isOnlineID { id => 96, _type => core/user.isOnlineID }
+17.02 05:26:26 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:26:26 ->>-: core/cache.get { type => user, v => -1, id => 96, _type => core/cache.get }
+17.02 05:26:26 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => uid96, money => 0, deleted => false, year => , email => , networktype =>   , password => uid96, isbanned => false, regdate => 2017-02-17 05:26:26.523296-05, city => , language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 1, id => 96 } }
+17.02 05:26:26 ->>-: core/cache.get { type => questdata, v => -1, id => 96, _type => core/cache.get }
+17.02 05:26:26 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 96 } }
+17.02 05:26:26 NET: Client login (conid:59157644, id:96, name:uid96)
+17.02 05:26:26 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 96, _type => core/user.loginPost, ipAddr => 188.162.39.30 }
+17.02 05:26:26 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:26:26 DB: SELECT ID FROM TempUserLogins WHERE UserID = 96 AND Date = 'today'::timestamp
+17.02 05:26:26 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 96 AND Date = 'today'::timestamp, _type => core/server.query }
+17.02 05:26:26 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:26:26 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (96, 'today'::timestamp)
+17.02 05:26:26 ++ NET: uid96 req: user.login { messageType => user.login, token => dWlkOTY= }
+17.02 05:26:26 TRACE: User already logon.
+17.02 05:26:26 TRACE: 
+Called from snipe/slave/Server.hx line 870
+Called from snipe/slave/Server.hx line 1124
+17.02 05:26:26 == NET: uid96 ret: user.login { name => uid96, type => user.login, errorCode => ok, id => 96 }
+17.02 05:26:26 == NET: uid96 ret: user.join { name => uid96, type => user.join }
+17.02 05:26:26 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1487327186, lastLoginDate => 48, lastLoadDate => 218 } }}, type => user, unlock => true, id => 96, _type => core/cache.update, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (96, 'today'::timestamp), _type => core/server.pending }} }
+17.02 05:26:26 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+17.02 05:26:26 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 96, _type => core/cache.update }
+17.02 05:26:26 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:26:26 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 96, _type => core/user.logoutPost }
+17.02 05:26:26 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:26:26 TRACE: Could not login.
+17.02 05:26:26 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+17.02 05:26:40 STATS: vdl.0 cache, locks:2
+17.02 05:26:46 ++ NET: uid96 req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:26:46 TIME: user.ping 0.12 ms
+17.02 05:26:46 == NET: uid96 ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:26:48 TIMER: Check auto-disconnect...
+17.02 05:27:15 NET: Client (name:uid96 conid:59157644 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:27:15 DB: SELECT id FROM battle WHERE firstid=96 OR secondid=96 AND finished <> true
+17.02 05:27:15 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=96 OR secondid=96 AND finished <> true, _type => core/server.query }
+17.02 05:27:15 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:27:15 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:27:15 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:27:15 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:27:15 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:27:15 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 96, _type => core/cache.update }
+17.02 05:27:15 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:27:15 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 96, _type => core/cache.update }
+17.02 05:27:15 -<<-: core/cache.update { errorCode => mustBeLocked, version => 0, _type => core/cache.update }
+17.02 05:27:15 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 96, _type => core/user.logoutPost }
+17.02 05:27:15 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:27:16 NET: Client (conid:10303945) connected to vdl.0 (clients:1)
+17.02 05:27:16 ++ NET: null req: user.register { city => Dhdh, password => qwerty, name => aimer, year => 1208, email => sjdjhd, messageType => user.register }
+17.02 05:27:16 DB: SELECT ID FROM Users WHERE Name = E'aimer'
+17.02 05:27:16 ->>-: core/server.query { q => SELECT ID FROM Users WHERE Name = E'aimer', _type => core/server.query }
+17.02 05:27:16 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:27:16 DB: SELECT nextval('Users_id_seq') AS id
+17.02 05:27:16 ->>-: core/server.query { q => SELECT nextval('Users_id_seq') AS id, _type => core/server.query }
+17.02 05:27:16 -<<-: core/server.query { list => {{ id => 97 }}, errorCode => ok, _type => core/server.query }
+17.02 05:27:16 ->>-: core/user.register { password => qwerty, name => aimer, fullParams => { city => Dhdh, password => qwerty, name => aimer, year => 1208, networkid => , networktype => , email => sjdjhd, messageType => user.register, id => 97 }, networkid => , connectionID => 10303945, networktype => , email => , id => 97, _type => core/user.register }
+17.02 05:27:16 -<<-: core/user.register { errorCode => ok, _type => core/user.register }
+17.02 05:27:16 -<<-: core/user.registerResponse { password => qwerty, name => aimer, _isNotify => true, fullParams => { city => Dhdh, password => qwerty, name => aimer, year => 1208, networkid => , networktype => , email => sjdjhd, messageType => user.register, id => 97 }, networkid => , connectionID => 10303945, networktype => , email => , id => 97, _type => core/user.registerResponse }
+17.02 05:27:16 == NET: null ret: user.register { type => user.register, errorCode => ok }
+17.02 05:27:16 ++ NET: null req: user.login { password => qwerty, name => aimer, messageType => user.login }
+17.02 05:27:16 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'aimer' AND Password = E'qwerty'
+17.02 05:27:16 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'aimer' AND Password = E'qwerty', _type => core/server.query }
+17.02 05:27:16 -<<-: core/server.query { list => {{ name => aimer, networkid => , isbanned => false, id => 97 }}, errorCode => ok, _type => core/server.query }
+17.02 05:27:16 ->>-: core/user.isOnlineID { id => 97, _type => core/user.isOnlineID }
+17.02 05:27:16 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+17.02 05:27:16 ->>-: core/cache.get { type => user, v => -1, id => 97, _type => core/cache.get }
+17.02 05:27:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => aimer, money => 0, deleted => false, year => , email => , networktype =>   , password => qwerty, isbanned => false, regdate => 2017-02-17 05:27:16.119291-05, city => , language =>   , networkid => , params => { inventory => { list => [] }, vars => {}, attrs => {}, effects => { list => [] } }}, version => 1, id => 97 } }
+17.02 05:27:16 ->>-: core/cache.get { type => questdata, v => -1, id => 97, _type => core/cache.get }
+17.02 05:27:16 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => {}}, version => 0, id => 97 } }
+17.02 05:27:16 NET: Client login (conid:10303945, id:97, name:aimer)
+17.02 05:27:16 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 97, _type => core/user.loginPost, ipAddr => 188.162.39.30 }
+17.02 05:27:16 -<<-: core/user.loginPost { _type => core/user.loginPost }
+17.02 05:27:16 DB: SELECT ID FROM TempUserLogins WHERE UserID = 97 AND Date = 'today'::timestamp
+17.02 05:27:16 ->>-: core/server.query { q => SELECT ID FROM TempUserLogins WHERE UserID = 97 AND Date = 'today'::timestamp, _type => core/server.query }
+17.02 05:27:16 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:27:16 PENDING: INSERT INTO TempUserLogins (UserID, Date) VALUES (97, 'today'::timestamp)
+17.02 05:27:16 == NET: aimer ret: user.login { name => aimer, type => user.login, errorCode => ok, id => 97 }
+17.02 05:27:16 == NET: aimer ret: user.join { name => aimer, type => user.join }
+17.02 05:27:16 ->>-: core/server.ping { _type => core/server.ping, _notify => {{ q => INSERT INTO TempUserLogins (UserID, Date) VALUES (97, 'today'::timestamp), _type => core/server.pending }} }
+17.02 05:27:16 -<<-: core/server.ping { errorCode => ok, _type => core/server.ping }
+17.02 05:27:16 ++ NET: aimer req: user.data { messageType => user.data }
+17.02 05:27:16 ->>-: vdl/cache.user.getData { userId => 97, _type => vdl/cache.user.getData, money => 0 }
+17.02 05:27:16 -<<-: vdl/cache.user.getData { info => { city => Dhdh, year => 1208, email => sjdjhd }, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+17.02 05:27:16 TIME: user.data 0.92 ms
+17.02 05:27:16 == NET: aimer ret: user.data { info => { city => Dhdh, year => 1208, email => sjdjhd }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+17.02 05:27:25 ->>-: core/cache.update { diff => {language => en, params => { attrs => { _lastTime.24hr => 1487327236, lastLoginDate => 48, lastLoadDate => 218 } }}, type => user, unlock => false, id => 97, _type => core/cache.update }
+17.02 05:27:25 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+17.02 05:27:25 STATS: vdl.0 cache connection, 2685 calls, total 1.7978823184967 sec spent, avg 0.67 ms
+17.02 05:27:40 STATS: vdl.0 cache, locks:4
+17.02 05:27:48 ++ NET: aimer req: user.ping { messageType => user.ping, msg => ok }
+17.02 05:27:48 TIME: user.ping 0.18 ms
+17.02 05:27:48 == NET: aimer ret: user.ping { type => user.ping, errorCode => ok }
+17.02 05:27:48 TIMER: Check auto-disconnect...
+17.02 05:28:24 ++ NET: aimer req: user.getFriendList { messageType => user.getFriendList }
+17.02 05:28:24 ->>-: vdl/cache.user.getFriendList { _type => vdl/cache.user.getFriendList, player => 97 }
+17.02 05:28:24 -<<-: vdl/cache.user.getFriendList { list => [], errorCode => ok, _type => vdl/cache.user.getFriendList }
+17.02 05:28:24 TIME: user.getFriendList 0.38 ms
+17.02 05:28:24 == NET: aimer ret: user.getFriendList { list => [], type => user.getFriendList, errorCode => ok, _type => vdl/cache.user.getFriendList }
+17.02 05:28:28 ++ NET: aimer req: user.searchEnemy { name => u, messageType => user.searchEnemy }
+17.02 05:28:28 ->>-: vdl/cache.user.searchEnemy { name => u, id => 97, _type => vdl/cache.user.searchEnemy }
+17.02 05:28:28 -<<-: vdl/cache.user.searchEnemy { errorCode => ok, _type => vdl/cache.user.searchEnemy, users => [{ name => uid4, isOnline => false, id => 4 },{ name => uid3, isOnline => false, id => 3 },{ name => uid2, isOnline => false, id => 2 },{ name => uid7, isOnline => false, id => 7 },{ name => uid6, isOnline => false, id => 6 },{ name => uid5, isOnline => false, id => 5 },{ name => uid10, isOnline => false, id => 10 },{ name => uid9, isOnline => false, id => 9 },{ name => uid8, isOnline => false, id => 8 },{ name => uid13, isOnline => false, id => 13 },{ name => uid12, isOnline => false, id => 12 },{ name => uid11, isOnline => false, id => 11 },{ name => uid16, isOnline => false, id => 16 },{ name => uid15, isOnline => false, id => 15 },{ name => uid14, isOnline => false, id => 14 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid17, isOnline => false, id => 17 },{ name => uid22, isOnline => false, id => 22 },{ name => uid21, isOnline => false, id => 21 },{ name => uid20, isOnline => false, id => 20 },{ name => uid25, isOnline => false, id => 25 },{ name => uid24, isOnline => false, id => 24 },{ name => uid23, isOnline => false, id => 23 },{ name => uid27, isOnline => false, id => 27 },{ name => uid26, isOnline => false, id => 26 },{ name => uid28, isOnline => false, id => 28 },{ name => uid31, isOnline => false, id => 31 },{ name => uid30, isOnline => false, id => 30 },{ name => uid29, isOnline => false, id => 29 },{ name => uid34, isOnline => false, id => 34 },{ name => uid33, isOnline => false, id => 33 },{ name => uid32, isOnline => false, id => 32 },{ name => uid37, isOnline => false, id => 37 },{ name => uid35, isOnline => false, id => 35 },{ name => uid39, isOnline => false, id => 39 },{ name => uid43, isOnline => false, id => 43 },{ name => uid46, isOnline => false, id => 46 },{ name => uid50, isOnline => false, id => 50 },{ name => uid47, isOnline => false, id => 47 },{ name => uid51, isOnline => false, id => 51 },{ name => uid36, isOnline => false, id => 36 },{ name => uid40, isOnline => false, id => 40 },{ name => uid38, isOnline => false, id => 38 },{ name => uid41, isOnline => false, id => 41 },{ name => uid42, isOnline => false, id => 42 },{ name => uid45, isOnline => false, id => 45 },{ name => uid44, isOnline => false, id => 44 },{ name => uid49, isOnline => false, id => 49 },{ name => uid48, isOnline => false, id => 48 }] }
+17.02 05:28:28 STATS: vdl.0 cache connection, 2687 calls, total 1.81661438941956 sec spent, avg 0.68 ms
+17.02 05:28:28 TIME: user.searchEnemy 18.53 ms
+17.02 05:28:28 == NET: aimer ret: user.searchEnemy { list => [{ name => uid4, isOnline => false, id => 4 },{ name => uid3, isOnline => false, id => 3 },{ name => uid2, isOnline => false, id => 2 },{ name => uid7, isOnline => false, id => 7 },{ name => uid6, isOnline => false, id => 6 },{ name => uid5, isOnline => false, id => 5 },{ name => uid10, isOnline => false, id => 10 },{ name => uid9, isOnline => false, id => 9 },{ name => uid8, isOnline => false, id => 8 },{ name => uid13, isOnline => false, id => 13 },{ name => uid12, isOnline => false, id => 12 },{ name => uid11, isOnline => false, id => 11 },{ name => uid16, isOnline => false, id => 16 },{ name => uid15, isOnline => false, id => 15 },{ name => uid14, isOnline => false, id => 14 },{ name => uid19, isOnline => false, id => 19 },{ name => uid18, isOnline => false, id => 18 },{ name => uid17, isOnline => false, id => 17 },{ name => uid22, isOnline => false, id => 22 },{ name => uid21, isOnline => false, id => 21 },{ name => uid20, isOnline => false, id => 20 },{ name => uid25, isOnline => false, id => 25 },{ name => uid24, isOnline => false, id => 24 },{ name => uid23, isOnline => false, id => 23 },{ name => uid27, isOnline => false, id => 27 },{ name => uid26, isOnline => false, id => 26 },{ name => uid28, isOnline => false, id => 28 },{ name => uid31, isOnline => false, id => 31 },{ name => uid30, isOnline => false, id => 30 },{ name => uid29, isOnline => false, id => 29 },{ name => uid34, isOnline => false, id => 34 },{ name => uid33, isOnline => false, id => 33 },{ name => uid32, isOnline => false, id => 32 },{ name => uid37, isOnline => false, id => 37 },{ name => uid35, isOnline => false, id => 35 },{ name => uid39, isOnline => false, id => 39 },{ name => uid43, isOnline => false, id => 43 },{ name => uid46, isOnline => false, id => 46 },{ name => uid50, isOnline => false, id => 50 },{ name => uid47, isOnline => false, id => 47 },{ name => uid51, isOnline => false, id => 51 },{ name => uid36, isOnline => false, id => 36 },{ name => uid40, isOnline => false, id => 40 },{ name => uid38, isOnline => false, id => 38 },{ name => uid41, isOnline => false, id => 41 },{ name => uid42, isOnline => false, id => 42 },{ name => uid45, isOnline => false, id => 45 },{ name => uid44, isOnline => false, id => 44 },{ name => uid49, isOnline => false, id => 49 },{ name => uid48, isOnline => false, id => 48 }], type => user.searchEnemy, errorCode => ok }
+17.02 05:28:40 STATS: vdl.0 cache, locks:4
+17.02 05:28:41 NET: Client (name:aimer conid:10303945 TCP) disconnected from vdl.0 (clients:0)
+17.02 05:28:41 DB: SELECT id FROM battle WHERE firstid=97 OR secondid=97 AND finished <> true
+17.02 05:28:41 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=97 OR secondid=97 AND finished <> true, _type => core/server.query }
+17.02 05:28:41 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+17.02 05:28:41 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:28:41 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+17.02 05:28:41 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+17.02 05:28:41 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+17.02 05:28:41 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 97, _type => core/cache.update }
+17.02 05:28:41 -<<-: core/cache.update { errorCode => ok, version => 3, _type => core/cache.update }
+17.02 05:28:41 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 97, _type => core/cache.update }
+17.02 05:28:41 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+17.02 05:28:41 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 97, _type => core/user.logoutPost }
+17.02 05:28:41 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+17.02 05:28:48 TIMER: Check auto-disconnect...
+17.02 05:29:40 STATS: vdl.0 cache, locks:2
+17.02 05:29:48 TIMER: Check auto-disconnect...
+17.02 05:30:40 STATS: vdl.0 cache, locks:2
+17.02 05:30:48 TIMER: Check auto-disconnect...
+17.02 05:31:40 STATS: vdl.0 cache, locks:2
+17.02 05:31:48 TIMER: Check auto-disconnect...
+17.02 05:32:40 STATS: vdl.0 cache, locks:2
+17.02 05:32:48 TIMER: Check auto-disconnect...
+17.02 05:33:40 STATS: vdl.0 cache, locks:2
+17.02 05:33:48 TIMER: Check auto-disconnect...
+17.02 05:34:40 STATS: vdl.0 cache, locks:2
+17.02 05:34:48 TIMER: Check auto-disconnect...
+17.02 05:35:40 STATS: vdl.0 cache, locks:2
+17.02 05:35:48 TIMER: Check auto-disconnect...
+17.02 05:36:40 STATS: vdl.0 cache, locks:2
+17.02 05:36:48 TIMER: Check auto-disconnect...
+17.02 05:37:40 STATS: vdl.0 cache, locks:2
+17.02 05:37:48 TIMER: Check auto-disconnect...
+17.02 05:38:40 STATS: vdl.0 cache, locks:2
+17.02 05:38:48 TIMER: Check auto-disconnect...
+17.02 05:39:40 STATS: vdl.0 cache, locks:2
+17.02 05:39:48 TIMER: Check auto-disconnect...
+17.02 05:40:40 STATS: vdl.0 cache, locks:2
+17.02 05:40:48 TIMER: Check auto-disconnect...
+17.02 05:41:40 STATS: vdl.0 cache, locks:2
+17.02 05:41:48 TIMER: Check auto-disconnect...
+17.02 05:42:40 STATS: vdl.0 cache, locks:2
+17.02 05:42:48 TIMER: Check auto-disconnect...
+17.02 05:43:40 STATS: vdl.0 cache, locks:2
+17.02 05:43:48 TIMER: Check auto-disconnect...
+17.02 05:44:40 STATS: vdl.0 cache, locks:2
+17.02 05:44:48 TIMER: Check auto-disconnect...
+17.02 05:45:40 STATS: vdl.0 cache, locks:2
+17.02 05:45:48 TIMER: Check auto-disconnect...
+17.02 05:46:40 STATS: vdl.0 cache, locks:2
+17.02 05:46:48 TIMER: Check auto-disconnect...
+17.02 05:47:40 STATS: vdl.0 cache, locks:2
+17.02 05:47:48 TIMER: Check auto-disconnect...
+17.02 05:48:40 STATS: vdl.0 cache, locks:2
+17.02 05:48:48 TIMER: Check auto-disconnect...
+17.02 05:49:40 STATS: vdl.0 cache, locks:2
+17.02 05:49:48 TIMER: Check auto-disconnect...
+17.02 05:50:40 STATS: vdl.0 cache, locks:2
+17.02 05:50:48 TIMER: Check auto-disconnect...
+17.02 05:51:40 STATS: vdl.0 cache, locks:2
+17.02 05:51:48 TIMER: Check auto-disconnect...
+17.02 05:52:40 STATS: vdl.0 cache, locks:2
+17.02 05:52:48 TIMER: Check auto-disconnect...
+17.02 05:53:40 STATS: vdl.0 cache, locks:2
+17.02 05:53:48 TIMER: Check auto-disconnect...
+17.02 05:54:40 STATS: vdl.0 cache, locks:2
+17.02 05:54:48 TIMER: Check auto-disconnect...
+17.02 05:55:40 STATS: vdl.0 cache, locks:2
+17.02 05:55:48 TIMER: Check auto-disconnect...
+17.02 05:56:40 STATS: vdl.0 cache, locks:2
+17.02 05:56:48 TIMER: Check auto-disconnect...
+17.02 05:57:40 STATS: vdl.0 cache, locks:2
+17.02 05:57:48 TIMER: Check auto-disconnect...
+17.02 05:58:40 STATS: vdl.0 cache, locks:2
+17.02 05:58:48 TIMER: Check auto-disconnect...
+17.02 05:59:40 STATS: vdl.0 cache, locks:2
+17.02 05:59:48 TIMER: Check auto-disconnect...

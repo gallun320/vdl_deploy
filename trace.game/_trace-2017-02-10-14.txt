@@ -1,0 +1,35 @@
+10.02 14:16:55 TRACE: Invalid field access : token
+10.02 14:16:55 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 344
+Called from a C function
+Called from snipe/slave/Server.hx line 688
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+10.02 14:22:19 TRACE: Invalid field access : token
+10.02 14:22:19 TRACE: 
+Called from snipe/slave/modules/UserModuleCore.hx line 344
+Called from a C function
+Called from snipe/slave/Server.hx line 688
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+10.02 14:38:58 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.02 14:38:58 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+10.02 14:40:21 TRACE: User already logon.
+10.02 14:40:21 TRACE: 
+Called from snipe/slave/Server.hx line 870
+Called from snipe/slave/Server.hx line 1124
+10.02 14:40:21 TRACE: Could not login.
+10.02 14:40:21 TRACE: 
+Called from snipe/slave/Server.hx line 1151
+Called from snipe/slave/MetaServer.hx line 530
+Called from snipe/slave/ThreadServerModified.hx line 202
+10.02 14:48:55 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+10.02 14:48:55 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994

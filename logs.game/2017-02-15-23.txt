@@ -1,0 +1,678 @@
+15.02 23:00:13 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:00:13 TIME: user.ping 0.1 ms
+15.02 23:00:13 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:00:18 STATS: vdl.0 cache, locks:4
+15.02 23:00:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:00:32 TIME: user.ping 0.1 ms
+15.02 23:00:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:00:48 TIMER: Check auto-disconnect...
+15.02 23:00:51 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:00:51 TIME: user.ping 0.11 ms
+15.02 23:00:51 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:01:11 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:01:11 TIME: user.ping 0.12 ms
+15.02 23:01:11 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:01:18 STATS: vdl.0 cache, locks:4
+15.02 23:01:30 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:01:30 TIME: user.ping 0.17 ms
+15.02 23:01:30 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:01:48 TIMER: Check auto-disconnect...
+15.02 23:01:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:01:49 TIME: user.ping 0.12 ms
+15.02 23:01:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:02:09 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:02:09 TIME: user.ping 0.12 ms
+15.02 23:02:09 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:02:18 STATS: vdl.0 cache, locks:4
+15.02 23:02:28 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:02:28 TIME: user.ping 0.07 ms
+15.02 23:02:28 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:02:47 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:02:47 TIME: user.ping 0.12 ms
+15.02 23:02:47 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:02:48 TIMER: Check auto-disconnect...
+15.02 23:03:07 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:03:07 TIME: user.ping 0.12 ms
+15.02 23:03:07 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:03:18 STATS: vdl.0 cache, locks:4
+15.02 23:03:26 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:03:26 TIME: user.ping 0.16 ms
+15.02 23:03:26 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:03:45 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:03:45 TIME: user.ping 0.12 ms
+15.02 23:03:45 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:03:48 TIMER: Check auto-disconnect...
+15.02 23:04:05 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:04:05 TIME: user.ping 0.16 ms
+15.02 23:04:05 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:04:18 STATS: vdl.0 cache, locks:4
+15.02 23:04:24 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:04:24 TIME: user.ping 0.12 ms
+15.02 23:04:24 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:04:43 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:04:43 TIME: user.ping 0.17 ms
+15.02 23:04:43 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:04:48 TIMER: Check auto-disconnect...
+15.02 23:05:03 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:05:03 TIME: user.ping 0.11 ms
+15.02 23:05:03 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:05:18 STATS: vdl.0 cache, locks:4
+15.02 23:05:22 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:05:22 TIME: user.ping 0.14 ms
+15.02 23:05:22 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:05:41 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:05:41 TIME: user.ping 0.13 ms
+15.02 23:05:41 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:05:48 TIMER: Check auto-disconnect...
+15.02 23:06:01 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:06:01 TIME: user.ping 0.1 ms
+15.02 23:06:01 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:06:18 STATS: vdl.0 cache, locks:4
+15.02 23:06:20 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:06:20 TIME: user.ping 0.13 ms
+15.02 23:06:20 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:06:39 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:06:39 TIME: user.ping 0.15 ms
+15.02 23:06:39 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:06:48 TIMER: Check auto-disconnect...
+15.02 23:06:58 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:06:58 TIME: user.ping 0.17 ms
+15.02 23:06:58 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:07:18 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:07:18 TIME: user.ping 0.15 ms
+15.02 23:07:18 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:07:18 STATS: vdl.0 cache, locks:4
+15.02 23:07:37 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:07:37 TIME: user.ping 0.11 ms
+15.02 23:07:37 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:07:48 TIMER: Check auto-disconnect...
+15.02 23:07:56 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:07:56 TIME: user.ping 0.16 ms
+15.02 23:07:56 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:08:16 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:08:16 TIME: user.ping 0.12 ms
+15.02 23:08:16 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:08:18 STATS: vdl.0 cache, locks:4
+15.02 23:08:35 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:08:35 TIME: user.ping 0.1 ms
+15.02 23:08:35 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:08:48 TIMER: Check auto-disconnect...
+15.02 23:08:54 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:08:54 TIME: user.ping 0.08 ms
+15.02 23:08:54 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:09:13 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:09:13 TIME: user.ping 0.13 ms
+15.02 23:09:13 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:09:18 STATS: vdl.0 cache, locks:4
+15.02 23:09:33 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:09:33 TIME: user.ping 0.1 ms
+15.02 23:09:33 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:09:48 TIMER: Check auto-disconnect...
+15.02 23:09:52 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:09:52 TIME: user.ping 0.15 ms
+15.02 23:09:52 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:10:11 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:10:11 TIME: user.ping 0.07 ms
+15.02 23:10:11 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:10:18 STATS: vdl.0 cache, locks:4
+15.02 23:10:31 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:10:31 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:10:31 TIME: user.ping 0.13 ms
+15.02 23:10:48 TIMER: Check auto-disconnect...
+15.02 23:10:50 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:10:50 TIME: user.ping 0.17 ms
+15.02 23:10:50 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:11:09 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:11:09 TIME: user.ping 0.07 ms
+15.02 23:11:09 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:11:18 STATS: vdl.0 cache, locks:4
+15.02 23:11:28 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:11:28 TIME: user.ping 0.13 ms
+15.02 23:11:28 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:11:48 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:11:48 TIME: user.ping 0.14 ms
+15.02 23:11:48 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:11:48 TIMER: Check auto-disconnect...
+15.02 23:12:07 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:12:07 TIME: user.ping 0.08 ms
+15.02 23:12:07 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:12:18 STATS: vdl.0 cache, locks:4
+15.02 23:12:26 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:12:26 TIME: user.ping 0.14 ms
+15.02 23:12:26 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:12:45 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:12:45 TIME: user.ping 0.13 ms
+15.02 23:12:45 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:12:48 TIMER: Check auto-disconnect...
+15.02 23:13:05 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:13:05 TIME: user.ping 0.13 ms
+15.02 23:13:05 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:13:18 STATS: vdl.0 cache, locks:4
+15.02 23:13:24 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:13:24 TIME: user.ping 0.12 ms
+15.02 23:13:24 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:13:43 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:13:43 TIME: user.ping 0.13 ms
+15.02 23:13:43 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:13:48 TIMER: Check auto-disconnect...
+15.02 23:14:03 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:14:03 TIME: user.ping 0.08 ms
+15.02 23:14:03 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:14:18 STATS: vdl.0 cache, locks:4
+15.02 23:14:22 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:14:22 TIME: user.ping 0.14 ms
+15.02 23:14:22 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:14:41 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:14:41 TIME: user.ping 0.13 ms
+15.02 23:14:41 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:14:48 TIMER: Check auto-disconnect...
+15.02 23:15:01 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:15:01 TIME: user.ping 0.16 ms
+15.02 23:15:01 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:15:18 STATS: vdl.0 cache, locks:4
+15.02 23:15:20 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:15:20 TIME: user.ping 0.12 ms
+15.02 23:15:20 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:15:39 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:15:39 TIME: user.ping 0.12 ms
+15.02 23:15:39 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:15:48 TIMER: Check auto-disconnect...
+15.02 23:15:59 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:15:59 TIME: user.ping 0.17 ms
+15.02 23:15:59 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:16:18 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:16:18 TIME: user.ping 0.12 ms
+15.02 23:16:18 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:16:18 STATS: vdl.0 cache, locks:4
+15.02 23:16:37 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:16:37 TIME: user.ping 0.23 ms
+15.02 23:16:37 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:16:48 TIMER: Check auto-disconnect...
+15.02 23:16:56 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:16:56 TIME: user.ping 0.07 ms
+15.02 23:16:56 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:17:16 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:17:16 TIME: user.ping 0.17 ms
+15.02 23:17:16 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:17:18 STATS: vdl.0 cache, locks:4
+15.02 23:17:35 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:17:35 TIME: user.ping 0.13 ms
+15.02 23:17:35 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:17:48 TIMER: Check auto-disconnect...
+15.02 23:17:54 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:17:54 TIME: user.ping 0.13 ms
+15.02 23:17:54 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:18:14 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:18:14 TIME: user.ping 0.12 ms
+15.02 23:18:14 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:18:18 STATS: vdl.0 cache, locks:4
+15.02 23:18:33 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:18:33 TIME: user.ping 0.12 ms
+15.02 23:18:33 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:18:48 TIMER: Check auto-disconnect...
+15.02 23:18:52 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:18:52 TIME: user.ping 0.11 ms
+15.02 23:18:52 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:19:12 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:19:12 TIME: user.ping 0.08 ms
+15.02 23:19:12 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:19:18 STATS: vdl.0 cache, locks:4
+15.02 23:19:31 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:19:31 TIME: user.ping 0.13 ms
+15.02 23:19:31 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:19:48 TIMER: Check auto-disconnect...
+15.02 23:19:50 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:19:50 TIME: user.ping 0.13 ms
+15.02 23:19:50 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:20:10 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:20:10 TIME: user.ping 0.12 ms
+15.02 23:20:10 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:20:18 STATS: vdl.0 cache, locks:4
+15.02 23:20:29 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:20:29 TIME: user.ping 0.11 ms
+15.02 23:20:29 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:20:48 TIMER: Check auto-disconnect...
+15.02 23:20:48 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:20:48 TIME: user.ping 0.13 ms
+15.02 23:20:48 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:21:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:21:08 TIME: user.ping 0.11 ms
+15.02 23:21:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:21:18 STATS: vdl.0 cache, locks:4
+15.02 23:21:27 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:21:27 TIME: user.ping 0.13 ms
+15.02 23:21:27 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:21:46 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:21:46 TIME: user.ping 0.12 ms
+15.02 23:21:46 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:21:48 TIMER: Check auto-disconnect...
+15.02 23:22:05 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:22:05 TIME: user.ping 0.14 ms
+15.02 23:22:05 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:22:18 STATS: vdl.0 cache, locks:4
+15.02 23:22:25 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:22:25 TIME: user.ping 0.14 ms
+15.02 23:22:25 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:22:44 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:22:44 TIME: user.ping 0.18 ms
+15.02 23:22:44 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:22:48 TIMER: Check auto-disconnect...
+15.02 23:23:03 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:23:03 TIME: user.ping 0.11 ms
+15.02 23:23:03 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:23:18 STATS: vdl.0 cache, locks:4
+15.02 23:23:23 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:23:23 TIME: user.ping 0.16 ms
+15.02 23:23:23 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:23:42 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:23:42 TIME: user.ping 0.13 ms
+15.02 23:23:42 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:23:48 TIMER: Check auto-disconnect...
+15.02 23:24:01 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:24:01 TIME: user.ping 0.15 ms
+15.02 23:24:01 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:24:18 STATS: vdl.0 cache, locks:4
+15.02 23:24:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:24:21 TIME: user.ping 0.14 ms
+15.02 23:24:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:24:40 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:24:40 TIME: user.ping 0.13 ms
+15.02 23:24:40 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:24:48 TIMER: Check auto-disconnect...
+15.02 23:24:59 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:24:59 TIME: user.ping 0.15 ms
+15.02 23:24:59 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:25:18 STATS: vdl.0 cache, locks:4
+15.02 23:25:18 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:25:18 TIME: user.ping 0.17 ms
+15.02 23:25:18 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:25:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:25:38 TIME: user.ping 0.11 ms
+15.02 23:25:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:25:48 TIMER: Check auto-disconnect...
+15.02 23:25:57 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:25:57 TIME: user.ping 0.12 ms
+15.02 23:25:57 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:26:16 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:26:16 TIME: user.ping 3.23 ms
+15.02 23:26:16 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:26:18 STATS: vdl.0 cache, locks:4
+15.02 23:26:36 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:26:36 TIME: user.ping 0.12 ms
+15.02 23:26:36 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:26:48 TIMER: Check auto-disconnect...
+15.02 23:26:55 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:26:55 TIME: user.ping 0.16 ms
+15.02 23:26:55 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:27:14 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:27:14 TIME: user.ping 0.17 ms
+15.02 23:27:14 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:27:18 STATS: vdl.0 cache, locks:4
+15.02 23:27:34 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:27:34 TIME: user.ping 0.12 ms
+15.02 23:27:34 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:27:48 TIMER: Check auto-disconnect...
+15.02 23:27:53 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:27:53 TIME: user.ping 0.12 ms
+15.02 23:27:53 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:28:12 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:28:12 TIME: user.ping 0.11 ms
+15.02 23:28:12 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:28:18 STATS: vdl.0 cache, locks:4
+15.02 23:28:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:28:32 TIME: user.ping 0.1 ms
+15.02 23:28:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:28:48 TIMER: Check auto-disconnect...
+15.02 23:28:51 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:28:51 TIME: user.ping 0.14 ms
+15.02 23:28:51 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:29:10 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:29:10 TIME: user.ping 0.12 ms
+15.02 23:29:10 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:29:18 STATS: vdl.0 cache, locks:4
+15.02 23:29:29 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:29:29 TIME: user.ping 0.12 ms
+15.02 23:29:29 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:29:48 TIMER: Check auto-disconnect...
+15.02 23:29:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:29:49 TIME: user.ping 0.11 ms
+15.02 23:29:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:30:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:30:08 TIME: user.ping 0.13 ms
+15.02 23:30:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:30:18 STATS: vdl.0 cache, locks:4
+15.02 23:30:27 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:30:27 TIME: user.ping 0.1 ms
+15.02 23:30:27 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:30:47 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:30:47 TIME: user.ping 0.12 ms
+15.02 23:30:47 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:30:48 TIMER: Check auto-disconnect...
+15.02 23:31:06 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:31:06 TIME: user.ping 0.12 ms
+15.02 23:31:06 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:31:18 STATS: vdl.0 cache, locks:4
+15.02 23:31:25 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:31:25 TIME: user.ping 0.12 ms
+15.02 23:31:25 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:31:45 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:31:45 TIME: user.ping 0.2 ms
+15.02 23:31:45 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:31:48 TIMER: Check auto-disconnect...
+15.02 23:32:04 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:32:04 TIME: user.ping 0.17 ms
+15.02 23:32:04 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:32:18 STATS: vdl.0 cache, locks:4
+15.02 23:32:23 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:32:23 TIME: user.ping 0.13 ms
+15.02 23:32:23 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:32:43 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:32:43 TIME: user.ping 0.14 ms
+15.02 23:32:43 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:32:48 TIMER: Check auto-disconnect...
+15.02 23:33:02 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:33:02 TIME: user.ping 0.14 ms
+15.02 23:33:02 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:33:18 STATS: vdl.0 cache, locks:4
+15.02 23:33:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:33:21 TIME: user.ping 0.2 ms
+15.02 23:33:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:33:40 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:33:40 TIME: user.ping 0.16 ms
+15.02 23:33:40 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:33:48 TIMER: Check auto-disconnect...
+15.02 23:34:00 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:34:00 TIME: user.ping 0.18 ms
+15.02 23:34:00 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:34:18 STATS: vdl.0 cache, locks:4
+15.02 23:34:19 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:34:19 TIME: user.ping 0.12 ms
+15.02 23:34:19 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:34:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:34:38 TIME: user.ping 0.14 ms
+15.02 23:34:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:34:48 TIMER: Check auto-disconnect...
+15.02 23:34:58 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:34:58 TIME: user.ping 0.12 ms
+15.02 23:34:58 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:35:17 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:35:17 TIME: user.ping 0.11 ms
+15.02 23:35:17 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:35:18 STATS: vdl.0 cache, locks:4
+15.02 23:35:36 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:35:36 TIME: user.ping 0.13 ms
+15.02 23:35:36 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:35:48 TIMER: Check auto-disconnect...
+15.02 23:35:56 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:35:56 TIME: user.ping 0.12 ms
+15.02 23:35:56 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:36:15 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:36:15 TIME: user.ping 0.14 ms
+15.02 23:36:15 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:36:18 STATS: vdl.0 cache, locks:4
+15.02 23:36:34 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:36:34 TIME: user.ping 0.12 ms
+15.02 23:36:34 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:36:48 TIMER: Check auto-disconnect...
+15.02 23:36:53 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:36:53 TIME: user.ping 0.12 ms
+15.02 23:36:53 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:37:13 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:37:13 TIME: user.ping 0.12 ms
+15.02 23:37:13 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:37:18 STATS: vdl.0 cache, locks:4
+15.02 23:37:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:37:32 TIME: user.ping 0.12 ms
+15.02 23:37:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:37:48 TIMER: Check auto-disconnect...
+15.02 23:37:51 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:37:51 TIME: user.ping 0.12 ms
+15.02 23:37:51 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:38:10 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:38:10 TIME: user.ping 0.12 ms
+15.02 23:38:10 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:38:18 STATS: vdl.0 cache, locks:4
+15.02 23:38:30 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:38:30 TIME: user.ping 0.12 ms
+15.02 23:38:30 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:38:48 TIMER: Check auto-disconnect...
+15.02 23:38:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:38:49 TIME: user.ping 0.12 ms
+15.02 23:38:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:39:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:39:08 TIME: user.ping 0.07 ms
+15.02 23:39:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:39:18 STATS: vdl.0 cache, locks:4
+15.02 23:39:27 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:39:27 TIME: user.ping 0.12 ms
+15.02 23:39:27 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:39:47 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:39:47 TIME: user.ping 0.17 ms
+15.02 23:39:47 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:39:48 TIMER: Check auto-disconnect...
+15.02 23:40:06 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:40:06 TIME: user.ping 0.08 ms
+15.02 23:40:06 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:40:18 STATS: vdl.0 cache, locks:4
+15.02 23:40:25 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:40:25 TIME: user.ping 0.14 ms
+15.02 23:40:25 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:40:44 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:40:44 TIME: user.ping 0.13 ms
+15.02 23:40:44 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:40:48 TIMER: Check auto-disconnect...
+15.02 23:41:04 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:41:04 TIME: user.ping 0.19 ms
+15.02 23:41:04 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:41:18 STATS: vdl.0 cache, locks:4
+15.02 23:41:23 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:41:23 TIME: user.ping 0.12 ms
+15.02 23:41:23 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:41:42 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:41:42 TIME: user.ping 0.16 ms
+15.02 23:41:42 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:41:48 TIMER: Check auto-disconnect...
+15.02 23:42:02 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:42:02 TIME: user.ping 0.07 ms
+15.02 23:42:02 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:42:19 STATS: vdl.0 cache, locks:4
+15.02 23:42:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:42:21 TIME: user.ping 0.13 ms
+15.02 23:42:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:42:40 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:42:40 TIME: user.ping 0.12 ms
+15.02 23:42:40 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:42:48 TIMER: Check auto-disconnect...
+15.02 23:42:59 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:42:59 TIME: user.ping 0.12 ms
+15.02 23:42:59 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:43:19 STATS: vdl.0 cache, locks:4
+15.02 23:43:19 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:43:19 TIME: user.ping 0.17 ms
+15.02 23:43:19 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:43:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:43:38 TIME: user.ping 0.11 ms
+15.02 23:43:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:43:48 TIMER: Check auto-disconnect...
+15.02 23:43:57 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:43:57 TIME: user.ping 0.11 ms
+15.02 23:43:57 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:44:17 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:44:17 TIME: user.ping 0.13 ms
+15.02 23:44:17 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:44:19 STATS: vdl.0 cache, locks:4
+15.02 23:44:36 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:44:36 TIME: user.ping 0.12 ms
+15.02 23:44:36 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:44:48 TIMER: Check auto-disconnect...
+15.02 23:44:55 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:44:55 TIME: user.ping 0.12 ms
+15.02 23:44:55 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:45:15 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:45:15 TIME: user.ping 0.19 ms
+15.02 23:45:15 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:45:19 STATS: vdl.0 cache, locks:4
+15.02 23:45:34 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:45:34 TIME: user.ping 0.13 ms
+15.02 23:45:34 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:45:48 TIMER: Check auto-disconnect...
+15.02 23:45:53 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:45:53 TIME: user.ping 0.09 ms
+15.02 23:45:53 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:46:12 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:46:12 TIME: user.ping 0.14 ms
+15.02 23:46:12 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:46:19 STATS: vdl.0 cache, locks:4
+15.02 23:46:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:46:32 TIME: user.ping 0.12 ms
+15.02 23:46:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:46:48 TIMER: Check auto-disconnect...
+15.02 23:46:51 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:46:51 TIME: user.ping 0.08 ms
+15.02 23:46:51 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:47:10 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:47:10 TIME: user.ping 0.1 ms
+15.02 23:47:10 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:47:19 STATS: vdl.0 cache, locks:4
+15.02 23:47:29 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:47:29 TIME: user.ping 0.1 ms
+15.02 23:47:29 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:47:48 TIMER: Check auto-disconnect...
+15.02 23:47:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:47:49 TIME: user.ping 0.12 ms
+15.02 23:47:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:48:08 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:48:08 TIME: user.ping 0.1 ms
+15.02 23:48:08 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:48:19 STATS: vdl.0 cache, locks:4
+15.02 23:48:27 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:48:27 TIME: user.ping 0.14 ms
+15.02 23:48:27 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:48:47 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:48:47 TIME: user.ping 0.08 ms
+15.02 23:48:47 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:48:48 TIMER: Check auto-disconnect...
+15.02 23:49:06 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:49:06 TIME: user.ping 0.12 ms
+15.02 23:49:06 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:49:19 STATS: vdl.0 cache, locks:4
+15.02 23:49:25 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:49:25 TIME: user.ping 0.1 ms
+15.02 23:49:25 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:49:45 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:49:45 TIME: user.ping 0.11 ms
+15.02 23:49:45 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:49:48 TIMER: Check auto-disconnect...
+15.02 23:50:04 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:50:04 TIME: user.ping 0.13 ms
+15.02 23:50:04 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:50:19 STATS: vdl.0 cache, locks:4
+15.02 23:50:23 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:50:23 TIME: user.ping 0.12 ms
+15.02 23:50:23 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:50:42 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:50:42 TIME: user.ping 0.17 ms
+15.02 23:50:42 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:50:48 TIMER: Check auto-disconnect...
+15.02 23:51:02 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:51:02 TIME: user.ping 0.1 ms
+15.02 23:51:02 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:51:19 STATS: vdl.0 cache, locks:4
+15.02 23:51:21 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:51:21 TIME: user.ping 0.12 ms
+15.02 23:51:21 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:51:40 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:51:40 TIME: user.ping 0.12 ms
+15.02 23:51:40 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:51:48 TIMER: Check auto-disconnect...
+15.02 23:52:00 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:52:00 TIME: user.ping 0.12 ms
+15.02 23:52:00 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:52:19 STATS: vdl.0 cache, locks:4
+15.02 23:52:19 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:52:19 TIME: user.ping 0.11 ms
+15.02 23:52:19 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:52:38 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:52:38 TIME: user.ping 0.17 ms
+15.02 23:52:38 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:52:48 TIMER: Check auto-disconnect...
+15.02 23:52:58 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:52:58 TIME: user.ping 0.12 ms
+15.02 23:52:58 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:53:17 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:53:17 TIME: user.ping 0.12 ms
+15.02 23:53:17 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:53:19 STATS: vdl.0 cache, locks:4
+15.02 23:53:36 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:53:36 TIME: user.ping 0.1 ms
+15.02 23:53:36 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:53:48 TIMER: Check auto-disconnect...
+15.02 23:53:55 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:53:55 TIME: user.ping 0.16 ms
+15.02 23:53:55 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:54:15 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:54:15 TIME: user.ping 0.11 ms
+15.02 23:54:15 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:54:19 STATS: vdl.0 cache, locks:4
+15.02 23:54:34 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:54:34 TIME: user.ping 0.12 ms
+15.02 23:54:34 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:54:48 TIMER: Check auto-disconnect...
+15.02 23:54:53 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:54:53 TIME: user.ping 0.13 ms
+15.02 23:54:53 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:55:13 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:55:13 TIME: user.ping 0.07 ms
+15.02 23:55:13 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:55:19 STATS: vdl.0 cache, locks:4
+15.02 23:55:32 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:55:32 TIME: user.ping 0.16 ms
+15.02 23:55:32 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:55:48 TIMER: Check auto-disconnect...
+15.02 23:55:51 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:55:51 TIME: user.ping 0.13 ms
+15.02 23:55:51 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:56:11 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:56:11 TIME: user.ping 0.12 ms
+15.02 23:56:11 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:56:19 STATS: vdl.0 cache, locks:4
+15.02 23:56:30 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:56:30 TIME: user.ping 0.11 ms
+15.02 23:56:30 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:56:48 TIMER: Check auto-disconnect...
+15.02 23:56:49 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:56:49 TIME: user.ping 0.16 ms
+15.02 23:56:49 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:57:09 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:57:09 TIME: user.ping 0.3 ms
+15.02 23:57:09 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:57:19 STATS: vdl.0 cache, locks:4
+15.02 23:57:28 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:57:28 TIME: user.ping 0.13 ms
+15.02 23:57:28 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:57:47 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:57:47 TIME: user.ping 0.11 ms
+15.02 23:57:47 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:57:48 TIMER: Check auto-disconnect...
+15.02 23:58:06 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:58:06 TIME: user.ping 0.12 ms
+15.02 23:58:06 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:58:19 STATS: vdl.0 cache, locks:4
+15.02 23:58:26 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:58:26 TIME: user.ping 0.17 ms
+15.02 23:58:26 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:58:45 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:58:45 TIME: user.ping 0.1 ms
+15.02 23:58:45 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:58:48 TIMER: Check auto-disconnect...
+15.02 23:59:04 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:59:04 TIME: user.ping 0.07 ms
+15.02 23:59:04 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:59:19 STATS: vdl.0 cache, locks:4
+15.02 23:59:23 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:59:23 TIME: user.ping 0.17 ms
+15.02 23:59:23 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:59:43 ++ NET: uid60 req: user.ping { messageType => user.ping, msg => ok }
+15.02 23:59:43 TIME: user.ping 0.12 ms
+15.02 23:59:43 == NET: uid60 ret: user.ping { type => user.ping, errorCode => ok }
+15.02 23:59:48 TIMER: Check auto-disconnect...

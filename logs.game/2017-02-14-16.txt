@@ -1,0 +1,205 @@
+14.02 16:00:48 TIMER: Check auto-disconnect...
+14.02 16:00:56 STATS: vdl.0 cache, locks:2
+14.02 16:01:48 TIMER: Check auto-disconnect...
+14.02 16:01:56 STATS: vdl.0 cache, locks:2
+14.02 16:02:48 TIMER: Check auto-disconnect...
+14.02 16:02:56 STATS: vdl.0 cache, locks:2
+14.02 16:03:48 TIMER: Check auto-disconnect...
+14.02 16:03:56 STATS: vdl.0 cache, locks:2
+14.02 16:04:48 TIMER: Check auto-disconnect...
+14.02 16:04:56 STATS: vdl.0 cache, locks:2
+14.02 16:05:48 TIMER: Check auto-disconnect...
+14.02 16:05:56 STATS: vdl.0 cache, locks:2
+14.02 16:06:48 TIMER: Check auto-disconnect...
+14.02 16:06:56 STATS: vdl.0 cache, locks:2
+14.02 16:07:48 TIMER: Check auto-disconnect...
+14.02 16:07:56 STATS: vdl.0 cache, locks:2
+14.02 16:08:48 TIMER: Check auto-disconnect...
+14.02 16:08:56 STATS: vdl.0 cache, locks:2
+14.02 16:09:48 TIMER: Check auto-disconnect...
+14.02 16:09:56 STATS: vdl.0 cache, locks:2
+14.02 16:10:48 TIMER: Check auto-disconnect...
+14.02 16:10:56 STATS: vdl.0 cache, locks:2
+14.02 16:11:48 TIMER: Check auto-disconnect...
+14.02 16:11:56 STATS: vdl.0 cache, locks:2
+14.02 16:12:48 TIMER: Check auto-disconnect...
+14.02 16:12:56 STATS: vdl.0 cache, locks:2
+14.02 16:13:48 TIMER: Check auto-disconnect...
+14.02 16:13:56 STATS: vdl.0 cache, locks:2
+14.02 16:14:48 TIMER: Check auto-disconnect...
+14.02 16:14:56 STATS: vdl.0 cache, locks:2
+14.02 16:15:48 TIMER: Check auto-disconnect...
+14.02 16:15:56 STATS: vdl.0 cache, locks:2
+14.02 16:16:48 TIMER: Check auto-disconnect...
+14.02 16:16:56 STATS: vdl.0 cache, locks:2
+14.02 16:17:48 TIMER: Check auto-disconnect...
+14.02 16:17:56 STATS: vdl.0 cache, locks:2
+14.02 16:18:48 TIMER: Check auto-disconnect...
+14.02 16:18:56 STATS: vdl.0 cache, locks:2
+14.02 16:19:48 TIMER: Check auto-disconnect...
+14.02 16:19:56 STATS: vdl.0 cache, locks:2
+14.02 16:20:48 TIMER: Check auto-disconnect...
+14.02 16:20:56 STATS: vdl.0 cache, locks:2
+14.02 16:21:48 TIMER: Check auto-disconnect...
+14.02 16:21:56 STATS: vdl.0 cache, locks:2
+14.02 16:22:48 TIMER: Check auto-disconnect...
+14.02 16:22:56 STATS: vdl.0 cache, locks:2
+14.02 16:23:48 TIMER: Check auto-disconnect...
+14.02 16:23:56 STATS: vdl.0 cache, locks:2
+14.02 16:24:48 TIMER: Check auto-disconnect...
+14.02 16:24:56 STATS: vdl.0 cache, locks:2
+14.02 16:25:48 TIMER: Check auto-disconnect...
+14.02 16:25:56 STATS: vdl.0 cache, locks:2
+14.02 16:26:48 TIMER: Check auto-disconnect...
+14.02 16:26:56 STATS: vdl.0 cache, locks:2
+14.02 16:27:48 TIMER: Check auto-disconnect...
+14.02 16:27:56 STATS: vdl.0 cache, locks:2
+14.02 16:28:48 TIMER: Check auto-disconnect...
+14.02 16:28:56 STATS: vdl.0 cache, locks:2
+14.02 16:29:48 TIMER: Check auto-disconnect...
+14.02 16:29:56 STATS: vdl.0 cache, locks:2
+14.02 16:30:48 TIMER: Check auto-disconnect...
+14.02 16:30:56 STATS: vdl.0 cache, locks:2
+14.02 16:31:48 TIMER: Check auto-disconnect...
+14.02 16:31:56 STATS: vdl.0 cache, locks:2
+14.02 16:32:48 TIMER: Check auto-disconnect...
+14.02 16:32:56 STATS: vdl.0 cache, locks:2
+14.02 16:33:48 TIMER: Check auto-disconnect...
+14.02 16:33:56 STATS: vdl.0 cache, locks:2
+14.02 16:34:48 TIMER: Check auto-disconnect...
+14.02 16:34:56 STATS: vdl.0 cache, locks:2
+14.02 16:35:48 TIMER: Check auto-disconnect...
+14.02 16:35:56 STATS: vdl.0 cache, locks:2
+14.02 16:36:48 TIMER: Check auto-disconnect...
+14.02 16:36:56 STATS: vdl.0 cache, locks:2
+14.02 16:37:48 TIMER: Check auto-disconnect...
+14.02 16:37:56 STATS: vdl.0 cache, locks:2
+14.02 16:38:48 TIMER: Check auto-disconnect...
+14.02 16:38:56 STATS: vdl.0 cache, locks:2
+14.02 16:39:48 TIMER: Check auto-disconnect...
+14.02 16:39:56 STATS: vdl.0 cache, locks:2
+14.02 16:40:48 TIMER: Check auto-disconnect...
+14.02 16:40:56 STATS: vdl.0 cache, locks:2
+14.02 16:41:48 TIMER: Check auto-disconnect...
+14.02 16:41:56 STATS: vdl.0 cache, locks:2
+14.02 16:42:48 TIMER: Check auto-disconnect...
+14.02 16:42:56 STATS: vdl.0 cache, locks:2
+14.02 16:43:48 TIMER: Check auto-disconnect...
+14.02 16:43:56 STATS: vdl.0 cache, locks:2
+14.02 16:44:48 TIMER: Check auto-disconnect...
+14.02 16:44:56 STATS: vdl.0 cache, locks:2
+14.02 16:45:48 TIMER: Check auto-disconnect...
+14.02 16:45:56 STATS: vdl.0 cache, locks:2
+14.02 16:46:48 TIMER: Check auto-disconnect...
+14.02 16:46:56 STATS: vdl.0 cache, locks:2
+14.02 16:47:48 TIMER: Check auto-disconnect...
+14.02 16:47:56 STATS: vdl.0 cache, locks:2
+14.02 16:48:48 TIMER: Check auto-disconnect...
+14.02 16:48:56 STATS: vdl.0 cache, locks:2
+14.02 16:49:48 TIMER: Check auto-disconnect...
+14.02 16:49:56 STATS: vdl.0 cache, locks:2
+14.02 16:50:48 TIMER: Check auto-disconnect...
+14.02 16:50:56 STATS: vdl.0 cache, locks:2
+14.02 16:51:15 NET: Client (conid:90683730) connected to vdl.0 (clients:1)
+14.02 16:51:17 ++ NET: null req: user.login { password => 77779999, name => ga.forest, messageType => user.login }
+14.02 16:51:17 DB: SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'ga.forest' AND Password = E'77779999'
+14.02 16:51:17 ->>-: core/server.query { q => SELECT ID, Name, NetworkID, IsBanned FROM Users WHERE Name = E'ga.forest' AND Password = E'77779999', _type => core/server.query }
+14.02 16:51:17 -<<-: core/server.query { list => {{ name => ga.forest, networkid => , isbanned => false, id => 76 }}, errorCode => ok, _type => core/server.query }
+14.02 16:51:17 STATS: vdl.0 cache connection, 1199 calls, total 0.827806711196899 sec spent, avg 0.69 ms
+14.02 16:51:17 ->>-: core/user.isOnlineID { id => 76, _type => core/user.isOnlineID }
+14.02 16:51:17 -<<-: core/user.isOnlineID { isOnline => false, errorCode => ok, _type => core/user.isOnlineID }
+14.02 16:51:17 ->>-: core/cache.get { type => user, v => -1, id => 76, _type => core/cache.get }
+14.02 16:51:17 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {name => ga.forest, money => 0, deleted => false, year => , email => , networktype =>   , password => 77779999, isbanned => false, regdate => 2017-02-12 14:50:59.369023-05, city => , language => en, networkid => , params => { inventory => { list => [] }, vars => {}, attrs => { _lastTime.24hr => 1487071866, lastLoginDate => 45, lastLoadDate => 215 }, effects => { list => [] } }}, version => 0, id => 76 } }
+14.02 16:51:17 ->>-: core/cache.get { type => questdata, v => -1, id => 76, _type => core/cache.get }
+14.02 16:51:17 -<<-: core/cache.get { errorCode => ok, _type => core/cache.get, block => { list => {params => { quests => { list => [] } }}, version => 0, id => 76 } }
+14.02 16:51:17 NET: Client login (conid:90683730, id:76, name:ga.forest)
+14.02 16:51:17 ->>-: core/user.loginPost { lang => en, networkid => , platform => web, networktype =>   , id => 76, _type => core/user.loginPost, ipAddr => 95.71.78.151 }
+14.02 16:51:17 -<<-: core/user.loginPost { _type => core/user.loginPost }
+14.02 16:51:17 == NET: ga.forest ret: user.login { name => ga.forest, type => user.login, errorCode => ok, id => 76 }
+14.02 16:51:17 == NET: ga.forest ret: user.join { name => ga.forest, type => user.join }
+14.02 16:51:18 ++ NET: ga.forest req: user.data { messageType => user.data }
+14.02 16:51:18 ->>-: vdl/cache.user.getData { userId => 76, _type => vdl/cache.user.getData, money => 0 }
+14.02 16:51:18 -<<-: vdl/cache.user.getData { info => { city => null, year => null, email => null }, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+14.02 16:51:18 TIME: user.data 1.26 ms
+14.02 16:51:18 == NET: ga.forest ret: user.data { info => { city => null, year => null, email => null }, type => user.data, errorCode => ok, _type => vdl/cache.user.getData, money => 0 }
+14.02 16:51:26 ++ NET: ga.forest req: user.getAccessFriend { messageType => user.getAccessFriend }
+14.02 16:51:26 ->>-: vdl/cache.user.getAccessFriend { _type => vdl/cache.user.getAccessFriend, player => 76 }
+14.02 16:51:26 -<<-: vdl/cache.user.getAccessFriend { list => [], errorCode => ok, _type => vdl/cache.user.getAccessFriend }
+14.02 16:51:26 TIME: user.getAccessFriend 0.24 ms
+14.02 16:51:26 == NET: ga.forest ret: user.getAccessFriend { list => [], type => user.getAccessFriend, errorCode => ok, _type => vdl/cache.user.getAccessFriend }
+14.02 16:51:26 ->>-: core/cache.update { diff => {language => en}, type => user, unlock => false, id => 76, _type => core/cache.update }
+14.02 16:51:26 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+14.02 16:51:27 ++ NET: ga.forest req: user.getFriendList { messageType => user.getFriendList }
+14.02 16:51:27 ->>-: vdl/cache.user.getFriendList { _type => vdl/cache.user.getFriendList, player => 76 }
+14.02 16:51:27 -<<-: vdl/cache.user.getFriendList { list => [], errorCode => ok, _type => vdl/cache.user.getFriendList }
+14.02 16:51:27 TIME: user.getFriendList 0.57 ms
+14.02 16:51:27 == NET: ga.forest ret: user.getFriendList { list => [], type => user.getFriendList, errorCode => ok, _type => vdl/cache.user.getFriendList }
+14.02 16:51:39 ++ NET: ga.forest req: user.searchEnemy { name => vvp, messageType => user.searchEnemy }
+14.02 16:51:39 ->>-: vdl/cache.user.searchEnemy { name => vvp, id => 76, _type => vdl/cache.user.searchEnemy }
+14.02 16:51:39 -<<-: vdl/cache.user.searchEnemy { errorCode => ok, _type => vdl/cache.user.searchEnemy, users => [{ name => vvp75, isOnline => false, id => 88 }] }
+14.02 16:51:39 TIME: user.searchEnemy 1.23 ms
+14.02 16:51:39 == NET: ga.forest ret: user.searchEnemy { list => [{ name => vvp75, isOnline => false, id => 88 }], type => user.searchEnemy, errorCode => ok }
+14.02 16:51:42 ++ NET: ga.forest req: user.searchEnemy { name => vvp75, messageType => user.searchEnemy }
+14.02 16:51:42 ->>-: vdl/cache.user.searchEnemy { name => vvp75, id => 76, _type => vdl/cache.user.searchEnemy }
+14.02 16:51:42 -<<-: vdl/cache.user.searchEnemy { errorCode => ok, _type => vdl/cache.user.searchEnemy, users => [{ name => vvp75, isOnline => false, id => 88 }] }
+14.02 16:51:42 TIME: user.searchEnemy 1.37 ms
+14.02 16:51:42 == NET: ga.forest ret: user.searchEnemy { list => [{ name => vvp75, isOnline => false, id => 88 }], type => user.searchEnemy, errorCode => ok }
+14.02 16:51:45 ++ NET: ga.forest req: user.addFriend { userId => 88, type => add, messageType => user.addFriend }
+14.02 16:51:45 ->>-: vdl/cache.user.addFriend { type => prepare, _type => vdl/cache.user.addFriend, friend => 88, player => 76 }
+14.02 16:51:45 -<<-: vdl/cache.user.addFriend { errorCode => ok, _type => vdl/cache.user.addFriend }
+14.02 16:51:45 ->>-: core/user.sendTo { id => 88, _type => core/user.sendTo, msg => { _type => user.friendAccess, player => 76 } }
+14.02 16:51:45 -<<-: core/user.sendTo { errorCode => userNotOnline, _type => core/user.sendTo }
+14.02 16:51:45 TIME: user.addFriend 1.83 ms
+14.02 16:51:45 == NET: ga.forest ret: user.addFriend { type => user.addFriend, errorCode => ok }
+14.02 16:51:48 TIMER: Check auto-disconnect...
+14.02 16:51:56 STATS: vdl.0 cache, locks:4
+14.02 16:51:58 ++ NET: ga.forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+14.02 16:51:58 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:51:58 -<<-: vdl/cache.tournament.getAvailableTournament { list => [], count => 0, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:51:58 TIME: tournament.getAvailableTournament 0.87 ms
+14.02 16:51:58 == NET: ga.forest ret: tournament.getAvailableTournament { list => [], count => 0, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:52:06 ++ NET: ga.forest req: tournament.getAvailableTournament { messageType => tournament.getAvailableTournament }
+14.02 16:52:06 ->>-: vdl/cache.tournament.getAvailableTournament { _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:52:06 -<<-: vdl/cache.tournament.getAvailableTournament { list => [], count => 0, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:52:06 TIME: tournament.getAvailableTournament 0.61 ms
+14.02 16:52:06 == NET: ga.forest ret: tournament.getAvailableTournament { list => [], count => 0, type => tournament.getAvailableTournament, errorCode => ok, _type => vdl/cache.tournament.getAvailableTournament }
+14.02 16:52:25 ++ NET: ga.forest req: user.getAccessFriend { messageType => user.getAccessFriend }
+14.02 16:52:25 ->>-: vdl/cache.user.getAccessFriend { _type => vdl/cache.user.getAccessFriend, player => 76 }
+14.02 16:52:25 -<<-: vdl/cache.user.getAccessFriend { list => [], errorCode => ok, _type => vdl/cache.user.getAccessFriend }
+14.02 16:52:25 STATS: vdl.0 cache connection, 1214 calls, total 0.838186502456665 sec spent, avg 0.69 ms
+14.02 16:52:25 TIME: user.getAccessFriend 0.86 ms
+14.02 16:52:25 == NET: ga.forest ret: user.getAccessFriend { list => [], type => user.getAccessFriend, errorCode => ok, _type => vdl/cache.user.getAccessFriend }
+14.02 16:52:48 TIMER: Check auto-disconnect...
+14.02 16:52:56 STATS: vdl.0 cache, locks:4
+14.02 16:52:59 NET: Client (name:ga.forest conid:90683730 TCP) disconnected from vdl.0 (clients:0)
+14.02 16:52:59 DB: SELECT id FROM battle WHERE firstid=76 OR secondid=76 AND finished <> true
+14.02 16:52:59 ->>-: core/server.query { q => SELECT id FROM battle WHERE firstid=76 OR secondid=76 AND finished <> true, _type => core/server.query }
+14.02 16:52:59 -<<-: core/server.query { list => {}, errorCode => ok, _type => core/server.query }
+14.02 16:52:59 ->>-: vdl/cache.battle.infoRoom { roomId => 0, _type => vdl/cache.battle.infoRoom }
+14.02 16:52:59 -<<-: vdl/cache.battle.infoRoom { errorCode => _requestException, _type => vdl/cache.battle.infoRoom }
+14.02 16:52:59 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+14.02 16:52:59 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+14.02 16:52:59 ->>-: core/cache.update { diff => {}, type => user, unlock => true, id => 76, _type => core/cache.update }
+14.02 16:52:59 -<<-: core/cache.update { errorCode => ok, version => 2, _type => core/cache.update }
+14.02 16:52:59 ->>-: core/cache.update { diff => {}, type => questdata, unlock => true, id => 76, _type => core/cache.update }
+14.02 16:52:59 -<<-: core/cache.update { errorCode => ok, version => 1, _type => core/cache.update }
+14.02 16:52:59 ->>-: core/user.logoutPost { networkid => , networktype =>   , id => 76, _type => core/user.logoutPost }
+14.02 16:52:59 -<<-: core/user.logoutPost { errorCode => ok, _type => core/user.logoutPost }
+14.02 16:53:48 TIMER: Check auto-disconnect...
+14.02 16:53:56 STATS: vdl.0 cache, locks:2
+14.02 16:54:48 TIMER: Check auto-disconnect...
+14.02 16:54:56 STATS: vdl.0 cache, locks:2
+14.02 16:55:48 TIMER: Check auto-disconnect...
+14.02 16:55:56 STATS: vdl.0 cache, locks:2
+14.02 16:56:48 TIMER: Check auto-disconnect...
+14.02 16:56:56 STATS: vdl.0 cache, locks:2
+14.02 16:57:48 TIMER: Check auto-disconnect...
+14.02 16:57:56 STATS: vdl.0 cache, locks:2
+14.02 16:58:48 TIMER: Check auto-disconnect...
+14.02 16:58:56 STATS: vdl.0 cache, locks:2
+14.02 16:59:48 TIMER: Check auto-disconnect...
+14.02 16:59:56 STATS: vdl.0 cache, locks:2

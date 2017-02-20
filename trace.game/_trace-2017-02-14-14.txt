@@ -1,0 +1,104 @@
+14.02 14:02:17 TRACE: logoutPost battle exception: cacheRequest exception { roomId => 0, _type => vdl/cache.battle.infoRoom }
+14.02 14:02:17 TRACE: 
+Called from snipe/slave/CacheConnection.hx line 199
+Called from modules/VDLBattleModule.hx line 523
+Called from modules/VDLBattleModule.hx line 536
+Called from snipe/slave/Server.hx line 994
+14.02 14:06:26 TRACE: Invalid field access : id
+14.02 14:06:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:07:26 TRACE: Invalid field access : id
+14.02 14:07:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:08:26 TRACE: Invalid field access : id
+14.02 14:08:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:09:26 TRACE: Invalid field access : id
+14.02 14:09:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:10:26 TRACE: Invalid field access : id
+14.02 14:10:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:11:26 TRACE: Invalid field access : id
+14.02 14:11:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:12:26 TRACE: Invalid field access : id
+14.02 14:12:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:13:26 TRACE: Invalid field access : id
+14.02 14:13:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:14:26 TRACE: Invalid field access : id
+14.02 14:14:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:15:26 TRACE: Invalid field access : id
+14.02 14:15:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:16:26 TRACE: Invalid field access : id
+14.02 14:16:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:17:26 TRACE: Invalid field access : id
+14.02 14:17:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:18:26 TRACE: Invalid field access : id
+14.02 14:18:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202
+14.02 14:19:26 TRACE: Invalid field access : id
+14.02 14:19:26 TRACE: 
+Called from modules/VDLBattleModule.hx line 162
+Called from a C function
+Called from snipe/slave/Server.hx line 685
+Called from snipe/slave/CacheConnection.hx line 303
+Called from snipe/slave/ThreadServerModified.hx line 202

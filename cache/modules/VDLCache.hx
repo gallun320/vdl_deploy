@@ -59,6 +59,13 @@ using Lambda;
            method: checkRound,
            log: true
           });
+     
+        server.timer.add({
+           name: 'Check tournaments',
+           time: 20,
+           method: checkTournament,
+           log: true
+          });
           server.subscribeModule("core/user.registerModify", this);
           server.subscribeModule("core/user.loginPost", this);
    }
@@ -97,7 +104,7 @@ using Lambda;
          var ret = StartCall(el.id, el.round);
        }
 
-     }
+       }
 
      if( battles.length > 0 ) {
        for( el in battles ) {
@@ -109,6 +116,23 @@ using Lambda;
      }
 
    }
+     
+  public function checkTournament() {
+    var res = server.query('SELECT * FROM tournament');
+    var t = Sys.time() / 1000;
+    
+    for (el in res) {
+      var ret = server.cacheManager.getUnlocked(0,'tournament',el.id, -1);
+      var tournament = ret.block;
+      var tournamentDate: Float = convertDateToFloat(el.startdate);
+      trace('=====================================');
+      trace(tournamentDate, t, t > tournamentDate);
+      if(t > tournamentDate && el.status == 'starting') {
+        tournament.set(null, "status", 'finished');
+      } 
+      server.cacheManager.updated(0, 'tournament', el.id);
+    }
+  }
 
    public function checkStep() {
      var ret = server.query('SELECT * FROM battle WHERE avaliable = false AND finished <> true AND steptime <> -1');
@@ -208,6 +232,8 @@ using Lambda;
           response = EditProfile(c, params);
         case "vdl/cache.user.searchEnemy":
           response = SearchEnemy(c, params);
+        case "vdl/cache.user.deleteFriend":
+          response = DeleteFriend(c, params);
 
 
 
@@ -277,7 +303,7 @@ using Lambda;
 
   public function FindRandomBattle(c: SlaveClient, params: Params): Dynamic {
     var user: Dynamic = params.get('user');
-
+    
 
     if(usersRandomList == null) usersRandomList = [];
 
@@ -393,54 +419,76 @@ using Lambda;
      if(type == "prepare") {
        var ret = server.cacheManager.getUnlocked(0, 'user', friend, -1);
        var friendBlock = ret.block;
-       var prepareList: Array<Int> = (user.get('params', 'friendPrepare') == null) ? [] : user.get('params', 'friendPrepare');
-       var accessList: Array<Int> = (user.get('params', 'friendAccess') == null) ? [] : user.get('params', 'friendAccess');
-       prepareList.push(friend);
-       accessList.push(player);
-       user.set('params', 'friendPrepare', prepareList);
-       user.set('params', 'friendAccess', accessList);
+       var prepareList: Array<Int> = (friendBlock.get('params', 'friendPrepare') == null) ? [] : friendBlock.get('params', 'friendPrepare');
+       //var accessList: Array<Int> = (friendBlock.get('params', 'friendAccess') == null) ? [] : friendBlock.get('params', 'friendAccess');
+       prepareList.push(player);
+       //accessList.push(player);
+       friendBlock.set('params', 'friendPrepare', prepareList);
+       //friendBlock.set('params', 'friendAccess', accessList);
        server.cacheManager.updated(0, 'user', friend);
      } else if(type == "add") {
+       var ret = server.cacheManager.getUnlocked(0, 'user', friend, -1);
+       var friendBlock = ret.block;
        var prepareList: Array<Int> =  (user.get('params', 'friendPrepare') == null) ? [] : user.get('params', 'friendPrepare');
-       var accessList: Array<Int> = (user.get('params', 'friendAccess') == null) ? [] : user.get('params', 'friendAccess');
+       //var accessList: Array<Int> = (user.get('params', 'friendAccess') == null) ? [] : user.get('params', 'friendAccess');
        var addList: Array<Int> = (user.get('params', 'friendList') == null) ? [] : user.get('params', 'friendList');
+       var addFriendList: Array<Int> = (friendBlock.get('params', 'friendList') == null) ? [] : friendBlock.get('params', 'friendList');
 
 
        addList.push(friend);
+       addFriendList.push(player);
        if(prepareList.has(friend)) {
          prepareList.remove(friend);
        }
 
-       if(accessList.has(friend)) {
+       /*if(accessList.has(friend)) {
          accessList.remove(friend);
-       }
+       }*/
 
        user.set('params', 'friendPrepare', prepareList);
        user.set('params', 'friendList', addList);
-       user.set('params', 'friendAccess', accessList);
+       friendBlock.set('params', 'friendList', addFriendList);
+       //user.set('params', 'friendAccess', accessList);
      } else {
-       var ret = server.cacheManager.getUnlocked(0, 'user', friend, -1);
-       var friendBlock = ret.block;
-       var accessList: Array<Int> = (user.get('params', 'friendAccess') == null) ? [] : user.get('params', 'friendAccess');
+       //var ret = server.cacheManager.getUnlocked(0, 'user', friend, -1);
+       //var friendBlock = ret.block;
+       //var accessList: Array<Int> = (friendBlock.get('params', 'friendAccess') == null) ? [] : friendBlock.get('params', 'friendAccess');
        var prepareList: Array<Int> = user.get('params', 'friendPrepare');
        if(prepareList == null) prepareList = [];
        if(prepareList.has(friend)) {
          prepareList.remove(friend);
        }
 
-       if(accessList.has(player)) {
+       /*if(accessList.has(player)) {
          accessList.remove(player);
-       }
+       }*/
 
        user.set('params', 'friendPrepare', prepareList);
-       user.set('params', 'friendAccess', accessList);
-       server.cacheManager.updated(0, 'user', friend);
+       //friendBlock.set('params', 'friendAccess', accessList);
+       //server.cacheManager.updated(0, 'user', user);
      }
 
      server.cacheManager.updated(0, 'user', player);
 
      return { errorCode: "ok" };
    }
+
+function DeleteFriend(c: SlaveClient, params: Params): Dynamic {
+  var player = params.get('player');
+  var friend = params.get('friend');
+  
+  var ret = server.cacheManager.getUnlocked(0, 'user', player, -1);
+  var user = ret.block;
+  var list: Array<Int> = (user.get('params', 'friendList') == null) ? [] : user.get('params', 'friendList');
+  
+  if(list.has(friend)) {
+         list.remove(friend);
+       }
+  
+  server.cacheManager.updated(0, 'user', player);
+
+     return { errorCode: "ok" };
+}
 
 function GetFriendList(c: SlaveClient, params: Params): Dynamic {
   var player: Int = params.get('player');
@@ -475,7 +523,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
   var ret = server.cacheManager.getUnlocked(0, 'user', player, -1);
   var user = ret.block;
 
-  var prepareList: Array<Int> = user.get('params', 'friendAccess');
+  var prepareList: Array<Int> = user.get('params', 'friendPrepare');
 
   if(prepareList == null) prepareList = [];
 
@@ -494,14 +542,14 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      var second:Int = data.secondid;
      var turnID:Int = 0;
      if (first == data.turnid) {
-      //  room.block.set(null, 'turnid', second);
+      room.set(null, 'turnid', second);
       trace("++++++++++++++++++++++++++++++++++");
      trace("firstid =  turnID = " + first);
      trace("++++++++++++++++++++++++++++++++++");
        turnID = second;
      }
      else if(second == data.turnid) {
-      //  room.block.set(null, 'turnid', first);
+      room.set(null, 'turnid', first);
       trace("++++++++++++++++++++++++++++++++++");
      trace("firstid =  turnID = " + second);
      trace("++++++++++++++++++++++++++++++++++");
@@ -525,7 +573,8 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      var slaveId2 = server.coreUserModule.getServerID(enemId);
 
      var client2 = server.getClient(slaveId2);
-
+     trace('==============================================');
+     trace(slaveId1, slaveId2);
      client1.notify({
        _type:"battle.skipEvent",
         id: turnID,
@@ -586,7 +635,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
    }
 
    function GetAvailableTournamentCall(c: SlaveClient, params: Params): Dynamic {
-     var res  = server.query("SELECT * FROM tournament");
+     var res  = server.query("SELECT * FROM tournament WHERE status <> 'finished'");
      var arr = [];
      for(row in res) {
        var ret = server.cacheManager.getUnlocked(0,'tournament', row.id, -1);
@@ -1121,9 +1170,10 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
     function SearchEnemy(c: SlaveClient, params: Params): Dynamic {
       var id: Int = params.get('id');
       var name: String = params.get('name');
-      var ret = server.query("SELECT id, name FROM users WHERE name LIKE '%" + name + "%'");
+      var ret = server.query("SELECT id, name FROM users WHERE name LIKE '%" + name + "%' LIMIT 50");
       var users: Array<Dynamic> = [];
-
+      trace('=============================');
+      trace(ret.length);
       for( el in ret ) {
         if( el.id != id) {
           var slaveId = server.coreUserModule.getServerID(el.id);
@@ -1233,7 +1283,6 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      tournament.set('params', 'usersAll', usersAll);
      server.cacheManager.updated(0, 'tournament', tournamentId);
 
-
      return {errorCode: "ok"};
 
    }
@@ -1273,9 +1322,15 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
    public function GetUserData(c: SlaveClient, params: Params): Dynamic {
      var userId = params.get('userId');
      var money = params.get("money");
-     var ret = server.cacheManager.getUnlocked(0,'user', userId, -1);
-     var user = ret.block;
-     var info = user.get( null, 'params').info;
+     //var ret = server.cacheManager.getUnlocked(0,'user', userId, -1);
+     //var user = ret.block;
+     //var info = user.get( 'params', 'info');
+     var ret = server.query('SELECT params FROM users WHERE id=' + userId);
+     var user = ret.results().first().params;
+     var user: Dynamic = haxe.Json.parse(user);
+     var info: Dynamic = user.info;
+     trace('=============================');
+     trace(user.info, user);
      if(info == null) info = {city: null, email: null, year: null};
      return {errorCode: "ok", info: info, money: money};
    }
@@ -1348,25 +1403,28 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
    }
 
    public function MakeTurn(userId: Int, roomId: Int): Dynamic {
-     /*trace("++++++++++++++++++++++++++++++");
-     trace("int MakeTurn.");
-     trace("++++++++++++++++++++++++++++++");*/
+     var turnId: Int = 0;
      var room = server.cacheManager.getUnlocked(0, 'battle', roomId, -1);
      var first = room.block.get(null, 'firstid');
      var second = room.block.get(null, 'secondid');
+     trace("++++++++++++++++++++++++++++++");
+     trace(roomId, first, second); 
+     trace("++++++++++++++++++++++++++++++");
      if (first == userId) {
        room.block.set(null, 'turnid', second);
-       turnID = second;
+       turnId = second;
      }
      else if(second == userId) {
        room.block.set(null, 'turnid', first);
-       turnID = first;
+       turnId = first;
      }
       var time: Float = ((Sys.time()+ (GlobalStepTime * 60)) / 1000);
-
+     trace("++++++++++++++++++++++++++++++");
+     trace(turnId);
+     trace("++++++++++++++++++++++++++++++");
       room.block.set(null, 'steptime', time);
     server.cacheManager.updated(0, 'battle', roomId);
-     return {errorCode: "ok", turnId: turnID};
+     return {errorCode: "ok", turnId: turnId};
    }
 
 
@@ -1416,26 +1474,28 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      trace("+++++++++++++++++++++++++++++++++++++++");
      var id = params.get('id');
      var city = (params.get('city') == null ) ? '' : params.get('city');
-     var year = params.get('year');
-     var email = params.get('email');
+     var year = (params.get('year') == null ) ? '' : params.get('year');
+     var email = (params.get('email') == null ) ? '' : params.get('email');
      /*server.query(
        "INSERT INTO phpbb_users (user_id, username, user_password, user_email, user_type, group_id) " +
        "VALUES (" + params.get("id") + "," + server.quote(params.get("name")) + "," +
        server.quote(haxe.crypto.Md5.encode(params.get("password"))) + "," +
        server.quote(email) + ", 1, 2)");*/
-     /*var ret = server.cacheManager.getUnlocked(0, 'user', id, -1);
+     //var ret = server.cacheManager.getUnlocked(0, 'user', id, -1);
 
-     var user = ret.block;*/
+     //var user = ret.block;
 
-     /*user.set(null, 'city', city);*/
-     /*user.set(null, 'year', year);*/
-     /*user.set(null, 'email', email);*/
-     diffParams.info = {city: city, year: year, email: email};
-     /*user.set(null, 'params', diffParams);*/
+     //user.set(null, 'city', city);
+     //user.set(null, 'year', year);
+     //user.set(null, 'email', email);
+     //diffParams.info = {city: city, year: year, email: email};
+     
+     //user.set(null, 'params', diffParams);
+     var qStr = '{"attrs":{},"inventory":{"list":[]}, "info": {"city":"' + city + '", "year": "' + year + '", "email": "' + email + '"}}';
+     server.query('UPDATE Users SET params=' + server.quote(qStr) + ' WHERE id=' + id);
+     //server.cacheManager.updated(0, 'user', id);
 
-     /*server.cacheManager.updated(0, 'user', id);*/
-
-     diffParams.info = {city: city, year: year, email: email};
+     //diffParams.info = {city: city, year: year, email: email};
    }
 
    /*override function loginPost(c: SlaveClient, params: Params, response: Dynamic) {
@@ -1445,7 +1505,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      if(info == null) info = {city: null, email: null, year: null};
      params.params.info = info;
      response.info = info;
-   }*/
+   }*/  
 
    private function convertDate(strData: String, interval: Int): String {
      var str: String = new String(strData);
@@ -1460,5 +1520,17 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
        var endDate: String = DateTools.format(formatDt, "%Y-%d-%m %H:%M");
      return endDate;
    }
+
+  private function convertDateToFloat(strData: String): Float {
+    var str: String = new String(strData);
+        var year: Int = Std.parseInt(str.substr(0, 4));
+        var day: Int = Std.parseInt(str.substr(5, 2));
+        var month: Int = Std.parseInt(str.substr(8, 2)) - 1;
+        var hours: Int = Std.parseInt(str.substr(11, 2));
+        var minute: Int = Std.parseInt(str.substr(14, 2));
+        var dt: Float = new Date(year, month, day, hours, minute, 0).getTime();
+    var correctDt: Float = dt + (1 * 60 * 60);
+    return dt;
+  }
 
  }
