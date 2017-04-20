@@ -79,7 +79,7 @@ using Lambda;
      //var currentTime: String = DateTools.format(Date.now(), '%Y-%d-%m %H:%M');
 
      var res = server.query("SELECT * FROM tournament WHERE startdate = '" + currentTime + "' OR rounddate = '" + currentTime + "' AND status <> 'finished'");
-     var time: Float = Sys.time() / 1000;
+     var time: Float = Sys.time();
      var battles = server.query("SELECT * FROM battle WHERE endtime >= '" + time + "' AND avaliable = false AND finished <> true");
 
      if(res.length > 0) {
@@ -135,7 +135,7 @@ using Lambda;
   }
 
    public function checkStep() {
-     var ret = server.query('SELECT * FROM battle WHERE avaliable = false AND finished <> true AND steptime <> -1');
+     var ret = server.query('SELECT * FROM battle WHERE avaliable = false AND finished <> true AND to_timestep(extract(epoch from now)) - steptime > 120');
     //  trace(ret[0]);
      var t = Sys.time() / 1000;
      trace("+++++++++++++++++++++++++++++++++++++++++");
@@ -152,9 +152,9 @@ using Lambda;
          trace("+++++++++++++++++++++++++++++++++++++++++");
          trace(t);
          trace("+++++++++++++++++++++++++++++++++++++++++");
-         if(el.steptime < t) {
+         
            SkipTurn(el);
-         }
+         
          /*trace("+++++++++++++++++++++++++++++++++++++++++");
          trace("In for in checkStep. el.steptime = " + el.steptime);
          trace("+++++++++++++++++++++++++++++++++++++++++");*/
@@ -258,7 +258,9 @@ using Lambda;
      var obj = {
        firstId: room.get(null, 'firstid'),
        secondId: room.get(null, 'secondid'),
-       turnId: room.get(null, 'turnid')
+       turnId: room.get(null, 'turnid'),
+       stepTime: room.get(null, 'steptime'),
+       roundTime: room.get(null, 'roundtime') 
      }
      return obj;
    }
@@ -807,7 +809,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
       //Field = MakeField();
       var ret = server.cacheManager.getUnlocked(0,'battle', battleId, -1);
       var battle = ret.block;
-      var time: Float = ((Sys.time()+ (GlobalStepTime * 60)) / 1000) ;
+      var time: Float = Sys.time() ;
 
       battle.set(null, 'steptime', time);
 
@@ -907,7 +909,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
 
       var ret = server.cacheManager.getUnlocked(0,'battle', battleId, -1);
       var battle = ret.block;
-      var time: Float = ((Sys.time()+ (GlobalStepTime * 60)) / 1000);
+      var time: Float = Sys.time();
 
       battle.set(null, 'steptime', time);
 
@@ -1322,9 +1324,11 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
    public function GetUserData(c: SlaveClient, params: Params): Dynamic {
      var userId = params.get('userId');
      var money = params.get("money");
-     //var ret = server.cacheManager.getUnlocked(0,'user', userId, -1);
-     //var user = ret.block;
-     //var info = user.get( 'params', 'info');
+     var ret = server.cacheManager.getUnlocked(0,'user', userId, -1);
+     var userBlock = ret.block;
+     var city = userBlock.get( null, 'city');
+     var year = userBlock.get( null, 'year');
+     var email = userBlock.get( null, 'email');
      var ret = server.query('SELECT params FROM users WHERE id=' + userId);
      var user = ret.results().first().params;
      var user: Dynamic = haxe.Json.parse(user);
@@ -1392,7 +1396,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
 
 
    public function setFirst(userId: Int, roomId: Int, roundTime: Int, ?tournamentId: Int): Dynamic {
-     var time: Float = (Sys.time() / 1000) + (roundTime * 60);
+     var time: Float = Sys.time() + (roundTime * 60);
      room.set(null, 'endtime', time);
      room.set(null, 'firstid', userId);
      if(tournamentId != null) room.set(null, 'tournamentid', tournamentId);
@@ -1418,7 +1422,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
        room.block.set(null, 'turnid', first);
        turnId = first;
      }
-      var time: Float = ((Sys.time()+ (GlobalStepTime * 60)) / 1000);
+      var time: Float = Sys.time();
      trace("++++++++++++++++++++++++++++++");
      trace(turnId);
      trace("++++++++++++++++++++++++++++++");
@@ -1481,13 +1485,13 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
        "VALUES (" + params.get("id") + "," + server.quote(params.get("name")) + "," +
        server.quote(haxe.crypto.Md5.encode(params.get("password"))) + "," +
        server.quote(email) + ", 1, 2)");*/
-     //var ret = server.cacheManager.getUnlocked(0, 'user', id, -1);
+     var ret = server.cacheManager.getUnlocked(0, 'user', id, -1);
 
-     //var user = ret.block;
+     var user = ret.block;
 
-     //user.set(null, 'city', city);
-     //user.set(null, 'year', year);
-     //user.set(null, 'email', email);
+     user.set(null, 'city', city);
+     user.set(null, 'year', year);
+     user.set(null, 'email', email);
      //diffParams.info = {city: city, year: year, email: email};
      
      //user.set(null, 'params', diffParams);
@@ -1495,7 +1499,7 @@ function GetAccessFriend(c: SlaveClient, params: Params): Dynamic {
      server.query('UPDATE Users SET params=' + server.quote(qStr) + ' WHERE id=' + id);
      //server.cacheManager.updated(0, 'user', id);
 
-     //diffParams.info = {city: city, year: year, email: email};
+     diffParams.info = {city: city, year: year, email: email};
    }
 
    /*override function loginPost(c: SlaveClient, params: Params, response: Dynamic) {

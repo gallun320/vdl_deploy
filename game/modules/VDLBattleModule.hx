@@ -46,6 +46,8 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
               response = AccessBattle(c, params);
           case "battle.message":
               response = BattleMessage(c, params);
+          case "battle.getState":
+            response = BattleState(c, params);
           /*case "battle.lose":
               response = LoseCall(c, params);*/
           case "battle.end":
@@ -321,8 +323,8 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         for (i in 0 ... 6) {
           arr.push(Std.random(6));
         }
-        CubesData.set(cid, arr);
-        var dices = CubesData.get(cid).copy();
+        CubesData.set(roomId, arr);
+        var dices = CubesData.get(roomId).copy();
         var obj: Dynamic = {name: name, dices: dices, errorCode: "ok"};
         c.response("battle.sendtask", obj);
         obj._type = "battle.task";
@@ -343,7 +345,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
           server.sendTo(enemId, obj);
 
           MakeTurn(cid, roomId);
-
+          CubesData.set(roomId, []);
           return {errorCode: 'ok'};
         } else {
           return { errorCode: "cannotSkip" };
@@ -358,7 +360,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       var to: Array<Int> = params.get('to');
       var battleId: Int = params.get('battleId');
 
-      var cubes: Array<Int> = CubesData.get(cid).copy();
+      var cubes: Array<Int> = CubesData.get(roomId).copy();
       //var cubesLocal: Array<Int> = cubes.copy();
 
       var field: Array<Array<Int>> = FieldData.get(roomId).copy();
@@ -379,7 +381,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
 
       if(!Rules.IsCanTake(dice, player, state, side, from[0], winBlock) ) {
 
-        var dices: Array<Int> = CubesData.get(cid).copy();
+        var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
 
         var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
@@ -388,7 +390,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
 
       if(!Rules.IsCanSwapTo(dice, state, to[0], stateTo, sideTo, winBlockTo, side)) {
 
-        var dices: Array<Int> = CubesData.get(cid).copy();
+        var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
 
         var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
@@ -400,7 +402,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         //CubesData.set(cid, cubes);
       } else {
 
-        var dices: Array<Int> = CubesData.get(cid).copy();
+        var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> = FieldFunc.Field;
 
         var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
@@ -415,7 +417,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       SetBattleScores(user.firstId, user.secondId, scores, battleId);
       trace( FieldFunc.Field );
       FieldData.set(roomId, FieldFunc.Field);
-      CubesData.set(cid, cubes);
+      CubesData.set(roomId, cubes);
       //var dices = CubesData.get(cid).toString();
     /*var obj = {
         type: "battle.task",
@@ -430,7 +432,7 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       }*/
       params.params.type = "battle.task";
       params.params._type = "battle.task";
-      params.params.dices = CubesData.get(cid).copy();
+      params.params.dices = CubesData.get(roomId).copy();
       var obj: Dynamic = params.params;
       //c.listStatistic.push(params);
       server.sendTo(enemId, obj);
@@ -454,7 +456,29 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       CubesData.set(cid, arr);
       return { errorCode: 'ok', cube: arr};
     }*/
-
+    public function BattleState(c: VDLClient, params: Params): Dynamic {
+      var battleId = params.get('battleId');
+      var battle = RoomInfo(battleId);
+      var pole = FieldData.get(battleId);
+      var dices = CubesData.get(battleId); 
+      var t: Float = Sys.time();
+      var currentPlayer: Int = 0;
+      if(battle.firstId == battle.turnId) {
+        currentPlayer = 1;
+      } else if(battle.secondId == battle.turnId) {
+        currentPlayer = 2;
+      }
+      
+      var stepTime: Float = t - battle.stepTime;
+      
+      return {
+        dices: dices,
+        pole: pole,
+        currentPlayer: currentPlayer,
+        gameTime: battle.roundTime,
+        stepTime: stepTime
+      }
+    }
     public function SetBattleScores(player1: Int, player2: Int, scores: Array<Int>, battleId: Int): Void {
       var ret = server.cacheRequest({
           _type: 'vdl/cache.battle.setScores',

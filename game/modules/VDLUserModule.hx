@@ -42,6 +42,8 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
             response = UserFriendList(c, params);
           case "user.addMoney":
             response = UserAddMoney(c, params);
+          case "user.recovery":
+            response = UserRecovery(c, params);
 
 
 
@@ -121,6 +123,10 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
         return {errorCode: "ok", list: ret.users };
 
       }
+  
+  public function UserRecovery(c: VDLClient, params: Params): Dynamic {
+    
+  }
 
       public function UserFriends(c: VDLClient, params: Params): Dynamic {
         var userId = params.get("userId");
