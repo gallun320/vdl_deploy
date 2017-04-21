@@ -135,7 +135,7 @@ using Lambda;
   }
 
    public function checkStep() {
-     var ret = server.query('SELECT * FROM battle WHERE avaliable = false AND finished <> true AND to_timestamp(extract(epoch from now)) - steptime > 120');
+     var ret = server.query('SELECT * FROM battle WHERE avaliable = false AND finished <> true');
     //  trace(ret[0]);
      var t = Sys.time() / 1000;
      trace("+++++++++++++++++++++++++++++++++++++++++");
@@ -152,8 +152,9 @@ using Lambda;
          trace("+++++++++++++++++++++++++++++++++++++++++");
          trace(t);
          trace("+++++++++++++++++++++++++++++++++++++++++");
-         
+         if((t - el.steptime) > 120 ) {
            SkipTurn(el);
+         }
          
          /*trace("+++++++++++++++++++++++++++++++++++++++++");
          trace("In for in checkStep. el.steptime = " + el.steptime);
