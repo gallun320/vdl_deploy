@@ -125,7 +125,19 @@ class VDLUserModule extends Module<VDLClient, ServerVDL>
       }
   
   public function UserRecovery(c: VDLClient, params: Params): Dynamic {
+    var name: String = params.get('name');
     
+    var ret = server.query('SELECT email, password FROM users WHERE name = ' + server.quote(name));
+    
+    var email: String = (ret.first().email == null) ? "" : ret.first().email;
+    var password: String = (ret.first().password == null) ? "" : ret.first().password;
+    try {
+      new sys.io.Process('python', ['mail.py', password, email]);
+    } catch(msg: String) {
+      trace(msg);
+      return { errorCode: "emailNotSend"};
+    }
+    return {errorCode: "ok"}
   }
 
       public function UserFriends(c: VDLClient, params: Params): Dynamic {

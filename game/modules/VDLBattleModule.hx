@@ -40,14 +40,12 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
             response = FindRoomCall(c, params);
           case "battle.sendtask":
               response = TaskCall(c, params);
-          case "battle.skipEvent":
-              response = SkipEventCall(c, params);
           case "battle.access":
               response = AccessBattle(c, params);
           case "battle.message":
               response = BattleMessage(c, params);
           case "battle.getState":
-            response = BattleState(c, params);
+            response = BattleStateCall(c, params);
           /*case "battle.lose":
               response = LoseCall(c, params);*/
           case "battle.end":
@@ -75,9 +73,6 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         return ret;
       }
 
-      public function SkipEventCall(c: VDLClient, params:Params): Dynamic {
-          return skipEvent(c.id);
-      }
 
       /*public function CubeCall(c: VDLClient, params: Params): Dynamic {
         var ret = Cube(c.id);
@@ -136,11 +131,10 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         });
       }
 
-      // public function skipEvent(msg: { id: Int, type: String}) {
-        public function skipEvent(id: Int) {
+  public function skipEvent(msg: { id: Int, type: String}) {
         //  var c: VDLClient = server.TournamentModule.getClient(msg.id);
         // c.id = msg.id;
-        server.sendTo(id, {
+        server.sendTo(msg.id, {
               _type: "battle.task",
               name: "skip"
             });
@@ -384,7 +378,8 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
         var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
 
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
+        var obj: Dynamic = BattleState(roomId);
+        obj.errorCode = "cannotSwap";
         return obj;
       }
 
@@ -392,8 +387,9 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
 
         var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> =  FieldFunc.Field;
-
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
+        
+        var obj: Dynamic = BattleState(roomId);
+        obj.errorCode = "cannotSwap";
         return obj;
       }
 
@@ -404,8 +400,10 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
 
         var dices: Array<Int> = CubesData.get(roomId).copy();
         var field: Array<Array<Int>> = FieldFunc.Field;
-
-        var obj: Dynamic = { dices: dices, pole: field, errorCode: "cannotSwap"};
+        
+        var obj: Dynamic = { };
+        obj = BattleState(roomId);
+        obj.errorCode = "cannotSwap";
         return obj;
       }
 
@@ -456,8 +454,12 @@ class VDLBattleModule extends Module<VDLClient, ServerVDL>
       CubesData.set(cid, arr);
       return { errorCode: 'ok', cube: arr};
     }*/
-    public function BattleState(c: VDLClient, params: Params): Dynamic {
-      var battleId = params.get('battleId');
+            public function BattleStateCall(c: VDLClient, params: Params): Dynamic {
+              var battleId: Int = params.get('battleId');
+              return BattleState(battleId);
+            }
+    public function BattleState(battleId: Int): Dynamic {
+      
       var battle = RoomInfo(battleId);
       var pole = FieldData.get(battleId);
       var dices = CubesData.get(battleId); 

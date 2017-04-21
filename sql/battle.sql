@@ -8,9 +8,9 @@ create table Battle
   SecondID int DEFAULT 0 NOT NULL, -- second ID
   TurnID int DEFAULT 0 NOT NULL, -- Turn Player ID
   RoundTime int DEFAULT 30 NOT NULL, -- battle round time
-  StepTime timestemp DEFAULT now() NOT NULL,
+  StepTime timestemp without timezone DEFAULT now() NOT NULL,
   TournamentId int DEFAULT -1 NOT NULL, -- tournament id
-  Endtime timestemp DEFAULT now() NOT NULL, -- time start battle
+  Endtime timestemp without timezone DEFAULT now() NOT NULL, -- time start battle
   Avaliable boolean DEFAULT true NOT NULL,
   Finished boolean DEFAULT false NOT NULL,
   Params text DEFAULT '' NOT NULL -- parameters (Haxe)
